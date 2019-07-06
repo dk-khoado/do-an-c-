@@ -1,0 +1,4 @@
+yêu cầu
+viết api tạo phòng chơi mới, và thêm người chơi mới vào phòng chơi
+bảng sử dụng: room_list, room_listplayer
+
