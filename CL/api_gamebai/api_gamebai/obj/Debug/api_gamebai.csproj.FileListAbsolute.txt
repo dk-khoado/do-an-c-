@@ -1,0 +1,171 @@
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csproj.CoreCompileInputs.cache
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\api_gamebai.dll.config
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\api_gamebai.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\api_gamebai.pdb
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\csc.exe
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\csc.exe.config
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\csc.rsp
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\csi.exe
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\csi.exe.config
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\csi.rsp
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.AppContext.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Collections.Immutable.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Console.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.IO.Compression.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.IO.FileSystem.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.IO.Pipes.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Reflection.Metadata.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Security.AccessControl.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Security.Claims.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.ValueTuple.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Xml.XPath.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\vbc.exe
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\vbc.exe.config
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\vbc.rsp
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\VBCSCompiler.exe
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\VBCSCompiler.exe.config
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\Antlr3.Runtime.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\EntityFramework.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\EntityFramework.SqlServer.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\Microsoft.Web.Infrastructure.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\Newtonsoft.Json.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\System.Net.Http.Formatting.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\System.Web.Helpers.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\System.Web.Http.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\System.Web.Http.WebHost.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\System.Web.Mvc.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\System.Web.Optimization.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\System.Web.Razor.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\System.Web.WebPages.Deployment.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\System.Web.WebPages.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\System.Web.WebPages.Razor.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\WebGrease.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\EntityFramework.xml
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\EntityFramework.SqlServer.xml
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\Newtonsoft.Json.xml
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\System.Net.Http.Formatting.xml
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\System.Web.Helpers.xml
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\System.Web.Http.xml
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\System.Web.Http.WebHost.xml
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\System.Web.Mvc.xml
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\System.Web.Optimization.xml
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\System.Web.Razor.xml
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\System.Web.WebPages.xml
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\System.Web.WebPages.Deployment.xml
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\System.Web.WebPages.Razor.xml
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\Antlr3.Runtime.pdb
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csproj.CopyComplete
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\obj\Debug\api_gamebai.dll
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\obj\Debug\api_gamebai.pdb
+C:\Github do an\do-an-c-\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csprojAssemblyReference.cache
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\api_gamebai.dll.config
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\api_gamebai.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\api_gamebai.pdb
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\csc.exe
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\csc.exe.config
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\csc.rsp
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\csi.exe
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\csi.exe.config
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\csi.rsp
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\Microsoft.Managed.Core.targets
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.AppContext.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.Collections.Immutable.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.Console.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.IO.Compression.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.IO.FileSystem.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.IO.Pipes.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.Reflection.Metadata.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.Security.AccessControl.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.Security.Claims.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.Security.Principal.Windows.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.ValueTuple.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.Xml.XmlDocument.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.Xml.XPath.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\vbc.exe
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\vbc.exe.config
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\vbc.rsp
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\VBCSCompiler.exe
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\roslyn\VBCSCompiler.exe.config
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\Antlr3.Runtime.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\EntityFramework.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\EntityFramework.SqlServer.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\Microsoft.Web.Infrastructure.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\Newtonsoft.Json.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\System.Net.Http.Formatting.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\System.Web.Helpers.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\System.Web.Http.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\System.Web.Http.WebHost.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\System.Web.Mvc.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\System.Web.Optimization.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\System.Web.Razor.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\System.Web.WebPages.Deployment.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\System.Web.WebPages.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\System.Web.WebPages.Razor.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\WebGrease.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\EntityFramework.xml
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\EntityFramework.SqlServer.xml
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\Newtonsoft.Json.xml
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\System.Net.Http.Formatting.xml
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\System.Web.Helpers.xml
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\System.Web.Http.xml
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\System.Web.Http.WebHost.xml
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\System.Web.Mvc.xml
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\System.Web.Optimization.xml
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\System.Web.Razor.xml
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\System.Web.WebPages.xml
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\System.Web.WebPages.Deployment.xml
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\System.Web.WebPages.Razor.xml
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\Antlr3.Runtime.pdb
+E:\DoAnC#\TU\api_gamebai\api_gamebai\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\DoAnC#\TU\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csproj.CoreCompileInputs.cache
+E:\DoAnC#\TU\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csproj.CopyComplete
+E:\DoAnC#\TU\api_gamebai\api_gamebai\obj\Debug\api_gamebai.dll
+E:\DoAnC#\TU\api_gamebai\api_gamebai\obj\Debug\api_gamebai.pdb
