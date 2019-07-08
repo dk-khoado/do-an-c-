@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseGameBaiModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="room_listplayer">
+    <Key>
+      <PropertyRef Name="room_id" />
+      <PropertyRef Name="player_id" />
+    </Key>
+    <Property Name="room_id" Type="Int32" Nullable="false" />
+    <Property Name="player_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DatabaseGameBaiEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="room_listplayer" EntityType="Self.room_listplayer" />
+    <FunctionImport Name="sendmessage">
+      <Parameter Name="playerIDsend" Mode="In" Type="Int32" />
+      <Parameter Name="playerIDrecive" Mode="In" Type="Int32" />
+      <Parameter Name="message" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

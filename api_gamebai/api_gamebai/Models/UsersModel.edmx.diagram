@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7d95341ab30e457982ccbcf49a839d47" Name="Diagram1">
+        <EntityTypeShape EntityType="DatabaseGameBaiModel.history_login" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseGameBaiModel.player" Width="1.5" PointX="0.5" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseGameBaiModel.player_chatlist" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseGameBaiModel.player_listfriend" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseGameBaiModel.player_rank" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseGameBaiModel.room_list" Width="1.5" PointX="5.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseGameBaiModel.player_message" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseGameBaiModel.player_status" Width="1.5" PointX="3" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseGameBaiModel.room_listplayer" Width="1.5" PointX="8" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseGameBaiModel.infoplayer" Width="1.5" PointX="5.625" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseGameBaiModel.vChat" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseGameBaiModel.vroom_listplayer" Width="1.5" PointX="8" PointY="7.5" IsExpanded="true" />
+        <AssociationConnector Association="DatabaseGameBaiModel.FK_player_id_receive" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseGameBaiModel.FK_player_id_send" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseGameBaiModel.FK_player_listfriend_player" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseGameBaiModel.FK_player_listfriend_player_listfriend" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseGameBaiModel.FK_player_rank_player" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseGameBaiModel.FK_player_status_player" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseGameBaiModel.chatlist" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseGameBaiModel.FK_room_listplayer_room_list" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

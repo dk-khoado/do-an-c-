@@ -12,35 +12,35 @@ namespace api_gamebai.Controllers
 {
     public class UserController : ApiController
     {
-        DatabaseGameBaiEntities db = new DatabaseGameBaiEntities();
-        Notification notifi = new Notification();
+        Databasegamebai db = new Databasegamebai();
+        ResponseMessage notifi = new ResponseMessage();
         [HttpPost]     
-        public Notification Register([FromBody]player muser)
+        public ResponseMessage Register([FromBody]player muser)
         {           
             if (!ModelState.IsValid)
             {
-                return new Notification(BadRequest().ToString(), "Loi");
+                return new ResponseMessage(BadRequest().ToString(), "Loi");
             }                
             if(muser == null)
             {
-                return new Notification(BadRequest().ToString(), "Khong duoc de trong");
+                return new ResponseMessage(BadRequest().ToString(), "Khong duoc de trong");
             }
             if(muser.username == "" || muser.password ==""||muser.email == "")
             {
-                return new Notification(BadRequest().ToString(), "Khong de trong cac truong nay");
+                return new ResponseMessage(BadRequest().ToString(), "Khong de trong cac truong nay");
             }            
             foreach (player item in db.players)
             {
                 if(muser.username == item.username)
                 {
-                    return new Notification(BadRequest().ToString(), "Username da duoc su dung");
+                    return new ResponseMessage(BadRequest().ToString(), "Username da duoc su dung");
                 }
             }
             foreach(player item in db.players)
             {
                 if(muser.email == item.email)
                 {
-                    return new Notification(BadRequest().ToString(), "Email da duoc su dung");
+                    return new ResponseMessage(BadRequest().ToString(), "Email da duoc su dung");
                 }
             }
             if(muser.nickname == null)
@@ -57,32 +57,31 @@ namespace api_gamebai.Controllers
             {
                 if (muser.email == null || muser.username == null || muser.password == null)
                 {
-                    return new Notification(BadRequest().ToString(), "đối tượng trống");
+                    return new ResponseMessage(BadRequest().ToString(), "đối tượng trống");
                 }               
-                return new Notification(BadRequest().ToString(), "loi tum lum");
+                return new ResponseMessage(BadRequest().ToString(), "loi tum lum");
             }
-            return new Notification(Ok().ToString(), "Them thanh cong");
+            return new ResponseMessage(Ok().ToString(), "Them thanh cong");
         }
         [HttpPost]
-        public Notification Login([FromBody]UserLoginModel mlogin)
+        public ResponseMessage Login([FromBody]UserLoginModel mlogin)
         {
-           
             if (!ModelState.IsValid)
             {
-                return new Notification(BadRequest().ToString(), "Mot lo loi");
+                return new ResponseMessage(BadRequest().ToString(), "Mot lo loi");
             }
-           
-            if (mlogin.username == ""||mlogin.password =="" || mlogin.isNull())
+
+            if (mlogin.username == "" || mlogin.password == "" || mlogin.isNull())
             {
-                return new Notification(BadRequest().ToString(), "Khong duoc de trong");
-            }            
-            if(db.players.Count(e =>e.username == mlogin.username)>0 && db.players.Count(e => e.password == mlogin.password) > 0)
+                return new ResponseMessage(BadRequest().ToString(), "Khong duoc de trong");
+            }
+            if (db.players.Count(e => e.username == mlogin.username) > 0 && db.players.Count(e => e.password == mlogin.password) > 0)
             {
-                return new Notification(Ok().ToString(), "Dang nhap thanh cong", 1);
+                return new ResponseMessage(Ok().ToString(), "Dang nhap thanh cong", 1);
             }
             else
             {
-                return new Notification(Ok().ToString(), "Dang nhap that bai",0);
+                return new ResponseMessage(Ok().ToString(), "Dang nhap that bai", 0);
             }
         }
         private string Mahoa(string input)

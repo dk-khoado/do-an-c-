@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseGameBaiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="history_login">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="player_id" Type="Int32" Nullable="false" />
+    <Property Name="login_time" Type="DateTime" Precision="3" />
+    <Property Name="logout_time" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="player">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="money" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="nickname" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="256" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="player_chatlist" Relationship="Self.FK_player_id_receive" FromRole="player" ToRole="player_chatlist" />
+    <NavigationProperty Name="player_chatlist1" Relationship="Self.FK_player_id_send" FromRole="player" ToRole="player_chatlist" />
+    <NavigationProperty Name="player_listfriend" Relationship="Self.FK_player_listfriend_player" FromRole="player" ToRole="player_listfriend" />
+    <NavigationProperty Name="player_listfriend1" Relationship="Self.FK_player_listfriend_player_listfriend" FromRole="player" ToRole="player_listfriend" />
+    <NavigationProperty Name="player_rank" Relationship="Self.FK_player_rank_player" FromRole="player" ToRole="player_rank" />
+    <NavigationProperty Name="player_status" Relationship="Self.FK_player_status_player" FromRole="player" ToRole="player_status" />
+  </EntityType>
+  <EntityType Name="player_chatlist">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="player_id_send" Type="Int32" Nullable="false" />
+    <Property Name="player_id_receive" Type="Int32" Nullable="false" />
+    <Property Name="isseen" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="player" Relationship="Self.FK_player_id_receive" FromRole="player_chatlist" ToRole="player" />
+    <NavigationProperty Name="player1" Relationship="Self.FK_player_id_send" FromRole="player_chatlist" ToRole="player" />
+    <NavigationProperty Name="player_message" Relationship="Self.chatlist" FromRole="player_chatlist" ToRole="player_message" />
+  </EntityType>
+  <EntityType Name="player_listfriend">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="player_id" Type="Int32" Nullable="false" />
+    <Property Name="friend_id" Type="Int32" Nullable="false" />
+    <Property Name="isban" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="player" Relationship="Self.FK_player_listfriend_player" FromRole="player_listfriend" ToRole="player" />
+    <NavigationProperty Name="player1" Relationship="Self.FK_player_listfriend_player_listfriend" FromRole="player_listfriend" ToRole="player" />
+  </EntityType>
+  <EntityType Name="player_rank">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="player_id" Type="Int32" Nullable="false" />
+    <Property Name="lose" Type="Int32" />
+    <Property Name="win" Type="Int32" />
+    <Property Name="hightscore" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="player" Relationship="Self.FK_player_rank_player" FromRole="player_rank" ToRole="player" />
+  </EntityType>
+  <EntityType Name="room_list">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="owner_id" Type="Int32" Nullable="false" />
+    <Property Name="limit_player" Type="Int32" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="current_player" Type="Int32" />
+    <NavigationProperty Name="room_listplayer" Relationship="Self.FK_room_listplayer_room_list" FromRole="room_list" ToRole="room_listplayer" />
+  </EntityType>
+  <EntityType Name="player_message">
+    <Key>
+      <PropertyRef Name="id_chatlist" />
+      <PropertyRef Name="message" />
+      <PropertyRef Name="send_date" />
+      <PropertyRef Name="isdelete" />
+    </Key>
+    <Property Name="id_chatlist" Type="Int32" Nullable="false" />
+    <Property Name="message" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="send_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="isdelete" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="player_chatlist" Relationship="Self.chatlist" FromRole="player_message" ToRole="player_chatlist" />
+  </EntityType>
+  <EntityType Name="player_status">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="player_id" />
+      <PropertyRef Name="status" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="player_id" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="player" Relationship="Self.FK_player_status_player" FromRole="player_status" ToRole="player" />
+  </EntityType>
+  <EntityType Name="room_listplayer">
+    <Key>
+      <PropertyRef Name="room_id" />
+      <PropertyRef Name="player_id" />
+    </Key>
+    <Property Name="room_id" Type="Int32" Nullable="false" />
+    <Property Name="player_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="room_list" Relationship="Self.FK_room_listplayer_room_list" FromRole="room_listplayer" ToRole="room_list" />
+  </EntityType>
+  <EntityType Name="infoplayer">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="nickname" />
+      <PropertyRef Name="money" />
+      <PropertyRef Name="status" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="nickname" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="money" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="lose" Type="Int32" />
+    <Property Name="win" Type="Int32" />
+    <Property Name="hightscore" Type="Decimal" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="vChat">
+    <Key>
+      <PropertyRef Name="player_id_send" />
+      <PropertyRef Name="player_id_receive" />
+      <PropertyRef Name="isseen" />
+      <PropertyRef Name="message" />
+      <PropertyRef Name="send_date" />
+      <PropertyRef Name="isdelete" />
+    </Key>
+    <Property Name="player_id_send" Type="Int32" Nullable="false" />
+    <Property Name="player_id_receive" Type="Int32" Nullable="false" />
+    <Property Name="isseen" Type="Boolean" Nullable="false" />
+    <Property Name="message" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="send_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="isdelete" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vroom_listplayer">
+    <Key>
+      <PropertyRef Name="room_id" />
+      <PropertyRef Name="player_id" />
+    </Key>
+    <Property Name="room_id" Type="Int32" Nullable="false" />
+    <Property Name="player_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_player_id_receive">
+    <End Role="player" Type="Self.player" Multiplicity="1" />
+    <End Role="player_chatlist" Type="Self.player_chatlist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="player">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="player_chatlist">
+        <PropertyRef Name="player_id_receive" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_player_id_send">
+    <End Role="player" Type="Self.player" Multiplicity="1" />
+    <End Role="player_chatlist" Type="Self.player_chatlist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="player">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="player_chatlist">
+        <PropertyRef Name="player_id_send" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_player_listfriend_player">
+    <End Role="player" Type="Self.player" Multiplicity="1" />
+    <End Role="player_listfriend" Type="Self.player_listfriend" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="player">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="player_listfriend">
+        <PropertyRef Name="friend_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_player_listfriend_player_listfriend">
+    <End Role="player" Type="Self.player" Multiplicity="1" />
+    <End Role="player_listfriend" Type="Self.player_listfriend" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="player">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="player_listfriend">
+        <PropertyRef Name="player_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_player_rank_player">
+    <End Role="player" Type="Self.player" Multiplicity="1" />
+    <End Role="player_rank" Type="Self.player_rank" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="player">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="player_rank">
+        <PropertyRef Name="player_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_player_status_player">
+    <End Role="player" Type="Self.player" Multiplicity="1" />
+    <End Role="player_status" Type="Self.player_status" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="player">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="player_status">
+        <PropertyRef Name="player_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="chatlist">
+    <End Role="player_chatlist" Type="Self.player_chatlist" Multiplicity="1" />
+    <End Role="player_message" Type="Self.player_message" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="player_chatlist">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="player_message">
+        <PropertyRef Name="id_chatlist" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_room_listplayer_room_list">
+    <End Role="room_list" Type="Self.room_list" Multiplicity="1" />
+    <End Role="room_listplayer" Type="Self.room_listplayer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="room_list">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="room_listplayer">
+        <PropertyRef Name="room_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Databasegamebai" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="history_login" EntityType="Self.history_login" />
+    <EntitySet Name="players" EntityType="Self.player" />
+    <EntitySet Name="player_chatlist" EntityType="Self.player_chatlist" />
+    <EntitySet Name="player_listfriend" EntityType="Self.player_listfriend" />
+    <EntitySet Name="player_rank" EntityType="Self.player_rank" />
+    <EntitySet Name="room_list" EntityType="Self.room_list" />
+    <EntitySet Name="player_message" EntityType="Self.player_message" />
+    <EntitySet Name="player_status" EntityType="Self.player_status" />
+    <EntitySet Name="room_listplayer" EntityType="Self.room_listplayer" />
+    <EntitySet Name="infoplayers" EntityType="Self.infoplayer" />
+    <EntitySet Name="vChats" EntityType="Self.vChat" />
+    <EntitySet Name="vroom_listplayer" EntityType="Self.vroom_listplayer" />
+    <AssociationSet Name="FK_player_id_receive" Association="Self.FK_player_id_receive">
+      <End Role="player" EntitySet="players" />
+      <End Role="player_chatlist" EntitySet="player_chatlist" />
+    </AssociationSet>
+    <AssociationSet Name="FK_player_id_send" Association="Self.FK_player_id_send">
+      <End Role="player" EntitySet="players" />
+      <End Role="player_chatlist" EntitySet="player_chatlist" />
+    </AssociationSet>
+    <AssociationSet Name="FK_player_listfriend_player" Association="Self.FK_player_listfriend_player">
+      <End Role="player" EntitySet="players" />
+      <End Role="player_listfriend" EntitySet="player_listfriend" />
+    </AssociationSet>
+    <AssociationSet Name="FK_player_listfriend_player_listfriend" Association="Self.FK_player_listfriend_player_listfriend">
+      <End Role="player" EntitySet="players" />
+      <End Role="player_listfriend" EntitySet="player_listfriend" />
+    </AssociationSet>
+    <AssociationSet Name="FK_player_rank_player" Association="Self.FK_player_rank_player">
+      <End Role="player" EntitySet="players" />
+      <End Role="player_rank" EntitySet="player_rank" />
+    </AssociationSet>
+    <AssociationSet Name="FK_player_status_player" Association="Self.FK_player_status_player">
+      <End Role="player" EntitySet="players" />
+      <End Role="player_status" EntitySet="player_status" />
+    </AssociationSet>
+    <AssociationSet Name="chatlist" Association="Self.chatlist">
+      <End Role="player_chatlist" EntitySet="player_chatlist" />
+      <End Role="player_message" EntitySet="player_message" />
+    </AssociationSet>
+    <AssociationSet Name="FK_room_listplayer_room_list" Association="Self.FK_room_listplayer_room_list">
+      <End Role="room_list" EntitySet="room_list" />
+      <End Role="room_listplayer" EntitySet="room_listplayer" />
+    </AssociationSet>
+    <FunctionImport Name="congTien">
+      <Parameter Name="amount" Mode="In" Type="Decimal" />
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sendmessage">
+      <Parameter Name="playerIDsend" Mode="In" Type="Int32" />
+      <Parameter Name="playerIDrecive" Mode="In" Type="Int32" />
+      <Parameter Name="message" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

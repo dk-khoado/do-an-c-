@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace api_gamebai.Models
+﻿namespace api_gamebai.Controllers
 {
     public class UserLoginModel
     {
@@ -15,7 +10,10 @@ namespace api_gamebai.Models
             {
                 return true;
             }
-            return false;
+            else
+            {
+                return false;
+            }
         }
     }
 }
