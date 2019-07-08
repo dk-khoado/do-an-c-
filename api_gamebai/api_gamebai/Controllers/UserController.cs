@@ -14,24 +14,22 @@ namespace api_gamebai.Controllers
     {
         DatabaseGameBaiEntities db = new DatabaseGameBaiEntities();
         Notification notifi = new Notification();
-        [HttpPost]
-        [Route("RegisterApi")]
+        [HttpPost]     
         public Notification Register([FromBody]player muser)
-        {
-            muser.password = Mahoa(muser.password);
+        {           
             if (!ModelState.IsValid)
             {
                 return new Notification(BadRequest().ToString(), "Loi");
-            }
+            }                
             if(muser == null)
             {
                 return new Notification(BadRequest().ToString(), "Khong duoc de trong");
             }
-            if(muser.username == "" || muser.password ==" "||muser.email == "")
+            if(muser.username == "" || muser.password ==""||muser.email == "")
             {
                 return new Notification(BadRequest().ToString(), "Khong de trong cac truong nay");
-            }
-            foreach(player item in db.players)
+            }            
+            foreach (player item in db.players)
             {
                 if(muser.username == item.username)
                 {
@@ -49,36 +47,42 @@ namespace api_gamebai.Controllers
             {
                 muser.nickname = muser.username;
             }
-            db.players.Add(muser);
             try
             {
+                muser.password = Mahoa(muser.password);
+                db.players.Add(muser);
                 db.SaveChanges();
             }
             catch
             {
+                if (muser.email == null || muser.username == null || muser.password == null)
+                {
+                    return new Notification(BadRequest().ToString(), "đối tượng trống");
+                }               
                 return new Notification(BadRequest().ToString(), "loi tum lum");
             }
             return new Notification(Ok().ToString(), "Them thanh cong");
         }
         [HttpPost]
-        public Notification Login([FromBody]player mlogin)
+        public Notification Login([FromBody]UserLoginModel mlogin)
         {
-            mlogin.password = Mahoa(mlogin.password);
+           
             if (!ModelState.IsValid)
             {
                 return new Notification(BadRequest().ToString(), "Mot lo loi");
             }
-            if(mlogin.username == ""||mlogin.password =="")
+           
+            if (mlogin.username == ""||mlogin.password =="" || mlogin.isNull())
             {
                 return new Notification(BadRequest().ToString(), "Khong duoc de trong");
-            }
+            }            
             if(db.players.Count(e =>e.username == mlogin.username)>0 && db.players.Count(e => e.password == mlogin.password) > 0)
             {
-                return new Notification(Ok().ToString(), "Dang nhap thanh cong");
+                return new Notification(Ok().ToString(), "Dang nhap thanh cong", 1);
             }
             else
             {
-                return new Notification(Ok().ToString(), "Dang nhap that bai");
+                return new Notification(Ok().ToString(), "Dang nhap that bai",0);
             }
         }
         private string Mahoa(string input)
