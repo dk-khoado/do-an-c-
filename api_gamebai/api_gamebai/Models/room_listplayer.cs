@@ -16,5 +16,7 @@ namespace api_gamebai.Models
     {
         public int room_id { get; set; }
         public int player_id { get; set; }
+    
+        public virtual room_list room_list { get; set; }
     }
 }

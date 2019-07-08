@@ -18,7 +18,7 @@ namespace api_gamebai
                 name: "RegisterApi",
                 routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional }
-            );
+            );           
         }
     }
 }
