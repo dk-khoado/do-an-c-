@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HistoryLoginModelStoreContainer" CdmEntityContainer="DatabaseUnoEntities">
+    <EntitySetMapping Name="history_login">
+      <EntityTypeMapping TypeName="HistoryLoginModel.history_login">
+        <MappingFragment StoreEntitySet="history_login">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="player_id" ColumnName="player_id" />
+          <ScalarProperty Name="login_time" ColumnName="login_time" />
+          <ScalarProperty Name="logout_time" ColumnName="logout_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

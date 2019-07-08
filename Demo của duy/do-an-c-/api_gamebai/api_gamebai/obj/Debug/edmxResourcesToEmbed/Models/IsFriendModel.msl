@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DatabaseGameBaiModelStoreContainer" CdmEntityContainer="DatabaseGameBaiEntities">
+    <EntitySetMapping Name="player_listfriend">
+      <EntityTypeMapping TypeName="DatabaseGameBaiModel.player_listfriend">
+        <MappingFragment StoreEntitySet="player_listfriend">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="player_id" ColumnName="player_id" />
+          <ScalarProperty Name="friend_id" ColumnName="friend_id" />
+          <ScalarProperty Name="isban" ColumnName="isban" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseGameBaiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="history_login">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="player_id" Type="Int32" Nullable="false" />
+    <Property Name="login_time" Type="DateTime" Precision="0" />
+    <Property Name="logout_time" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityContainer Name="DatabaseGameEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="history_login" EntityType="Self.history_login" />
+  </EntityContainer>
+</Schema>
