@@ -9,7 +9,7 @@ namespace api_gamebai.Models
     {
         public string response;
         public string message;
-
+        public int result;
         public Notification()
         {
         }
@@ -17,7 +17,13 @@ namespace api_gamebai.Models
         public Notification(string res,string mess)
         {
             this.response = res;
+            this.message = mess;           
+        }
+        public Notification(string res, string mess, int result)
+        {
+            this.response = res;
             this.message = mess;
+            this.result = result;
         }
     }
 }
