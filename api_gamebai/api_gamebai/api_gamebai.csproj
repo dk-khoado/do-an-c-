@@ -171,6 +171,16 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RoomListController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Models\player_message.cs">
+      <DependentUpon>UsersModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RegisterUser.cs" />
+    <Compile Include="Models\room_list.cs">
+      <DependentUpon>UsersModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\room_listplayer.cs">
+      <DependentUpon>UsersModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\UserLoginModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -190,9 +200,6 @@
     <Compile Include="Models\player_listfriend.cs">
       <DependentUpon>UsersModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\player_message.cs">
-      <DependentUpon>UsersModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\player_rank.cs">
       <DependentUpon>UsersModel.tt</DependentUpon>
     </Compile>
@@ -200,12 +207,6 @@
       <DependentUpon>UsersModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ResponseMessage.cs" />
-    <Compile Include="Models\room_list.cs">
-      <DependentUpon>UsersModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\room_listplayer.cs">
-      <DependentUpon>UsersModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\UsersModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -220,12 +221,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>UsersModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\vChat.cs">
-      <DependentUpon>UsersModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\vroom_listplayer.cs">
-      <DependentUpon>UsersModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -283,6 +278,9 @@
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Views\mailTemplate.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -297,6 +295,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\lick.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

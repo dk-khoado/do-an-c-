@@ -18,6 +18,7 @@ namespace api_gamebai.Models
         public string message { get; set; }
         public System.DateTime send_date { get; set; }
         public bool isdelete { get; set; }
+        public int id { get; set; }
     
         public virtual player_chatlist player_chatlist { get; set; }
     }

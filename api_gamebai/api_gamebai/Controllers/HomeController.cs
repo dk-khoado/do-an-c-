@@ -13,5 +13,9 @@ namespace api_gamebai.Controllers
             ViewBag.Title = "Home Page";            
             return View();
         }
+        public ActionResult Lick()
+        {            
+            return View();
+        }
     }
 }
