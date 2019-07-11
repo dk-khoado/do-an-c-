@@ -10,7 +10,7 @@ using api_gamebai.Models;
 using System.Web;
 using System.Diagnostics;
 using System.Web.Mvc.Routing;
-
+using System.Security.Policy;
 
 namespace api_gamebai.Controllers
 {
@@ -18,9 +18,9 @@ namespace api_gamebai.Controllers
     {
         Databasegamebai db = new Databasegamebai();
         ResponseMessage notifi = new ResponseMessage();
-        public void Get()
+        public string Get()
         {
-            //SendMail("duy.haivl321@gmail.com");
+            return Url.Link("RegisterApi", new { controller = "user", action = "Register"});
         }
         [HttpPost]     
         public ResponseMessage Register([FromBody]RegisterUser muser)
@@ -130,9 +130,10 @@ namespace api_gamebai.Controllers
             string htmlMail;
             using (StreamReader reader = new StreamReader(HttpContext.Current.Request.MapPath("~/Views/mailTemplate.html")))
             {
+                string url = Url.Link("RegisterApi", new { controller = "user", action = "Register" });
                 htmlMail = reader.ReadToEnd();
                 htmlMail = htmlMail.Replace("{name}",name);
-                htmlMail = htmlMail.Replace("{link}",new Uri("~/Home/lick").AbsoluteUri);
+                htmlMail = htmlMail.Replace("{link}",url);
             }
             try
             {
