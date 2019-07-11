@@ -1,0 +1,15 @@
+﻿<UserControl x:Name="itemUser_" x:Class="UChat.itemUser"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UChat"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="200" Background="White">
+    <ListViewItem x:Name="listView" Background="#FFFDFDFD" Foreground="Red" FontFamily="Verdana" FontSize="12" FontWeight="Bold">
+        <StackPanel Orientation="Horizontal">
+            <Image x:Name="img_user" Height="50" ></Image>
+            <TextBlock x:Name="txt_name" Text="Coffie"/>
+        </StackPanel>
+    </ListViewItem>
+</UserControl>

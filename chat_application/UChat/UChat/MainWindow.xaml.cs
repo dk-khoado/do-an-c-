@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,9 +23,39 @@ namespace UChat
     /// </summary>
     public partial class MainWindow : Window
     {
+        itemUser item = new itemUser();        
         public MainWindow()
         {
             InitializeComponent();
+            downloadFile();
+
+        }
+        private void downloadFile()
+        {           
+            // Change the url by the value you want (a textbox or something else)
+            string url = "https://www.google.com/images/icons/ui/doodle_plus/logo.png";
+            // Get filename from URL
+            string filename = getFilename(url);
+
+            using (var client = new WebClient())
+            {
+                if (!Directory.Exists("image"))
+                {
+                    Directory.CreateDirectory("image");
+                }
+               
+                client.DownloadFile(url,"image/"+ filename);
+            }
+
+            MessageBox.Show("Download ready");
+        }
+        private string getFilename(string hreflink)
+        {
+            Uri uri = new Uri(hreflink);
+
+            string filename = System.IO.Path.GetFileName(uri.LocalPath);
+
+            return filename;
         }
     }
 }
