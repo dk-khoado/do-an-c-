@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DatabaseGameBaiModel1StoreContainer" CdmEntityContainer="DatabaseRoomList">
+    <EntitySetMapping Name="room_list">
+      <EntityTypeMapping TypeName="DatabaseGameBaiModel1.room_list">
+        <MappingFragment StoreEntitySet="room_list">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="owner_id" ColumnName="owner_id" />
+          <ScalarProperty Name="limit_player" ColumnName="limit_player" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="current_player" ColumnName="current_player" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

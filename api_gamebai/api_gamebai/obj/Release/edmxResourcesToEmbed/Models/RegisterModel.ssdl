@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseGameBaiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="player">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="money" Type="money" Nullable="false" />
+    <Property Name="nickname" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DatabaseGameBaiModelStoreContainer">
+    <EntitySet Name="player" EntityType="Self.player" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
