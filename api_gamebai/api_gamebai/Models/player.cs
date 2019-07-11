@@ -31,6 +31,7 @@ namespace api_gamebai.Models
         public decimal money { get; set; }
         public string nickname { get; set; }
         public string email { get; set; }
+        public int status { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<player_chatlist> player_chatlist { get; set; }

@@ -259,6 +259,7 @@ D:\C#_project\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csproj.CoreCompileIn
 D:\C#_project\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csproj.CopyComplete
 D:\C#_project\api_gamebai\api_gamebai\obj\Debug\api_gamebai.dll
 D:\C#_project\api_gamebai\api_gamebai\obj\Debug\api_gamebai.pdb
+<<<<<<< HEAD
 C:\Đồ án C#\do-an-c-\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csprojAssemblyReference.cache
 C:\Đồ án C#\do-an-c-\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csproj.CoreCompileInputs.cache
 C:\Đồ án C#\do-an-c-\api_gamebai\api_gamebai\obj\Debug\api_gamebai.dll
@@ -349,3 +350,7 @@ C:\Đồ án C#\do-an-c-\api_gamebai\api_gamebai\bin\System.Web.WebPages.Razor.x
 C:\Đồ án C#\do-an-c-\api_gamebai\api_gamebai\bin\Antlr3.Runtime.pdb
 C:\Đồ án C#\do-an-c-\api_gamebai\api_gamebai\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Đồ án C#\do-an-c-\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csproj.CopyComplete
+=======
+D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csprojAssemblyReference.cache
+D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\Views\mailTemplate.html
+>>>>>>> master
