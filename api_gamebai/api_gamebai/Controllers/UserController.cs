@@ -13,8 +13,12 @@ using KeyRandom;
 using System.Web;
 using System.Diagnostics;
 using System.Web.Mvc.Routing;
+<<<<<<< HEAD
 using System.Security.Policy;
 >>>>>>> master
+=======
+
+>>>>>>> parent of 69fafa8... Merge pull request #22 from kakoi-3nhan4-16/khoa
 
 namespace api_gamebai.Controllers
 {
@@ -22,9 +26,9 @@ namespace api_gamebai.Controllers
     {
         Databasegamebai db = new Databasegamebai();
         ResponseMessage notifi = new ResponseMessage();
-        public string Get()
+        public void Get()
         {
-            return Url.Link("RegisterApi", new { controller = "user", action = "Register"});
+            //SendMail("duy.haivl321@gmail.com");
         }
         [HttpPost]     
         public ResponseMessage Register([FromBody]RegisterUser muser)
@@ -146,10 +150,9 @@ namespace api_gamebai.Controllers
             string htmlMail;
             using (StreamReader reader = new StreamReader(HttpContext.Current.Request.MapPath("~/Views/mailTemplate.html")))
             {
-                string url = Url.Link("RegisterApi", new { controller = "user", action = "Register" });
                 htmlMail = reader.ReadToEnd();
                 htmlMail = htmlMail.Replace("{name}",name);
-                htmlMail = htmlMail.Replace("{link}",url);
+                htmlMail = htmlMail.Replace("{link}",new Uri("~/Home/lick").AbsoluteUri);
             }
             try
             {
