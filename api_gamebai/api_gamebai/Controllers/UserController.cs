@@ -7,6 +7,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Web.Http;
 using api_gamebai.Models;
+using KeyRandom;
 
 namespace api_gamebai.Controllers
 {
@@ -68,7 +69,7 @@ namespace api_gamebai.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return new ResponseMessage(BadRequest().ToString(), "Mot lo loi");
+                return new ResponseMessage(BadRequest().ToString(), "Fail !!!");
             }
 
             if (mlogin.username == "" || mlogin.password == "" || mlogin.isNull())
@@ -96,5 +97,15 @@ namespace api_gamebai.Controllers
             }
             return sb.ToString();
         }
+        [HttpGet]
+        public string AcceptAccount(string key)
+        {
+            Databasegamebai databasegamebai = new Databasegamebai();
+            RanDomKey rd = new RanDomKey();
+            return null;
+        }
+        
+        
+
     }
 }

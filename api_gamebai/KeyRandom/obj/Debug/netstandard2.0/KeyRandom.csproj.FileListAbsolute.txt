@@ -1,0 +1,9 @@
+C:\Đồ án C#\do-an-c-\api_gamebai\KeyRandom\obj\Debug\netstandard2.0\KeyRandom.csprojAssemblyReference.cache
+C:\Đồ án C#\do-an-c-\api_gamebai\KeyRandom\obj\Debug\netstandard2.0\KeyRandom.csproj.CoreCompileInputs.cache
+C:\Đồ án C#\do-an-c-\api_gamebai\KeyRandom\obj\Debug\netstandard2.0\KeyRandom.AssemblyInfoInputs.cache
+C:\Đồ án C#\do-an-c-\api_gamebai\KeyRandom\obj\Debug\netstandard2.0\KeyRandom.AssemblyInfo.cs
+C:\Đồ án C#\do-an-c-\api_gamebai\KeyRandom\bin\Debug\netstandard2.0\KeyRandom.deps.json
+C:\Đồ án C#\do-an-c-\api_gamebai\KeyRandom\bin\Debug\netstandard2.0\KeyRandom.dll
+C:\Đồ án C#\do-an-c-\api_gamebai\KeyRandom\bin\Debug\netstandard2.0\KeyRandom.pdb
+C:\Đồ án C#\do-an-c-\api_gamebai\KeyRandom\obj\Debug\netstandard2.0\KeyRandom.dll
+C:\Đồ án C#\do-an-c-\api_gamebai\KeyRandom\obj\Debug\netstandard2.0\KeyRandom.pdb
