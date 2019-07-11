@@ -32,13 +32,11 @@ namespace api_gamebai.Models
         public virtual DbSet<player_chatlist> player_chatlist { get; set; }
         public virtual DbSet<player_listfriend> player_listfriend { get; set; }
         public virtual DbSet<player_rank> player_rank { get; set; }
-        public virtual DbSet<room_list> room_list { get; set; }
-        public virtual DbSet<player_message> player_message { get; set; }
         public virtual DbSet<player_status> player_status { get; set; }
-        public virtual DbSet<room_listplayer> room_listplayer { get; set; }
         public virtual DbSet<infoplayer> infoplayers { get; set; }
-        public virtual DbSet<vChat> vChats { get; set; }
-        public virtual DbSet<vroom_listplayer> vroom_listplayer { get; set; }
+        public virtual DbSet<room_list> room_list { get; set; }
+        public virtual DbSet<room_listplayer> room_listplayer { get; set; }
+        public virtual DbSet<player_message> player_message { get; set; }
     
         public virtual int congTien(Nullable<decimal> amount, Nullable<int> id)
         {
