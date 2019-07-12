@@ -16,15 +16,19 @@ namespace api_gamebai.Controllers
     public class UploadController : ApiController
     {        
         public ResponseMessage Avartar()
-        {           
+        {
+            if (!Directory.Exists("Upload"))
+            {
+                Directory.CreateDirectory("Upload");
+            }
             var httpRequest = HttpContext.Current.Request;
             if (httpRequest.Files.Count > 0)
             {
                 var docfiles = new List<string>();
                 foreach (string file in httpRequest.Files)
-                {
+                {                   
                     var postedFile = httpRequest.Files[file];
-                    var filePath = HttpContext.Current.Server.MapPath("~/App_Data/" + postedFile.FileName);
+                    var filePath = HttpContext.Current.Server.MapPath("~/Upload/" + postedFile.FileName);
                     postedFile.SaveAs(filePath);
                     docfiles.Add(filePath);
                 }               
