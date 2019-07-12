@@ -20,7 +20,7 @@ namespace api_gamebai.Controllers
         ResponseMessage notifi = new ResponseMessage();
         public string Get()
         {
-            return Url.Link("RegisterApi", new { controller = "user", action = "Register"});
+            return Url.Link("RegisterApi", new { controller = "user", action = "RanDomKey" });
         }
         [HttpPost]     
         public ResponseMessage Register([FromBody]RegisterUser muser)
@@ -130,7 +130,7 @@ namespace api_gamebai.Controllers
             string htmlMail;
             using (StreamReader reader = new StreamReader(HttpContext.Current.Request.MapPath("~/Views/mailTemplate.html")))
             {
-                string url = Url.Link("RegisterApi", new { controller = "user", action = "Register" });
+                string url = Url.Link("RegisterApi", new { controller = "user", action = "KeyRandom" });
                 htmlMail = reader.ReadToEnd();
                 htmlMail = htmlMail.Replace("{name}",name);
                 htmlMail = htmlMail.Replace("{link}",url);
@@ -156,6 +156,11 @@ namespace api_gamebai.Controllers
             {
                 Debug.WriteLine(ex);
             }
+        }
+
+        public string RanDomKey()
+        {
+            return "";
         }
         
     }
