@@ -12,12 +12,12 @@ namespace api_gamebai.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class player_status
+    public partial class vListFriend
     {
-        public int id { get; set; }
+        public string nickname { get; set; }
+        public bool isban { get; set; }
+        public string avartar { get; set; }
         public int player_id { get; set; }
-        public int status { get; set; }
-    
-        public virtual player player { get; set; }
+        public int friend_id { get; set; }
     }
 }

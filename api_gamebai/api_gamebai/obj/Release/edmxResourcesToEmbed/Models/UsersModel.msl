@@ -1,19 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="DatabaseGameBaiModelStoreContainer" CdmEntityContainer="Databasegamebai">
-    <EntitySetMapping Name="history_login">
-      <EntityTypeMapping TypeName="DatabaseGameBaiModel.history_login">
-        <MappingFragment StoreEntitySet="history_login">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="player_id" ColumnName="player_id" />
-          <ScalarProperty Name="login_time" ColumnName="login_time" />
-          <ScalarProperty Name="logout_time" ColumnName="logout_time" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="players">
       <EntityTypeMapping TypeName="DatabaseGameBaiModel.player">
         <MappingFragment StoreEntitySet="player">
+          <ScalarProperty Name="avartar" ColumnName="avartar" />
           <ScalarProperty Name="status" ColumnName="status" />
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="username" ColumnName="username" />
@@ -21,46 +12,6 @@
           <ScalarProperty Name="money" ColumnName="money" />
           <ScalarProperty Name="nickname" ColumnName="nickname" />
           <ScalarProperty Name="email" ColumnName="email" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="player_chatlist">
-      <EntityTypeMapping TypeName="DatabaseGameBaiModel.player_chatlist">
-        <MappingFragment StoreEntitySet="player_chatlist">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="player_id_send" ColumnName="player_id_send" />
-          <ScalarProperty Name="player_id_receive" ColumnName="player_id_receive" />
-          <ScalarProperty Name="isseen" ColumnName="isseen" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="player_listfriend">
-      <EntityTypeMapping TypeName="DatabaseGameBaiModel.player_listfriend">
-        <MappingFragment StoreEntitySet="player_listfriend">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="player_id" ColumnName="player_id" />
-          <ScalarProperty Name="friend_id" ColumnName="friend_id" />
-          <ScalarProperty Name="isban" ColumnName="isban" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="player_rank">
-      <EntityTypeMapping TypeName="DatabaseGameBaiModel.player_rank">
-        <MappingFragment StoreEntitySet="player_rank">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="player_id" ColumnName="player_id" />
-          <ScalarProperty Name="lose" ColumnName="lose" />
-          <ScalarProperty Name="win" ColumnName="win" />
-          <ScalarProperty Name="hightscore" ColumnName="hightscore" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="player_status">
-      <EntityTypeMapping TypeName="DatabaseGameBaiModel.player_status">
-        <MappingFragment StoreEntitySet="player_status">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="player_id" ColumnName="player_id" />
-          <ScalarProperty Name="status" ColumnName="status" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -79,33 +30,37 @@
     </EntitySetMapping>
     <FunctionImportMapping FunctionImportName="congTien" FunctionName="DatabaseGameBaiModel.Store.congTien" />
     <FunctionImportMapping FunctionImportName="sendmessage" FunctionName="DatabaseGameBaiModel.Store.sendmessage" />
-    <EntitySetMapping Name="room_list">
-      <EntityTypeMapping TypeName="DatabaseGameBaiModel.room_list">
-        <MappingFragment StoreEntitySet="room_list">
-          <ScalarProperty Name="current_player" ColumnName="current_player" />
+    <EntitySetMapping Name="player_key">
+      <EntityTypeMapping TypeName="DatabaseGameBaiModel.player_key">
+        <MappingFragment StoreEntitySet="player_key">
+          <ScalarProperty Name="keyStatus" ColumnName="keyStatus" />
+          <ScalarProperty Name="keyuser" ColumnName="keyuser" />
+          <ScalarProperty Name="playerID" ColumnName="playerID" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="LoadListFriend" FunctionName="DatabaseGameBaiModel.Store.LoadListFriend">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DatabaseGameBaiModel.LoadListFriend_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
           <ScalarProperty Name="password" ColumnName="password" />
-          <ScalarProperty Name="limit_player" ColumnName="limit_player" />
-          <ScalarProperty Name="owner_id" ColumnName="owner_id" />
-          <ScalarProperty Name="id" ColumnName="id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="room_listplayer">
-      <EntityTypeMapping TypeName="DatabaseGameBaiModel.room_listplayer">
-        <MappingFragment StoreEntitySet="room_listplayer">
+          <ScalarProperty Name="money" ColumnName="money" />
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="avartar" ColumnName="avartar" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="history_login">
+      <EntityTypeMapping TypeName="DatabaseGameBaiModel.history_login">
+        <MappingFragment StoreEntitySet="history_login">
+          <ScalarProperty Name="logout_time" ColumnName="logout_time" />
+          <ScalarProperty Name="login_time" ColumnName="login_time" />
           <ScalarProperty Name="player_id" ColumnName="player_id" />
-          <ScalarProperty Name="room_id" ColumnName="room_id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="player_message">
-      <EntityTypeMapping TypeName="DatabaseGameBaiModel.player_message">
-        <MappingFragment StoreEntitySet="player_message">
           <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="isdelete" ColumnName="isdelete" />
-          <ScalarProperty Name="send_date" ColumnName="send_date" />
-          <ScalarProperty Name="message" ColumnName="message" />
-          <ScalarProperty Name="id_chatlist" ColumnName="id_chatlist" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

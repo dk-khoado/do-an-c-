@@ -79,10 +79,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/11/2019 16:13:51</publishTime>
     </File>
     <File Include="bin/api_gamebai.dll">
-      <publishTime>07/12/2019 09:46:22</publishTime>
+      <publishTime>07/12/2019 11:02:25</publishTime>
     </File>
     <File Include="bin/api_gamebai.pdb">
-      <publishTime>07/12/2019 09:46:22</publishTime>
+      <publishTime>07/12/2019 11:02:25</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>07/07/2019 14:20:51</publishTime>
@@ -97,7 +97,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/11/2019 16:13:51</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>07/11/2019 16:13:51</publishTime>
+      <publishTime>07/12/2019 09:50:56</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>07/11/2019 16:13:51</publishTime>
@@ -247,7 +247,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/11/2019 16:13:51</publishTime>
     </File>
     <File Include="bin/System.Web.Http.SelfHost.dll">
-      <publishTime>07/11/2019 16:13:51</publishTime>
+      <publishTime>07/12/2019 09:50:56</publishTime>
     </File>
     <File Include="bin/System.Web.Http.WebHost.dll">
       <publishTime>07/11/2019 16:13:51</publishTime>
@@ -352,7 +352,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/07/2019 14:55:57</publishTime>
     </File>
     <File Include="Models/UsersModel.edmx.diagram">
-      <publishTime>07/11/2019 16:13:51</publishTime>
+      <publishTime>07/12/2019 09:57:31</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>07/11/2019 16:13:51</publishTime>
@@ -403,7 +403,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/11/2019 16:13:51</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/12/2019 08:42:06</publishTime>
+      <publishTime>07/12/2019 10:01:57</publishTime>
     </File>
   </ItemGroup>
 </Project>

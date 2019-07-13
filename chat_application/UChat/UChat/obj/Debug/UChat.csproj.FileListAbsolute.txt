@@ -1,7 +1,6 @@
 D:\backup E\gitHub\do-an-c-\chat_application\UChat\UChat\bin\Debug\UChat.exe.config
 D:\backup E\gitHub\do-an-c-\chat_application\UChat\UChat\bin\Debug\UChat.exe
 D:\backup E\gitHub\do-an-c-\chat_application\UChat\UChat\bin\Debug\UChat.pdb
-D:\backup E\gitHub\do-an-c-\chat_application\UChat\UChat\obj\Debug\UChat.csprojAssemblyReference.cache
 D:\backup E\gitHub\do-an-c-\chat_application\UChat\UChat\obj\Debug\MainWindow.g.cs
 D:\backup E\gitHub\do-an-c-\chat_application\UChat\UChat\obj\Debug\App.g.cs
 D:\backup E\gitHub\do-an-c-\chat_application\UChat\UChat\obj\Debug\UChat_MarkupCompile.cache
@@ -15,4 +14,4 @@ D:\backup E\gitHub\do-an-c-\chat_application\UChat\UChat\obj\Debug\UChat.exe
 D:\backup E\gitHub\do-an-c-\chat_application\UChat\UChat\obj\Debug\UChat.pdb
 D:\backup E\gitHub\do-an-c-\chat_application\UChat\UChat\obj\Debug\itemUser.g.cs
 D:\backup E\gitHub\do-an-c-\chat_application\UChat\UChat\obj\Debug\itemUser.baml
-D:\backup E\gitHub\do-an-c-\chat_application\UChat\UChat\obj\Debug\Dictionary1.baml
+D:\backup E\gitHub\do-an-c-\chat_application\UChat\UChat\obj\Debug\UChat.csprojAssemblyReference.cache

@@ -165,46 +165,54 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Controllers\FriendListController.cs" />
     <Compile Include="Controllers\HistoryLoginController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\RoomListController.cs" />
     <Compile Include="Controllers\UploadController.cs" />
     <Compile Include="Controllers\UserController.cs" />
-    <Compile Include="Models\player_message.cs">
-      <DependentUpon>UsersModel.tt</DependentUpon>
+    <Compile Include="Models\AddFriendModel.cs" />
+    <Compile Include="Models\FriendsModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FriendsModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\RegisterUser.cs" />
-    <Compile Include="Models\room_list.cs">
-      <DependentUpon>UsersModel.tt</DependentUpon>
+    <Compile Include="Models\FriendsModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FriendsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\room_listplayer.cs">
-      <DependentUpon>UsersModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\UserLoginModel.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
+    <Compile Include="Models\FriendsModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FriendsModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\history_login.cs">
       <DependentUpon>UsersModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LoadListFriend_Result.cs">
+      <DependentUpon>UsersModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\player_chatlist.cs">
+      <DependentUpon>FriendsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\player_key.cs">
+      <DependentUpon>UsersModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\player_listfriend.cs">
+      <DependentUpon>FriendsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\player_message.cs">
+      <DependentUpon>FriendsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RegisterUser.cs" />
+    <Compile Include="Models\UserLoginModel.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\infoplayer.cs">
       <DependentUpon>UsersModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\player.cs">
-      <DependentUpon>UsersModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\player_chatlist.cs">
-      <DependentUpon>UsersModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\player_listfriend.cs">
-      <DependentUpon>UsersModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\player_rank.cs">
-      <DependentUpon>UsersModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\player_status.cs">
       <DependentUpon>UsersModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ResponseMessage.cs" />
@@ -223,6 +231,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UsersModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\vListFriend.cs">
+      <DependentUpon>FriendsModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -234,6 +245,16 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Models\FriendsModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FriendsModel.edmx</DependentUpon>
+      <LastGenOutput>FriendsModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\FriendsModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FriendsModel.edmx</DependentUpon>
+      <LastGenOutput>FriendsModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Models\UsersModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>UsersModel.edmx</DependentUpon>
@@ -271,6 +292,13 @@
     </EntityDeploy>
     <Content Include="Models\UsersModel.edmx.diagram">
       <DependentUpon>UsersModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\FriendsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FriendsModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\FriendsModel.edmx.diagram">
+      <DependentUpon>FriendsModel.edmx</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />

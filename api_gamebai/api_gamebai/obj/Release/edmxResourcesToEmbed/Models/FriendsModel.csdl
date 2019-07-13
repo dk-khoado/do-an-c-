@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseGameBaiModel_friend" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="player_chatlist">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="player_id_send" Type="Int32" Nullable="false" />
+    <Property Name="player_id_receive" Type="Int32" Nullable="false" />
+    <Property Name="isseen" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="player_message" Relationship="Self.chatlist" FromRole="player_chatlist" ToRole="player_message" />
+  </EntityType>
+  <EntityType Name="player_message">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id_chatlist" Type="Int32" Nullable="false" />
+    <Property Name="message" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="send_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="isdelete" Type="Boolean" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="player_chatlist" Relationship="Self.chatlist" FromRole="player_message" ToRole="player_chatlist" />
+  </EntityType>
+  <Association Name="chatlist">
+    <End Role="player_chatlist" Type="Self.player_chatlist" Multiplicity="1" />
+    <End Role="player_message" Type="Self.player_message" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="player_chatlist">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="player_message">
+        <PropertyRef Name="id_chatlist" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DatabaseGameBai_friend" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="player_chatlist" EntityType="Self.player_chatlist" />
+    <EntitySet Name="player_message" EntityType="Self.player_message" />
+    <AssociationSet Name="chatlist" Association="Self.chatlist">
+      <End Role="player_chatlist" EntitySet="player_chatlist" />
+      <End Role="player_message" EntitySet="player_message" />
+    </AssociationSet>
+    <EntitySet Name="vListFriends" EntityType="DatabaseGameBaiModel_friend.vListFriend" a:GetterAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+    <EntitySet Name="player_listfriend" EntityType="DatabaseGameBaiModel_friend.player_listfriend" />
+  </EntityContainer>
+  <EntityType Name="vListFriend" a:TypeAccess="Public" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration">
+    <Key>
+      <PropertyRef Name="nickname" />
+      <PropertyRef Name="isban" />
+      <PropertyRef Name="player_id" />
+      <PropertyRef Name="friend_id" />
+    </Key>
+    <Property Name="nickname" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="isban" Type="Boolean" Nullable="false" />
+    <Property Name="avartar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="player_id" Type="Int32" Nullable="false" />
+    <Property Name="friend_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="player_listfriend">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="player_id" Type="Int32" Nullable="false" />
+    <Property Name="friend_id" Type="Int32" Nullable="false" />
+    <Property Name="isban" Type="Boolean" Nullable="false" />
+  </EntityType>
+</Schema>

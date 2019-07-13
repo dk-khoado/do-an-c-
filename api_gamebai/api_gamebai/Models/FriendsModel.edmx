@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DatabaseGameBaiModel_friend.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="player_chatlist">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="player_id_send" Type="int" Nullable="false" />
+          <Property Name="player_id_receive" Type="int" Nullable="false" />
+          <Property Name="isseen" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="player_listfriend">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="player_id" Type="int" Nullable="false" />
+          <Property Name="friend_id" Type="int" Nullable="false" />
+          <Property Name="isban" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="player_message">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id_chatlist" Type="int" Nullable="false" />
+          <Property Name="message" Type="ntext" Nullable="false" />
+          <Property Name="send_date" Type="datetime" Nullable="false" />
+          <Property Name="isdelete" Type="bit" Nullable="false" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DatabaseGameBai.dbo.vListFriend' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="vListFriend">
+          <Key>
+            <PropertyRef Name="nickname" />
+            <PropertyRef Name="isban" />
+            <PropertyRef Name="player_id" />
+            <PropertyRef Name="friend_id" />
+          </Key>
+          <Property Name="nickname" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="isban" Type="bit" Nullable="false" />
+          <Property Name="avartar" Type="varchar(max)" />
+          <Property Name="player_id" Type="int" Nullable="false" />
+          <Property Name="friend_id" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="chatlist">
+          <End Role="player_chatlist" Type="Self.player_chatlist" Multiplicity="1" />
+          <End Role="player_message" Type="Self.player_message" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="player_chatlist">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="player_message">
+              <PropertyRef Name="id_chatlist" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DatabaseGameBaiModel_friendStoreContainer">
+          <EntitySet Name="player_chatlist" EntityType="Self.player_chatlist" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="player_listfriend" EntityType="Self.player_listfriend" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="player_message" EntityType="Self.player_message" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="vListFriend" EntityType="Self.vListFriend" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [vListFriend].[nickname] AS [nickname], 
+    [vListFriend].[isban] AS [isban], 
+    [vListFriend].[avartar] AS [avartar], 
+    [vListFriend].[player_id] AS [player_id], 
+    [vListFriend].[friend_id] AS [friend_id]
+    FROM [dbo].[vListFriend] AS [vListFriend]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="chatlist" Association="Self.chatlist">
+            <End Role="player_chatlist" EntitySet="player_chatlist" />
+            <End Role="player_message" EntitySet="player_message" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DatabaseGameBaiModel_friend" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="player_chatlist">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="player_id_send" Type="Int32" Nullable="false" />
+          <Property Name="player_id_receive" Type="Int32" Nullable="false" />
+          <Property Name="isseen" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="player_message" Relationship="Self.chatlist" FromRole="player_chatlist" ToRole="player_message" />
+        </EntityType>
+        <EntityType Name="player_message">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id_chatlist" Type="Int32" Nullable="false" />
+          <Property Name="message" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="send_date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="isdelete" Type="Boolean" Nullable="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="player_chatlist" Relationship="Self.chatlist" FromRole="player_message" ToRole="player_chatlist" />
+        </EntityType>
+        <Association Name="chatlist">
+          <End Role="player_chatlist" Type="Self.player_chatlist" Multiplicity="1" />
+          <End Role="player_message" Type="Self.player_message" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="player_chatlist">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="player_message">
+              <PropertyRef Name="id_chatlist" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DatabaseGameBai_friend" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="player_chatlist" EntityType="Self.player_chatlist" />
+          <EntitySet Name="player_message" EntityType="Self.player_message" />
+          <AssociationSet Name="chatlist" Association="Self.chatlist">
+            <End Role="player_chatlist" EntitySet="player_chatlist" />
+            <End Role="player_message" EntitySet="player_message" />
+          </AssociationSet>
+          <EntitySet Name="vListFriends" EntityType="DatabaseGameBaiModel_friend.vListFriend" a:GetterAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+          <EntitySet Name="player_listfriend" EntityType="DatabaseGameBaiModel_friend.player_listfriend" />
+        </EntityContainer>
+        <EntityType Name="vListFriend" a:TypeAccess="Public" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration">
+          <Key>
+            <PropertyRef Name="nickname" />
+            <PropertyRef Name="isban" />
+            <PropertyRef Name="player_id" />
+            <PropertyRef Name="friend_id" />
+          </Key>
+          <Property Name="nickname" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="isban" Type="Boolean" Nullable="false" />
+          <Property Name="avartar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="player_id" Type="Int32" Nullable="false" />
+          <Property Name="friend_id" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="player_listfriend">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="player_id" Type="Int32" Nullable="false" />
+          <Property Name="friend_id" Type="Int32" Nullable="false" />
+          <Property Name="isban" Type="Boolean" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DatabaseGameBaiModel_friendStoreContainer" CdmEntityContainer="DatabaseGameBai_friend">
+          <EntitySetMapping Name="player_chatlist">
+            <EntityTypeMapping TypeName="DatabaseGameBaiModel_friend.player_chatlist">
+              <MappingFragment StoreEntitySet="player_chatlist">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="player_id_send" ColumnName="player_id_send" />
+                <ScalarProperty Name="player_id_receive" ColumnName="player_id_receive" />
+                <ScalarProperty Name="isseen" ColumnName="isseen" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="player_message">
+            <EntityTypeMapping TypeName="DatabaseGameBaiModel_friend.player_message">
+              <MappingFragment StoreEntitySet="player_message">
+                <ScalarProperty Name="id_chatlist" ColumnName="id_chatlist" />
+                <ScalarProperty Name="message" ColumnName="message" />
+                <ScalarProperty Name="send_date" ColumnName="send_date" />
+                <ScalarProperty Name="isdelete" ColumnName="isdelete" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vListFriends">
+            <EntityTypeMapping TypeName="DatabaseGameBaiModel_friend.vListFriend">
+              <MappingFragment StoreEntitySet="vListFriend">
+                <ScalarProperty Name="friend_id" ColumnName="friend_id" />
+                <ScalarProperty Name="player_id" ColumnName="player_id" />
+                <ScalarProperty Name="avartar" ColumnName="avartar" />
+                <ScalarProperty Name="isban" ColumnName="isban" />
+                <ScalarProperty Name="nickname" ColumnName="nickname" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="player_listfriend">
+            <EntityTypeMapping TypeName="DatabaseGameBaiModel_friend.player_listfriend">
+              <MappingFragment StoreEntitySet="player_listfriend">
+                <ScalarProperty Name="isban" ColumnName="isban" />
+                <ScalarProperty Name="friend_id" ColumnName="friend_id" />
+                <ScalarProperty Name="player_id" ColumnName="player_id" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

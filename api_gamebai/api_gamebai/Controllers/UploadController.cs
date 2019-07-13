@@ -14,26 +14,39 @@ using api_gamebai.Models;
 namespace api_gamebai.Controllers
 {
     public class UploadController : ApiController
-    {        
-        public ResponseMessage Avartar()
+    {
+        Databasegamebai db = new Databasegamebai();
+        public ResponseMessage Avartar(int id)
         {
-            if (!Directory.Exists("Upload"))
+            try
             {
-                Directory.CreateDirectory("Upload");
+                player mPlayer = db.players.Find(id);
+                if (!Directory.Exists("Upload"))
+                {
+                    Directory.CreateDirectory("Upload");
+                }
+                var httpRequest = HttpContext.Current.Request;
+                if (httpRequest.Files.Count > 0)
+                {
+                    var docfiles = new List<string>();
+                    foreach (string file in httpRequest.Files)
+                    {
+                        var postedFile = httpRequest.Files[file];
+                        var filePath = HttpContext.Current.Server.MapPath("~/Upload/" + postedFile.FileName);
+                        postedFile.SaveAs(filePath);
+                        docfiles.Add(filePath);
+                        mPlayer.avartar = postedFile.FileName;                     
+                        db.Entry(mPlayer).State = System.Data.Entity.EntityState.Modified;
+                        db.SaveChanges();
+                    }
+                }
+                return new ResponseMessage("tải thành cong");
             }
-            var httpRequest = HttpContext.Current.Request;
-            if (httpRequest.Files.Count > 0)
+            catch (Exception e)
             {
-                var docfiles = new List<string>();
-                foreach (string file in httpRequest.Files)
-                {                   
-                    var postedFile = httpRequest.Files[file];
-                    var filePath = HttpContext.Current.Server.MapPath("~/Upload/" + postedFile.FileName);
-                    postedFile.SaveAs(filePath);
-                    docfiles.Add(filePath);
-                }               
-            }           
-            return new ResponseMessage("tải thành cong");
+                return new ResponseMessage("lỗi", e);                
+            }
+           
         }
     }      
 }

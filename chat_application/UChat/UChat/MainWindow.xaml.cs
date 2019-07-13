@@ -28,12 +28,12 @@ namespace UChat
         {
             InitializeComponent();
             downloadFile();
-
+            listView.Items.Add(item);
         }
         private void downloadFile()
         {           
             // Change the url by the value you want (a textbox or something else)
-            string url = "https://www.google.com/images/icons/ui/doodle_plus/logo.png";
+            string url = "https://localhost/upload/Capture.PNG";
             // Get filename from URL
             string filename = getFilename(url);
 
@@ -44,10 +44,12 @@ namespace UChat
                     Directory.CreateDirectory("image");
                 }
                
-                client.DownloadFile(url,"image/"+ filename);
+                client.DownloadFile(url,"image/"+ filename);                
             }
-
-            MessageBox.Show("Download ready");
+            Uri uri = new Uri(url);
+            var bitmap = new BitmapImage(uri);
+            item.img_user.Source = bitmap;
+            //MessageBox.Show("Download ready");
         }
         private string getFilename(string hreflink)
         {

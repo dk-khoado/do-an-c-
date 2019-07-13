@@ -58,7 +58,7 @@ namespace api_gamebai.Controllers
                 save.username = muser.username;
                 save.password = muser.password;
                 save.email = muser.email;
-                if (muser.nickname == null)
+                if (muser.nickname == "")
                 {
                     save.nickname = muser.username;
                 }

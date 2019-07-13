@@ -18,8 +18,5 @@ namespace api_gamebai.Models
         public int player_id { get; set; }
         public int friend_id { get; set; }
         public bool isban { get; set; }
-    
-        public virtual player player { get; set; }
-        public virtual player player1 { get; set; }
     }
 }

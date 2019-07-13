@@ -33,7 +33,7 @@ namespace api_gamebai.Controllers
                 {
                     db.SaveChanges();
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     return new ResponseMessage("fail");
                 }
@@ -46,7 +46,7 @@ namespace api_gamebai.Controllers
                 {
                     db.SaveChanges();
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     return new ResponseMessage("fail");
                 }

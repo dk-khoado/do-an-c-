@@ -23,6 +23,10 @@
         <AssociationConnector Association="DatabaseGameBaiModel.FK_room_listplayer_room_list" />
         <EntityTypeShape EntityType="DatabaseGameBaiModel.player_message" Width="1.5" PointX="5.125" PointY="1.125" />
         <AssociationConnector Association="DatabaseGameBaiModel.chatlist" />
+        <EntityTypeShape EntityType="DatabaseGameBaiModel.player_key" Width="1.5" PointX="2.75" PointY="13.5" />
+        <EntityTypeShape EntityType="DatabaseGameBaiModel.vChat" Width="1.5" PointX="7.375" PointY="5.75" />
+        <EntityTypeShape EntityType="DatabaseGameBaiModel.vroom_listplayer" Width="1.5" PointX="7.375" PointY="8.75" />
+        <AssociationConnector Association="DatabaseGameBaiModel.player_id" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

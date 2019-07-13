@@ -5,11 +5,11 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:UChat"
              mc:Ignorable="d" 
-             d:DesignHeight="50" d:DesignWidth="200" Background="White">
-    <ListViewItem x:Name="listView" Background="#FFFDFDFD" Foreground="Red" FontFamily="Verdana" FontSize="12" FontWeight="Bold">
-        <StackPanel Orientation="Horizontal">
-            <Image x:Name="img_user" Height="50" ></Image>
-            <TextBlock x:Name="txt_name" Text="Coffie"/>
+             d:DesignHeight="50" d:DesignWidth="200" Foreground="{x:Null}">
+    <ListViewItem x:Name="listView" Background="{x:Null}" Foreground="Red" FontFamily="Verdana" FontSize="12" FontWeight="Bold" Focusable="False" Cursor="Hand" BorderBrush="{x:Null}">
+        <StackPanel Orientation="Horizontal" Width="190" IsEnabled="False">
+            <Image x:Name="img_user" Height="48" Width="50" IsEnabled="False"></Image>
+            <TextBlock x:Name="txt_name" Text="Coffie" Width="140"/>
         </StackPanel>
     </ListViewItem>
 </UserControl>
