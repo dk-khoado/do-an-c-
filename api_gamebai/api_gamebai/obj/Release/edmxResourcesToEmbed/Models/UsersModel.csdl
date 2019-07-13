@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseGameBaiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="player">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="money" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="nickname" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="256" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="avartar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="player_key" Relationship="DatabaseGameBaiModel.player_id" FromRole="player" ToRole="player_key" />
+    <NavigationProperty Name="history_login" Relationship="DatabaseGameBaiModel.player_fk_id" FromRole="player" ToRole="history_login" />
+  </EntityType>
+  <EntityType Name="infoplayer">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="nickname" />
+      <PropertyRef Name="money" />
+      <PropertyRef Name="status" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="nickname" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="money" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="lose" Type="Int32" />
+    <Property Name="win" Type="Int32" />
+    <Property Name="hightscore" Type="Decimal" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityContainer Name="Databasegamebai" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="players" EntityType="Self.player" />
+    <EntitySet Name="infoplayers" EntityType="Self.infoplayer" />
+    <FunctionImport Name="congTien">
+      <Parameter Name="amount" Mode="In" Type="Decimal" />
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sendmessage">
+      <Parameter Name="playerIDsend" Mode="In" Type="Int32" />
+      <Parameter Name="playerIDrecive" Mode="In" Type="Int32" />
+      <Parameter Name="message" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="player_key" EntityType="DatabaseGameBaiModel.player_key" />
+    <AssociationSet Name="player_id" Association="DatabaseGameBaiModel.player_id">
+      <End Role="player" EntitySet="players" />
+      <End Role="player_key" EntitySet="player_key" />
+    </AssociationSet>
+    <FunctionImport Name="LoadListFriend" ReturnType="Collection(DatabaseGameBaiModel.LoadListFriend_Result)">
+      <Parameter Name="playerID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="history_login" EntityType="DatabaseGameBaiModel.history_login" />
+    <AssociationSet Name="player_fk_id" Association="DatabaseGameBaiModel.player_fk_id">
+      <End Role="player" EntitySet="players" />
+      <End Role="history_login" EntitySet="history_login" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="player_key">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="playerID" Type="Int32" Nullable="false" />
+    <Property Name="keyuser" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="keyStatus" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="player" Relationship="DatabaseGameBaiModel.player_id" FromRole="player_key" ToRole="player" />
+  </EntityType>
+  <Association Name="player_id">
+    <End Type="DatabaseGameBaiModel.player" Role="player" Multiplicity="1" />
+    <End Type="DatabaseGameBaiModel.player_key" Role="player_key" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="player">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="player_key">
+        <PropertyRef Name="playerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="LoadListFriend_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="username" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="password" Nullable="false" MaxLength="50" />
+    <Property Type="Decimal" Name="money" Nullable="false" Precision="19" />
+    <Property Type="String" Name="nickname" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="email" Nullable="false" MaxLength="256" />
+    <Property Type="Int32" Name="status" Nullable="false" />
+    <Property Type="String" Name="avartar" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="history_login">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="player_id" Type="Int32" Nullable="false" />
+    <Property Name="login_time" Type="DateTime" Precision="3" />
+    <Property Name="logout_time" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="player" Relationship="DatabaseGameBaiModel.player_fk_id" FromRole="history_login" ToRole="player" />
+  </EntityType>
+  <Association Name="player_fk_id">
+    <End Type="DatabaseGameBaiModel.player" Role="player" Multiplicity="1" />
+    <End Type="DatabaseGameBaiModel.history_login" Role="history_login" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="player">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="history_login">
+        <PropertyRef Name="player_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseGameBaiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="history_login">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="player_id" Type="int" Nullable="false" />
+    <Property Name="login_time" Type="datetime" />
+    <Property Name="logout_time" Type="datetime" />
+  </EntityType>
+  <EntityType Name="player">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="money" Type="money" Nullable="false" />
+    <Property Name="nickname" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="256" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="avartar" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="player_key">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="playerID" Type="int" Nullable="false" />
+    <Property Name="keyuser" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="keyStatus" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DatabaseGameBai.dbo.infoplayer' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="infoplayer">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="nickname" />
+      <PropertyRef Name="money" />
+      <PropertyRef Name="status" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="nickname" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="money" Type="money" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="lose" Type="int" />
+    <Property Name="win" Type="int" />
+    <Property Name="hightscore" Type="money" />
+  </EntityType>
+  <Association Name="player_fk_id">
+    <End Role="player" Type="Self.player" Multiplicity="1" />
+    <End Role="history_login" Type="Self.history_login" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="player">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="history_login">
+        <PropertyRef Name="player_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="player_id">
+    <End Role="player" Type="Self.player" Multiplicity="1" />
+    <End Role="player_key" Type="Self.player_key" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="player">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="player_key">
+        <PropertyRef Name="playerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="congTien" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="amount" Type="money" Mode="In" />
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="LoadListFriend" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="playerID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sendmessage" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="playerIDsend" Type="int" Mode="In" />
+    <Parameter Name="playerIDrecive" Type="int" Mode="In" />
+    <Parameter Name="message" Type="ntext" Mode="In" />
+  </Function>
+  <EntityContainer Name="DatabaseGameBaiModelStoreContainer">
+    <EntitySet Name="history_login" EntityType="Self.history_login" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="player" EntityType="Self.player" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="player_key" EntityType="Self.player_key" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="infoplayer" EntityType="Self.infoplayer" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [infoplayer].[id] AS [id], 
+    [infoplayer].[nickname] AS [nickname], 
+    [infoplayer].[money] AS [money], 
+    [infoplayer].[status] AS [status], 
+    [infoplayer].[lose] AS [lose], 
+    [infoplayer].[win] AS [win], 
+    [infoplayer].[hightscore] AS [hightscore]
+    FROM [dbo].[infoplayer] AS [infoplayer]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="player_fk_id" Association="Self.player_fk_id">
+      <End Role="player" EntitySet="player" />
+      <End Role="history_login" EntitySet="history_login" />
+    </AssociationSet>
+    <AssociationSet Name="player_id" Association="Self.player_id">
+      <End Role="player" EntitySet="player" />
+      <End Role="player_key" EntitySet="player_key" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

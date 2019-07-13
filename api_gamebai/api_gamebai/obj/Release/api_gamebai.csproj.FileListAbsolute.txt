@@ -84,3 +84,6 @@ D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\api_gamebai.cspr
 D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\api_gamebai.csproj.CopyComplete
 D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\api_gamebai.dll
 D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\api_gamebai.pdb
+D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\Views\mailTemplate.html
+D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\System.Web.Http.SelfHost.dll
+D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\System.Web.Http.SelfHost.xml

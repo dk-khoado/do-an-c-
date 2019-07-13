@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DatabaseGameBaiModelStoreContainer" CdmEntityContainer="Databasegamebai">
+    <EntitySetMapping Name="players">
+      <EntityTypeMapping TypeName="DatabaseGameBaiModel.player">
+        <MappingFragment StoreEntitySet="player">
+          <ScalarProperty Name="avartar" ColumnName="avartar" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="money" ColumnName="money" />
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="infoplayers">
+      <EntityTypeMapping TypeName="DatabaseGameBaiModel.infoplayer">
+        <MappingFragment StoreEntitySet="infoplayer">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="money" ColumnName="money" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="lose" ColumnName="lose" />
+          <ScalarProperty Name="win" ColumnName="win" />
+          <ScalarProperty Name="hightscore" ColumnName="hightscore" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="congTien" FunctionName="DatabaseGameBaiModel.Store.congTien" />
+    <FunctionImportMapping FunctionImportName="sendmessage" FunctionName="DatabaseGameBaiModel.Store.sendmessage" />
+    <EntitySetMapping Name="player_key">
+      <EntityTypeMapping TypeName="DatabaseGameBaiModel.player_key">
+        <MappingFragment StoreEntitySet="player_key">
+          <ScalarProperty Name="keyStatus" ColumnName="keyStatus" />
+          <ScalarProperty Name="keyuser" ColumnName="keyuser" />
+          <ScalarProperty Name="playerID" ColumnName="playerID" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="LoadListFriend" FunctionName="DatabaseGameBaiModel.Store.LoadListFriend">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DatabaseGameBaiModel.LoadListFriend_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="money" ColumnName="money" />
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="avartar" ColumnName="avartar" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="history_login">
+      <EntityTypeMapping TypeName="DatabaseGameBaiModel.history_login">
+        <MappingFragment StoreEntitySet="history_login">
+          <ScalarProperty Name="logout_time" ColumnName="logout_time" />
+          <ScalarProperty Name="login_time" ColumnName="login_time" />
+          <ScalarProperty Name="player_id" ColumnName="player_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

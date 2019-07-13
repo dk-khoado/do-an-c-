@@ -25,8 +25,6 @@ namespace api_gamebai.Models
         public int player_id_receive { get; set; }
         public bool isseen { get; set; }
     
-        public virtual player player { get; set; }
-        public virtual player player1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<player_message> player_message { get; set; }
     }
