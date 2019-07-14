@@ -13,9 +13,111 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2019-07-14T14:58:00.928+07:00
-  initializedAtString: 2019-07-14T14:56:08.926+07:00
+  lastUpdatedAtString: 2019-07-14T15:37:00.980+07:00
+  initializedAtString: 2019-07-14T15:34:22.365+07:00
   log:
+  - commitID: f8b24f1a0b9950d5c54293fc74163404cca31a08
+    mergeA: 
+    mergeB: 
+    authorName: "\u0111\u1ED7 kim \u0111\u0103ng khoa"
+    authorEmail: 43430177+kakoi-3nhan4-16@users.noreply.github.com
+    commitEmail: 43430177+kakoi-3nhan4-16@users.noreply.github.com
+    commitName: "\u0111\u1ED7 kim \u0111\u0103ng khoa"
+    summary: update
+    description: 
+    timeString: 2019-07-14T14:58:20.000+07:00
+    commitTimeString: 2019-07-14T14:58:20.000+07:00
+    changes:
+    - path: gameBai\Assets\UNO_cards_deck.svg.png
+      fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Assets\UNO_cards_deck.svg.png
+      projectPath: Assets\UNO_cards_deck.svg.png
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: gameBai\Assets\UNO_cards_deck.svg.png.meta
+      fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Assets\UNO_cards_deck.svg.png.meta
+      projectPath: Assets\UNO_cards_deck.svg.png.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: gameBai\Library\CurrentLayout.dwlt
+      fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\CurrentLayout.dwlt
+      projectPath: Library\CurrentLayout.dwlt
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: gameBai\Library\assetDatabase3
+      fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\assetDatabase3
+      projectPath: Library\assetDatabase3
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: gameBai\Library\expandedItems
+      fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\expandedItems
+      projectPath: Library\expandedItems
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: gameBai\Library\gfu\cache\branches.yaml
+      fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: gameBai\Library\gfu\cache\gitlocks.yaml
+      fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: gameBai\Library\gfu\cache\gitlog.yaml
+      fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: gameBai\Library\gfu\cache\gitstatusentries.yaml
+      fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: gameBai\Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: gameBai\Library\gfu\cache\gituser.yaml
+      fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\gfu\cache\gituser.yaml
+      projectPath: Library\gfu\cache\gituser.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: gameBai\Library\gfu\cache\repoinfo.yaml
+      fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: gameBai\Library\metadata\09\09a35d43f8fe2d149acb874a81d0823d
+      fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\metadata\09\09a35d43f8fe2d149acb874a81d0823d
+      projectPath: Library\metadata\09\09a35d43f8fe2d149acb874a81d0823d
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: gameBai\Library\metadata\09\09a35d43f8fe2d149acb874a81d0823d.info
+      fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\metadata\09\09a35d43f8fe2d149acb874a81d0823d.info
+      projectPath: Library\metadata\09\09a35d43f8fe2d149acb874a81d0823d.info
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: gameBai\Library\shadercompiler-UnityShaderCompiler.exe0.log
+      fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\shadercompiler-UnityShaderCompiler.exe0.log
+      projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: a4ee63a5e4699ea569b491dabd280fcee13222cf
     mergeA: 
     mergeB: 
