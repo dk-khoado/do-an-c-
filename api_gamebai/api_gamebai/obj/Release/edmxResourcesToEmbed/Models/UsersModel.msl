@@ -64,5 +64,30 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="getID" FunctionName="DatabaseGameBaiModel.Store.getID" />
+    <FunctionImportMapping FunctionImportName="FindKeyUser" FunctionName="DatabaseGameBaiModel.Store.FindKeyUser">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DatabaseGameBaiModel.FindKeyUser_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="playerID" ColumnName="playerID" />
+          <ScalarProperty Name="keyuser" ColumnName="keyuser" />
+          <ScalarProperty Name="keyStatus" ColumnName="keyStatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LoginData" FunctionName="DatabaseGameBaiModel.Store.LoginData">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DatabaseGameBaiModel.LoginData_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="money" ColumnName="money" />
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="avartar" ColumnName="avartar" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

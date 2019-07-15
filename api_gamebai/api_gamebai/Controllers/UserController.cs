@@ -22,63 +22,67 @@ namespace api_gamebai.Controllers
         {
             return Url.Link("RegisterApi", new { controller = "user", action = "RanDomKey" });
         }
-        [HttpPost]     
+        [HttpPost]
         public ResponseMessage Register([FromBody]RegisterUser muser)
-        {           
+        {
             if (!ModelState.IsValid)
             {
                 return new ResponseMessage(BadRequest().ToString(), "Loi");
-            }                
-            if(muser == null)
+            }
+            if (muser == null)
             {
-               
+
                 return new ResponseMessage(BadRequest().ToString(), "Khong duoc de trong");
             }
-            if(muser.username == "" || muser.password ==""||muser.email == "")
+            if (muser.username == "" || muser.password == "" || muser.email == "")
             {
                 return new ResponseMessage(BadRequest().ToString(), "Khong de trong cac truong nay");
-            }            
+            }
             foreach (player item in db.players)
             {
-                if(muser.username == item.username)
+                if (muser.username == item.username)
                 {
                     return new ResponseMessage(BadRequest().ToString(), "Username da duoc su dung");
                 }
             }
-            foreach(player item in db.players)
+            foreach (player item in db.players)
             {
-                if(muser.email == item.email)
+                if (muser.email == item.email)
                 {
                     return new ResponseMessage(BadRequest().ToString(), "Email da duoc su dung");
                 }
-            }           
+            }
             try
-            {                               
+            {
                 player save = new player();
                 save.username = muser.username;
                 save.password = muser.password;
                 save.email = muser.email;
-                if (muser.nickname == "")
+                if (muser.nickname == null)
                 {
-                    save.nickname = muser.username;
+                    muser.nickname = muser.username;
+                    save.nickname = muser.nickname;
                 }
                 else
-                {
+                {                    
                     save.nickname = muser.nickname;
                 }
                 save.password = Mahoa(muser.password);
                 db.players.Add(save);
+                db.SaveChanges();
                 //gửi mail
-                SendMail(muser.email, muser.username);
-                db.SaveChanges();               
+                string key = CreateKey(db.getID(save.username,save.password).FirstOrDefault().GetValueOrDefault());
+                SendMail(save.email, save.username,key);
+
             }
             catch
             {
                 if (muser.email == null || muser.username == null || muser.password == null)
                 {
                     return new ResponseMessage(BadRequest().ToString(), "đối tượng trống");
-                }               
-                return new ResponseMessage(BadRequest().ToString(), "loi tum lum");
+                }
+                throw;
+                //return new ResponseMessage(BadRequest().ToString(), "loi tum lum");
             }
             return new ResponseMessage(Ok().ToString(), "Them thanh cong");
         }
@@ -97,11 +101,15 @@ namespace api_gamebai.Controllers
             }
             if (db.players.Count(e => e.username == mlogin.username) > 0 && db.players.Count(e => e.password == mlogin.password) > 0)
             {
-                player mPlayer = db.players.Where(e => e.username == mlogin.username && e.password == mlogin.password).FirstOrDefault();
+                var mPlayer = db.LoginData(mlogin.username, Mahoa( mlogin.password)).FirstOrDefault();              
+                if (mPlayer== null)
+                {
+                    return new ResponseMessage(BadRequest().ToString(), "Lỗi 404");
+                }
                 if (mPlayer.status == 0)
                 {
                     return new ResponseMessage(Ok().ToString(), "tài khoản chưa xát thực", 0);
-                }
+                }                
                 return new ResponseMessage(Ok().ToString(), "Dang nhap thanh cong", 1);
             }
             else
@@ -109,6 +117,52 @@ namespace api_gamebai.Controllers
                 return new ResponseMessage(Ok().ToString(), "Dang nhap that bai", 0);
             }
         }
+        /// <summary>
+        /// tạo key xát thực
+        /// </summary>
+        /// <returns></returns>
+        private string CreateKey(int idPlayer)
+        {
+            Random random = new Random();
+            do
+            {
+                StringBuilder key = new StringBuilder();
+                for (int i = 0; i < 6; i++)
+                {
+                    
+                    int number = random.Next(0, 2);
+                    switch (number)
+                    {
+                        case 0:
+                            key.Append(random.Next(0,9));
+                            break;
+                        case 1:
+                            key.Append(Convert.ToChar(random.Next(65, 90)));
+                            break;
+                        case 2:
+                            key.Append(Convert.ToChar(random.Next(97, 122)));
+                            break;
+                        default:
+                            break;
+                    }
+                }
+                string key_ = key.ToString();
+                if (db.player_key.Count(e => e.keyuser == key_) < 1)
+                {
+                    player_key player_Key_ = new player_key();
+                    player_Key_.keyuser = key.ToString();
+                    player_Key_.playerID = idPlayer;                    
+                    db.player_key.Add(player_Key_);
+                    db.SaveChanges();
+                    return key.ToString();
+                }
+            } while (true);
+        }
+        /// <summary>
+        /// mã hóa password thành md5
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         private string Mahoa(string input)
         {
             MD5 md5 = MD5.Create();
@@ -125,15 +179,15 @@ namespace api_gamebai.Controllers
         /// gửi mail đến địa chỉ
         /// </summary>
         /// <param name="to">địa chỉ mail</param>
-        private void SendMail(string to,string name)
+        private void SendMail(string to, string name, string keyUser)
         {
             string htmlMail;
             using (StreamReader reader = new StreamReader(HttpContext.Current.Request.MapPath("~/Views/mailTemplate.html")))
             {
-                string url = Url.Link("RegisterApi", new { controller = "user", action = "KeyRandom" });
+                string url = Url.Link("Default", new { controller = "Home", action = "Verify" })+ "?key=" + keyUser;
                 htmlMail = reader.ReadToEnd();
-                htmlMail = htmlMail.Replace("{name}",name);
-                htmlMail = htmlMail.Replace("{link}",url);
+                htmlMail = htmlMail.Replace("{name}", name);
+                htmlMail = htmlMail.Replace("{link}", url);
             }
             try
             {
@@ -150,18 +204,17 @@ namespace api_gamebai.Controllers
                 SmtpServer.Credentials = new NetworkCredential("khoado29k11@viendong.edu.vn", "khoa958632147");
                 SmtpServer.EnableSsl = true;
 
-                SmtpServer.Send(mail);               
+                SmtpServer.Send(mail);
             }
             catch (Exception ex)
             {
                 Debug.WriteLine(ex);
             }
         }
-
-        public string RanDomKey()
+        [HttpGet]
+        public IHttpActionResult ForgotPassword(int id)
         {
-            return "";
-        }
-        
+            return RedirectToRoute("Default",new { controller="Home",action="Index"});
+        }          
     }
 }

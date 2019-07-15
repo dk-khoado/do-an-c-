@@ -9,7 +9,7 @@
         <EntityTypeShape EntityType="DatabaseGameBaiModel_friend.player_message" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
         <AssociationConnector Association="DatabaseGameBaiModel_friend.chatlist" ManuallyRouted="false" />
         <EntityTypeShape EntityType="DatabaseGameBaiModel_friend.vListFriend" Width="1.5" PointX="5" PointY="0.875" FillColor="Red" />
-        <EntityTypeShape EntityType="DatabaseGameBaiModel_friend.player_listfriend" Width="1.5" PointX="6.875" PointY="1.5" />
+        <EntityTypeShape EntityType="DatabaseGameBaiModel_friend.player_listfriend" Width="1.5" PointX="7.25" PointY="0.875" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
