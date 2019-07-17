@@ -165,11 +165,8 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-
     <Compile Include="Controllers\RoomManagerController.cs" />
-
     <Compile Include="Controllers\ChatController.cs" />
-
     <Compile Include="Controllers\FriendListController.cs" />
     <Compile Include="Controllers\HistoryLoginController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -203,13 +200,13 @@
       <DependentUpon>FriendsModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\LoadListFriend_Result.cs">
-      <DependentUpon>FriendsModel.tt</DependentUpon>
+      <DependentUpon>UsersModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\LoginData_Result.cs">
       <DependentUpon>UsersModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\player.cs">
-      <DependentUpon>RoomManagerModel.tt</DependentUpon>
+      <DependentUpon>UsersModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\player_chatlist.cs">
       <DependentUpon>FriendsModel.tt</DependentUpon>
@@ -224,7 +221,6 @@
       <DependentUpon>FriendsModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\RegisterUser.cs" />
-
     <Compile Include="Models\RoomManagerModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -246,7 +242,6 @@
     <Compile Include="Models\room_listplayer.cs">
       <DependentUpon>RoomManagerModel.tt</DependentUpon>
     </Compile>
-
     <Compile Include="Models\SendChatModel.cs" />
     <Compile Include="Models\UserLoginModel.cs" />
     <Compile Include="Global.asax.cs">
