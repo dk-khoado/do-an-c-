@@ -43,5 +43,32 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="LoadChatBox" FunctionName="DatabaseGameBaiModel_friend.Store.LoadChatBox">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DatabaseGameBaiModel_friend.LoadChatBox_Result">
+          <ScalarProperty Name="player_id_send" ColumnName="player_id_send" />
+          <ScalarProperty Name="player_id_receive" ColumnName="player_id_receive" />
+          <ScalarProperty Name="isseen" ColumnName="isseen" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="send_date" ColumnName="send_date" />
+          <ScalarProperty Name="isdelete" ColumnName="isdelete" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LoadListFriend" FunctionName="DatabaseGameBaiModel_friend.Store.LoadListFriend">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DatabaseGameBaiModel_friend.LoadListFriend_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="money" ColumnName="money" />
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="avartar" ColumnName="avartar" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sendmessage" FunctionName="DatabaseGameBaiModel_friend.Store.sendmessage" />
   </EntityContainerMapping>
 </Mapping>

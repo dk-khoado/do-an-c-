@@ -18,9 +18,9 @@ namespace api_gamebai.Controllers
     {
         Databasegamebai db = new Databasegamebai();
         ResponseMessage notifi = new ResponseMessage();
-        public string Get()
+        public ResponseMessage Get(int id)
         {
-            return Url.Link("RegisterApi", new { controller = "user", action = "RanDomKey" });
+            return new ResponseMessage("succes", db.players.Find(id), 1);
         }
         [HttpPost]
         public ResponseMessage Register([FromBody]RegisterUser muser)
@@ -110,7 +110,7 @@ namespace api_gamebai.Controllers
                 {
                     return new ResponseMessage(Ok().ToString(), "tài khoản chưa xát thực", 0);
                 }                
-                return new ResponseMessage(Ok().ToString(), "Dang nhap thanh cong", 1);
+                return new ResponseMessage(mPlayer.id.ToString(),"Dang nhap thanh cong", mPlayer,1);
             }
             else
             {

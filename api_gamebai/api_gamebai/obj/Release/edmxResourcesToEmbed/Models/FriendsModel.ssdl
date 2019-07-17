@@ -55,6 +55,17 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.vListFriend' does not have a p
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="LoadChatBox" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="playerID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="LoadListFriend" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="playerID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sendmessage" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="playerIDsend" Type="int" Mode="In" />
+    <Parameter Name="playerIDrecive" Type="int" Mode="In" />
+    <Parameter Name="message" Type="ntext" Mode="In" />
+  </Function>
   <EntityContainer Name="DatabaseGameBaiModel_friendStoreContainer">
     <EntitySet Name="player_chatlist" EntityType="Self.player_chatlist" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="player_listfriend" EntityType="Self.player_listfriend" Schema="dbo" store:Type="Tables" />
