@@ -165,12 +165,22 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+
+    <Compile Include="Controllers\RoomManagerController.cs" />
+
+    <Compile Include="Controllers\ChatController.cs" />
+
     <Compile Include="Controllers\FriendListController.cs" />
     <Compile Include="Controllers\HistoryLoginController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InfoPlayerController.cs" />
+    <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Controllers\UploadController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Models\AddFriendModel.cs" />
+    <Compile Include="Models\FindKeyUser_Result.cs">
+      <DependentUpon>UsersModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\FriendsModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -189,8 +199,17 @@
     <Compile Include="Models\history_login.cs">
       <DependentUpon>UsersModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\LoadChatBox_Result.cs">
+      <DependentUpon>FriendsModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\LoadListFriend_Result.cs">
+      <DependentUpon>FriendsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LoginData_Result.cs">
       <DependentUpon>UsersModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\player.cs">
+      <DependentUpon>RoomManagerModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\player_chatlist.cs">
       <DependentUpon>FriendsModel.tt</DependentUpon>
@@ -205,14 +224,35 @@
       <DependentUpon>FriendsModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\RegisterUser.cs" />
+
+    <Compile Include="Models\RoomManagerModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoomManagerModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RoomManagerModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoomManagerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RoomManagerModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoomManagerModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\room_list.cs">
+      <DependentUpon>RoomManagerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\room_listplayer.cs">
+      <DependentUpon>RoomManagerModel.tt</DependentUpon>
+    </Compile>
+
+    <Compile Include="Models\SendChatModel.cs" />
     <Compile Include="Models\UserLoginModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\infoplayer.cs">
-      <DependentUpon>UsersModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\player.cs">
       <DependentUpon>UsersModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ResponseMessage.cs" />
@@ -254,6 +294,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>FriendsModel.edmx</DependentUpon>
       <LastGenOutput>FriendsModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\RoomManagerModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RoomManagerModel.edmx</DependentUpon>
+      <LastGenOutput>RoomManagerModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\RoomManagerModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RoomManagerModel.edmx</DependentUpon>
+      <LastGenOutput>RoomManagerModel.cs</LastGenOutput>
     </Content>
     <Content Include="Models\UsersModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -300,6 +350,13 @@
     <Content Include="Models\FriendsModel.edmx.diagram">
       <DependentUpon>FriendsModel.edmx</DependentUpon>
     </Content>
+    <EntityDeploy Include="Models\RoomManagerModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>RoomManagerModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\RoomManagerModel.edmx.diagram">
+      <DependentUpon>RoomManagerModel.edmx</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -324,7 +381,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\lick.cshtml" />
+    <Content Include="Views\Home\Verify.cshtml" />
+    <Content Include="Views\Main\Index.cshtml" />
+    <Content Include="Views\LayoutMaster\LayoutMaster.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
