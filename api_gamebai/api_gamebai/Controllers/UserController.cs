@@ -64,8 +64,15 @@ namespace api_gamebai.Controllers
                     save.nickname = muser.nickname;
                 }
                 else
-                {                    
-                    save.nickname = muser.nickname;
+                {
+                    if (muser.nickname.Trim().Equals(""))
+                    {
+                        save.nickname = muser.username;
+                    }
+                    else
+                    {
+                        save.nickname = muser.nickname;
+                    }                    
                 }
                 save.password = Mahoa(muser.password);
                 db.players.Add(save);
@@ -99,7 +106,8 @@ namespace api_gamebai.Controllers
             {
                 return new ResponseMessage(BadRequest().ToString(), "Khong duoc de trong");
             }
-            if (db.players.Count(e => e.username == mlogin.username) > 0 && db.players.Count(e => e.password == mlogin.password) > 0)
+            string password = Mahoa(mlogin.password);
+            if (db.players.Count(e => e.username == mlogin.username) > 0 && db.players.Count(e => e.password == password) > 0)
             {
                 var mPlayer = db.LoginData(mlogin.username, Mahoa( mlogin.password)).FirstOrDefault();              
                 if (mPlayer== null)
