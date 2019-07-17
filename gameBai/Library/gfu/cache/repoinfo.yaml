@@ -13,13 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-<<<<<<< HEAD
-  lastUpdatedAtString: 2019-07-14T15:38:57.746+07:00
-  initializedAtString: 2019-07-14T15:38:57.746+07:00
-=======
-  lastUpdatedAtString: 2019-07-14T15:34:04.995+07:00
-  initializedAtString: 2019-07-14T15:32:58.283+07:00
->>>>>>> master
+  lastUpdatedAtString: 2019-07-17T21:20:21.089+07:00
+  initializedAtString: 2019-07-17T21:20:21.089+07:00
   currentGitRemote:
     name: origin
     url: https://github.com/kakoi-3nhan4-16/do-an-c-.git
