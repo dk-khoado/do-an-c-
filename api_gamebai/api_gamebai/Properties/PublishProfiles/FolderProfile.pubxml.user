@@ -79,10 +79,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/11/2019 16:13:51</publishTime>
     </File>
     <File Include="bin/api_gamebai.dll">
-      <publishTime>07/12/2019 11:02:25</publishTime>
+      <publishTime>07/17/2019 15:45:13</publishTime>
     </File>
     <File Include="bin/api_gamebai.pdb">
-      <publishTime>07/12/2019 11:02:25</publishTime>
+      <publishTime>07/17/2019 15:45:13</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>07/07/2019 14:20:51</publishTime>
@@ -97,7 +97,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/11/2019 16:13:51</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>07/12/2019 09:50:56</publishTime>
+      <publishTime>07/13/2019 23:39:49</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>07/11/2019 16:13:51</publishTime>
@@ -247,7 +247,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/11/2019 16:13:51</publishTime>
     </File>
     <File Include="bin/System.Web.Http.SelfHost.dll">
-      <publishTime>07/12/2019 09:50:56</publishTime>
+      <publishTime>07/13/2019 23:39:49</publishTime>
     </File>
     <File Include="bin/System.Web.Http.WebHost.dll">
       <publishTime>07/11/2019 16:13:51</publishTime>
@@ -345,6 +345,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Global.asax">
       <publishTime>07/11/2019 16:13:51</publishTime>
     </File>
+    <File Include="Models/FriendsModel.edmx.diagram">
+      <publishTime>07/15/2019 15:03:00</publishTime>
+    </File>
     <File Include="Models/Model1.edmx.diagram">
       <publishTime>07/08/2019 00:52:09</publishTime>
     </File>
@@ -352,7 +355,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/07/2019 14:55:57</publishTime>
     </File>
     <File Include="Models/UsersModel.edmx.diagram">
-      <publishTime>07/12/2019 09:57:31</publishTime>
+      <publishTime>07/13/2019 23:39:49</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>07/11/2019 16:13:51</publishTime>
@@ -387,8 +390,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Home/lick.cshtml">
       <publishTime>07/11/2019 16:13:51</publishTime>
     </File>
+    <File Include="Views/Home/Verify.cshtml">
+      <publishTime>07/15/2019 00:04:51</publishTime>
+    </File>
+    <File Include="Views/LayoutMaster/LayoutMaster.cshtml">
+      <publishTime>07/15/2019 10:56:36</publishTime>
+    </File>
     <File Include="Views/mailTemplate.html">
       <publishTime>07/11/2019 16:13:51</publishTime>
+    </File>
+    <File Include="Views/Main/Index.cshtml">
+      <publishTime>07/15/2019 10:55:17</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>07/11/2019 16:13:51</publishTime>
@@ -403,7 +415,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/11/2019 16:13:51</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/12/2019 10:01:57</publishTime>
+      <publishTime>07/15/2019 10:09:26</publishTime>
     </File>
   </ItemGroup>
 </Project>

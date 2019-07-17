@@ -259,5 +259,5 @@ D:\C#_project\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csproj.CoreCompileIn
 D:\C#_project\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csproj.CopyComplete
 D:\C#_project\api_gamebai\api_gamebai\obj\Debug\api_gamebai.dll
 D:\C#_project\api_gamebai\api_gamebai\obj\Debug\api_gamebai.pdb
-D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csprojAssemblyReference.cache
 D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\Views\mailTemplate.html
+D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csprojAssemblyReference.cache

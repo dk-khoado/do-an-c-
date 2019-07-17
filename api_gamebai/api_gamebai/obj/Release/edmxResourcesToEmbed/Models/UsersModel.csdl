@@ -55,6 +55,17 @@
       <End Role="player" EntitySet="players" />
       <End Role="history_login" EntitySet="history_login" />
     </AssociationSet>
+    <FunctionImport Name="getID" ReturnType="Collection(Int32)">
+      <Parameter Name="username" Mode="In" Type="String" />
+      <Parameter Name="password" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="FindKeyUser" ReturnType="Collection(DatabaseGameBaiModel.FindKeyUser_Result)">
+      <Parameter Name="keyUser" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="LoginData" ReturnType="Collection(DatabaseGameBaiModel.LoginData_Result)">
+      <Parameter Name="username" Mode="In" Type="String" />
+      <Parameter Name="password" Mode="In" Type="String" />
+    </FunctionImport>
   </EntityContainer>
   <EntityType Name="player_key">
     <Key>
@@ -62,7 +73,7 @@
     </Key>
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="playerID" Type="Int32" Nullable="false" />
-    <Property Name="keyuser" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="keyuser" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
     <Property Name="keyStatus" Type="Int32" Nullable="false" />
     <NavigationProperty Name="player" Relationship="DatabaseGameBaiModel.player_id" FromRole="player_key" ToRole="player" />
   </EntityType>
@@ -110,4 +121,20 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <ComplexType Name="FindKeyUser_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="Int32" Name="playerID" Nullable="false" />
+    <Property Type="String" Name="keyuser" Nullable="false" MaxLength="6" />
+    <Property Type="Int32" Name="keyStatus" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="LoginData_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="username" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="password" Nullable="false" MaxLength="50" />
+    <Property Type="Decimal" Name="money" Nullable="false" Precision="19" />
+    <Property Type="String" Name="nickname" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="email" Nullable="false" MaxLength="256" />
+    <Property Type="Int32" Name="status" Nullable="false" />
+    <Property Type="String" Name="avartar" Nullable="true" />
+  </ComplexType>
 </Schema>

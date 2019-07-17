@@ -165,13 +165,22 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+
     <Compile Include="Controllers\RoomManagerController.cs" />
+
+    <Compile Include="Controllers\ChatController.cs" />
+
     <Compile Include="Controllers\FriendListController.cs" />
     <Compile Include="Controllers\HistoryLoginController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InfoPlayerController.cs" />
+    <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Controllers\UploadController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Models\AddFriendModel.cs" />
+    <Compile Include="Models\FindKeyUser_Result.cs">
+      <DependentUpon>UsersModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\FriendsModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -190,7 +199,13 @@
     <Compile Include="Models\history_login.cs">
       <DependentUpon>UsersModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\LoadChatBox_Result.cs">
+      <DependentUpon>FriendsModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\LoadListFriend_Result.cs">
+      <DependentUpon>FriendsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LoginData_Result.cs">
       <DependentUpon>UsersModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\player.cs">
@@ -209,6 +224,7 @@
       <DependentUpon>FriendsModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\RegisterUser.cs" />
+
     <Compile Include="Models\RoomManagerModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -230,6 +246,8 @@
     <Compile Include="Models\room_listplayer.cs">
       <DependentUpon>RoomManagerModel.tt</DependentUpon>
     </Compile>
+
+    <Compile Include="Models\SendChatModel.cs" />
     <Compile Include="Models\UserLoginModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -363,7 +381,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\lick.cshtml" />
+    <Content Include="Views\Home\Verify.cshtml" />
+    <Content Include="Views\Main\Index.cshtml" />
+    <Content Include="Views\LayoutMaster\LayoutMaster.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -11,15 +11,13 @@ namespace api_gamebai.Models
 {
     using System;
     
-    public partial class LoadListFriend_Result
+    public partial class LoadChatBox_Result
     {
-        public int id { get; set; }
-        public string username { get; set; }
-        public string password { get; set; }
-        public decimal money { get; set; }
-        public string nickname { get; set; }
-        public string email { get; set; }
-        public int status { get; set; }
-        public string avartar { get; set; }
+        public int player_id_send { get; set; }
+        public int player_id_receive { get; set; }
+        public bool isseen { get; set; }
+        public string message { get; set; }
+        public System.DateTime send_date { get; set; }
+        public bool isdelete { get; set; }
     }
 }
