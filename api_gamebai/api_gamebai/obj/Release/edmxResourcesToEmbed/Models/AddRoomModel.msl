@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DbAddRoomStoreContainer" CdmEntityContainer="DatabaseAddRoom">
+    <EntitySetMapping Name="players">
+      <EntityTypeMapping TypeName="DbAddRoom.player">
+        <MappingFragment StoreEntitySet="player">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="money" ColumnName="money" />
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="avartar" ColumnName="avartar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="room_list">
+      <EntityTypeMapping TypeName="DbAddRoom.room_list">
+        <MappingFragment StoreEntitySet="room_list">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="owner_id" ColumnName="owner_id" />
+          <ScalarProperty Name="limit_player" ColumnName="limit_player" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="current_player" ColumnName="current_player" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="room_listplayer">
+      <EntityTypeMapping TypeName="DbAddRoom.room_listplayer">
+        <MappingFragment StoreEntitySet="room_listplayer">
+          <ScalarProperty Name="room_id" ColumnName="room_id" />
+          <ScalarProperty Name="player_id" ColumnName="player_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="addRoomList" FunctionName="DbAddRoom.Store.addRoomList" />
+    <FunctionImportMapping FunctionImportName="JoinRoomList" FunctionName="DbAddRoom.Store.JoinRoomList" />
+    <FunctionImportMapping FunctionImportName="OutRoom" FunctionName="DbAddRoom.Store.OutRoom" />
+  </EntityContainerMapping>
+</Mapping>

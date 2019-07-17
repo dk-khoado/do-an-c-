@@ -12,15 +12,11 @@ namespace api_gamebai.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class player
+    public partial class room_listplayer
     {
-        public int id { get; set; }
-        public string username { get; set; }
-        public string password { get; set; }
-        public decimal money { get; set; }
-        public string nickname { get; set; }
-        public string email { get; set; }
-        public int status { get; set; }
-        public string avartar { get; set; }
+        public int room_id { get; set; }
+        public int player_id { get; set; }
+    
+        public virtual room_list room_list { get; set; }
     }
 }
