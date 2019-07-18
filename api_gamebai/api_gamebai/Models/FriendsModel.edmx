@@ -60,6 +60,17 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.vListFriend' does not have a p
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="LoadChatBox" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="playerID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="LoadListFriend" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="playerID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sendmessage" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="playerIDsend" Type="int" Mode="In" />
+          <Parameter Name="playerIDrecive" Type="int" Mode="In" />
+          <Parameter Name="message" Type="ntext" Mode="In" />
+        </Function>
         <EntityContainer Name="DatabaseGameBaiModel_friendStoreContainer">
           <EntitySet Name="player_chatlist" EntityType="Self.player_chatlist" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="player_listfriend" EntityType="Self.player_listfriend" Schema="dbo" store:Type="Tables" />
@@ -124,6 +135,17 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.vListFriend' does not have a p
           </AssociationSet>
           <EntitySet Name="vListFriends" EntityType="DatabaseGameBaiModel_friend.vListFriend" a:GetterAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
           <EntitySet Name="player_listfriend" EntityType="DatabaseGameBaiModel_friend.player_listfriend" />
+          <FunctionImport Name="LoadChatBox" ReturnType="Collection(DatabaseGameBaiModel_friend.LoadChatBox_Result)">
+          <Parameter Name="playerID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="LoadListFriend" ReturnType="Collection(DatabaseGameBaiModel_friend.LoadListFriend_Result)">
+          <Parameter Name="playerID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sendmessage">
+            <Parameter Name="playerIDsend" Mode="In" Type="Int32" />
+            <Parameter Name="playerIDrecive" Mode="In" Type="Int32" />
+            <Parameter Name="message" Mode="In" Type="String" />
+          </FunctionImport>
         </EntityContainer>
         <EntityType Name="vListFriend" a:TypeAccess="Public" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration">
           <Key>
@@ -147,6 +169,24 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.vListFriend' does not have a p
           <Property Name="friend_id" Type="Int32" Nullable="false" />
           <Property Name="isban" Type="Boolean" Nullable="false" />
         </EntityType>
+        <ComplexType Name="LoadChatBox_Result">
+          <Property Type="Int32" Name="player_id_send" Nullable="false" />
+          <Property Type="Int32" Name="player_id_receive" Nullable="false" />
+          <Property Type="Boolean" Name="isseen" Nullable="false" />
+          <Property Type="String" Name="message" Nullable="false" MaxLength="Max" />
+          <Property Type="DateTime" Name="send_date" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="isdelete" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="LoadListFriend_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="username" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="password" Nullable="false" MaxLength="50" />
+          <Property Type="Decimal" Name="money" Nullable="false" Precision="19" />
+          <Property Type="String" Name="nickname" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="email" Nullable="false" MaxLength="256" />
+          <Property Type="Int32" Name="status" Nullable="false" />
+          <Property Type="String" Name="avartar" Nullable="true" />
+        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -195,6 +235,33 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.vListFriend' does not have a p
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="LoadChatBox" FunctionName="DatabaseGameBaiModel_friend.Store.LoadChatBox">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DatabaseGameBaiModel_friend.LoadChatBox_Result">
+                <ScalarProperty Name="player_id_send" ColumnName="player_id_send" />
+                <ScalarProperty Name="player_id_receive" ColumnName="player_id_receive" />
+                <ScalarProperty Name="isseen" ColumnName="isseen" />
+                <ScalarProperty Name="message" ColumnName="message" />
+                <ScalarProperty Name="send_date" ColumnName="send_date" />
+                <ScalarProperty Name="isdelete" ColumnName="isdelete" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="LoadListFriend" FunctionName="DatabaseGameBaiModel_friend.Store.LoadListFriend">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DatabaseGameBaiModel_friend.LoadListFriend_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="money" ColumnName="money" />
+                <ScalarProperty Name="nickname" ColumnName="nickname" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="avartar" ColumnName="avartar" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sendmessage" FunctionName="DatabaseGameBaiModel_friend.Store.sendmessage" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

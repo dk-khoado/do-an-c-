@@ -12,6 +12,8 @@ namespace api_gamebai.Models
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class DatabaseGameBai_friend : DbContext
     {
@@ -30,5 +32,40 @@ namespace api_gamebai.Models
         public virtual DbSet<player_message> player_message { get; set; }
         internal virtual DbSet<vListFriend> vListFriends { get; set; }
         public virtual DbSet<player_listfriend> player_listfriend { get; set; }
+    
+        public virtual ObjectResult<LoadChatBox_Result> LoadChatBox(Nullable<int> playerID)
+        {
+            var playerIDParameter = playerID.HasValue ?
+                new ObjectParameter("playerID", playerID) :
+                new ObjectParameter("playerID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<LoadChatBox_Result>("LoadChatBox", playerIDParameter);
+        }
+    
+        public virtual ObjectResult<LoadListFriend_Result> LoadListFriend(Nullable<int> playerID)
+        {
+            var playerIDParameter = playerID.HasValue ?
+                new ObjectParameter("playerID", playerID) :
+                new ObjectParameter("playerID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<LoadListFriend_Result>("LoadListFriend", playerIDParameter);
+        }
+    
+        public virtual int sendmessage(Nullable<int> playerIDsend, Nullable<int> playerIDrecive, string message)
+        {
+            var playerIDsendParameter = playerIDsend.HasValue ?
+                new ObjectParameter("playerIDsend", playerIDsend) :
+                new ObjectParameter("playerIDsend", typeof(int));
+    
+            var playerIDreciveParameter = playerIDrecive.HasValue ?
+                new ObjectParameter("playerIDrecive", playerIDrecive) :
+                new ObjectParameter("playerIDrecive", typeof(int));
+    
+            var messageParameter = message != null ?
+                new ObjectParameter("message", message) :
+                new ObjectParameter("message", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sendmessage", playerIDsendParameter, playerIDreciveParameter, messageParameter);
+        }
     }
 }

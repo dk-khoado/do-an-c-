@@ -28,7 +28,7 @@
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="playerID" Type="int" Nullable="false" />
-    <Property Name="keyuser" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="keyuser" Type="varchar" MaxLength="6" Nullable="false" />
     <Property Name="keyStatus" Type="int" Nullable="false" />
   </EntityType>
   <!--Errors Found During Generation:
@@ -76,8 +76,19 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.infoplayer' does not have a pr
     <Parameter Name="amount" Type="money" Mode="In" />
     <Parameter Name="id" Type="int" Mode="In" />
   </Function>
+  <Function Name="FindKeyUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="keyUser" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="getID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="username" Type="varchar" Mode="In" />
+    <Parameter Name="password" Type="varchar" Mode="In" />
+  </Function>
   <Function Name="LoadListFriend" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="playerID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="LoginData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="username" Type="varchar" Mode="In" />
+    <Parameter Name="password" Type="varchar" Mode="In" />
   </Function>
   <Function Name="sendmessage" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="playerIDsend" Type="int" Mode="In" />
