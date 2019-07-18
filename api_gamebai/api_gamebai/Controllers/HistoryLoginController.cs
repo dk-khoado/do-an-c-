@@ -35,6 +35,7 @@ namespace api_gamebai.Controllers
                 }
                 catch (Exception)
                 {
+                    
                     return new ResponseMessage("fail");
                 }
                 return new ResponseMessage("Update thàng công :)))");
