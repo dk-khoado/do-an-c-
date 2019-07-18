@@ -49,7 +49,7 @@ public class Login : MonoBehaviour
         {       
             webRequest.SetRequestHeader("Content-Type", "application/json");
             byte[] raw = Encoding.UTF8.GetBytes(postdata);
-            webRequest.uploadHandler = new UploadHandlerRaw(raw);
+            webRequest.uploadHandler = new UploadHandlerRaw(raw);            
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
             string[] pages = uri.Split('/');

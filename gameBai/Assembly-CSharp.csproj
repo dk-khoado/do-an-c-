@@ -67,6 +67,7 @@
     <Compile Include="Assets\Script\PhongCho\Sanhcho.cs" />
     <Compile Include="Assets\Script\TrangLogin\Login.cs" />
     <Compile Include="Assets\Script\TrangLogin\SetActive.cs" />
+    <Compile Include="Assets\Script\Upload.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
