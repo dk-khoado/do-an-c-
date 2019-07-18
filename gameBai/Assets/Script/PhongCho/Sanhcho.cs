@@ -1,17 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
-using Newtonsoft.Json;
 
 public class Sanhcho : MonoBehaviour
 {
     public Text ten;
     public Text tien;
     public Text lv;
-    nhanData2 mdata = new nhanData2();
+    DataFromLogin mdata = new DataFromLogin();
     public void Start()
     {
         StartCoroutine(GetRequest("http://26.60.150.44/api/User/Get/" +PlayerPrefs.GetInt("id").ToString()));
@@ -36,33 +36,17 @@ public class Sanhcho : MonoBehaviour
             {
                 try
                 {
-                    mdata =JsonConvert.DeserializeObject<nhanData2>(webRequest.downloadHandler.text);
-                    if (mdata.result > 0)
-                    {
-                        Debug.Log(mdata.message);
-                        Debug.Log(mdata.data);
-                    }
-                    else
-                    {
-                        Debug.Log(mdata.message);
-                        Debug.Log(mdata.data);
-                    }
+                    mdata =JsonUtility.FromJson<DataFromLogin>(webRequest.downloadHandler.text);
+                    ten.text = mdata.data.nickname;
+                    tien.text = mdata.data.money.ToString();
                 }
-                catch
+                catch(Exception e)
                 {
-
+                    Debug.Log(e);
                 }
             }
         }
     }
-}
-public class nhanData2
-{
-    public string response;
-    public string message;
-    public Object data;
-    public int result;
-    public nhanData2() { }
 }
 
 
