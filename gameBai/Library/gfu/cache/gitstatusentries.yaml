@@ -13,86 +13,114 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-07-16T14:30:45.267+07:00
-  initializedAtString: 2019-07-16T13:39:56.151+07:00
+  lastUpdatedAtString: 2019-07-18T11:02:34.873+07:00
+  initializedAtString: 2019-07-18T10:23:43.358+07:00
   entries:
   - path: gameBai\.vs\gameBai\v16\Server\sqlite3\storage.ide-shm
     fullPath: E:\do-an-c-\gameBai\.vs\gameBai\v16\Server\sqlite3\storage.ide-shm
     projectPath: .vs\gameBai\v16\Server\sqlite3\storage.ide-shm
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: gameBai\.vs\gameBai\v16\Server\sqlite3\storage.ide-wal
     fullPath: E:\do-an-c-\gameBai\.vs\gameBai\v16\Server\sqlite3\storage.ide-wal
     projectPath: .vs\gameBai\v16\Server\sqlite3\storage.ide-wal
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: gameBai\Assembly-CSharp.csproj
     fullPath: E:\do-an-c-\gameBai\Assembly-CSharp.csproj
     projectPath: Assembly-CSharp.csproj
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameBai\Assets\Plugins\Resouces.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces.meta
-    projectPath: Assets\Plugins\Resouces.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties.meta
-    projectPath: Assets\Plugins\Resouces\Properties.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw 4.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_2.asset
     fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw
-      4.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Draw 4.asset
+      4_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw 4.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_2.asset.meta
     fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw
-      4.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Draw 4.asset.meta
+      4_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Wild.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_3.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw
+      4_3.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_3.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Wild.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_3.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw
+      4_3.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_3.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_0.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_0.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_0.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_4.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw
+      4_4.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_4.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_0.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_0.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_0.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_4.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw
+      4_4.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_4.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_1.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_1.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_1.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Wild_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_1.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_1.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_1.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Wild_2.asset.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_3.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_3.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Wild_3.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_3.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_3.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Wild_3.asset.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_4.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_4.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Wild_4.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_4.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_4.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Wild_4.asset.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_1_1.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_1_1.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_1_1.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_1_1.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_1_1.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_1_1.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -100,291 +128,279 @@ MonoBehaviour:
     fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_10.asset
     projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_10.asset
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_10.asset.meta
     fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_10.asset.meta
     projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_10.asset.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_2.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_2.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_2.asset
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_2_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_2_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_2_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_2.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_2.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_2.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_2_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_2_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_2_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_3.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_3.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_3.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_3_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_3_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_3_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_3.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_3.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_3.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_3_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_3_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_3_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_4.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_4.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_4.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_4_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_4_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_4_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_4.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_4.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_4.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_4_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_4_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_4_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_5.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_5.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_5.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_5_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_5_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_5_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_5.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_5.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_5.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_5_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_5_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_5_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_6.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_6.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_6.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_6_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_6_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_6_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_6.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_6.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_6.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_6_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_6_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_6_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_7.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_7.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_7.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_7_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_7_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_7_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_7.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_7.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_7.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_7_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_7_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_7_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_8.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_8.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_8.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_8_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_8_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_8_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_8.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_8.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_8.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_8_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_8_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_8_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_9.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_9.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_9.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_9_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_9_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_9_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_9.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_9.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_9.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_9_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_9_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_9_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Draw 2.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Draw 2_2.asset
     fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Draw
-      2.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_Draw 2.asset
+      2_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_Draw 2_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Draw 2.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Draw 2_2.asset.meta
     fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Draw
-      2.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_Draw 2.asset.meta
+      2_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_Draw 2_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Reverse.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Reverse.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_Reverse.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Reverse_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Reverse_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_Reverse_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Reverse.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Reverse.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_Reverse.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Reverse_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Reverse_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_Reverse_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Skip.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Skip.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_Skip.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Skip_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Skip_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_Skip_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Skip.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Skip.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_Skip.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Skip_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Skip_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_Skip_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_0.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_0.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_0.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_1_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_1_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_1_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_0.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_0.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_0.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_1_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_1_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_1_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_1.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_1.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_1.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_2_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_2_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_2_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_1.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_1.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_1.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_2_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_2_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_2_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_2.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_2.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_2.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_3_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_3_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_3_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_2.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_2.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_2.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_3_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_3_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_3_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_3.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_3.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_3.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_4_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_4_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_4_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_3.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_3.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_3.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_4_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_4_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_4_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_4.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_4.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_4.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_5_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_5_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_5_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_4.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_4.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_4.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_5_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_5_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_5_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_5.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_5.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_5.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_6_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_6_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_6_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_5.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_5.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_5.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_6_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_6_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_6_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_6.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_6.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_6.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_7_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_7_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_7_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_6.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_6.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_6.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_7_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_7_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_7_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_7.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_7.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_7.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_8_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_8_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_8_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_7.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_7.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_7.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_8_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_8_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_8_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_8.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_8.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_8.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_9_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_9_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_9_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_8.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_8.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_8.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_9_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_9_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_9_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_9.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_9.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_9.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_9.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_9.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_9.asset.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Draw 2.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Draw 2_2.asset
     fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Draw
-      2.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_Draw 2.asset
+      2_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_Draw 2_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Draw 2.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Draw 2_2.asset.meta
     fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Draw
-      2.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_Draw 2.asset.meta
+      2_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_Draw 2_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Reverse.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Reverse.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_Reverse.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Reverse_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Reverse_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_Reverse_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Reverse.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Reverse.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_Reverse.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Reverse_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Reverse_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_Reverse_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -392,145 +408,145 @@ MonoBehaviour:
     fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Skip.asset
     projectPath: Assets\Plugins\Resouces\Properties\Uno_green_Skip.asset
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Skip.asset.meta
     fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Skip.asset.meta
     projectPath: Assets\Plugins\Resouces\Properties\Uno_green_Skip.asset.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_0.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_0.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_0.asset
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Skip_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Skip_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_Skip_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_0.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_0.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_0.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Skip_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Skip_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_Skip_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_1.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_1.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_1.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_1_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_1_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_1_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_1.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_1.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_1.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_1_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_1_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_1_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_2.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_2.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_2.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_2_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_2_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_2_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_2.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_2.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_2.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_2_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_2_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_2_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_3.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_3.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_3.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_3_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_3_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_3_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_3.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_3.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_3.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_3_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_3_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_3_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_4.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_4.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_4.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_4_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_4_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_4_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_4.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_4.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_4.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_4_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_4_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_4_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_5.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_5.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_5.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_5_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_5_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_5_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_5.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_5.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_5.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_5_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_5_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_5_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_6.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_6.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_6.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_6_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_6_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_6_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_6.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_6.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_6.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_6_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_6_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_6_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_7.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_7.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_7.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_7_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_7_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_7_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_7.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_7.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_7.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_7_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_7_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_7_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_8.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_8.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_8.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_8_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_8_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_8_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_8.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_8.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_8.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_8_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_8_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_8_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_9.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_9.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_9.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_9_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_9_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_9_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_9.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_9.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_9.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_9_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_9_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_9_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Draw 2.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Draw 2_2.asset
     fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Draw
-      2.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_Draw 2.asset
+      2_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_Draw 2_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Draw 2.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Draw 2_2.asset.meta
     fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Draw
-      2.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_Draw 2.asset.meta
+      2_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_Draw 2_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -538,181 +554,181 @@ MonoBehaviour:
     fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Reverse.asset
     projectPath: Assets\Plugins\Resouces\Properties\Uno_red_Reverse.asset
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Reverse.asset.meta
     fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Reverse.asset.meta
     projectPath: Assets\Plugins\Resouces\Properties\Uno_red_Reverse.asset.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Skip.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Skip.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_Skip.asset
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Reverse_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Reverse_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_Reverse_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Skip.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Skip.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_Skip.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Reverse_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Reverse_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_Reverse_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_0.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_0.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_0.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Skip_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Skip_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_Skip_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_0.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_0.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_0.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Skip_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Skip_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_Skip_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_1.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_1.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_1.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_1_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_1_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_1_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_1.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_1.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_1.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_1_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_1_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_1_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_2.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_2.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_2.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_2_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_2_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_2_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_2.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_2.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_2.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_2_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_2_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_2_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_3.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_3.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_3.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_3_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_3_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_3_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_3.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_3.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_3.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_3_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_3_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_3_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_4.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_4.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_4.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_4_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_4_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_4_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_4.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_4.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_4.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_4_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_4_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_4_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_5.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_5.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_5.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_5_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_5_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_5_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_5.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_5.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_5.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_5_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_5_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_5_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_6.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_6.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_6.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_6_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_6_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_6_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_6.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_6.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_6.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_6_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_6_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_6_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_7.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_7.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_7.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_7_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_7_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_7_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_7.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_7.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_7.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_7_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_7_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_7_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_8.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_8.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_8.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_8_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_8_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_8_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_8.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_8.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_8.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_8_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_8_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_8_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_9.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_9.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_9.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_9_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_9_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_9_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_9.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_9.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_9.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_9_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_9_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_9_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Draw 2.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Draw 2_2.asset
     fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Draw
-      2.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_Draw 2.asset
+      2_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_Draw 2_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Draw 2.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Draw 2_2.asset.meta
     fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Draw
-      2.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_Draw 2.asset.meta
+      2_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_Draw 2_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Reverse.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Reverse.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_Reverse.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Reverse_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Reverse_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_Reverse_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Reverse.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Reverse.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_Reverse.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Reverse_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Reverse_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_Reverse_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Skip.asset
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Skip.asset
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_Skip.asset
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Skip_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Skip_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_Skip_2.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Skip.asset.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Skip.asset.meta
-    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_Skip.asset.meta
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Skip_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Skip_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_Skip_2.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -722,21 +738,21 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameBai\Assets\Script\CardModel.cs
-    fullPath: E:\do-an-c-\gameBai\Assets\Script\CardModel.cs
-    projectPath: Assets\Script\CardModel.cs
+  - path: gameBai\Assets\Script\Controller_Uno.cs
+    fullPath: E:\do-an-c-\gameBai\Assets\Script\Controller_Uno.cs
+    projectPath: Assets\Script\Controller_Uno.cs
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\Script\CardModel.cs.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\Script\CardModel.cs.meta
-    projectPath: Assets\Script\CardModel.cs.meta
+  - path: gameBai\Assets\Script\Controller_Uno.cs.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Script\Controller_Uno.cs.meta
+    projectPath: Assets\Script\Controller_Uno.cs.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Assets\UNO_cards_deck.svg.png.meta
-    fullPath: E:\do-an-c-\gameBai\Assets\UNO_cards_deck.svg.png.meta
-    projectPath: Assets\UNO_cards_deck.svg.png.meta
+  - path: gameBai\Library\APIUpdater\project-dependencies.graph
+    fullPath: E:\do-an-c-\gameBai\Library\APIUpdater\project-dependencies.graph
+    projectPath: Library\APIUpdater\project-dependencies.graph
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -749,18 +765,6 @@ MonoBehaviour:
   - path: gameBai\Library\CrashedAssetImports.txt
     fullPath: E:\do-an-c-\gameBai\Library\CrashedAssetImports.txt
     projectPath: Library\CrashedAssetImports.txt
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Library\CurrentLayout.dwlt
-    fullPath: E:\do-an-c-\gameBai\Library\CurrentLayout.dwlt
-    projectPath: Library\CurrentLayout.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: gameBai\Library\EditorInstance.json
-    fullPath: E:\do-an-c-\gameBai\Library\EditorInstance.json
-    projectPath: Library\EditorInstance.json
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -782,726 +786,1272 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameBai\Library\gfu\cache\repoinfo.yaml
-    fullPath: E:\do-an-c-\gameBai\Library\gfu\cache\repoinfo.yaml
-    projectPath: Library\gfu\cache\repoinfo.yaml
+  - path: gameBai\Library\metadata\00\00ed25e3298ac440eb327c706a964e3a
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\00\00ed25e3298ac440eb327c706a964e3a
+    projectPath: Library\metadata\00\00ed25e3298ac440eb327c706a964e3a
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameBai\Library\InspectorExpandedItems.asset
-    fullPath: E:\do-an-c-\gameBai\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
+  - path: gameBai\Library\metadata\01\015812e983113a84b95773e55f3cec13
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\01\015812e983113a84b95773e55f3cec13
+    projectPath: Library\metadata\01\015812e983113a84b95773e55f3cec13
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameBai\Library\metadata\01\01331ddfc0eea0f469c454faeb4496d5
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\01\01331ddfc0eea0f469c454faeb4496d5
-    projectPath: Library\metadata\01\01331ddfc0eea0f469c454faeb4496d5
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Library\metadata\01\01331ddfc0eea0f469c454faeb4496d5.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\01\01331ddfc0eea0f469c454faeb4496d5.info
-    projectPath: Library\metadata\01\01331ddfc0eea0f469c454faeb4496d5.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Library\metadata\02\0275afa285a452f459784c81e3723fbf
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\02\0275afa285a452f459784c81e3723fbf
-    projectPath: Library\metadata\02\0275afa285a452f459784c81e3723fbf
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Library\metadata\02\0275afa285a452f459784c81e3723fbf.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\02\0275afa285a452f459784c81e3723fbf.info
-    projectPath: Library\metadata\02\0275afa285a452f459784c81e3723fbf.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Library\metadata\07\07080d96c31e24343b547a1341094bcf
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\07\07080d96c31e24343b547a1341094bcf
-    projectPath: Library\metadata\07\07080d96c31e24343b547a1341094bcf
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Library\metadata\07\07080d96c31e24343b547a1341094bcf.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\07\07080d96c31e24343b547a1341094bcf.info
-    projectPath: Library\metadata\07\07080d96c31e24343b547a1341094bcf.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Library\metadata\09\095edf9275299b04293e90e80d1ac231
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\09\095edf9275299b04293e90e80d1ac231
-    projectPath: Library\metadata\09\095edf9275299b04293e90e80d1ac231
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Library\metadata\09\095edf9275299b04293e90e80d1ac231.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\09\095edf9275299b04293e90e80d1ac231.info
-    projectPath: Library\metadata\09\095edf9275299b04293e90e80d1ac231.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Library\metadata\09\09a35d43f8fe2d149acb874a81d0823d
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\09\09a35d43f8fe2d149acb874a81d0823d
-    projectPath: Library\metadata\09\09a35d43f8fe2d149acb874a81d0823d
+  - path: gameBai\Library\metadata\02\0217a80286f79419daa202f69409f19b
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\02\0217a80286f79419daa202f69409f19b
+    projectPath: Library\metadata\02\0217a80286f79419daa202f69409f19b
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameBai\Library\metadata\09\09a35d43f8fe2d149acb874a81d0823d.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\09\09a35d43f8fe2d149acb874a81d0823d.info
-    projectPath: Library\metadata\09\09a35d43f8fe2d149acb874a81d0823d.info
+  - path: gameBai\Library\metadata\03\036d03e26977243fa9a2d7af48e51e08
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\03\036d03e26977243fa9a2d7af48e51e08
+    projectPath: Library\metadata\03\036d03e26977243fa9a2d7af48e51e08
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameBai\Library\metadata\0b\0b1f1acb198f6544fa8c30b5d5b93785
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\0b\0b1f1acb198f6544fa8c30b5d5b93785
-    projectPath: Library\metadata\0b\0b1f1acb198f6544fa8c30b5d5b93785
+  - path: gameBai\Library\metadata\06\06ee9e9467265a64eb9d227b77f47b09
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\06\06ee9e9467265a64eb9d227b77f47b09
+    projectPath: Library\metadata\06\06ee9e9467265a64eb9d227b77f47b09
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\0b\0b1f1acb198f6544fa8c30b5d5b93785.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\0b\0b1f1acb198f6544fa8c30b5d5b93785.info
-    projectPath: Library\metadata\0b\0b1f1acb198f6544fa8c30b5d5b93785.info
+  - path: gameBai\Library\metadata\06\06ee9e9467265a64eb9d227b77f47b09.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\06\06ee9e9467265a64eb9d227b77f47b09.info
+    projectPath: Library\metadata\06\06ee9e9467265a64eb9d227b77f47b09.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\0d\0d0de3e8e3c9aec4ab4bc0d270867b6a
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\0d\0d0de3e8e3c9aec4ab4bc0d270867b6a
-    projectPath: Library\metadata\0d\0d0de3e8e3c9aec4ab4bc0d270867b6a
+  - path: gameBai\Library\metadata\08\08e9894bdf0834710b22d3c0aa245ac0
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\08\08e9894bdf0834710b22d3c0aa245ac0
+    projectPath: Library\metadata\08\08e9894bdf0834710b22d3c0aa245ac0
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\0a\0a9812bd0abd922469b4c6c72b76d34c
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\0a\0a9812bd0abd922469b4c6c72b76d34c
+    projectPath: Library\metadata\0a\0a9812bd0abd922469b4c6c72b76d34c
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\0d\0d0de3e8e3c9aec4ab4bc0d270867b6a.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\0d\0d0de3e8e3c9aec4ab4bc0d270867b6a.info
-    projectPath: Library\metadata\0d\0d0de3e8e3c9aec4ab4bc0d270867b6a.info
+  - path: gameBai\Library\metadata\0a\0a9812bd0abd922469b4c6c72b76d34c.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\0a\0a9812bd0abd922469b4c6c72b76d34c.info
+    projectPath: Library\metadata\0a\0a9812bd0abd922469b4c6c72b76d34c.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\14\142d31c6ad80c8846bffe831cf2c9ae0
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\14\142d31c6ad80c8846bffe831cf2c9ae0
-    projectPath: Library\metadata\14\142d31c6ad80c8846bffe831cf2c9ae0
+  - path: gameBai\Library\metadata\0f\0fda7ebe61ab2164383d10e32efb9c6e
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\0f\0fda7ebe61ab2164383d10e32efb9c6e
+    projectPath: Library\metadata\0f\0fda7ebe61ab2164383d10e32efb9c6e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\0f\0fe4c527c3aa3eb42912a1caafbbc6a0
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\0f\0fe4c527c3aa3eb42912a1caafbbc6a0
+    projectPath: Library\metadata\0f\0fe4c527c3aa3eb42912a1caafbbc6a0
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\12\124f4d8ca0a92ca4f9a5f75ce6c81898
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\12\124f4d8ca0a92ca4f9a5f75ce6c81898
+    projectPath: Library\metadata\12\124f4d8ca0a92ca4f9a5f75ce6c81898
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\14\142d31c6ad80c8846bffe831cf2c9ae0.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\14\142d31c6ad80c8846bffe831cf2c9ae0.info
-    projectPath: Library\metadata\14\142d31c6ad80c8846bffe831cf2c9ae0.info
+  - path: gameBai\Library\metadata\12\124f4d8ca0a92ca4f9a5f75ce6c81898.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\12\124f4d8ca0a92ca4f9a5f75ce6c81898.info
+    projectPath: Library\metadata\12\124f4d8ca0a92ca4f9a5f75ce6c81898.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\14\148674d5365dd3a4abe12604aa91bef5
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\14\148674d5365dd3a4abe12604aa91bef5
-    projectPath: Library\metadata\14\148674d5365dd3a4abe12604aa91bef5
+  - path: gameBai\Library\metadata\13\1322fd896bbb15bb6e335591b766ae62.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\13\1322fd896bbb15bb6e335591b766ae62.info
+    projectPath: Library\metadata\13\1322fd896bbb15bb6e335591b766ae62.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\13\138961c4434d141a987d96df1f8d7342
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\13\138961c4434d141a987d96df1f8d7342
+    projectPath: Library\metadata\13\138961c4434d141a987d96df1f8d7342
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\15\15bf9c691b85b41a39c18bee2f87e21b
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\15\15bf9c691b85b41a39c18bee2f87e21b
+    projectPath: Library\metadata\15\15bf9c691b85b41a39c18bee2f87e21b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\17\176de3d6f71d9e941b1ddd04db212af1
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\17\176de3d6f71d9e941b1ddd04db212af1
+    projectPath: Library\metadata\17\176de3d6f71d9e941b1ddd04db212af1
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\14\148674d5365dd3a4abe12604aa91bef5.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\14\148674d5365dd3a4abe12604aa91bef5.info
-    projectPath: Library\metadata\14\148674d5365dd3a4abe12604aa91bef5.info
+  - path: gameBai\Library\metadata\17\176de3d6f71d9e941b1ddd04db212af1.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\17\176de3d6f71d9e941b1ddd04db212af1.info
+    projectPath: Library\metadata\17\176de3d6f71d9e941b1ddd04db212af1.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\15\151586f41ca600e45911c3923980a365
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\15\151586f41ca600e45911c3923980a365
-    projectPath: Library\metadata\15\151586f41ca600e45911c3923980a365
+  - path: gameBai\Library\metadata\1d\1dcbe0b974a70c24ebf042ff4e1bab1e
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\1d\1dcbe0b974a70c24ebf042ff4e1bab1e
+    projectPath: Library\metadata\1d\1dcbe0b974a70c24ebf042ff4e1bab1e
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\15\151586f41ca600e45911c3923980a365.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\15\151586f41ca600e45911c3923980a365.info
-    projectPath: Library\metadata\15\151586f41ca600e45911c3923980a365.info
+  - path: gameBai\Library\metadata\1d\1dcbe0b974a70c24ebf042ff4e1bab1e.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\1d\1dcbe0b974a70c24ebf042ff4e1bab1e.info
+    projectPath: Library\metadata\1d\1dcbe0b974a70c24ebf042ff4e1bab1e.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: gameBai\Library\metadata\22\22e08031157598f43a63e36dd9f57f2c
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\22\22e08031157598f43a63e36dd9f57f2c
+    projectPath: Library\metadata\22\22e08031157598f43a63e36dd9f57f2c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\metadata\22\22e08031157598f43a63e36dd9f57f2c.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\22\22e08031157598f43a63e36dd9f57f2c.info
+    projectPath: Library\metadata\22\22e08031157598f43a63e36dd9f57f2c.info
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\metadata\23\23a56a19774ed42b6b65646af08a003c
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\23\23a56a19774ed42b6b65646af08a003c
+    projectPath: Library\metadata\23\23a56a19774ed42b6b65646af08a003c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\24\240551e3142f04b0ca801ce8eb645ba2
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\24\240551e3142f04b0ca801ce8eb645ba2
+    projectPath: Library\metadata\24\240551e3142f04b0ca801ce8eb645ba2
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\26\2611aeb90bc23ca47acfe521fc518e83
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\26\2611aeb90bc23ca47acfe521fc518e83
+    projectPath: Library\metadata\26\2611aeb90bc23ca47acfe521fc518e83
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\metadata\26\2611aeb90bc23ca47acfe521fc518e83.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\26\2611aeb90bc23ca47acfe521fc518e83.info
+    projectPath: Library\metadata\26\2611aeb90bc23ca47acfe521fc518e83.info
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\metadata\26\2622838afa3284cc882c48ceea4c8220
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\26\2622838afa3284cc882c48ceea4c8220
+    projectPath: Library\metadata\26\2622838afa3284cc882c48ceea4c8220
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\27\273f02c0520cc0d46b01d3cf099aec7a
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\27\273f02c0520cc0d46b01d3cf099aec7a
+    projectPath: Library\metadata\27\273f02c0520cc0d46b01d3cf099aec7a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\metadata\27\273f02c0520cc0d46b01d3cf099aec7a.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\27\273f02c0520cc0d46b01d3cf099aec7a.info
+    projectPath: Library\metadata\27\273f02c0520cc0d46b01d3cf099aec7a.info
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\metadata\28\281e94ffb3d74ad4d9be37d6e3b439d9
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\28\281e94ffb3d74ad4d9be37d6e3b439d9
+    projectPath: Library\metadata\28\281e94ffb3d74ad4d9be37d6e3b439d9
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\metadata\28\281e94ffb3d74ad4d9be37d6e3b439d9.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\28\281e94ffb3d74ad4d9be37d6e3b439d9.info
+    projectPath: Library\metadata\28\281e94ffb3d74ad4d9be37d6e3b439d9.info
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\metadata\29\293182c4d29604c05b6724ae00fd121a
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\29\293182c4d29604c05b6724ae00fd121a
+    projectPath: Library\metadata\29\293182c4d29604c05b6724ae00fd121a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: gameBai\Library\metadata\29\296d1fa47840ca342b7607e877d12104
     fullPath: E:\do-an-c-\gameBai\Library\metadata\29\296d1fa47840ca342b7607e877d12104
     projectPath: Library\metadata\29\296d1fa47840ca342b7607e877d12104
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: gameBai\Library\metadata\29\296d1fa47840ca342b7607e877d12104.info
     fullPath: E:\do-an-c-\gameBai\Library\metadata\29\296d1fa47840ca342b7607e877d12104.info
     projectPath: Library\metadata\29\296d1fa47840ca342b7607e877d12104.info
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Library\metadata\2b\2b6eb19da00914346961df177676108f
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\2b\2b6eb19da00914346961df177676108f
-    projectPath: Library\metadata\2b\2b6eb19da00914346961df177676108f
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\2b\2b2be9ee9f41a4b2db6b502697ba31b1
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\2b\2b2be9ee9f41a4b2db6b502697ba31b1
+    projectPath: Library\metadata\2b\2b2be9ee9f41a4b2db6b502697ba31b1
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\32\324a41abd48bdad4ab945fac6a3bc667
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\32\324a41abd48bdad4ab945fac6a3bc667
+    projectPath: Library\metadata\32\324a41abd48bdad4ab945fac6a3bc667
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\2b\2b6eb19da00914346961df177676108f.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\2b\2b6eb19da00914346961df177676108f.info
-    projectPath: Library\metadata\2b\2b6eb19da00914346961df177676108f.info
+  - path: gameBai\Library\metadata\32\324a41abd48bdad4ab945fac6a3bc667.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\32\324a41abd48bdad4ab945fac6a3bc667.info
+    projectPath: Library\metadata\32\324a41abd48bdad4ab945fac6a3bc667.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\2d\2d79f8667948585438566d017f48f3c9
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\2d\2d79f8667948585438566d017f48f3c9
-    projectPath: Library\metadata\2d\2d79f8667948585438566d017f48f3c9
+  - path: gameBai\Library\metadata\35\35b4e72ca46f44581b85082c4dc21d13
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\35\35b4e72ca46f44581b85082c4dc21d13
+    projectPath: Library\metadata\35\35b4e72ca46f44581b85082c4dc21d13
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\3a\3ab6e6972ecb54e2cbd505692415a7ba
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\3a\3ab6e6972ecb54e2cbd505692415a7ba
+    projectPath: Library\metadata\3a\3ab6e6972ecb54e2cbd505692415a7ba
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\3b\3b7671eb981bcc14386c082d6ce31e0c
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\3b\3b7671eb981bcc14386c082d6ce31e0c
+    projectPath: Library\metadata\3b\3b7671eb981bcc14386c082d6ce31e0c
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\2d\2d79f8667948585438566d017f48f3c9.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\2d\2d79f8667948585438566d017f48f3c9.info
-    projectPath: Library\metadata\2d\2d79f8667948585438566d017f48f3c9.info
+  - path: gameBai\Library\metadata\3b\3b7671eb981bcc14386c082d6ce31e0c.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\3b\3b7671eb981bcc14386c082d6ce31e0c.info
+    projectPath: Library\metadata\3b\3b7671eb981bcc14386c082d6ce31e0c.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\2f\2faf23125b791bf4ab55f0fe9f366fa7
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\2f\2faf23125b791bf4ab55f0fe9f366fa7
-    projectPath: Library\metadata\2f\2faf23125b791bf4ab55f0fe9f366fa7
+  - path: gameBai\Library\metadata\3c\3c737f7a9d78541d1ab25f28f045dd32
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\3c\3c737f7a9d78541d1ab25f28f045dd32
+    projectPath: Library\metadata\3c\3c737f7a9d78541d1ab25f28f045dd32
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\3e\3eb0c8a62d0317a4aa8ff131952147dd
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\3e\3eb0c8a62d0317a4aa8ff131952147dd
+    projectPath: Library\metadata\3e\3eb0c8a62d0317a4aa8ff131952147dd
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\2f\2faf23125b791bf4ab55f0fe9f366fa7.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\2f\2faf23125b791bf4ab55f0fe9f366fa7.info
-    projectPath: Library\metadata\2f\2faf23125b791bf4ab55f0fe9f366fa7.info
+  - path: gameBai\Library\metadata\3e\3eb0c8a62d0317a4aa8ff131952147dd.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\3e\3eb0c8a62d0317a4aa8ff131952147dd.info
+    projectPath: Library\metadata\3e\3eb0c8a62d0317a4aa8ff131952147dd.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\33\33ab16f4e18141a47ad4f40d22da12f8
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\33\33ab16f4e18141a47ad4f40d22da12f8
-    projectPath: Library\metadata\33\33ab16f4e18141a47ad4f40d22da12f8
+  - path: gameBai\Library\metadata\44\44760bd4e62c482cbe0bd4e4b928a54a
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\44\44760bd4e62c482cbe0bd4e4b928a54a
+    projectPath: Library\metadata\44\44760bd4e62c482cbe0bd4e4b928a54a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\44\44f39a74ca5ee4bf5936b17e901f251c
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\44\44f39a74ca5ee4bf5936b17e901f251c
+    projectPath: Library\metadata\44\44f39a74ca5ee4bf5936b17e901f251c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\45\453f100e6bdae4dfd9e655927819dc85.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\45\453f100e6bdae4dfd9e655927819dc85.info
+    projectPath: Library\metadata\45\453f100e6bdae4dfd9e655927819dc85.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\47\470530e667ad4475786b28fa3187ce95
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\47\470530e667ad4475786b28fa3187ce95
+    projectPath: Library\metadata\47\470530e667ad4475786b28fa3187ce95
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\47\4763463973851254d8a76e9698e85e66
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\47\4763463973851254d8a76e9698e85e66
+    projectPath: Library\metadata\47\4763463973851254d8a76e9698e85e66
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\33\33ab16f4e18141a47ad4f40d22da12f8.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\33\33ab16f4e18141a47ad4f40d22da12f8.info
-    projectPath: Library\metadata\33\33ab16f4e18141a47ad4f40d22da12f8.info
+  - path: gameBai\Library\metadata\47\4763463973851254d8a76e9698e85e66.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\47\4763463973851254d8a76e9698e85e66.info
+    projectPath: Library\metadata\47\4763463973851254d8a76e9698e85e66.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\3e\3e0ff55fdd87ecb429644c7adb0d1f7a
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\3e\3e0ff55fdd87ecb429644c7adb0d1f7a
-    projectPath: Library\metadata\3e\3e0ff55fdd87ecb429644c7adb0d1f7a
+  - path: gameBai\Library\metadata\4a\4a84b1bd35517ce4c9ae476d001af8a1
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\4a\4a84b1bd35517ce4c9ae476d001af8a1
+    projectPath: Library\metadata\4a\4a84b1bd35517ce4c9ae476d001af8a1
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\3e\3e0ff55fdd87ecb429644c7adb0d1f7a.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\3e\3e0ff55fdd87ecb429644c7adb0d1f7a.info
-    projectPath: Library\metadata\3e\3e0ff55fdd87ecb429644c7adb0d1f7a.info
+  - path: gameBai\Library\metadata\4a\4a84b1bd35517ce4c9ae476d001af8a1.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\4a\4a84b1bd35517ce4c9ae476d001af8a1.info
+    projectPath: Library\metadata\4a\4a84b1bd35517ce4c9ae476d001af8a1.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\3f\3f41a351fb605ea42b9aaa5c69ff337a
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\3f\3f41a351fb605ea42b9aaa5c69ff337a
-    projectPath: Library\metadata\3f\3f41a351fb605ea42b9aaa5c69ff337a
+  - path: gameBai\Library\metadata\4c\4c6fe94acbb24417c988bab18cbd5209
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\4c\4c6fe94acbb24417c988bab18cbd5209
+    projectPath: Library\metadata\4c\4c6fe94acbb24417c988bab18cbd5209
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\50\50de529b6a28f4a7093045e08810a5df
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\50\50de529b6a28f4a7093045e08810a5df
+    projectPath: Library\metadata\50\50de529b6a28f4a7093045e08810a5df
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\51\510d1d319d2754ea4a47c6dd8c421ea0
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\51\510d1d319d2754ea4a47c6dd8c421ea0
+    projectPath: Library\metadata\51\510d1d319d2754ea4a47c6dd8c421ea0
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\51\51eb93fd0191b9c4a96fc5efdeefaea9
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\51\51eb93fd0191b9c4a96fc5efdeefaea9
+    projectPath: Library\metadata\51\51eb93fd0191b9c4a96fc5efdeefaea9
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\3f\3f41a351fb605ea42b9aaa5c69ff337a.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\3f\3f41a351fb605ea42b9aaa5c69ff337a.info
-    projectPath: Library\metadata\3f\3f41a351fb605ea42b9aaa5c69ff337a.info
+  - path: gameBai\Library\metadata\51\51eb93fd0191b9c4a96fc5efdeefaea9.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\51\51eb93fd0191b9c4a96fc5efdeefaea9.info
+    projectPath: Library\metadata\51\51eb93fd0191b9c4a96fc5efdeefaea9.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\3f\3fe4ad1c6e4b97a428491033dfdd3fa9
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\3f\3fe4ad1c6e4b97a428491033dfdd3fa9
-    projectPath: Library\metadata\3f\3fe4ad1c6e4b97a428491033dfdd3fa9
+  - path: gameBai\Library\metadata\54\5401052494ffeda438ccf2e84ff7e90f
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\54\5401052494ffeda438ccf2e84ff7e90f
+    projectPath: Library\metadata\54\5401052494ffeda438ccf2e84ff7e90f
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\3f\3fe4ad1c6e4b97a428491033dfdd3fa9.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\3f\3fe4ad1c6e4b97a428491033dfdd3fa9.info
-    projectPath: Library\metadata\3f\3fe4ad1c6e4b97a428491033dfdd3fa9.info
+  - path: gameBai\Library\metadata\54\5401052494ffeda438ccf2e84ff7e90f.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\54\5401052494ffeda438ccf2e84ff7e90f.info
+    projectPath: Library\metadata\54\5401052494ffeda438ccf2e84ff7e90f.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\4f\4fb8e8a071b87bd4da14315b8f262f78
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\4f\4fb8e8a071b87bd4da14315b8f262f78
-    projectPath: Library\metadata\4f\4fb8e8a071b87bd4da14315b8f262f78
+  - path: gameBai\Library\metadata\54\5490e9e761a3bf9448a28d8724da8667
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\54\5490e9e761a3bf9448a28d8724da8667
+    projectPath: Library\metadata\54\5490e9e761a3bf9448a28d8724da8667
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\4f\4fb8e8a071b87bd4da14315b8f262f78.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\4f\4fb8e8a071b87bd4da14315b8f262f78.info
-    projectPath: Library\metadata\4f\4fb8e8a071b87bd4da14315b8f262f78.info
+  - path: gameBai\Library\metadata\54\5490e9e761a3bf9448a28d8724da8667.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\54\5490e9e761a3bf9448a28d8724da8667.info
+    projectPath: Library\metadata\54\5490e9e761a3bf9448a28d8724da8667.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\4f\4ff90720effaac2408690753b6208f51
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\4f\4ff90720effaac2408690753b6208f51
-    projectPath: Library\metadata\4f\4ff90720effaac2408690753b6208f51
+  - path: gameBai\Library\metadata\56\567282f2b55ad7645a67c0e5974c17fb
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\56\567282f2b55ad7645a67c0e5974c17fb
+    projectPath: Library\metadata\56\567282f2b55ad7645a67c0e5974c17fb
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\4f\4ff90720effaac2408690753b6208f51.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\4f\4ff90720effaac2408690753b6208f51.info
-    projectPath: Library\metadata\4f\4ff90720effaac2408690753b6208f51.info
+  - path: gameBai\Library\metadata\56\567282f2b55ad7645a67c0e5974c17fb.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\56\567282f2b55ad7645a67c0e5974c17fb.info
+    projectPath: Library\metadata\56\567282f2b55ad7645a67c0e5974c17fb.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\5c\5cda3ddab56452545995a1a60148f669
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\5c\5cda3ddab56452545995a1a60148f669
-    projectPath: Library\metadata\5c\5cda3ddab56452545995a1a60148f669
+  - path: gameBai\Library\metadata\57\5799cd7050eb3084893be92fe93c7c09
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\57\5799cd7050eb3084893be92fe93c7c09
+    projectPath: Library\metadata\57\5799cd7050eb3084893be92fe93c7c09
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\5c\5cda3ddab56452545995a1a60148f669.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\5c\5cda3ddab56452545995a1a60148f669.info
-    projectPath: Library\metadata\5c\5cda3ddab56452545995a1a60148f669.info
+  - path: gameBai\Library\metadata\57\5799cd7050eb3084893be92fe93c7c09.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\57\5799cd7050eb3084893be92fe93c7c09.info
+    projectPath: Library\metadata\57\5799cd7050eb3084893be92fe93c7c09.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\6e\6e16aa5d26d99e54e8112d3171bbb3b1
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\6e\6e16aa5d26d99e54e8112d3171bbb3b1
-    projectPath: Library\metadata\6e\6e16aa5d26d99e54e8112d3171bbb3b1
+  - path: gameBai\Library\metadata\57\57b0c806ba25b48aa8a6ecb3345a4a9b
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\57\57b0c806ba25b48aa8a6ecb3345a4a9b
+    projectPath: Library\metadata\57\57b0c806ba25b48aa8a6ecb3345a4a9b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\58\589b3ddef1e4d44cea68e0144bd95434
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\58\589b3ddef1e4d44cea68e0144bd95434
+    projectPath: Library\metadata\58\589b3ddef1e4d44cea68e0144bd95434
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\59\599a5fd92bab81a4ab02e52d0b1b1c60
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\59\599a5fd92bab81a4ab02e52d0b1b1c60
+    projectPath: Library\metadata\59\599a5fd92bab81a4ab02e52d0b1b1c60
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\5e\5e4344dfd9d38804c8555577844aa3c3
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\5e\5e4344dfd9d38804c8555577844aa3c3
+    projectPath: Library\metadata\5e\5e4344dfd9d38804c8555577844aa3c3
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\6e\6e16aa5d26d99e54e8112d3171bbb3b1.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\6e\6e16aa5d26d99e54e8112d3171bbb3b1.info
-    projectPath: Library\metadata\6e\6e16aa5d26d99e54e8112d3171bbb3b1.info
+  - path: gameBai\Library\metadata\5e\5e4344dfd9d38804c8555577844aa3c3.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\5e\5e4344dfd9d38804c8555577844aa3c3.info
+    projectPath: Library\metadata\5e\5e4344dfd9d38804c8555577844aa3c3.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\6e\6e90596f057e83f4baf4bd49bd517f8d
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\6e\6e90596f057e83f4baf4bd49bd517f8d
-    projectPath: Library\metadata\6e\6e90596f057e83f4baf4bd49bd517f8d
+  - path: gameBai\Library\metadata\5e\5e7a49a6952af4d4ab2c3b038be68141
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\5e\5e7a49a6952af4d4ab2c3b038be68141
+    projectPath: Library\metadata\5e\5e7a49a6952af4d4ab2c3b038be68141
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\61\616bf1dc97bd84841b3ca05e8d0dbce2
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\61\616bf1dc97bd84841b3ca05e8d0dbce2
+    projectPath: Library\metadata\61\616bf1dc97bd84841b3ca05e8d0dbce2
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\6e\6e90596f057e83f4baf4bd49bd517f8d.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\6e\6e90596f057e83f4baf4bd49bd517f8d.info
-    projectPath: Library\metadata\6e\6e90596f057e83f4baf4bd49bd517f8d.info
+  - path: gameBai\Library\metadata\61\616bf1dc97bd84841b3ca05e8d0dbce2.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\61\616bf1dc97bd84841b3ca05e8d0dbce2.info
+    projectPath: Library\metadata\61\616bf1dc97bd84841b3ca05e8d0dbce2.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\71\710c87312f31f1c43be891588f7f70bf
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\71\710c87312f31f1c43be891588f7f70bf
-    projectPath: Library\metadata\71\710c87312f31f1c43be891588f7f70bf
+  - path: gameBai\Library\metadata\61\617202f4e2bed4ef8acccfd6c1ecd6fa
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\61\617202f4e2bed4ef8acccfd6c1ecd6fa
+    projectPath: Library\metadata\61\617202f4e2bed4ef8acccfd6c1ecd6fa
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\64\645165c8169474bfbbeb8fb0bcfd26f5
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\64\645165c8169474bfbbeb8fb0bcfd26f5
+    projectPath: Library\metadata\64\645165c8169474bfbbeb8fb0bcfd26f5
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\65\65d58d50c3db54f979b1ffae3777d74b
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\65\65d58d50c3db54f979b1ffae3777d74b
+    projectPath: Library\metadata\65\65d58d50c3db54f979b1ffae3777d74b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\65\65dabdbcd9144fc4881208106cc6ab84
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\65\65dabdbcd9144fc4881208106cc6ab84
+    projectPath: Library\metadata\65\65dabdbcd9144fc4881208106cc6ab84
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\71\710c87312f31f1c43be891588f7f70bf.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\71\710c87312f31f1c43be891588f7f70bf.info
-    projectPath: Library\metadata\71\710c87312f31f1c43be891588f7f70bf.info
+  - path: gameBai\Library\metadata\65\65dabdbcd9144fc4881208106cc6ab84.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\65\65dabdbcd9144fc4881208106cc6ab84.info
+    projectPath: Library\metadata\65\65dabdbcd9144fc4881208106cc6ab84.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\79\79e65dcf49963084a83f06cebf4d7a4b
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\79\79e65dcf49963084a83f06cebf4d7a4b
-    projectPath: Library\metadata\79\79e65dcf49963084a83f06cebf4d7a4b
+  - path: gameBai\Library\metadata\67\677b888d5eb13cd43b18b956c676e517
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\67\677b888d5eb13cd43b18b956c676e517
+    projectPath: Library\metadata\67\677b888d5eb13cd43b18b956c676e517
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\79\79e65dcf49963084a83f06cebf4d7a4b.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\79\79e65dcf49963084a83f06cebf4d7a4b.info
-    projectPath: Library\metadata\79\79e65dcf49963084a83f06cebf4d7a4b.info
+  - path: gameBai\Library\metadata\67\677b888d5eb13cd43b18b956c676e517.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\67\677b888d5eb13cd43b18b956c676e517.info
+    projectPath: Library\metadata\67\677b888d5eb13cd43b18b956c676e517.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\7e\7eb995ae06e31d043be2e51ca9aaab54
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\7e\7eb995ae06e31d043be2e51ca9aaab54
-    projectPath: Library\metadata\7e\7eb995ae06e31d043be2e51ca9aaab54
+  - path: gameBai\Library\metadata\6d\6d0c580cbfab5064f97ecf392be03679
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\6d\6d0c580cbfab5064f97ecf392be03679
+    projectPath: Library\metadata\6d\6d0c580cbfab5064f97ecf392be03679
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\7e\7eb995ae06e31d043be2e51ca9aaab54.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\7e\7eb995ae06e31d043be2e51ca9aaab54.info
-    projectPath: Library\metadata\7e\7eb995ae06e31d043be2e51ca9aaab54.info
+  - path: gameBai\Library\metadata\6d\6d0c580cbfab5064f97ecf392be03679.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\6d\6d0c580cbfab5064f97ecf392be03679.info
+    projectPath: Library\metadata\6d\6d0c580cbfab5064f97ecf392be03679.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\84\84329beb78d83c249b55bb47aa68aa1c
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\84\84329beb78d83c249b55bb47aa68aa1c
-    projectPath: Library\metadata\84\84329beb78d83c249b55bb47aa68aa1c
+  - path: gameBai\Library\metadata\6f\6f516f1ec21a54a59a92bf99db2d9535
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\6f\6f516f1ec21a54a59a92bf99db2d9535
+    projectPath: Library\metadata\6f\6f516f1ec21a54a59a92bf99db2d9535
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\70\706bb3d758662234983b9733d173d283
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\70\706bb3d758662234983b9733d173d283
+    projectPath: Library\metadata\70\706bb3d758662234983b9733d173d283
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\84\84329beb78d83c249b55bb47aa68aa1c.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\84\84329beb78d83c249b55bb47aa68aa1c.info
-    projectPath: Library\metadata\84\84329beb78d83c249b55bb47aa68aa1c.info
+  - path: gameBai\Library\metadata\70\706bb3d758662234983b9733d173d283.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\70\706bb3d758662234983b9733d173d283.info
+    projectPath: Library\metadata\70\706bb3d758662234983b9733d173d283.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\88\88141aafee8b952419a7f6909e4679a7
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\88\88141aafee8b952419a7f6909e4679a7
-    projectPath: Library\metadata\88\88141aafee8b952419a7f6909e4679a7
+  - path: gameBai\Library\metadata\71\71b11355001648444b41d17fd36c150d.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\71\71b11355001648444b41d17fd36c150d.info
+    projectPath: Library\metadata\71\71b11355001648444b41d17fd36c150d.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\71\71c1514a6bd24e1e882cebbe1904ce04
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\71\71c1514a6bd24e1e882cebbe1904ce04
+    projectPath: Library\metadata\71\71c1514a6bd24e1e882cebbe1904ce04
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\75\75295ae7e5501044bbd8b44745bfbc72
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\75\75295ae7e5501044bbd8b44745bfbc72
+    projectPath: Library\metadata\75\75295ae7e5501044bbd8b44745bfbc72
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\88\88141aafee8b952419a7f6909e4679a7.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\88\88141aafee8b952419a7f6909e4679a7.info
-    projectPath: Library\metadata\88\88141aafee8b952419a7f6909e4679a7.info
+  - path: gameBai\Library\metadata\75\75295ae7e5501044bbd8b44745bfbc72.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\75\75295ae7e5501044bbd8b44745bfbc72.info
+    projectPath: Library\metadata\75\75295ae7e5501044bbd8b44745bfbc72.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\89\890d6a3481d5df4439b8fbff5ac858bf
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\89\890d6a3481d5df4439b8fbff5ac858bf
-    projectPath: Library\metadata\89\890d6a3481d5df4439b8fbff5ac858bf
+  - path: gameBai\Library\metadata\76\768d77435df35443bad74aedc993c0cf
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\76\768d77435df35443bad74aedc993c0cf
+    projectPath: Library\metadata\76\768d77435df35443bad74aedc993c0cf
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\78\782c49e6e68074dc7ba12c95537825ce
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\78\782c49e6e68074dc7ba12c95537825ce
+    projectPath: Library\metadata\78\782c49e6e68074dc7ba12c95537825ce
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\78\782de34c17796430ba8d0ceddb60944e
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\78\782de34c17796430ba8d0ceddb60944e
+    projectPath: Library\metadata\78\782de34c17796430ba8d0ceddb60944e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\78\78759e25237a7430587982cd92a2a0d8
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\78\78759e25237a7430587982cd92a2a0d8
+    projectPath: Library\metadata\78\78759e25237a7430587982cd92a2a0d8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\79\7927683d1fc5848b5abfb54ebb1028ec.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\79\7927683d1fc5848b5abfb54ebb1028ec.info
+    projectPath: Library\metadata\79\7927683d1fc5848b5abfb54ebb1028ec.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\79\792bbc3f3f52a244da5b04f771457b9c
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\79\792bbc3f3f52a244da5b04f771457b9c
+    projectPath: Library\metadata\79\792bbc3f3f52a244da5b04f771457b9c
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\89\890d6a3481d5df4439b8fbff5ac858bf.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\89\890d6a3481d5df4439b8fbff5ac858bf.info
-    projectPath: Library\metadata\89\890d6a3481d5df4439b8fbff5ac858bf.info
+  - path: gameBai\Library\metadata\79\792bbc3f3f52a244da5b04f771457b9c.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\79\792bbc3f3f52a244da5b04f771457b9c.info
+    projectPath: Library\metadata\79\792bbc3f3f52a244da5b04f771457b9c.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\8c\8c7c684371cc86643a1d0f2b5ba8d9f9
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\8c\8c7c684371cc86643a1d0f2b5ba8d9f9
-    projectPath: Library\metadata\8c\8c7c684371cc86643a1d0f2b5ba8d9f9
+  - path: gameBai\Library\metadata\7a\7aad9e80c95b4991a1f4d017c8caf386
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\7a\7aad9e80c95b4991a1f4d017c8caf386
+    projectPath: Library\metadata\7a\7aad9e80c95b4991a1f4d017c8caf386
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\7a\7ab6289a0576f59419c9effd94bb6ef6
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\7a\7ab6289a0576f59419c9effd94bb6ef6
+    projectPath: Library\metadata\7a\7ab6289a0576f59419c9effd94bb6ef6
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\8c\8c7c684371cc86643a1d0f2b5ba8d9f9.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\8c\8c7c684371cc86643a1d0f2b5ba8d9f9.info
-    projectPath: Library\metadata\8c\8c7c684371cc86643a1d0f2b5ba8d9f9.info
+  - path: gameBai\Library\metadata\7a\7ab6289a0576f59419c9effd94bb6ef6.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\7a\7ab6289a0576f59419c9effd94bb6ef6.info
+    projectPath: Library\metadata\7a\7ab6289a0576f59419c9effd94bb6ef6.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\96\962118596a744dc4a9f19163fd8a8456
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\96\962118596a744dc4a9f19163fd8a8456
-    projectPath: Library\metadata\96\962118596a744dc4a9f19163fd8a8456
+  - path: gameBai\Library\metadata\7b\7b186a0d29a784d81809e8a5471d155e
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\7b\7b186a0d29a784d81809e8a5471d155e
+    projectPath: Library\metadata\7b\7b186a0d29a784d81809e8a5471d155e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\7e\7e4b2b6a72c09b347bd95e9ec96deaa7
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\7e\7e4b2b6a72c09b347bd95e9ec96deaa7
+    projectPath: Library\metadata\7e\7e4b2b6a72c09b347bd95e9ec96deaa7
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\96\962118596a744dc4a9f19163fd8a8456.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\96\962118596a744dc4a9f19163fd8a8456.info
-    projectPath: Library\metadata\96\962118596a744dc4a9f19163fd8a8456.info
+  - path: gameBai\Library\metadata\7e\7e4b2b6a72c09b347bd95e9ec96deaa7.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\7e\7e4b2b6a72c09b347bd95e9ec96deaa7.info
+    projectPath: Library\metadata\7e\7e4b2b6a72c09b347bd95e9ec96deaa7.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\97\97dc1ac2861543143b656b945cb747f1
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\97\97dc1ac2861543143b656b945cb747f1
-    projectPath: Library\metadata\97\97dc1ac2861543143b656b945cb747f1
+  - path: gameBai\Library\metadata\80\804f8e2fdce14479b7d4c3ca3dded60d
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\80\804f8e2fdce14479b7d4c3ca3dded60d
+    projectPath: Library\metadata\80\804f8e2fdce14479b7d4c3ca3dded60d
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\81\811f7f1f5920641c0a9233503492c9ba
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\81\811f7f1f5920641c0a9233503492c9ba
+    projectPath: Library\metadata\81\811f7f1f5920641c0a9233503492c9ba
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\82\821f5482c5a3f4389885f4432433f56f
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\82\821f5482c5a3f4389885f4432433f56f
+    projectPath: Library\metadata\82\821f5482c5a3f4389885f4432433f56f
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\82\82a9e7c931c0b1e438fd041d37495d54
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\82\82a9e7c931c0b1e438fd041d37495d54
+    projectPath: Library\metadata\82\82a9e7c931c0b1e438fd041d37495d54
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\97\97dc1ac2861543143b656b945cb747f1.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\97\97dc1ac2861543143b656b945cb747f1.info
-    projectPath: Library\metadata\97\97dc1ac2861543143b656b945cb747f1.info
+  - path: gameBai\Library\metadata\82\82a9e7c931c0b1e438fd041d37495d54.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\82\82a9e7c931c0b1e438fd041d37495d54.info
+    projectPath: Library\metadata\82\82a9e7c931c0b1e438fd041d37495d54.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\9a\9ae75cedb7c1f6e45abac8863100bb80
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\9a\9ae75cedb7c1f6e45abac8863100bb80
-    projectPath: Library\metadata\9a\9ae75cedb7c1f6e45abac8863100bb80
+  - path: gameBai\Library\metadata\86\86c008322e7c647149878156c5b81940.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\86\86c008322e7c647149878156c5b81940.info
+    projectPath: Library\metadata\86\86c008322e7c647149878156c5b81940.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\87\876d47a520ae34f81a97792e1afed14b
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\87\876d47a520ae34f81a97792e1afed14b
+    projectPath: Library\metadata\87\876d47a520ae34f81a97792e1afed14b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\88\882f1a4147a284f028899b9c018e63eb
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\88\882f1a4147a284f028899b9c018e63eb
+    projectPath: Library\metadata\88\882f1a4147a284f028899b9c018e63eb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\88\884f8f0e4025a420893d3a8d1d3063e1
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\88\884f8f0e4025a420893d3a8d1d3063e1
+    projectPath: Library\metadata\88\884f8f0e4025a420893d3a8d1d3063e1
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\8a\8aa8171e088f94069bbd1978a053f7dd
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\8a\8aa8171e088f94069bbd1978a053f7dd
+    projectPath: Library\metadata\8a\8aa8171e088f94069bbd1978a053f7dd
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\8b\8b0f0c8689876421c90e7b60f096325a
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\8b\8b0f0c8689876421c90e7b60f096325a
+    projectPath: Library\metadata\8b\8b0f0c8689876421c90e7b60f096325a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\8b\8b4a8234f532f4b34aba0ab70400d90d
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\8b\8b4a8234f532f4b34aba0ab70400d90d
+    projectPath: Library\metadata\8b\8b4a8234f532f4b34aba0ab70400d90d
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\8d\8d39964500e495e40b55f65a4f191ce8
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\8d\8d39964500e495e40b55f65a4f191ce8
+    projectPath: Library\metadata\8d\8d39964500e495e40b55f65a4f191ce8
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\9a\9ae75cedb7c1f6e45abac8863100bb80.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\9a\9ae75cedb7c1f6e45abac8863100bb80.info
-    projectPath: Library\metadata\9a\9ae75cedb7c1f6e45abac8863100bb80.info
+  - path: gameBai\Library\metadata\8d\8d39964500e495e40b55f65a4f191ce8.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\8d\8d39964500e495e40b55f65a4f191ce8.info
+    projectPath: Library\metadata\8d\8d39964500e495e40b55f65a4f191ce8.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\9c\9ce78389d88df5b479e4ee4b065c7bbd
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\9c\9ce78389d88df5b479e4ee4b065c7bbd
-    projectPath: Library\metadata\9c\9ce78389d88df5b479e4ee4b065c7bbd
+  - path: gameBai\Library\metadata\90\90791303b72ec4ae198f99d637dfdf6c
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\90\90791303b72ec4ae198f99d637dfdf6c
+    projectPath: Library\metadata\90\90791303b72ec4ae198f99d637dfdf6c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\93\93f7ca1a9c5c945a89e884f9611c70f0
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\93\93f7ca1a9c5c945a89e884f9611c70f0
+    projectPath: Library\metadata\93\93f7ca1a9c5c945a89e884f9611c70f0
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\94\9405b416c158444b19157040fd664533
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\94\9405b416c158444b19157040fd664533
+    projectPath: Library\metadata\94\9405b416c158444b19157040fd664533
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\96\96626a3e271e94e76a848c68828fbbac
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\96\96626a3e271e94e76a848c68828fbbac
+    projectPath: Library\metadata\96\96626a3e271e94e76a848c68828fbbac
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\9b\9b24f485263ff684a8e0b6a3be9903ad
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\9b\9b24f485263ff684a8e0b6a3be9903ad
+    projectPath: Library\metadata\9b\9b24f485263ff684a8e0b6a3be9903ad
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\9c\9ce78389d88df5b479e4ee4b065c7bbd.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\9c\9ce78389d88df5b479e4ee4b065c7bbd.info
-    projectPath: Library\metadata\9c\9ce78389d88df5b479e4ee4b065c7bbd.info
+  - path: gameBai\Library\metadata\9b\9b24f485263ff684a8e0b6a3be9903ad.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\9b\9b24f485263ff684a8e0b6a3be9903ad.info
+    projectPath: Library\metadata\9b\9b24f485263ff684a8e0b6a3be9903ad.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\a0\a098c8fce83c0bf4dad3560362581c6e
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\a0\a098c8fce83c0bf4dad3560362581c6e
-    projectPath: Library\metadata\a0\a098c8fce83c0bf4dad3560362581c6e
+  - path: gameBai\Library\metadata\9e\9ef870565e4b0a54199f2bb8af2bef1c
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\9e\9ef870565e4b0a54199f2bb8af2bef1c
+    projectPath: Library\metadata\9e\9ef870565e4b0a54199f2bb8af2bef1c
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\a0\a098c8fce83c0bf4dad3560362581c6e.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\a0\a098c8fce83c0bf4dad3560362581c6e.info
-    projectPath: Library\metadata\a0\a098c8fce83c0bf4dad3560362581c6e.info
+  - path: gameBai\Library\metadata\9e\9ef870565e4b0a54199f2bb8af2bef1c.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\9e\9ef870565e4b0a54199f2bb8af2bef1c.info
+    projectPath: Library\metadata\9e\9ef870565e4b0a54199f2bb8af2bef1c.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\a3\a3b7d68c329aa3d4d8543f09c1ff325f
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\a3\a3b7d68c329aa3d4d8543f09c1ff325f
-    projectPath: Library\metadata\a3\a3b7d68c329aa3d4d8543f09c1ff325f
+  - path: gameBai\Library\metadata\a0\a0386f7d33e5e2444a2d199a3fbf97db
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\a0\a0386f7d33e5e2444a2d199a3fbf97db
+    projectPath: Library\metadata\a0\a0386f7d33e5e2444a2d199a3fbf97db
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\a3\a3b7d68c329aa3d4d8543f09c1ff325f.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\a3\a3b7d68c329aa3d4d8543f09c1ff325f.info
-    projectPath: Library\metadata\a3\a3b7d68c329aa3d4d8543f09c1ff325f.info
+  - path: gameBai\Library\metadata\a0\a0386f7d33e5e2444a2d199a3fbf97db.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\a0\a0386f7d33e5e2444a2d199a3fbf97db.info
+    projectPath: Library\metadata\a0\a0386f7d33e5e2444a2d199a3fbf97db.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\a5\a5b3bf891c52a3543aa8d6246753eaf4
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\a5\a5b3bf891c52a3543aa8d6246753eaf4
-    projectPath: Library\metadata\a5\a5b3bf891c52a3543aa8d6246753eaf4
+  - path: gameBai\Library\metadata\a1\a10564aae782c458cbf1de024f4870f7
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\a1\a10564aae782c458cbf1de024f4870f7
+    projectPath: Library\metadata\a1\a10564aae782c458cbf1de024f4870f7
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\a2\a2d895ccfaf94d5fa62c9208f65623c7
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\a2\a2d895ccfaf94d5fa62c9208f65623c7
+    projectPath: Library\metadata\a2\a2d895ccfaf94d5fa62c9208f65623c7
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\a3\a30e59ca9f68d46db88323ac18f49e31
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\a3\a30e59ca9f68d46db88323ac18f49e31
+    projectPath: Library\metadata\a3\a30e59ca9f68d46db88323ac18f49e31
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\a4\a45405e95e6bc2b4b8fa97be67854dbc
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\a4\a45405e95e6bc2b4b8fa97be67854dbc
+    projectPath: Library\metadata\a4\a45405e95e6bc2b4b8fa97be67854dbc
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\a5\a5b3bf891c52a3543aa8d6246753eaf4.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\a5\a5b3bf891c52a3543aa8d6246753eaf4.info
-    projectPath: Library\metadata\a5\a5b3bf891c52a3543aa8d6246753eaf4.info
+  - path: gameBai\Library\metadata\a4\a45405e95e6bc2b4b8fa97be67854dbc.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\a4\a45405e95e6bc2b4b8fa97be67854dbc.info
+    projectPath: Library\metadata\a4\a45405e95e6bc2b4b8fa97be67854dbc.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\a7\a7c4cefa8da22014bb864c81e05517ba
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\a7\a7c4cefa8da22014bb864c81e05517ba
-    projectPath: Library\metadata\a7\a7c4cefa8da22014bb864c81e05517ba
+  - path: gameBai\Library\metadata\a4\a483595b0257945278dc75c5ff7d82ee
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\a4\a483595b0257945278dc75c5ff7d82ee
+    projectPath: Library\metadata\a4\a483595b0257945278dc75c5ff7d82ee
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\a5\a571de1bea3cb4c9784493c6f1b0b76c
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\a5\a571de1bea3cb4c9784493c6f1b0b76c
+    projectPath: Library\metadata\a5\a571de1bea3cb4c9784493c6f1b0b76c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\a5\a592d27ead6884163839d4f8da3977ef
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\a5\a592d27ead6884163839d4f8da3977ef
+    projectPath: Library\metadata\a5\a592d27ead6884163839d4f8da3977ef
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\a5\a5ebb11c6fc3a2f498bd89593f7744aa
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\a5\a5ebb11c6fc3a2f498bd89593f7744aa
+    projectPath: Library\metadata\a5\a5ebb11c6fc3a2f498bd89593f7744aa
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\a6\a6842a74831964edc8fefa1c0aed89dc.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\a6\a6842a74831964edc8fefa1c0aed89dc.info
+    projectPath: Library\metadata\a6\a6842a74831964edc8fefa1c0aed89dc.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\a7\a7c91a123806d41a0873fcdcb629b1c4
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\a7\a7c91a123806d41a0873fcdcb629b1c4
+    projectPath: Library\metadata\a7\a7c91a123806d41a0873fcdcb629b1c4
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\ab\abce648262b4c9a42a64e25c272bca02
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\ab\abce648262b4c9a42a64e25c272bca02
+    projectPath: Library\metadata\ab\abce648262b4c9a42a64e25c272bca02
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\a7\a7c4cefa8da22014bb864c81e05517ba.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\a7\a7c4cefa8da22014bb864c81e05517ba.info
-    projectPath: Library\metadata\a7\a7c4cefa8da22014bb864c81e05517ba.info
+  - path: gameBai\Library\metadata\ab\abce648262b4c9a42a64e25c272bca02.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\ab\abce648262b4c9a42a64e25c272bca02.info
+    projectPath: Library\metadata\ab\abce648262b4c9a42a64e25c272bca02.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\ae\ae8cf76d579e4a84b808151fcf763d24
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\ae\ae8cf76d579e4a84b808151fcf763d24
-    projectPath: Library\metadata\ae\ae8cf76d579e4a84b808151fcf763d24
+  - path: gameBai\Library\metadata\ac\ac281230df7b14becb40b3c479f1b429
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\ac\ac281230df7b14becb40b3c479f1b429
+    projectPath: Library\metadata\ac\ac281230df7b14becb40b3c479f1b429
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\ad\adee0c1377ef8b2489060e152dd0d119
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\ad\adee0c1377ef8b2489060e152dd0d119
+    projectPath: Library\metadata\ad\adee0c1377ef8b2489060e152dd0d119
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\b0\b025f6f8a47be46418bcb0ed1050cfb4
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\b0\b025f6f8a47be46418bcb0ed1050cfb4
+    projectPath: Library\metadata\b0\b025f6f8a47be46418bcb0ed1050cfb4
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\b0\b0bb2afc5cd494e6f9b44455a0fc22f8
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\b0\b0bb2afc5cd494e6f9b44455a0fc22f8
+    projectPath: Library\metadata\b0\b0bb2afc5cd494e6f9b44455a0fc22f8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\b1\b146e0fbfba5484d91c800907c51799f
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\b1\b146e0fbfba5484d91c800907c51799f
+    projectPath: Library\metadata\b1\b146e0fbfba5484d91c800907c51799f
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\b5\b52e557db2c2b4eebb10444f1d582029.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\b5\b52e557db2c2b4eebb10444f1d582029.info
+    projectPath: Library\metadata\b5\b52e557db2c2b4eebb10444f1d582029.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\b5\b5366b8adc0f44b3c9cb261a3f752d7a
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\b5\b5366b8adc0f44b3c9cb261a3f752d7a
+    projectPath: Library\metadata\b5\b5366b8adc0f44b3c9cb261a3f752d7a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\ba\baed137a26b150b479524e99ac462da2
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\ba\baed137a26b150b479524e99ac462da2
+    projectPath: Library\metadata\ba\baed137a26b150b479524e99ac462da2
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\ae\ae8cf76d579e4a84b808151fcf763d24.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\ae\ae8cf76d579e4a84b808151fcf763d24.info
-    projectPath: Library\metadata\ae\ae8cf76d579e4a84b808151fcf763d24.info
+  - path: gameBai\Library\metadata\ba\baed137a26b150b479524e99ac462da2.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\ba\baed137a26b150b479524e99ac462da2.info
+    projectPath: Library\metadata\ba\baed137a26b150b479524e99ac462da2.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\b2\b2f1e4a5bcf3bf342b77f6a2dae588ba
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\b2\b2f1e4a5bcf3bf342b77f6a2dae588ba
-    projectPath: Library\metadata\b2\b2f1e4a5bcf3bf342b77f6a2dae588ba
+  - path: gameBai\Library\metadata\bb\bb15697a279504a90b825c44dc355047
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\bb\bb15697a279504a90b825c44dc355047
+    projectPath: Library\metadata\bb\bb15697a279504a90b825c44dc355047
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Library\metadata\b2\b2f1e4a5bcf3bf342b77f6a2dae588ba.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\b2\b2f1e4a5bcf3bf342b77f6a2dae588ba.info
-    projectPath: Library\metadata\b2\b2f1e4a5bcf3bf342b77f6a2dae588ba.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Library\metadata\b7\b7c61f822282d0e46a0ccab9b348ca4b
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\b7\b7c61f822282d0e46a0ccab9b348ca4b
-    projectPath: Library\metadata\b7\b7c61f822282d0e46a0ccab9b348ca4b
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Library\metadata\b7\b7c61f822282d0e46a0ccab9b348ca4b.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\b7\b7c61f822282d0e46a0ccab9b348ca4b.info
-    projectPath: Library\metadata\b7\b7c61f822282d0e46a0ccab9b348ca4b.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Library\metadata\b8\b85404221cb4d5142afcfdb532c7df82
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\b8\b85404221cb4d5142afcfdb532c7df82
-    projectPath: Library\metadata\b8\b85404221cb4d5142afcfdb532c7df82
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Library\metadata\b8\b85404221cb4d5142afcfdb532c7df82.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\b8\b85404221cb4d5142afcfdb532c7df82.info
-    projectPath: Library\metadata\b8\b85404221cb4d5142afcfdb532c7df82.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: gameBai\Library\metadata\bb\bb45e9194a9e7604c940b04659b0f06b
     fullPath: E:\do-an-c-\gameBai\Library\metadata\bb\bb45e9194a9e7604c940b04659b0f06b
     projectPath: Library\metadata\bb\bb45e9194a9e7604c940b04659b0f06b
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: gameBai\Library\metadata\bb\bb45e9194a9e7604c940b04659b0f06b.info
     fullPath: E:\do-an-c-\gameBai\Library\metadata\bb\bb45e9194a9e7604c940b04659b0f06b.info
     projectPath: Library\metadata\bb\bb45e9194a9e7604c940b04659b0f06b.info
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Library\metadata\bc\bcd3fe896ed3a5047aee34da36d6c052
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\bc\bcd3fe896ed3a5047aee34da36d6c052
-    projectPath: Library\metadata\bc\bcd3fe896ed3a5047aee34da36d6c052
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\bb\bb717e2402f8f704fa9d2f2246424d8c
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\bb\bb717e2402f8f704fa9d2f2246424d8c
+    projectPath: Library\metadata\bb\bb717e2402f8f704fa9d2f2246424d8c
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\bc\bcd3fe896ed3a5047aee34da36d6c052.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\bc\bcd3fe896ed3a5047aee34da36d6c052.info
-    projectPath: Library\metadata\bc\bcd3fe896ed3a5047aee34da36d6c052.info
+  - path: gameBai\Library\metadata\bb\bb717e2402f8f704fa9d2f2246424d8c.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\bb\bb717e2402f8f704fa9d2f2246424d8c.info
+    projectPath: Library\metadata\bb\bb717e2402f8f704fa9d2f2246424d8c.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\c3\c3c0033e606b92c4989b29f6d4c62678
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\c3\c3c0033e606b92c4989b29f6d4c62678
-    projectPath: Library\metadata\c3\c3c0033e606b92c4989b29f6d4c62678
+  - path: gameBai\Library\metadata\bc\bcd27da1c9ae94d2cafe094482a20792
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\bc\bcd27da1c9ae94d2cafe094482a20792
+    projectPath: Library\metadata\bc\bcd27da1c9ae94d2cafe094482a20792
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\bf\bff25ea4cf0d3d841b6787b9f649f21b
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\bf\bff25ea4cf0d3d841b6787b9f649f21b
+    projectPath: Library\metadata\bf\bff25ea4cf0d3d841b6787b9f649f21b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\c0\c09652e660b34484cb10d35ed2206df5
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\c0\c09652e660b34484cb10d35ed2206df5
+    projectPath: Library\metadata\c0\c09652e660b34484cb10d35ed2206df5
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\c0\c0f5167b9c880894d901b6fa961f8fd0
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\c0\c0f5167b9c880894d901b6fa961f8fd0
+    projectPath: Library\metadata\c0\c0f5167b9c880894d901b6fa961f8fd0
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\c3\c3c0033e606b92c4989b29f6d4c62678.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\c3\c3c0033e606b92c4989b29f6d4c62678.info
-    projectPath: Library\metadata\c3\c3c0033e606b92c4989b29f6d4c62678.info
+  - path: gameBai\Library\metadata\c0\c0f5167b9c880894d901b6fa961f8fd0.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\c0\c0f5167b9c880894d901b6fa961f8fd0.info
+    projectPath: Library\metadata\c0\c0f5167b9c880894d901b6fa961f8fd0.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\c6\c632d24168aebc54390b4b77ce91b039
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\c6\c632d24168aebc54390b4b77ce91b039
-    projectPath: Library\metadata\c6\c632d24168aebc54390b4b77ce91b039
+  - path: gameBai\Library\metadata\c1\c123610a8dd399740b5a94bc8f082a4f
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\c1\c123610a8dd399740b5a94bc8f082a4f
+    projectPath: Library\metadata\c1\c123610a8dd399740b5a94bc8f082a4f
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\c6\c632d24168aebc54390b4b77ce91b039.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\c6\c632d24168aebc54390b4b77ce91b039.info
-    projectPath: Library\metadata\c6\c632d24168aebc54390b4b77ce91b039.info
+  - path: gameBai\Library\metadata\c1\c123610a8dd399740b5a94bc8f082a4f.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\c1\c123610a8dd399740b5a94bc8f082a4f.info
+    projectPath: Library\metadata\c1\c123610a8dd399740b5a94bc8f082a4f.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\cb\cb09a7db501a47844b6b7c8d48e85ab0
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\cb\cb09a7db501a47844b6b7c8d48e85ab0
-    projectPath: Library\metadata\cb\cb09a7db501a47844b6b7c8d48e85ab0
+  - path: gameBai\Library\metadata\c1\c1396a569e9ba314990c1ee1343284fc
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\c1\c1396a569e9ba314990c1ee1343284fc
+    projectPath: Library\metadata\c1\c1396a569e9ba314990c1ee1343284fc
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\cb\cb09a7db501a47844b6b7c8d48e85ab0.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\cb\cb09a7db501a47844b6b7c8d48e85ab0.info
-    projectPath: Library\metadata\cb\cb09a7db501a47844b6b7c8d48e85ab0.info
+  - path: gameBai\Library\metadata\c1\c1396a569e9ba314990c1ee1343284fc.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\c1\c1396a569e9ba314990c1ee1343284fc.info
+    projectPath: Library\metadata\c1\c1396a569e9ba314990c1ee1343284fc.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\cd\cd14cd5cd93b7224fbbf57bd115a608a
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\cd\cd14cd5cd93b7224fbbf57bd115a608a
-    projectPath: Library\metadata\cd\cd14cd5cd93b7224fbbf57bd115a608a
+  - path: gameBai\Library\metadata\c2\c235b5209d8662842a396826f92bda3c
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\c2\c235b5209d8662842a396826f92bda3c
+    projectPath: Library\metadata\c2\c235b5209d8662842a396826f92bda3c
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\cd\cd14cd5cd93b7224fbbf57bd115a608a.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\cd\cd14cd5cd93b7224fbbf57bd115a608a.info
-    projectPath: Library\metadata\cd\cd14cd5cd93b7224fbbf57bd115a608a.info
+  - path: gameBai\Library\metadata\c2\c235b5209d8662842a396826f92bda3c.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\c2\c235b5209d8662842a396826f92bda3c.info
+    projectPath: Library\metadata\c2\c235b5209d8662842a396826f92bda3c.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\d2\d207b2bd050e7ed49b96c2b13aabdb49
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\d2\d207b2bd050e7ed49b96c2b13aabdb49
-    projectPath: Library\metadata\d2\d207b2bd050e7ed49b96c2b13aabdb49
+  - path: gameBai\Library\metadata\c4\c4c1445ee948a4124bfa9fb818a17e36
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\c4\c4c1445ee948a4124bfa9fb818a17e36
+    projectPath: Library\metadata\c4\c4c1445ee948a4124bfa9fb818a17e36
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\c5\c502ce20d15f0a742a389d545d064c49
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\c5\c502ce20d15f0a742a389d545d064c49
+    projectPath: Library\metadata\c5\c502ce20d15f0a742a389d545d064c49
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\d2\d207b2bd050e7ed49b96c2b13aabdb49.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\d2\d207b2bd050e7ed49b96c2b13aabdb49.info
-    projectPath: Library\metadata\d2\d207b2bd050e7ed49b96c2b13aabdb49.info
+  - path: gameBai\Library\metadata\c5\c502ce20d15f0a742a389d545d064c49.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\c5\c502ce20d15f0a742a389d545d064c49.info
+    projectPath: Library\metadata\c5\c502ce20d15f0a742a389d545d064c49.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\d4\d468a29217d23e9419285a08d1cdab67
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\d4\d468a29217d23e9419285a08d1cdab67
-    projectPath: Library\metadata\d4\d468a29217d23e9419285a08d1cdab67
+  - path: gameBai\Library\metadata\c5\c5ba7626a737840ff88a3bd84b100482.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\c5\c5ba7626a737840ff88a3bd84b100482.info
+    projectPath: Library\metadata\c5\c5ba7626a737840ff88a3bd84b100482.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\c7\c754112a02f354a6696fa4f2b99e95a5
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\c7\c754112a02f354a6696fa4f2b99e95a5
+    projectPath: Library\metadata\c7\c754112a02f354a6696fa4f2b99e95a5
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\c7\c786248494be6489bbfa006bdf59c773
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\c7\c786248494be6489bbfa006bdf59c773
+    projectPath: Library\metadata\c7\c786248494be6489bbfa006bdf59c773
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\c8\c8b2fb5f6020f414cb152a2ca9edfe51
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\c8\c8b2fb5f6020f414cb152a2ca9edfe51
+    projectPath: Library\metadata\c8\c8b2fb5f6020f414cb152a2ca9edfe51
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\d4\d468a29217d23e9419285a08d1cdab67.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\d4\d468a29217d23e9419285a08d1cdab67.info
-    projectPath: Library\metadata\d4\d468a29217d23e9419285a08d1cdab67.info
+  - path: gameBai\Library\metadata\c8\c8b2fb5f6020f414cb152a2ca9edfe51.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\c8\c8b2fb5f6020f414cb152a2ca9edfe51.info
+    projectPath: Library\metadata\c8\c8b2fb5f6020f414cb152a2ca9edfe51.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\da\dab5ac659bb77774b81cf8703ae1d4f3
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\da\dab5ac659bb77774b81cf8703ae1d4f3
-    projectPath: Library\metadata\da\dab5ac659bb77774b81cf8703ae1d4f3
+  - path: gameBai\Library\metadata\c9\c95a332f415514f49968b25fb61e20c7
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\c9\c95a332f415514f49968b25fb61e20c7
+    projectPath: Library\metadata\c9\c95a332f415514f49968b25fb61e20c7
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\da\dab5ac659bb77774b81cf8703ae1d4f3.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\da\dab5ac659bb77774b81cf8703ae1d4f3.info
-    projectPath: Library\metadata\da\dab5ac659bb77774b81cf8703ae1d4f3.info
+  - path: gameBai\Library\metadata\c9\c95a332f415514f49968b25fb61e20c7.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\c9\c95a332f415514f49968b25fb61e20c7.info
+    projectPath: Library\metadata\c9\c95a332f415514f49968b25fb61e20c7.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\dd\dd9e492c64a4e424f8c2016f6e816af5
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\dd\dd9e492c64a4e424f8c2016f6e816af5
-    projectPath: Library\metadata\dd\dd9e492c64a4e424f8c2016f6e816af5
+  - path: gameBai\Library\metadata\c9\c99bfe4fc4e5c4dc3917c14075acd117.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\c9\c99bfe4fc4e5c4dc3917c14075acd117.info
+    projectPath: Library\metadata\c9\c99bfe4fc4e5c4dc3917c14075acd117.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\cc\cc1b50b5501f748da8bec762294d9136.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\cc\cc1b50b5501f748da8bec762294d9136.info
+    projectPath: Library\metadata\cc\cc1b50b5501f748da8bec762294d9136.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\ce\ce4395ccdb12cf62fca756358be1a892.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\ce\ce4395ccdb12cf62fca756358be1a892.info
+    projectPath: Library\metadata\ce\ce4395ccdb12cf62fca756358be1a892.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\ce\cea01b2bd4a2f1341804f5043a558f9c
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\ce\cea01b2bd4a2f1341804f5043a558f9c
+    projectPath: Library\metadata\ce\cea01b2bd4a2f1341804f5043a558f9c
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\dd\dd9e492c64a4e424f8c2016f6e816af5.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\dd\dd9e492c64a4e424f8c2016f6e816af5.info
-    projectPath: Library\metadata\dd\dd9e492c64a4e424f8c2016f6e816af5.info
+  - path: gameBai\Library\metadata\ce\cea01b2bd4a2f1341804f5043a558f9c.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\ce\cea01b2bd4a2f1341804f5043a558f9c.info
+    projectPath: Library\metadata\ce\cea01b2bd4a2f1341804f5043a558f9c.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\df\df30fd3a547ac6a488fdf89a41022557
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\df\df30fd3a547ac6a488fdf89a41022557
-    projectPath: Library\metadata\df\df30fd3a547ac6a488fdf89a41022557
+  - path: gameBai\Library\metadata\cf\cf6aca931950a4a6a886e214e9e649c4
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\cf\cf6aca931950a4a6a886e214e9e649c4
+    projectPath: Library\metadata\cf\cf6aca931950a4a6a886e214e9e649c4
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\d1\d1114812d620342e1a4ad3eaae7e220c
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\d1\d1114812d620342e1a4ad3eaae7e220c
+    projectPath: Library\metadata\d1\d1114812d620342e1a4ad3eaae7e220c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\d3\d330fcec1d38bd142a62aa7d668c0d33
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\d3\d330fcec1d38bd142a62aa7d668c0d33
+    projectPath: Library\metadata\d3\d330fcec1d38bd142a62aa7d668c0d33
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\df\df30fd3a547ac6a488fdf89a41022557.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\df\df30fd3a547ac6a488fdf89a41022557.info
-    projectPath: Library\metadata\df\df30fd3a547ac6a488fdf89a41022557.info
+  - path: gameBai\Library\metadata\d3\d330fcec1d38bd142a62aa7d668c0d33.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\d3\d330fcec1d38bd142a62aa7d668c0d33.info
+    projectPath: Library\metadata\d3\d330fcec1d38bd142a62aa7d668c0d33.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\e1\e148eaaf6ad4c5646993262dee791d5a
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\e1\e148eaaf6ad4c5646993262dee791d5a
-    projectPath: Library\metadata\e1\e148eaaf6ad4c5646993262dee791d5a
+  - path: gameBai\Library\metadata\d4\d4ef26aa386b44923b61c9c4b505a67c
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\d4\d4ef26aa386b44923b61c9c4b505a67c
+    projectPath: Library\metadata\d4\d4ef26aa386b44923b61c9c4b505a67c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\d9\d912d4873af534bd4a9d44bf1b52f14e
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\d9\d912d4873af534bd4a9d44bf1b52f14e
+    projectPath: Library\metadata\d9\d912d4873af534bd4a9d44bf1b52f14e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\dc\dced8f6ea9f964e8e8e61574ea889d21
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\dc\dced8f6ea9f964e8e8e61574ea889d21
+    projectPath: Library\metadata\dc\dced8f6ea9f964e8e8e61574ea889d21
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\ea\eab64c9bac24f46449f3ec0f3eaa93a6
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\ea\eab64c9bac24f46449f3ec0f3eaa93a6
+    projectPath: Library\metadata\ea\eab64c9bac24f46449f3ec0f3eaa93a6
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\e1\e148eaaf6ad4c5646993262dee791d5a.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\e1\e148eaaf6ad4c5646993262dee791d5a.info
-    projectPath: Library\metadata\e1\e148eaaf6ad4c5646993262dee791d5a.info
+  - path: gameBai\Library\metadata\ea\eab64c9bac24f46449f3ec0f3eaa93a6.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\ea\eab64c9bac24f46449f3ec0f3eaa93a6.info
+    projectPath: Library\metadata\ea\eab64c9bac24f46449f3ec0f3eaa93a6.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\e1\e1d97b7e304ab44438d74828e647ce4d
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\e1\e1d97b7e304ab44438d74828e647ce4d
-    projectPath: Library\metadata\e1\e1d97b7e304ab44438d74828e647ce4d
+  - path: gameBai\Library\metadata\eb\eb752600453512f4a97538fc939cb447
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\eb\eb752600453512f4a97538fc939cb447
+    projectPath: Library\metadata\eb\eb752600453512f4a97538fc939cb447
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\e1\e1d97b7e304ab44438d74828e647ce4d.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\e1\e1d97b7e304ab44438d74828e647ce4d.info
-    projectPath: Library\metadata\e1\e1d97b7e304ab44438d74828e647ce4d.info
+  - path: gameBai\Library\metadata\eb\eb752600453512f4a97538fc939cb447.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\eb\eb752600453512f4a97538fc939cb447.info
+    projectPath: Library\metadata\eb\eb752600453512f4a97538fc939cb447.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\ec\ecac174bdc8a5d34c8057b16b36ee300
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\ec\ecac174bdc8a5d34c8057b16b36ee300
-    projectPath: Library\metadata\ec\ecac174bdc8a5d34c8057b16b36ee300
+  - path: gameBai\Library\metadata\ed\edf97aac6cc5a437ebf600a06a2e5ac7
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\ed\edf97aac6cc5a437ebf600a06a2e5ac7
+    projectPath: Library\metadata\ed\edf97aac6cc5a437ebf600a06a2e5ac7
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\f0\f03b3e03b69e74ef9bd0f20377217a73
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\f0\f03b3e03b69e74ef9bd0f20377217a73
+    projectPath: Library\metadata\f0\f03b3e03b69e74ef9bd0f20377217a73
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\f0\f064e4d4403f2414e99cf9bcf5fc88ec
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\f0\f064e4d4403f2414e99cf9bcf5fc88ec
+    projectPath: Library\metadata\f0\f064e4d4403f2414e99cf9bcf5fc88ec
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\ec\ecac174bdc8a5d34c8057b16b36ee300.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\ec\ecac174bdc8a5d34c8057b16b36ee300.info
-    projectPath: Library\metadata\ec\ecac174bdc8a5d34c8057b16b36ee300.info
+  - path: gameBai\Library\metadata\f0\f064e4d4403f2414e99cf9bcf5fc88ec.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\f0\f064e4d4403f2414e99cf9bcf5fc88ec.info
+    projectPath: Library\metadata\f0\f064e4d4403f2414e99cf9bcf5fc88ec.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\ef\ef7a733534aa9cc4096e34925b2a010e
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\ef\ef7a733534aa9cc4096e34925b2a010e
-    projectPath: Library\metadata\ef\ef7a733534aa9cc4096e34925b2a010e
+  - path: gameBai\Library\metadata\f4\f4c7193663918411c8f78e3cf844cb9e
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\f4\f4c7193663918411c8f78e3cf844cb9e
+    projectPath: Library\metadata\f4\f4c7193663918411c8f78e3cf844cb9e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\f4\f4f481a39ae58c04faddf5fdc5e2bb0d
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\f4\f4f481a39ae58c04faddf5fdc5e2bb0d
+    projectPath: Library\metadata\f4\f4f481a39ae58c04faddf5fdc5e2bb0d
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\ef\ef7a733534aa9cc4096e34925b2a010e.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\ef\ef7a733534aa9cc4096e34925b2a010e.info
-    projectPath: Library\metadata\ef\ef7a733534aa9cc4096e34925b2a010e.info
+  - path: gameBai\Library\metadata\f4\f4f481a39ae58c04faddf5fdc5e2bb0d.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\f4\f4f481a39ae58c04faddf5fdc5e2bb0d.info
+    projectPath: Library\metadata\f4\f4f481a39ae58c04faddf5fdc5e2bb0d.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\f3\f333ccebaee5fc84cb737f83d4d1857b
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\f3\f333ccebaee5fc84cb737f83d4d1857b
-    projectPath: Library\metadata\f3\f333ccebaee5fc84cb737f83d4d1857b
+  - path: gameBai\Library\metadata\f7\f734521fec88eb14ab6a01fbffe906e1
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\f7\f734521fec88eb14ab6a01fbffe906e1
+    projectPath: Library\metadata\f7\f734521fec88eb14ab6a01fbffe906e1
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\f3\f333ccebaee5fc84cb737f83d4d1857b.info
-    fullPath: E:\do-an-c-\gameBai\Library\metadata\f3\f333ccebaee5fc84cb737f83d4d1857b.info
-    projectPath: Library\metadata\f3\f333ccebaee5fc84cb737f83d4d1857b.info
+  - path: gameBai\Library\metadata\f7\f734521fec88eb14ab6a01fbffe906e1.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\f7\f734521fec88eb14ab6a01fbffe906e1.info
+    projectPath: Library\metadata\f7\f734521fec88eb14ab6a01fbffe906e1.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: gameBai\Library\metadata\f8\f8c1fdc18f691bb4f8a587ada3b02903
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\f8\f8c1fdc18f691bb4f8a587ada3b02903
+    projectPath: Library\metadata\f8\f8c1fdc18f691bb4f8a587ada3b02903
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\metadata\f8\f8c1fdc18f691bb4f8a587ada3b02903.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\f8\f8c1fdc18f691bb4f8a587ada3b02903.info
+    projectPath: Library\metadata\f8\f8c1fdc18f691bb4f8a587ada3b02903.info
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\metadata\f9\f944311c8fff2479fa3ba741f6039fc8
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\f9\f944311c8fff2479fa3ba741f6039fc8
+    projectPath: Library\metadata\f9\f944311c8fff2479fa3ba741f6039fc8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\fa\fa4ff09b6aaaa4df29a884efa38bce56
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\fa\fa4ff09b6aaaa4df29a884efa38bce56
+    projectPath: Library\metadata\fa\fa4ff09b6aaaa4df29a884efa38bce56
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\fb\fb21522cb465ca5429915e2640198254
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\fb\fb21522cb465ca5429915e2640198254
+    projectPath: Library\metadata\fb\fb21522cb465ca5429915e2640198254
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\metadata\fb\fb21522cb465ca5429915e2640198254.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\fb\fb21522cb465ca5429915e2640198254.info
+    projectPath: Library\metadata\fb\fb21522cb465ca5429915e2640198254.info
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\metadata\fb\fbbd84931bbd0e047b8bae429d883471
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\fb\fbbd84931bbd0e047b8bae429d883471
+    projectPath: Library\metadata\fb\fbbd84931bbd0e047b8bae429d883471
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\metadata\fb\fbbd84931bbd0e047b8bae429d883471.info
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\fb\fbbd84931bbd0e047b8bae429d883471.info
+    projectPath: Library\metadata\fb\fbbd84931bbd0e047b8bae429d883471.info
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\metadata\fc\fc46f91ea1e8e4ca2ab693fef9156dbe
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\fc\fc46f91ea1e8e4ca2ab693fef9156dbe
+    projectPath: Library\metadata\fc\fc46f91ea1e8e4ca2ab693fef9156dbe
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\fe\fed9dda667cab45d398d06402bba03f4
+    fullPath: E:\do-an-c-\gameBai\Library\metadata\fe\fed9dda667cab45d398d06402bba03f4
+    projectPath: Library\metadata\fe\fed9dda667cab45d398d06402bba03f4
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: gameBai\Library\metadata\ff\ff70c83b32f45e746bd9a34802e98426
     fullPath: E:\do-an-c-\gameBai\Library\metadata\ff\ff70c83b32f45e746bd9a34802e98426
     projectPath: Library\metadata\ff\ff70c83b32f45e746bd9a34802e98426
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: gameBai\Library\metadata\ff\ff70c83b32f45e746bd9a34802e98426.info
     fullPath: E:\do-an-c-\gameBai\Library\metadata\ff\ff70c83b32f45e746bd9a34802e98426.info
     projectPath: Library\metadata\ff\ff70c83b32f45e746bd9a34802e98426.info
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: gameBai\Library\ScriptAssemblies\Assembly-CSharp.dll
     fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
@@ -1514,9 +2064,105 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
+    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
+    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.TextMeshPro.pdb
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.TextMeshPro.pdb
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.Timeline.dll
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.Timeline.dll
+    projectPath: Library\ScriptAssemblies\Unity.Timeline.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ShaderCache\1\1b427cc49d4220cb67731df94c262739.bin
+    fullPath: E:\do-an-c-\gameBai\Library\ShaderCache\1\1b427cc49d4220cb67731df94c262739.bin
+    projectPath: Library\ShaderCache\1\1b427cc49d4220cb67731df94c262739.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\ShaderCache\7\73a01e62fc73d8ffb62da8915f15c490.bin
+    fullPath: E:\do-an-c-\gameBai\Library\ShaderCache\7\73a01e62fc73d8ffb62da8915f15c490.bin
+    projectPath: Library\ShaderCache\7\73a01e62fc73d8ffb62da8915f15c490.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\ShaderCache\EditorEncounteredVariants
+    fullPath: E:\do-an-c-\gameBai\Library\ShaderCache\EditorEncounteredVariants
+    projectPath: Library\ShaderCache\EditorEncounteredVariants
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: E:\do-an-c-\gameBai\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: gameBai\Library\StateCache\Hierarchy\ed76d6-mainStage.json
     fullPath: E:\do-an-c-\gameBai\Library\StateCache\Hierarchy\ed76d6-mainStage.json
     projectPath: Library\StateCache\Hierarchy\ed76d6-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\StateCache\SceneView\37282e-mainStage.json
+    fullPath: E:\do-an-c-\gameBai\Library\StateCache\SceneView\37282e-mainStage.json
+    projectPath: Library\StateCache\SceneView\37282e-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -1532,75 +2178,117 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameBai\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    fullPath: E:\do-an-c-\gameBai\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: gameBai\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     fullPath: E:\do-an-c-\gameBai\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: gameBai\ProjectSettings\QualitySettings.asset
+    fullPath: E:\do-an-c-\gameBai\ProjectSettings\QualitySettings.asset
+    projectPath: ProjectSettings\QualitySettings.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\ProjectSettings\UnityConnectSettings.asset
+    fullPath: E:\do-an-c-\gameBai\ProjectSettings\UnityConnectSettings.asset
+    projectPath: ProjectSettings\UnityConnectSettings.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Temp\__Backupscenes\0.backup
+    fullPath: E:\do-an-c-\gameBai\Temp\__Backupscenes\0.backup
+    projectPath: Temp\__Backupscenes\0.backup
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: gameBai\Temp\UnityLockfile
     fullPath: E:\do-an-c-\gameBai\Temp\UnityLockfile
     projectPath: Temp\UnityLockfile
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Temp\UnityTempFile-17368a1e40ee4494b97ebc885300cc21
-    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-17368a1e40ee4494b97ebc885300cc21
-    projectPath: Temp\UnityTempFile-17368a1e40ee4494b97ebc885300cc21
+  - path: gameBai\Temp\UnityTempFile-017c0f7f1e3e7c24ba01f5a030be430c
+    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-017c0f7f1e3e7c24ba01f5a030be430c
+    projectPath: Temp\UnityTempFile-017c0f7f1e3e7c24ba01f5a030be430c
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Temp\UnityTempFile-46ec7a130020e22418b3413086c4e6c9
-    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-46ec7a130020e22418b3413086c4e6c9
-    projectPath: Temp\UnityTempFile-46ec7a130020e22418b3413086c4e6c9
+  - path: gameBai\Temp\UnityTempFile-165bada352ec07b4ab6035627c6106e5
+    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-165bada352ec07b4ab6035627c6106e5
+    projectPath: Temp\UnityTempFile-165bada352ec07b4ab6035627c6106e5
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Temp\UnityTempFile-885fc0ab217181d4996b7ee0614df0a0
-    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-885fc0ab217181d4996b7ee0614df0a0
-    projectPath: Temp\UnityTempFile-885fc0ab217181d4996b7ee0614df0a0
+  - path: gameBai\Temp\UnityTempFile-18d528d0a6d91064b9cb84a5c1ca9fd1
+    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-18d528d0a6d91064b9cb84a5c1ca9fd1
+    projectPath: Temp\UnityTempFile-18d528d0a6d91064b9cb84a5c1ca9fd1
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Temp\UnityTempFile-913f5cb1148649a4b828dba3e2903cf5
-    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-913f5cb1148649a4b828dba3e2903cf5
-    projectPath: Temp\UnityTempFile-913f5cb1148649a4b828dba3e2903cf5
+  - path: gameBai\Temp\UnityTempFile-54fe51c07122975428a4dbd14f3bf8eb
+    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-54fe51c07122975428a4dbd14f3bf8eb
+    projectPath: Temp\UnityTempFile-54fe51c07122975428a4dbd14f3bf8eb
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Temp\UnityTempFile-9bf29b360dc3b3946aa4d1f35dcaac1c
-    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-9bf29b360dc3b3946aa4d1f35dcaac1c
-    projectPath: Temp\UnityTempFile-9bf29b360dc3b3946aa4d1f35dcaac1c
+  - path: gameBai\Temp\UnityTempFile-58bcd0f490e65294985f1b190b370718
+    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-58bcd0f490e65294985f1b190b370718
+    projectPath: Temp\UnityTempFile-58bcd0f490e65294985f1b190b370718
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Temp\UnityTempFile-af8fde21c6138f14c872460de648d2a5
-    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-af8fde21c6138f14c872460de648d2a5
-    projectPath: Temp\UnityTempFile-af8fde21c6138f14c872460de648d2a5
+  - path: gameBai\Temp\UnityTempFile-6392ebe2409ecfe449619046c1271c21
+    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-6392ebe2409ecfe449619046c1271c21
+    projectPath: Temp\UnityTempFile-6392ebe2409ecfe449619046c1271c21
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Temp\UnityTempFile-c78e03e25a1a3e7439f9a47e44bfcf3a
-    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-c78e03e25a1a3e7439f9a47e44bfcf3a
-    projectPath: Temp\UnityTempFile-c78e03e25a1a3e7439f9a47e44bfcf3a
+  - path: gameBai\Temp\UnityTempFile-6763ebd06a507c043a16b9ed3ddb1784
+    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-6763ebd06a507c043a16b9ed3ddb1784
+    projectPath: Temp\UnityTempFile-6763ebd06a507c043a16b9ed3ddb1784
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Temp\UnityTempFile-e3dee07649dc2d642836e577995d8e7b
-    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-e3dee07649dc2d642836e577995d8e7b
-    projectPath: Temp\UnityTempFile-e3dee07649dc2d642836e577995d8e7b
+  - path: gameBai\Temp\UnityTempFile-82af44ba98ebfaa449574cbf96e1d990
+    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-82af44ba98ebfaa449574cbf96e1d990
+    projectPath: Temp\UnityTempFile-82af44ba98ebfaa449574cbf96e1d990
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Temp\UnityTempFile-ed3cbcfd5e3867742bb2614c3caa2dc9
-    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-ed3cbcfd5e3867742bb2614c3caa2dc9
-    projectPath: Temp\UnityTempFile-ed3cbcfd5e3867742bb2614c3caa2dc9
+  - path: gameBai\Temp\UnityTempFile-9836e7f943443884cba2a05c92c39203
+    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-9836e7f943443884cba2a05c92c39203
+    projectPath: Temp\UnityTempFile-9836e7f943443884cba2a05c92c39203
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-a502be23ace4d11448fb4fb05cf1ebe2
+    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-a502be23ace4d11448fb4fb05cf1ebe2
+    projectPath: Temp\UnityTempFile-a502be23ace4d11448fb4fb05cf1ebe2
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-cbb795146d86c3f46a6fee3806844675
+    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-cbb795146d86c3f46a6fee3806844675
+    projectPath: Temp\UnityTempFile-cbb795146d86c3f46a6fee3806844675
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-cef2250fd58b20f41b56f8447d545219
+    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-cef2250fd58b20f41b56f8447d545219
+    projectPath: Temp\UnityTempFile-cef2250fd58b20f41b56f8447d545219
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-e8bc508f9e22e41428a000f6be588e51
+    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-e8bc508f9e22e41428a000f6be588e51
+    projectPath: Temp\UnityTempFile-e8bc508f9e22e41428a000f6be588e51
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-f12aec38529e1f34e8d59d1608793c31
+    fullPath: E:\do-an-c-\gameBai\Temp\UnityTempFile-f12aec38529e1f34e8d59d1608793c31
+    projectPath: Temp\UnityTempFile-f12aec38529e1f34e8d59d1608793c31
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1

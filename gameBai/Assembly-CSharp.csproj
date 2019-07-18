@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\CardModel.cs" />
+    <Compile Include="Assets\Script\Controller_Uno.cs" />
     <Compile Include="Assets\Script\Huong Dan\SaveData_V01.cs" />
     <Compile Include="Assets\Script\Huong Dan\SetActiveGameObject.cs" />
     <Reference Include="Unity.Timeline.Editor">
