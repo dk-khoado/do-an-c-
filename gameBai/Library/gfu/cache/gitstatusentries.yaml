@@ -16,9 +16,683 @@ MonoBehaviour:
   lastUpdatedAtString: 2019-07-18T09:53:02.900+07:00
   initializedAtString: 2019-07-18T09:40:10.599+07:00
   entries:
-  - path: gameBai\.vs\gameBai\v16\.suo
-    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\.vs\gameBai\v16\.suo
-    projectPath: .vs\gameBai\v16\.suo
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw
+      4_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw
+      4_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_3.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw
+      4_3.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_3.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_3.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw
+      4_3.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_3.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_4.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw
+      4_4.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_4.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_4.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Draw
+      4_4.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Draw 4_4.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Wild_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Wild_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_3.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_3.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Wild_3.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_3.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_3.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Wild_3.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_4.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_4.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Wild_4.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_4.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_black_Wild_4.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_black_Wild_4.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_1_1.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_1_1.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_1_1.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_1_1.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_1_1.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_1_1.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_2_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_2_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_2_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_2_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_2_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_2_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_3_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_3_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_3_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_3_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_3_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_3_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_4_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_4_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_4_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_4_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_4_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_4_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_5_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_5_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_5_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_5_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_5_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_5_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_6_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_6_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_6_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_6_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_6_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_6_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_7_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_7_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_7_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_7_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_7_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_7_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_8_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_8_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_8_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_8_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_8_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_8_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_9_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_9_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_9_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_9_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_9_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_9_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Draw 2_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Draw
+      2_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_Draw 2_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Draw 2_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Draw
+      2_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_Draw 2_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Reverse_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Reverse_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_Reverse_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Reverse_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Reverse_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_Reverse_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Skip_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Skip_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_Skip_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Skip_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_blue_Skip_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_blue_Skip_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_1_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_1_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_1_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_1_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_1_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_1_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_2_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_2_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_2_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_2_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_2_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_2_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_3_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_3_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_3_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_3_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_3_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_3_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_4_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_4_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_4_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_4_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_4_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_4_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_5_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_5_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_5_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_5_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_5_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_5_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_6_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_6_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_6_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_6_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_6_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_6_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_7_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_7_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_7_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_7_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_7_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_7_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_8_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_8_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_8_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_8_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_8_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_8_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_9_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_9_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_9_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_9_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_9_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_9_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Draw 2_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Draw
+      2_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_Draw 2_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Draw 2_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Draw
+      2_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_Draw 2_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Reverse_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Reverse_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_Reverse_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Reverse_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Reverse_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_Reverse_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Skip_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Skip_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_Skip_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Skip_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_green_Skip_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_green_Skip_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_1_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_1_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_1_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_1_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_1_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_1_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_2_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_2_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_2_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_2_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_2_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_2_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_3_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_3_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_3_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_3_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_3_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_3_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_4_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_4_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_4_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_4_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_4_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_4_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_5_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_5_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_5_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_5_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_5_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_5_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_6_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_6_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_6_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_6_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_6_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_6_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_7_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_7_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_7_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_7_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_7_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_7_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_8_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_8_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_8_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_8_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_8_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_8_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_9_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_9_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_9_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_9_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_9_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_9_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Draw 2_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Draw
+      2_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_Draw 2_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Draw 2_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Draw
+      2_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_Draw 2_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Reverse_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Reverse_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_Reverse_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Reverse_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Reverse_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_Reverse_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Skip_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Skip_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_Skip_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Skip_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_red_Skip_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_red_Skip_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_1_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_1_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_1_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_1_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_1_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_1_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_2_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_2_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_2_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_2_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_2_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_2_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_3_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_3_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_3_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_3_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_3_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_3_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_4_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_4_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_4_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_4_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_4_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_4_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_5_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_5_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_5_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_5_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_5_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_5_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_6_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_6_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_6_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_6_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_6_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_6_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_7_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_7_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_7_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_7_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_7_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_7_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_8_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_8_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_8_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_8_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_8_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_8_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_9_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_9_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_9_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_9_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_9_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_9_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Draw 2_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Draw
+      2_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_Draw 2_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Draw 2_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Draw
+      2_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_Draw 2_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Reverse_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Reverse_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_Reverse_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Reverse_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Reverse_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_Reverse_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Skip_2.asset
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Skip_2.asset
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_Skip_2.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Skip_2.asset.meta
+    fullPath: E:\do-an-c-\gameBai\Assets\Plugins\Resouces\Properties\Uno_yellow_Skip_2.asset.meta
+    projectPath: Assets\Plugins\Resouces\Properties\Uno_yellow_Skip_2.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: gameBai\Library\APIUpdater\project-dependencies.graph
+    fullPath: E:\do-an-c-\gameBai\Library\APIUpdater\project-dependencies.graph
+    projectPath: Library\APIUpdater\project-dependencies.graph
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\assetDatabase3
+    fullPath: E:\do-an-c-\gameBai\Library\assetDatabase3
+    projectPath: Library\assetDatabase3
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\EditorInstance.json
+    fullPath: E:\do-an-c-\gameBai\Library\EditorInstance.json
+    projectPath: Library\EditorInstance.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -1270,11 +1944,11 @@ MonoBehaviour:
     fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\StateCache\SceneView\e22e02-mainStage.json
     projectPath: Library\StateCache\SceneView\e22e02-mainStage.json
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\PackageCache\com.unity.purchasing@2.0.6\Tests\Editor\PurchasingEditorTest.cs.meta
+    fullPath: E:\do-an-c-\gameBai\Library\PackageCache\com.unity.purchasing@2.0.6\Tests\Editor\PurchasingEditorTest.cs.meta
+    projectPath: Library\PackageCache\com.unity.purchasing@2.0.6\Tests\Editor\PurchasingEditorTest.cs.meta
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -1296,14 +1970,110 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameBai\Temp\__Backupscenes\0.backup
-    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\__Backupscenes\0.backup
-    projectPath: Temp\__Backupscenes\0.backup
+  - path: gameBai\Library\PackageCache\com.unity.purchasing@2.0.6\Tests\Runtime\Unity.IAP.purchasing.RunTimeTests.asmdef
+    fullPath: E:\do-an-c-\gameBai\Library\PackageCache\com.unity.purchasing@2.0.6\Tests\Runtime\Unity.IAP.purchasing.RunTimeTests.asmdef
+    projectPath: Library\PackageCache\com.unity.purchasing@2.0.6\Tests\Runtime\Unity.IAP.purchasing.RunTimeTests.asmdef
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\PackageCache\com.unity.purchasing@2.0.6\Tests\Runtime\Unity.IAP.purchasing.RunTimeTests.asmdef.meta
+    fullPath: E:\do-an-c-\gameBai\Library\PackageCache\com.unity.purchasing@2.0.6\Tests\Runtime\Unity.IAP.purchasing.RunTimeTests.asmdef.meta
+    projectPath: Library\PackageCache\com.unity.purchasing@2.0.6\Tests\Runtime\Unity.IAP.purchasing.RunTimeTests.asmdef.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\PackageCache\com.unity.purchasing@2.0.6\UnityEngine.Purchasing.dll.meta
+    fullPath: E:\do-an-c-\gameBai\Library\PackageCache\com.unity.purchasing@2.0.6\UnityEngine.Purchasing.dll.meta
+    projectPath: Library\PackageCache\com.unity.purchasing@2.0.6\UnityEngine.Purchasing.dll.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_FontAsset.cs
+    fullPath: E:\do-an-c-\gameBai\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_FontAsset.cs
+    projectPath: Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_FontAsset.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Assembly-CSharp.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
+    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
+    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.TextMeshPro.pdb
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.TextMeshPro.pdb
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.Timeline.dll
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.Timeline.dll
+    projectPath: Library\ScriptAssemblies\Unity.Timeline.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+    fullPath: E:\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: E:\do-an-c-\gameBai\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: gameBai\Temp\UnityLockfile
-    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityLockfile
+    fullPath: E:\do-an-c-\gameBai\Temp\UnityLockfile
     projectPath: Temp\UnityLockfile
     originalPath: 
     indexStatus: 1
