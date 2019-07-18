@@ -24,14 +24,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: khoa
-    tracking: origin/khoa
+    name: tu
+    tracking: origin/tu
   currentConfigBranch:
-    name: khoa
+    name: tu
     remote:
       name: origin
       url: https://github.com/kakoi-3nhan4-16/do-an-c-.git
-    trackingBranch: khoa
+    trackingBranch: tu
   currentConfigRemote:
     name: origin
     url: https://github.com/kakoi-3nhan4-16/do-an-c-.git
