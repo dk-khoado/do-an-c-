@@ -117,8 +117,9 @@ namespace api_gamebai.Controllers
                 if (mPlayer.status == 0)
                 {
                     return new ResponseMessage(Ok().ToString(), "tài khoản chưa xát thực", 0);
-                }                
-                return new ResponseMessage(mPlayer.id.ToString(),"Dang nhap thanh cong", mPlayer,1);
+                }
+                object[] dataResponse = new object[1] { mPlayer };               
+                return new ResponseMessage("ok","Dang nhap thanh cong", mPlayer, 1);
             }
             else
             {
