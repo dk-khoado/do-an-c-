@@ -18,7 +18,7 @@ public class cardModel : ScriptableObject
     }
     public enum Chucnang
     {
-        change direction, prohibit, plus, discoloration
+        direction, prohibit, plus, discoloration,none
     }
 
 }

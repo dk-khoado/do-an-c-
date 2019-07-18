@@ -18,7 +18,6 @@ public class manager : MonoBehaviour
             Instantiate(card, parent.transform);
         }
     }
-
     // Update is called once per frame
     void Update()
     {
