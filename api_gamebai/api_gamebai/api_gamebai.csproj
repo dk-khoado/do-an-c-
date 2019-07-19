@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -50,6 +50,9 @@
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -128,11 +131,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -165,11 +163,8 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-
     <Compile Include="Controllers\RoomManagerController.cs" />
-
     <Compile Include="Controllers\ChatController.cs" />
-
     <Compile Include="Controllers\FriendListController.cs" />
     <Compile Include="Controllers\HistoryLoginController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -203,13 +198,13 @@
       <DependentUpon>FriendsModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\LoadListFriend_Result.cs">
-      <DependentUpon>FriendsModel.tt</DependentUpon>
+      <DependentUpon>UsersModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\LoginData_Result.cs">
       <DependentUpon>UsersModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\player.cs">
-      <DependentUpon>RoomManagerModel.tt</DependentUpon>
+      <DependentUpon>RoomModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\player_chatlist.cs">
       <DependentUpon>FriendsModel.tt</DependentUpon>
@@ -224,29 +219,27 @@
       <DependentUpon>FriendsModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\RegisterUser.cs" />
-
-    <Compile Include="Models\RoomManagerModel.Context.cs">
+    <Compile Include="Models\RoomModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>RoomManagerModel.Context.tt</DependentUpon>
+      <DependentUpon>RoomModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\RoomManagerModel.cs">
+    <Compile Include="Models\RoomModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>RoomManagerModel.tt</DependentUpon>
+      <DependentUpon>RoomModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\RoomManagerModel.Designer.cs">
+    <Compile Include="Models\RoomModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>RoomManagerModel.edmx</DependentUpon>
+      <DependentUpon>RoomModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\room_list.cs">
-      <DependentUpon>RoomManagerModel.tt</DependentUpon>
+      <DependentUpon>RoomModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\room_listplayer.cs">
-      <DependentUpon>RoomManagerModel.tt</DependentUpon>
+      <DependentUpon>RoomModel.tt</DependentUpon>
     </Compile>
-
     <Compile Include="Models\SendChatModel.cs" />
     <Compile Include="Models\UserLoginModel.cs" />
     <Compile Include="Global.asax.cs">
@@ -295,15 +288,15 @@
       <DependentUpon>FriendsModel.edmx</DependentUpon>
       <LastGenOutput>FriendsModel.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\RoomManagerModel.Context.tt">
+    <Content Include="Models\RoomModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>RoomManagerModel.edmx</DependentUpon>
-      <LastGenOutput>RoomManagerModel.Context.cs</LastGenOutput>
+      <DependentUpon>RoomModel.edmx</DependentUpon>
+      <LastGenOutput>RoomModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\RoomManagerModel.tt">
+    <Content Include="Models\RoomModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>RoomManagerModel.edmx</DependentUpon>
-      <LastGenOutput>RoomManagerModel.cs</LastGenOutput>
+      <DependentUpon>RoomModel.edmx</DependentUpon>
+      <LastGenOutput>RoomModel.cs</LastGenOutput>
     </Content>
     <Content Include="Models\UsersModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -350,12 +343,12 @@
     <Content Include="Models\FriendsModel.edmx.diagram">
       <DependentUpon>FriendsModel.edmx</DependentUpon>
     </Content>
-    <EntityDeploy Include="Models\RoomManagerModel.edmx">
+    <EntityDeploy Include="Models\RoomModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>RoomManagerModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>RoomModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\RoomManagerModel.edmx.diagram">
-      <DependentUpon>RoomManagerModel.edmx</DependentUpon>
+    <Content Include="Models\RoomModel.edmx.diagram">
+      <DependentUpon>RoomModel.edmx</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -452,7 +445,7 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

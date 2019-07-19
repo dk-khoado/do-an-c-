@@ -13,7 +13,7 @@ namespace api_gamebai.Controllers
         Databasegamebai db = new Databasegamebai();
         public ResponseMessage Get(int id)
         {            
-            return new ResponseMessage("succes", db.infoplayers.Find(),1);
+            return new ResponseMessage("success", db.infoplayers.Find(),1);
         }        
     }
 }
