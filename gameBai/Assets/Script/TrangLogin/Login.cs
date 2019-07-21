@@ -67,6 +67,7 @@ public class Login : MonoBehaviour
                     if(mnhandata.result > 0)
                     {
                         PlayerPrefs.SetInt("id",mnhandata.data.id);
+                        PlayerPrefs.SetString("avartar",mnhandata.data.avartar);
                        //ebug.Log(JsonUtility.ToJson(mnhandata));
                         StartCoroutine(LoadYourAsyncScene());
                     }
@@ -177,6 +178,7 @@ public class Data
     public string username;  
     public double money;
     public string email;
+    public string password;
     public string avartar;
     public string nickname;
 }
