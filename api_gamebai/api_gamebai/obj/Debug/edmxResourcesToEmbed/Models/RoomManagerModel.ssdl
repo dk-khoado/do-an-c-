@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="DatabaseRoom.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="DbRoomManager.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="player">
     <Key>
       <PropertyRef Name="id" />
@@ -22,10 +22,21 @@
     <Property Name="limit_player" Type="int" Nullable="false" />
     <Property Name="password" Type="nchar" MaxLength="10" />
     <Property Name="current_player" Type="int" />
+    <Property Name="room_name" Type="nvarchar" MaxLength="10" />
   </EntityType>
   <!--Errors Found During Generation:
 warning 6002: The table/view 'DatabaseGameBai.dbo.room_listplayer' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="room_listplayer">
+    <Key>
+      <PropertyRef Name="room_id" />
+      <PropertyRef Name="player_id" />
+    </Key>
+    <Property Name="room_id" Type="int" Nullable="false" />
+    <Property Name="player_id" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DatabaseGameBai.dbo.vroom_listplayer' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vroom_listplayer">
     <Key>
       <PropertyRef Name="room_id" />
       <PropertyRef Name="player_id" />
@@ -49,7 +60,9 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.room_listplayer' does not have
     <Parameter Name="owner_id" Type="int" Mode="In" />
     <Parameter Name="limit_player" Type="int" Mode="In" />
     <Parameter Name="password" Type="varchar" Mode="In" />
+    <Parameter Name="room_name" Type="varchar" Mode="In" />
   </Function>
+  <Function Name="GetInfoRoom" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <Function Name="JoinRoomList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="room_id" Type="int" Mode="In" />
     <Parameter Name="player_id" Type="int" Mode="In" />
@@ -58,7 +71,7 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.room_listplayer' does not have
     <Parameter Name="room_id" Type="int" Mode="In" />
     <Parameter Name="player_id" Type="int" Mode="In" />
   </Function>
-  <EntityContainer Name="DatabaseRoomStoreContainer">
+  <EntityContainer Name="DbRoomManagerStoreContainer">
     <EntitySet Name="player" EntityType="Self.player" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="room_list" EntityType="Self.room_list" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="room_listplayer" EntityType="Self.room_listplayer" store:Type="Tables" store:Schema="dbo">
@@ -66,6 +79,12 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.room_listplayer' does not have
     [room_listplayer].[room_id] AS [room_id], 
     [room_listplayer].[player_id] AS [player_id]
     FROM [dbo].[room_listplayer] AS [room_listplayer]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vroom_listplayer" EntityType="Self.vroom_listplayer" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vroom_listplayer].[room_id] AS [room_id], 
+    [vroom_listplayer].[player_id] AS [player_id]
+    FROM [dbo].[vroom_listplayer] AS [vroom_listplayer]</DefiningQuery>
     </EntitySet>
     <AssociationSet Name="FK_room_listplayer_room_list" Association="Self.FK_room_listplayer_room_list">
       <End Role="room_list" EntitySet="room_list" />

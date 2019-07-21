@@ -10,7 +10,7 @@ namespace api_gamebai.Controllers
 {
     public class RoomManagerController : ApiController
     {
-        DatabaseManagerRoom db = new DatabaseManagerRoom();
+        DatabaseGameBai_Room db = new DatabaseGameBai_Room();
 
         //Tạo phòng
         [HttpPost]
@@ -25,7 +25,7 @@ namespace api_gamebai.Controllers
                 return new ResponseMessage(BadRequest().ToString(), "Trống !!!");
             }
 
-            if(room.owner_id.ToString() == "" || room.limit_player.ToString() == "" || room.password == "" )
+            if(room.owner_id.ToString() == "" || room.limit_player.ToString() == "" || room.password == "" || room.room_name == "" || room.room_name == null)
             {
                 return new ResponseMessage(BadRequest().ToString(), "Không đc nhập thiếu");
             }
@@ -38,16 +38,23 @@ namespace api_gamebai.Controllers
             }
             else
             {
-                //Nếu người chơi tồn tại thì cho tạo phòng còn không thì thôi
-                if (db.players.Count(e => e.id == room.owner_id) > 0)
+                if (db.room_list.Count(e => e.room_name == room.room_name) > 0)
                 {
-                    db.addRoomList(room.owner_id, room.limit_player, room.password);
-                    return new ResponseMessage(Ok().ToString(), "Tạo phòng thành công");
-                    
+                    return new ResponseMessage(BadRequest().ToString(), "Tên phòng đã tồn tại !!!");
                 }
                 else
                 {
-                    return new ResponseMessage(BadRequest().ToString(), "Người chơi không tồn tại không thể tạo phòng !!!");
+                    //Nếu người chơi tồn tại thì cho tạo phòng còn không thì thôi
+                    if (db.players.Count(e => e.id == room.owner_id) > 0)
+                    {
+                        db.addRoomList(room.owner_id, room.limit_player, room.password, room.room_name);
+                        return new ResponseMessage(Ok().ToString(), "Tạo phòng thành công");
+
+                    }
+                    else
+                    {
+                        return new ResponseMessage(BadRequest().ToString(), "Người chơi không tồn tại không thể tạo phòng !!!");
+                    }
                 }
                 
             }
@@ -70,9 +77,6 @@ namespace api_gamebai.Controllers
             {
                 return new ResponseMessage(BadRequest().ToString(), "Không đc nhập thiếu");
             }
-
-
-
             //Nếu phòng tồn tại thì cho vào, ngược lại thì không thể vào vì làm đéo gì có phòng mà vào
             if (db.room_listplayer.Count(e => e.room_id == room.room_id) > 0)
             {
@@ -87,8 +91,16 @@ namespace api_gamebai.Controllers
                     }
                     else
                     {
-                        db.JoinRoomList(room.room_id, room.player_id);
-                        return new ResponseMessage(Ok().ToString(), room.player_id + " đã vào phòng " + room.room_id);
+                        try
+                        {
+                            db.JoinRoomList(room.room_id, room.player_id);
+                            return new ResponseMessage(Ok().ToString(), room.player_id + " đã vào phòng " + room.room_id);
+                        }
+                        catch(Exception)
+                        {
+                            return new ResponseMessage("Phòng " + room.room_id + " đã đầy !!!");
+                        }
+                        
                     }
                 }
                 else
@@ -101,7 +113,6 @@ namespace api_gamebai.Controllers
             else
             {
                 return new ResponseMessage(BadRequest().ToString(), "Phòng không tồn tại");
-
             }
 
             
@@ -130,8 +141,15 @@ namespace api_gamebai.Controllers
                 //Nếu người chơi tồn tại thì cho out còn không thì báo lỗi
                 if (db.players.Count(e => e.id == room.player_id) > 0)
                 {
-                    db.OutRoom(room.room_id, room.player_id);
-                    return new ResponseMessage(Ok().ToString(), room.player_id + " đã rời phòng !!!");
+                    if (db.room_listplayer.Count(e => e.player_id == room.player_id) > 0)
+                    {
+                        db.OutRoom(room.room_id, room.player_id);
+                        return new ResponseMessage(Ok().ToString(), room.player_id + " đã rời phòng !!!");
+                    }
+                    else
+                    {
+                        return new ResponseMessage("Người chơi " + room.player_id + " không tồn tại trong phòng " + room.room_id);
+                    }
                 }
                 else
                 {
@@ -142,6 +160,12 @@ namespace api_gamebai.Controllers
             {
                 return new ResponseMessage(BadRequest().ToString(), "Phòng không tồn tại");
             }
+        }
+
+        [HttpPost]
+        public List<room_list> GetInfoRoom()
+        {
+            return db.room_list.ToList();
         }
 
     }

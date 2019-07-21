@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="DatabaseRoomStoreContainer" CdmEntityContainer="DatabaseManagerRoom">
+  <EntityContainerMapping StorageEntityContainer="DbRoomManagerStoreContainer" CdmEntityContainer="DatabaseRoomManager">
     <EntitySetMapping Name="players">
-      <EntityTypeMapping TypeName="DatabaseRoom.player">
+      <EntityTypeMapping TypeName="DbRoomManager.player">
         <MappingFragment StoreEntitySet="player">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="username" ColumnName="username" />
@@ -16,8 +16,9 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="room_list">
-      <EntityTypeMapping TypeName="DatabaseRoom.room_list">
+      <EntityTypeMapping TypeName="DbRoomManager.room_list">
         <MappingFragment StoreEntitySet="room_list">
+          <ScalarProperty Name="room_name" ColumnName="room_name" />
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="owner_id" ColumnName="owner_id" />
           <ScalarProperty Name="limit_player" ColumnName="limit_player" />
@@ -26,16 +27,35 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="room_listplayer">
-      <EntityTypeMapping TypeName="DatabaseRoom.room_listplayer">
-        <MappingFragment StoreEntitySet="room_listplayer">
-          <ScalarProperty Name="room_id" ColumnName="room_id" />
+    <FunctionImportMapping FunctionImportName="addRoomList" FunctionName="DbRoomManager.Store.addRoomList" />
+    <FunctionImportMapping FunctionImportName="GetInfoRoom" FunctionName="DbRoomManager.Store.GetInfoRoom">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DbRoomManager.GetInfoRoom_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="owner_id" ColumnName="owner_id" />
+          <ScalarProperty Name="limit_player" ColumnName="limit_player" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="current_player" ColumnName="current_player" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="JoinRoomList" FunctionName="DbRoomManager.Store.JoinRoomList" />
+    <FunctionImportMapping FunctionImportName="OutRoom" FunctionName="DbRoomManager.Store.OutRoom" />
+    <EntitySetMapping Name="vroom_listplayer">
+      <EntityTypeMapping TypeName="DbRoomManager.vroom_listplayer">
+        <MappingFragment StoreEntitySet="vroom_listplayer">
           <ScalarProperty Name="player_id" ColumnName="player_id" />
+          <ScalarProperty Name="room_id" ColumnName="room_id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <FunctionImportMapping FunctionImportName="addRoomList" FunctionName="DatabaseRoom.Store.addRoomList" />
-    <FunctionImportMapping FunctionImportName="JoinRoomList" FunctionName="DatabaseRoom.Store.JoinRoomList" />
-    <FunctionImportMapping FunctionImportName="OutRoom" FunctionName="DatabaseRoom.Store.OutRoom" />
+    <EntitySetMapping Name="room_listplayer">
+      <EntityTypeMapping TypeName="DbRoomManager.room_listplayer">
+        <MappingFragment StoreEntitySet="room_listplayer">
+          <ScalarProperty Name="player_id" ColumnName="player_id" />
+          <ScalarProperty Name="room_id" ColumnName="room_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>
