@@ -64,11 +64,18 @@
   <ItemGroup>
     <Compile Include="Assets\Script\CardModel.cs" />
     <Compile Include="Assets\Script\Controller_Uno.cs" />
+    <Compile Include="Assets\Script\Contronller\CardSkill.cs" />
+    <Compile Include="Assets\Script\Contronller\Controller_NetWork.cs" />
+    <Compile Include="Assets\Script\Contronller\ControllerCard.cs" />
+    <Compile Include="Assets\Script\Contronller\ControllerPlayer.cs" />
+    <Compile Include="Assets\Script\Contronller\Event.cs" />
     <Compile Include="Assets\Script\Huong Dan\SaveData_V01.cs" />
     <Compile Include="Assets\Script\Huong Dan\SetActiveGameObject.cs" />
+    <Compile Include="Assets\Script\Manager\ManagerGame.cs" />
     <Compile Include="Assets\Script\PhongCho\Sanhcho.cs" />
     <Compile Include="Assets\Script\TrangLogin\Login.cs" />
     <Compile Include="Assets\Script\TrangLogin\SetActive.cs" />
+    <Compile Include="Assets\Script\UI\UI_manager.cs" />
     <Compile Include="Assets\Script\Upload.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
