@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseGameBaiModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="player">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="money" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="nickname" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="256" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="avartar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="room_list">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="owner_id" Type="Int32" Nullable="false" />
+    <Property Name="limit_player" Type="Int32" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="current_player" Type="Int32" />
+    <Property Name="room_name" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="room_listplayer" Relationship="DatabaseGameBaiModel1.FK_room_listplayer_room_list" FromRole="room_list" ToRole="room_listplayer" />
+  </EntityType>
+  <EntityType Name="room_listplayer">
+    <Key>
+      <PropertyRef Name="room_id" />
+      <PropertyRef Name="player_id" />
+    </Key>
+    <Property Name="room_id" Type="Int32" Nullable="false" />
+    <Property Name="player_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="room_list" Relationship="DatabaseGameBaiModel1.FK_room_listplayer_room_list" FromRole="room_listplayer" ToRole="room_list" />
+  </EntityType>
+  <EntityContainer Name="DatabaseGameBai_Room" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="players" EntityType="Self.player" />
+    <EntitySet Name="room_list" EntityType="Self.room_list" />
+    <EntitySet Name="room_listplayer" EntityType="Self.room_listplayer" />
+    <FunctionImport Name="addRoomList">
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="limit_player" Mode="In" Type="Int32" />
+      <Parameter Name="password" Mode="In" Type="String" />
+      <Parameter Name="room_name" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="JoinRoomList">
+      <Parameter Name="room_id" Mode="In" Type="Int32" />
+      <Parameter Name="player_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="OutRoom">
+      <Parameter Name="room_id" Mode="In" Type="Int32" />
+      <Parameter Name="player_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <AssociationSet Name="FK_room_listplayer_room_list" Association="DatabaseGameBaiModel1.FK_room_listplayer_room_list">
+      <End Role="room_list" EntitySet="room_list" />
+      <End Role="room_listplayer" EntitySet="room_listplayer" />
+    </AssociationSet>
+    <FunctionImport Name="CountCurrentPlayer">
+      <Parameter Name="room_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <Association Name="FK_room_listplayer_room_list">
+    <End Type="DatabaseGameBaiModel1.room_list" Role="room_list" Multiplicity="1" />
+    <End Type="DatabaseGameBaiModel1.room_listplayer" Role="room_listplayer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="room_list">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="room_listplayer">
+        <PropertyRef Name="room_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
