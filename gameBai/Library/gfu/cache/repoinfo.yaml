@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2019-07-18T09:40:09.203+07:00
-  initializedAtString: 2019-07-18T09:40:09.203+07:00
+  lastUpdatedAtString: 2019-07-21T16:29:54.475+07:00
+  initializedAtString: 2019-07-21T16:29:54.475+07:00
   currentGitRemote:
     name: origin
     url: https://github.com/kakoi-3nhan4-16/do-an-c-.git
@@ -24,14 +24,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: tu
-    tracking: origin/tu
+    name: khoa
+    tracking: origin/khoa
   currentConfigBranch:
-    name: tu
+    name: khoa
     remote:
       name: origin
       url: https://github.com/kakoi-3nhan4-16/do-an-c-.git
-    trackingBranch: tu
+    trackingBranch: khoa
   currentConfigRemote:
     name: origin
     url: https://github.com/kakoi-3nhan4-16/do-an-c-.git

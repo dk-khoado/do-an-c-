@@ -79,10 +79,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/11/2019 16:13:51</publishTime>
     </File>
     <File Include="bin/api_gamebai.dll">
-      <publishTime>07/17/2019 22:49:36</publishTime>
+      <publishTime>07/20/2019 18:03:47</publishTime>
     </File>
     <File Include="bin/api_gamebai.pdb">
-      <publishTime>07/17/2019 22:49:36</publishTime>
+      <publishTime>07/20/2019 18:03:47</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>07/07/2019 14:20:51</publishTime>
@@ -346,7 +346,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/11/2019 16:13:51</publishTime>
     </File>
     <File Include="Models/FriendsModel.edmx.diagram">
-      <publishTime>07/17/2019 16:28:01</publishTime>
+      <publishTime>07/18/2019 11:14:17</publishTime>
     </File>
     <File Include="Models/Model1.edmx.diagram">
       <publishTime>07/08/2019 00:52:09</publishTime>
@@ -355,10 +355,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/07/2019 14:55:57</publishTime>
     </File>
     <File Include="Models/RoomManagerModel.edmx.diagram">
-      <publishTime>07/17/2019 16:34:51</publishTime>
+      <publishTime>07/18/2019 11:14:17</publishTime>
     </File>
     <File Include="Models/UsersModel.edmx.diagram">
-      <publishTime>07/17/2019 16:28:01</publishTime>
+      <publishTime>07/18/2019 11:14:17</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>07/11/2019 16:13:51</publishTime>
@@ -394,16 +394,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/11/2019 16:13:51</publishTime>
     </File>
     <File Include="Views/Home/Verify.cshtml">
-      <publishTime>07/17/2019 16:28:01</publishTime>
+      <publishTime>07/18/2019 11:14:17</publishTime>
     </File>
     <File Include="Views/LayoutMaster/LayoutMaster.cshtml">
-      <publishTime>07/17/2019 16:28:01</publishTime>
+      <publishTime>07/18/2019 11:14:17</publishTime>
     </File>
     <File Include="Views/mailTemplate.html">
       <publishTime>07/11/2019 16:13:51</publishTime>
     </File>
     <File Include="Views/Main/Index.cshtml">
-      <publishTime>07/17/2019 16:28:01</publishTime>
+      <publishTime>07/18/2019 11:14:17</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>07/11/2019 16:13:51</publishTime>
@@ -418,7 +418,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/11/2019 16:13:51</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/17/2019 22:10:19</publishTime>
+      <publishTime>07/18/2019 11:14:17</publishTime>
     </File>
   </ItemGroup>
 </Project>

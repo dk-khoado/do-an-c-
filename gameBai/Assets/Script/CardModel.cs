@@ -9,8 +9,13 @@ public class CardModel : ScriptableObject
     public Color_Card color;
     public bool isChucNang;
     public Sprite image;
+    public Skill skill;
 }
 public enum Color_Card
 {
     Red,Blue,Green,Yellow, Black
+}
+public enum Skill
+{
+    Draw, Wild, Reverse,Skip
 }
