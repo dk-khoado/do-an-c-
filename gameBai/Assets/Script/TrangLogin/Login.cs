@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Networking;
 using System.Text;
-using Newtonsoft.Json;
 using UnityEngine.SceneManagement;
 using System;
 
@@ -17,10 +16,10 @@ public class Login : MonoBehaviour
     public TMP_InputField password_register;
     public TMP_InputField repassword;
     public TMP_InputField email;
-    nhanData mnhandata = new nhanData();
+    DataFromLogin mnhandata = new DataFromLogin();
     public void onLogin()
     {
-        sendData dataLogin = new sendData(username_login.text, password_login.text);
+        sendDataLogin dataLogin = new sendDataLogin(username_login.text, password_login.text);
         string json = JsonUtility.ToJson(dataLogin);
         StartCoroutine(GetRequestLogin("http://26.60.150.44/api/User/Login", json));
         Debug.Log(json);
@@ -29,8 +28,8 @@ public class Login : MonoBehaviour
     public void onRegister()
     {
 
-        sendData2 data2 = new sendData2(username_register.text,password_register.text,email.text);
-        string json = JsonConvert.SerializeObject(data2);
+        SendResgiter data2 = new SendResgiter(username_register.text,password_register.text,email.text);
+        string json = JsonUtility.ToJson(data2);
         if (password_register.text == repassword.text)
         {
             StartCoroutine(GetRequestRegister("http://26.60.150.44/api/User/Register", json));
@@ -63,18 +62,18 @@ public class Login : MonoBehaviour
             {
                 try
                 {
-                   string var = JsonConvert.SerializeObject(mnhandata);
-                    Debug.Log(var);
+                    mnhandata = JsonUtility.FromJson<DataFromLogin>(webRequest.downloadHandler.text);
+                    Debug.Log(webRequest.downloadHandler.text);
                     if(mnhandata.result > 0)
                     {
-                        PlayerPrefs.SetInt("id",int.Parse(mnhandata.response));
-                        Debug.Log(mnhandata.data);
-                        //StartCoroutine(LoadYourAsyncScene());
+                        PlayerPrefs.SetInt("id",mnhandata.data.id);
+                       //ebug.Log(JsonUtility.ToJson(mnhandata));
+                        StartCoroutine(LoadYourAsyncScene());
                     }
                     else
                     {
                         Debug.Log(mnhandata.message);
-                        Debug.Log(mnhandata.data);
+                        //Debug.Log(mnhandata.data);
                     }
                 }
                 catch(Exception e)
@@ -104,7 +103,7 @@ public class Login : MonoBehaviour
             {
                 try
                 {
-                    var mnhandata = JsonUtility.FromJson<nhanData>(postdata);
+                    var mnhandata = JsonUtility.FromJson<DataFromLogin>(postdata);
                     if (mnhandata.result > 0)
                     {
                         Debug.Log(mnhandata.message);
@@ -141,47 +140,43 @@ public class Login : MonoBehaviour
         }
     }
 }
-public class sendData
+public class sendDataLogin
 {
     public string username;
-    public string password;
-    public sendData() { }
-    public sendData(string muser,string mpass)
+    public string password;   
+    public sendDataLogin(string username, string password)
     {
-        this.username = muser;
-        this.password = mpass;
+        this.username = username;
+        this.password = password;
     }
 }
-public class nhanData
+[Serializable]
+public class DataFromLogin
 {
     public string response;
     public string message;
-    public int result;
-    public Object data = new Object();
-    public nhanData() { }
+    public int result;   
+    public Data data; 
 }
-public class sendData2
+public class SendResgiter
 {
     public string username;
     public string password;
-    public string email;
-    public sendData2() { }
-    public sendData2(string muser,string mpassword,string memail)
+    public string email;    
+    public SendResgiter(string username, string password, string email)
     {
-        this.username = muser;
-        this.password = mpassword;
-        this.email = memail;
+        this.username = username;
+        this.password = password;
+        this.email = email;
     }
 }
-public class Object
+[Serializable]
+public class Data
 {
     public int id;
-    public string username;
-    public string password;
+    public string username;  
     public double money;
     public string email;
-    public string nickname;
-    public int status;
     public string avartar;
-   
+    public string nickname;
 }

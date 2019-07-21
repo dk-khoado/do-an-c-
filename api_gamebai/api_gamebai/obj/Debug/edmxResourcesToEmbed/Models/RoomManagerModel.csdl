@@ -86,4 +86,26 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <EntityContainer Name="DatabaseManagerRoom" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="players" EntityType="Self.player" />
+    <EntitySet Name="room_list" EntityType="Self.room_list" />
+    <EntitySet Name="room_listplayer" EntityType="Self.room_listplayer" />
+    <AssociationSet Name="FK_room_listplayer_room_list" Association="Self.FK_room_listplayer_room_list">
+      <End Role="room_list" EntitySet="room_list" />
+      <End Role="room_listplayer" EntitySet="room_listplayer" />
+    </AssociationSet>
+    <FunctionImport Name="addRoomList">
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="limit_player" Mode="In" Type="Int32" />
+      <Parameter Name="password" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="JoinRoomList">
+      <Parameter Name="room_id" Mode="In" Type="Int32" />
+      <Parameter Name="player_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="OutRoom">
+      <Parameter Name="room_id" Mode="In" Type="Int32" />
+      <Parameter Name="player_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
 </Schema>
