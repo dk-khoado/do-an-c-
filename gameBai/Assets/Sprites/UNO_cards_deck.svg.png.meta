@@ -1,0 +1,1648 @@
+fileFormatVersion: 2
+guid: 09a35d43f8fe2d149acb874a81d0823d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4359192130956991984
+    second: UNO_cards_deck.svg_0
+  - first:
+      213: 2713038438854919361
+    second: UNO_cards_deck.svg_1
+  - first:
+      213: 8533262564387201279
+    second: UNO_cards_deck.svg_2
+  - first:
+      213: 7070437991263433123
+    second: UNO_cards_deck.svg_3
+  - first:
+      213: 5589955581182051873
+    second: UNO_cards_deck.svg_4
+  - first:
+      213: 4879947087233319824
+    second: UNO_cards_deck.svg_5
+  - first:
+      213: 9129783388587964823
+    second: UNO_cards_deck.svg_6
+  - first:
+      213: -6797449763404276756
+    second: UNO_cards_deck.svg_7
+  - first:
+      213: -2856641236506960062
+    second: UNO_cards_deck.svg_8
+  - first:
+      213: 4551969862974358724
+    second: UNO_cards_deck.svg_9
+  - first:
+      213: 8130428011928058339
+    second: UNO_cards_deck.svg_10
+  - first:
+      213: -1717278253335934653
+    second: UNO_cards_deck.svg_11
+  - first:
+      213: -6828246673692636297
+    second: UNO_cards_deck.svg_12
+  - first:
+      213: 8217068417977691234
+    second: UNO_cards_deck.svg_13
+  - first:
+      213: -2402447275309772023
+    second: UNO_cards_deck.svg_14
+  - first:
+      213: 1202683374013328542
+    second: UNO_cards_deck.svg_15
+  - first:
+      213: 7812917112339195059
+    second: UNO_cards_deck.svg_16
+  - first:
+      213: -6718578835811112466
+    second: UNO_cards_deck.svg_17
+  - first:
+      213: 7491362613476827653
+    second: UNO_cards_deck.svg_18
+  - first:
+      213: 7671969610284552832
+    second: UNO_cards_deck.svg_19
+  - first:
+      213: -586709093537830698
+    second: UNO_cards_deck.svg_20
+  - first:
+      213: 7871385650498892405
+    second: UNO_cards_deck.svg_21
+  - first:
+      213: 8439098778225191121
+    second: UNO_cards_deck.svg_22
+  - first:
+      213: 356919922750385102
+    second: UNO_cards_deck.svg_23
+  - first:
+      213: 3778773890935288835
+    second: UNO_cards_deck.svg_24
+  - first:
+      213: 6065472783220470148
+    second: UNO_cards_deck.svg_25
+  - first:
+      213: 2174714963646640192
+    second: UNO_cards_deck.svg_26
+  - first:
+      213: -3157232426595675837
+    second: UNO_cards_deck.svg_27
+  - first:
+      213: -5756914341069494929
+    second: UNO_cards_deck.svg_28
+  - first:
+      213: -7532420439585172260
+    second: UNO_cards_deck.svg_29
+  - first:
+      213: 8190411965460629319
+    second: UNO_cards_deck.svg_30
+  - first:
+      213: 3844016470394751783
+    second: UNO_cards_deck.svg_31
+  - first:
+      213: 8715113728285128673
+    second: UNO_cards_deck.svg_32
+  - first:
+      213: 2111587736498634117
+    second: UNO_cards_deck.svg_33
+  - first:
+      213: 7144411429687517913
+    second: UNO_cards_deck.svg_34
+  - first:
+      213: -5334252142026252244
+    second: UNO_cards_deck.svg_35
+  - first:
+      213: 4098464442569101409
+    second: UNO_cards_deck.svg_36
+  - first:
+      213: 9147889365871029869
+    second: UNO_cards_deck.svg_37
+  - first:
+      213: -4161441550290488658
+    second: UNO_cards_deck.svg_38
+  - first:
+      213: 3045754500343700717
+    second: UNO_cards_deck.svg_39
+  - first:
+      213: -5778430059795654148
+    second: UNO_cards_deck.svg_40
+  - first:
+      213: -4660454814761820783
+    second: UNO_cards_deck.svg_41
+  - first:
+      213: 8349062941521972508
+    second: UNO_cards_deck.svg_42
+  - first:
+      213: -8717092166500586637
+    second: UNO_cards_deck.svg_43
+  - first:
+      213: -1297711390212791673
+    second: UNO_cards_deck.svg_44
+  - first:
+      213: 6005905744173648479
+    second: UNO_cards_deck.svg_45
+  - first:
+      213: 4278021517433588115
+    second: UNO_cards_deck.svg_46
+  - first:
+      213: 5862782985117539416
+    second: UNO_cards_deck.svg_47
+  - first:
+      213: -6187599222567918715
+    second: UNO_cards_deck.svg_48
+  - first:
+      213: 7083501863288455292
+    second: UNO_cards_deck.svg_49
+  - first:
+      213: -221675376748167826
+    second: UNO_cards_deck.svg_50
+  - first:
+      213: 8485612167683691975
+    second: UNO_cards_deck.svg_51
+  - first:
+      213: -5998650174363354195
+    second: UNO_cards_deck.svg_52
+  - first:
+      213: 6100328778224577674
+    second: UNO_cards_deck.svg_53
+  - first:
+      213: -3379597329462205021
+    second: UNO_cards_deck.svg_54
+  - first:
+      213: 1858974256397414156
+    second: UNO_cards_deck.svg_55
+  - first:
+      213: -7812553663656145816
+    second: UNO_cards_deck.svg_56
+  - first:
+      213: -1737601269854702243
+    second: UNO_cards_deck.svg_57
+  - first:
+      213: -3341169885644570404
+    second: UNO_cards_deck.svg_58
+  - first:
+      213: 7446310271703759006
+    second: UNO_cards_deck.svg_59
+  - first:
+      213: -955266415070226178
+    second: UNO_cards_deck.svg_60
+  - first:
+      213: 2553201474402111932
+    second: UNO_cards_deck.svg_61
+  - first:
+      213: -1706478767882898617
+    second: UNO_cards_deck.svg_62
+  - first:
+      213: -6123480150614067774
+    second: UNO_cards_deck.svg_63
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1538
+        width: 144
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f6da4775c4ec1479cf4eb22624ca15
+      internalID: -4359192130956991984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_1
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1538
+        width: 143
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39e8fe0283f7fa04a980f16d577455e4
+      internalID: 2713038438854919361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_2
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1538
+        width: 143
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ebbdfd0aaa7f5478510d37d3a20bc6
+      internalID: 8533262564387201279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_3
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 1538
+        width: 143
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8b8e37491fbfd4bb26a83e3d5d1ba7
+      internalID: 7070437991263433123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_4
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 1538
+        width: 143
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59fd46263b332144e87399fe727a2641
+      internalID: 5589955581182051873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_5
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 1538
+        width: 143
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f3d7157fb3e2e40aab2d019ffbf397
+      internalID: 4879947087233319824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_6
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1538
+        width: 144
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a579c49dd8ccee448366f8201d31799
+      internalID: 9129783388587964823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_7
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 1538
+        width: 143
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8a4f23e45d5fb4c92bd5b88f16e064
+      internalID: -6797449763404276756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_8
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 1538
+        width: 144
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ec9e647be40354fac3a8f513f726c7
+      internalID: -2856641236506960062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_9
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 1538
+        width: 143
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68be947b9bef25458ffbde135951aff
+      internalID: 4551969862974358724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_10
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 1538
+        width: 143
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a3ce1ce966f384d83e1a2e66f493ec
+      internalID: 8130428011928058339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_11
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 1538
+        width: 144
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a89b6795ae5f24eb019812936500cb
+      internalID: -1717278253335934653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_12
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 1537
+        width: 144
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12dace01db5bac34aac8e66d42cc0f43
+      internalID: -6828246673692636297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_13
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 1538
+        width: 143
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989b2cc39d468d049a84ebd38ef23771
+      internalID: 8217068417977691234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_14
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1318
+        width: 144
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4979b3319001b9445991753a3eca388e
+      internalID: -2402447275309772023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_15
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1318
+        width: 143
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f69fd40dd2e061499860b17fadc3875
+      internalID: 1202683374013328542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_16
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1318
+        width: 143
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79164969ff689946ababba2c39d5337
+      internalID: 7812917112339195059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_17
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 1318
+        width: 143
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ee1fd3d2a1a0644a64ac1469271513
+      internalID: -6718578835811112466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_18
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 1318
+        width: 143
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8abdaaf220c4247806def9925714f3
+      internalID: 7491362613476827653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_19
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 1318
+        width: 143
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8c17ff93cf2cf42a6c81d5739284de
+      internalID: 7671969610284552832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_20
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1318
+        width: 144
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338eb488205149c4a9d6814ea020f1a9
+      internalID: -586709093537830698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_21
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 1318
+        width: 143
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8095a5aa351ccbc4b82ac70a8fa131ad
+      internalID: 7871385650498892405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_22
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 1318
+        width: 144
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed6599b3911021e438f9ae21120bffa4
+      internalID: 8439098778225191121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_23
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 1318
+        width: 143
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf5b7e313636b24b8ef33fb68af370d
+      internalID: 356919922750385102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_24
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 1318
+        width: 143
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0c7dccae360e5459264686728109e3
+      internalID: 3778773890935288835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_25
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 1318
+        width: 144
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73d65cad07e3c846a0bc32e2a7c28bf
+      internalID: 6065472783220470148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_26
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 1318
+        width: 144
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71de2933d5b93064c9fe0ce1e7671bdd
+      internalID: 2174714963646640192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_27
+      rect:
+        serializedVersion: 2
+        x: 1902
+        y: 1318
+        width: 144
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e751092f4ec453a459f061ede51d7086
+      internalID: -3157232426595675837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_28
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1099
+        width: 144
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481a5cd3e61b8834ebc30a7fd7167048
+      internalID: -5756914341069494929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_29
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1099
+        width: 142
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc1f362f037fe848ad4095aff8320c7
+      internalID: -7532420439585172260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_30
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 1099
+        width: 144
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7104c5e5b1326c7419649920c43ee0b2
+      internalID: 8190411965460629319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_31
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 1099
+        width: 143
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6042dc4fe6f9fc42a77b5825c2b0939
+      internalID: 3844016470394751783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_32
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 1099
+        width: 143
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3661f4e7e2effb0448aed7095360755d
+      internalID: 8715113728285128673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_33
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 1099
+        width: 143
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d19bf9498dbae428849e739dab5619
+      internalID: 2111587736498634117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_34
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1099
+        width: 144
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754a435c17d6760439d3ef5ffeb822f9
+      internalID: 7144411429687517913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_35
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 1099
+        width: 143
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203bd14500df4fb49aea61ac7b87eb53
+      internalID: -5334252142026252244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_36
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 1099
+        width: 144
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83180b6a7c1e5714e869281c45fd6d4c
+      internalID: 4098464442569101409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_37
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 1099
+        width: 143
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c23315a8f886f44acff6fef3680d2a
+      internalID: 9147889365871029869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_38
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 1099
+        width: 143
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef1e29793855a6419ffada9319810e2
+      internalID: -4161441550290488658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_39
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 1099
+        width: 143
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550796c88f72a794e90d04c181accf90
+      internalID: 3045754500343700717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_40
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 1099
+        width: 144
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b3744f2588e4348a6a33c8f3d57d6e
+      internalID: -5778430059795654148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_41
+      rect:
+        serializedVersion: 2
+        x: 1902
+        y: 1099
+        width: 144
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb74490c02735f4d8a92579437b4304
+      internalID: -4660454814761820783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_42
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 880
+        width: 144
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456b4cff7b813f44c978561cc6a45ff1
+      internalID: 8349062941521972508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_43
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 879
+        width: 143
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4870d1838347f5341b40cc6ca71c6ce5
+      internalID: -8717092166500586637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_44
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 878
+        width: 143
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4505e4921b88c348aa6391f8ef04ced
+      internalID: -1297711390212791673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_45
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 878
+        width: 145
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 313d6eb8ccd63b14fb91f6e34b5c57c0
+      internalID: 6005905744173648479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_46
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 879
+        width: 143
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a307c25512c9f04996ecad07562416e
+      internalID: 4278021517433588115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_47
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 879
+        width: 143
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d75bf1fa772dd418b408c9d3d4ba0e
+      internalID: 5862782985117539416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_48
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 878
+        width: 144
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b6ca130d00e8e4a8993f4ced6b1166
+      internalID: -6187599222567918715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_49
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 878
+        width: 145
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68577ba0a0f7d1644a265b837bd2edf5
+      internalID: 7083501863288455292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_50
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 879
+        width: 145
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed6033b2f3d36a7498da83aecf765272
+      internalID: -221675376748167826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_51
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 878
+        width: 143
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c75640633bfec9449d09841f6729596
+      internalID: 8485612167683691975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_52
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 878
+        width: 143
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dafeabc0ebbcaeb4196629d564124fb9
+      internalID: -5998650174363354195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_53
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 878
+        width: 144
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fcf29b8c7ff93541a1f3be5e3e76bef
+      internalID: 6100328778224577674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_54
+      rect:
+        serializedVersion: 2
+        x: 1902
+        y: 879
+        width: 144
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd8861c0fadf604e8586e5bbd1687c6
+      internalID: -3379597329462205021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_55
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 745
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5dbc69995762a4c91a9a7f5d8b2a93
+      internalID: 1858974256397414156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_56
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 660
+        width: 143
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa88f85dbfa363409382c224e6c6ca2
+      internalID: -7812553663656145816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_57
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 696
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9939abc7aa6b3468eea24c1a1c6456
+      internalID: -1737601269854702243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_58
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 358
+        width: 602
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543a4a0b93dd2a54aa33f5bff873c1b5
+      internalID: -3341169885644570404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_59
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 441
+        width: 143
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a66d335cc1600941a16d2d028e7f4ed
+      internalID: 7446310271703759006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_60
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 222
+        width: 143
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097c4a98d488a9043880151c05ad2e61
+      internalID: -955266415070226178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_61
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 112
+        width: 7
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be58dc1ce2c82984b82327e253082702
+      internalID: 2553201474402111932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_62
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 2
+        width: 143
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b429a2da40b362543a18496698cad808
+      internalID: -1706478767882898617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNO_cards_deck.svg_63
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 879
+        width: 137
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b009fd896f0b254d91989dfbe1f094a
+      internalID: -6123480150614067774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 50e8f1d416429174ca04812bf8bab2e7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

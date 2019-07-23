@@ -28,19 +28,26 @@ namespace api_gamebai.Controllers
                 var httpRequest = HttpContext.Current.Request;
                 if (httpRequest.Files.Count > 0)
                 {
+                    var test = "";
                     var docfiles = new List<string>();
                     foreach (string file in httpRequest.Files)
                     {
                         var postedFile = httpRequest.Files[file];
-                        var filePath = HttpContext.Current.Server.MapPath("~/Upload/" + postedFile.FileName);
+                        var subname = postedFile.FileName.Substring(postedFile.FileName.LastIndexOf('.'));
+                        var main = postedFile.FileName.Replace(subname, ".jpg");
+                        test = main;
+                        var filePath = HttpContext.Current.Server.MapPath("~/Upload/" + main);                                             
                         postedFile.SaveAs(filePath);
                         docfiles.Add(filePath);
-                        mPlayer.avartar = postedFile.FileName;                     
+                        mPlayer.avartar = main;                     
                         db.Entry(mPlayer).State = System.Data.Entity.EntityState.Modified;
                         db.SaveChanges();
                     }
+                    return new ResponseMessage("tải thành cong",test, 1);
                 }
-                return new ResponseMessage("tải thành cong");
+                else {
+                    return new ResponseMessage("tải thành cong",null,0);
+                }               
             }
             catch (Exception e)
             {
