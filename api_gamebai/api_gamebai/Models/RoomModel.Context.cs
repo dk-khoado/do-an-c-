@@ -30,6 +30,7 @@ namespace api_gamebai.Models
         public virtual DbSet<player> players { get; set; }
         public virtual DbSet<room_list> room_list { get; set; }
         public virtual DbSet<room_listplayer> room_listplayer { get; set; }
+        public virtual DbSet<vroom_listplayer> vroom_listplayer { get; set; }
     
         public virtual int addRoomList(Nullable<int> owner_id, Nullable<int> limit_player, string password, string room_name)
         {
@@ -85,6 +86,15 @@ namespace api_gamebai.Models
                 new ObjectParameter("room_id", typeof(int));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CountCurrentPlayer", room_idParameter);
+        }
+    
+        public virtual ObjectResult<GetListPlayerInRoom_Result> GetListPlayerInRoom(Nullable<int> iD_room)
+        {
+            var iD_roomParameter = iD_room.HasValue ?
+                new ObjectParameter("ID_room", iD_room) :
+                new ObjectParameter("ID_room", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<GetListPlayerInRoom_Result>("GetListPlayerInRoom", iD_roomParameter);
         }
     }
 }

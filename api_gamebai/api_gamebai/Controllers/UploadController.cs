@@ -36,7 +36,7 @@ namespace api_gamebai.Controllers
                         var subname = postedFile.FileName.Substring(postedFile.FileName.LastIndexOf('.'));
                         var main = postedFile.FileName.Replace(subname, ".jpg");
                         test = main;
-                        var filePath = HttpContext.Current.Server.MapPath("~/Upload/" + main);                                             
+                        var filePath = HttpContext.Current.Server.MapPath("~/Upload/" + main);                                          
                         postedFile.SaveAs(filePath);
                         docfiles.Add(filePath);
                         mPlayer.avartar = main;                     

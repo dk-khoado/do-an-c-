@@ -1,9 +1,13 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
 [RequireComponent(typeof(UI_manager))]
 public class ManagerGame : MonoBehaviour
 {
+    public int IDLocalPlayer;
     public int AmountCardPerPlayer;
     public GameObject localPlayer;
     public List<GameObject> remotePlayers;
@@ -14,7 +18,7 @@ public class ManagerGame : MonoBehaviour
     [SerializeField]
     private GameObject ModelCard;
     public List<int> currentPosCard = new List<int>();
-    UI_manager uI_Manager;
+    UI_manager uI_Manager;   
     // Start is called before the first frame update
     void Start()
     {
@@ -224,5 +228,5 @@ public class ManagerGame : MonoBehaviour
                 break;
         }
         uI_Manager.properties = currentCard;
-    }
+    }      
 }

@@ -39,6 +39,21 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.room_listplayer' does not have
           <Property Name="room_id" Type="int" Nullable="false" />
           <Property Name="player_id" Type="int" Nullable="false" />
         </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DatabaseGameBai.dbo.vroom_listplayer' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="vroom_listplayer">
+          <Key>
+            <PropertyRef Name="room_id" />
+            <PropertyRef Name="player_id" />
+            <PropertyRef Name="nickname" />
+            <PropertyRef Name="money" />
+          </Key>
+          <Property Name="room_id" Type="int" Nullable="false" />
+          <Property Name="player_id" Type="int" Nullable="false" />
+          <Property Name="nickname" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="money" Type="money" Nullable="false" />
+          <Property Name="avartar" Type="varchar(max)" />
+        </EntityType>
         <Association Name="FK_room_listplayer_room_list">
           <End Role="room_list" Type="Self.room_list" Multiplicity="1" />
           <End Role="room_listplayer" Type="Self.room_listplayer" Multiplicity="*" />
@@ -57,8 +72,8 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.room_listplayer' does not have
           <Parameter Name="password" Type="varchar" Mode="In" />
           <Parameter Name="room_name" Type="varchar" Mode="In" />
         </Function>
-        <Function Name="CountCurrentPlayer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="room_id" Type="int" Mode="In" />
+        <Function Name="GetListPlayerInRoom" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID_room" Type="int" Mode="In" />
         </Function>
         <Function Name="JoinRoomList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="room_id" Type="int" Mode="In" />
@@ -76,6 +91,15 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.room_listplayer' does not have
     [room_listplayer].[room_id] AS [room_id], 
     [room_listplayer].[player_id] AS [player_id]
     FROM [dbo].[room_listplayer] AS [room_listplayer]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vroom_listplayer" EntityType="Self.vroom_listplayer" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [vroom_listplayer].[room_id] AS [room_id], 
+    [vroom_listplayer].[player_id] AS [player_id], 
+    [vroom_listplayer].[nickname] AS [nickname], 
+    [vroom_listplayer].[money] AS [money], 
+    [vroom_listplayer].[avartar] AS [avartar]
+    FROM [dbo].[vroom_listplayer] AS [vroom_listplayer]</DefiningQuery>
           </EntitySet>
           <AssociationSet Name="FK_room_listplayer_room_list" Association="Self.FK_room_listplayer_room_list">
             <End Role="room_list" EntitySet="room_list" />
@@ -145,6 +169,10 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.room_listplayer' does not have
           <FunctionImport Name="CountCurrentPlayer">
             <Parameter Name="room_id" Mode="In" Type="Int32" />
           </FunctionImport>
+          <FunctionImport Name="GetListPlayerInRoom" ReturnType="Collection(DatabaseGameBaiModel1.GetListPlayerInRoom_Result)">
+          <Parameter Name="ID_room" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="vroom_listplayer" EntityType="DatabaseGameBaiModel1.vroom_listplayer" />
         </EntityContainer>
         <Association Name="FK_room_listplayer_room_list">
           <End Type="DatabaseGameBaiModel1.room_list" Role="room_list" Multiplicity="1" />
@@ -158,6 +186,26 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.room_listplayer' does not have
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <ComplexType Name="GetListPlayerInRoom_Result">
+          <Property Type="Int32" Name="room_id" Nullable="false" />
+          <Property Type="Int32" Name="player_id" Nullable="false" />
+          <Property Type="String" Name="nickname" Nullable="false" MaxLength="30" />
+          <Property Type="Decimal" Name="money" Nullable="false" Precision="19" />
+          <Property Type="String" Name="avartar" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="vroom_listplayer">
+          <Key>
+            <PropertyRef Name="room_id" />
+            <PropertyRef Name="player_id" />
+            <PropertyRef Name="nickname" />
+            <PropertyRef Name="money" />
+          </Key>
+          <Property Name="room_id" Type="Int32" Nullable="false" />
+          <Property Name="player_id" Type="Int32" Nullable="false" />
+          <Property Name="nickname" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="money" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="avartar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -201,7 +249,28 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.room_listplayer' does not have
           <FunctionImportMapping FunctionImportName="addRoomList" FunctionName="DatabaseGameBaiModel1.Store.addRoomList" />
           <FunctionImportMapping FunctionImportName="JoinRoomList" FunctionName="DatabaseGameBaiModel1.Store.JoinRoomList" />
           <FunctionImportMapping FunctionImportName="OutRoom" FunctionName="DatabaseGameBaiModel1.Store.OutRoom" />
-          <FunctionImportMapping FunctionImportName="CountCurrentPlayer" FunctionName="DatabaseGameBaiModel1.Store.CountCurrentPlayer" />
+          <FunctionImportMapping FunctionImportName="GetListPlayerInRoom" FunctionName="DatabaseGameBaiModel1.Store.GetListPlayerInRoom">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DatabaseGameBaiModel1.GetListPlayerInRoom_Result">
+                <ScalarProperty Name="room_id" ColumnName="room_id" />
+                <ScalarProperty Name="player_id" ColumnName="player_id" />
+                <ScalarProperty Name="nickname" ColumnName="nickname" />
+                <ScalarProperty Name="money" ColumnName="money" />
+                <ScalarProperty Name="avartar" ColumnName="avartar" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="vroom_listplayer">
+            <EntityTypeMapping TypeName="DatabaseGameBaiModel1.vroom_listplayer">
+              <MappingFragment StoreEntitySet="vroom_listplayer">
+                <ScalarProperty Name="avartar" ColumnName="avartar" />
+                <ScalarProperty Name="money" ColumnName="money" />
+                <ScalarProperty Name="nickname" ColumnName="nickname" />
+                <ScalarProperty Name="player_id" ColumnName="player_id" />
+                <ScalarProperty Name="room_id" ColumnName="room_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

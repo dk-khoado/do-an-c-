@@ -191,6 +191,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FriendsModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\GetListPlayerInRoom_Result.cs">
+      <DependentUpon>RoomModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\history_login.cs">
       <DependentUpon>UsersModel.tt</DependentUpon>
     </Compile>
@@ -204,7 +207,7 @@
       <DependentUpon>UsersModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\player.cs">
-      <DependentUpon>RoomModel.tt</DependentUpon>
+      <DependentUpon>UsersModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\player_chatlist.cs">
       <DependentUpon>FriendsModel.tt</DependentUpon>
@@ -219,6 +222,9 @@
       <DependentUpon>FriendsModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\RegisterUser.cs" />
+    <Compile Include="Models\RoomCreateModel.cs" />
+    <Compile Include="Models\RoomJoinModel.cs" />
+    <Compile Include="Models\RoomLeaveModel.cs" />
     <Compile Include="Models\RoomModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -266,6 +272,9 @@
     </Compile>
     <Compile Include="Models\vListFriend.cs">
       <DependentUpon>FriendsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\vroom_listplayer.cs">
+      <DependentUpon>RoomModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

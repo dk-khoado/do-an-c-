@@ -26,16 +26,11 @@ D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Diagnostic
 D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.IO.Compression.dll
 D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.IO.FileSystem.dll
 D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.IO.FileSystem.Primitives.dll
-D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.IO.Pipes.AccessControl.dll
-D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.IO.Pipes.dll
 D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Reflection.Metadata.dll
-D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Security.AccessControl.dll
-D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Security.Claims.dll
 D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Security.Cryptography.Algorithms.dll
 D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Security.Cryptography.Encoding.dll
 D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Security.Cryptography.Primitives.dll
 D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Security.Principal.Windows.dll
 D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Text.Encoding.CodePages.dll
 D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.ValueTuple.dll
 D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Xml.ReaderWriter.dll
@@ -176,3 +171,11 @@ C:\Đồ án C#\do-an-c-\api_gamebai\api_gamebai\obj\Release\api_gamebai.csproj.
 C:\Đồ án C#\do-an-c-\api_gamebai\api_gamebai\obj\Release\api_gamebai.csproj.CopyComplete
 C:\Đồ án C#\do-an-c-\api_gamebai\api_gamebai\obj\Release\api_gamebai.dll
 C:\Đồ án C#\do-an-c-\api_gamebai\api_gamebai\obj\Release\api_gamebai.pdb
+D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Globalization.Calendars.dll
+D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Net.Http.dll
+D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Net.Sockets.dll
+D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Threading.Tasks.Extensions.dll
