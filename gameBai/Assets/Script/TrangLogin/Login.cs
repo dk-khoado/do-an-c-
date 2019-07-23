@@ -49,7 +49,7 @@ public class Login : MonoBehaviour
         {       
             webRequest.SetRequestHeader("Content-Type", "application/json");
             byte[] raw = Encoding.UTF8.GetBytes(postdata);
-            webRequest.uploadHandler = new UploadHandlerRaw(raw);            
+            webRequest.uploadHandler = new UploadHandlerRaw(raw);
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
             string[] pages = uri.Split('/');
@@ -67,6 +67,7 @@ public class Login : MonoBehaviour
                     if(mnhandata.result > 0)
                     {
                         PlayerPrefs.SetInt("id",mnhandata.data.id);
+                        PlayerPrefs.SetString("avartar",mnhandata.data.avartar);
                        //ebug.Log(JsonUtility.ToJson(mnhandata));
                         StartCoroutine(LoadYourAsyncScene());
                     }
@@ -177,6 +178,7 @@ public class Data
     public string username;  
     public double money;
     public string email;
+    public string password;
     public string avartar;
     public string nickname;
 }
