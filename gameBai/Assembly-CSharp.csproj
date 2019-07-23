@@ -61,9 +61,9 @@
     <Compile Include="Assets\Script\Controller_Uno.cs" />
     <Compile Include="Assets\Script\Huong Dan\SaveData_V01.cs" />
     <Compile Include="Assets\Script\Huong Dan\SetActiveGameObject.cs" />
-    <Compile Include="Assets\Script\PhongCho\CreateActive.cs" />
-    <Compile Include="Assets\Script\PhongCho\CreateRoom.cs" />
-    <Compile Include="Assets\Script\PhongCho\Phongchoset.cs" />
+    <Compile Include="Assets\Script\Manager\ManagerGame.cs" />
+    <Compile Include="Assets\Script\Models\Player.cs" />
+    <Compile Include="Assets\Script\Models\Player_InRoomModels.cs" />
     <Compile Include="Assets\Script\PhongCho\Sanhcho.cs" />
     <Compile Include="Assets\Script\Phongchoi\cardModel.cs" />
     <Compile Include="Assets\Script\Phongchoi\ControllerCarduno.cs" />

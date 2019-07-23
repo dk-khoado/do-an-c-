@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1636179309801476328}
-  - component: {fileID: 1636179309801476329}
+  - component: {fileID: 3852595715714095954}
   - component: {fileID: 1636179309801476334}
   m_Layer: 5
   m_Name: Player_local
@@ -37,7 +37,7 @@ RectTransform:
   m_AnchoredPosition: {x: 7e-15, y: 40}
   m_SizeDelta: {x: 165, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1636179309801476329
+--- !u!114 &3852595715714095954
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -73,6 +73,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56ec1d0a0f553af4891a2bddbe23bee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player:
+    room_id: 0
+    player_id: 0
+    nickname: 
+    money: 0
+    avartar: 
   isLocalPlayer: 1
   cardsOnHand: []
   manager: {fileID: 0}
+  selectColor: 0
+  child: {fileID: 0}

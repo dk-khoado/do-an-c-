@@ -14,7 +14,7 @@ namespace api_gamebai.Controllers
 
         //Tạo phòng
         [HttpPost]
-        public ResponseMessage CreateRoom([FromBody]room_list room)
+        public ResponseMessage CreateRoom([FromBody]RoomCreateModel room)
         {
             if (!ModelState.IsValid)
             {
@@ -63,7 +63,7 @@ namespace api_gamebai.Controllers
 
 
         [HttpPost]
-        public ResponseMessage JoinRoom([FromBody]room_listplayer room)
+        public ResponseMessage JoinRoom([FromBody]RoomJoinModel room)
         {
             if (!ModelState.IsValid)
             {
@@ -120,7 +120,7 @@ namespace api_gamebai.Controllers
 
 
         [HttpPost]
-        public ResponseMessage LeaveRoom([FromBody] room_listplayer room)
+        public ResponseMessage LeaveRoom([FromBody] RoomLeaveModel room)
         {
             if (!ModelState.IsValid)
             {
@@ -163,10 +163,13 @@ namespace api_gamebai.Controllers
         }
 
         [HttpPost]
-        public List<room_list> GetInfoRoom()
-        {
-            return db.room_list.ToList();
+        public ResponseMessage GetRoomList()
+        {           
+            return new ResponseMessage("ok", db.room_list.ToList());
         }
-
+        public ResponseMessage GetPlayerInRoom(int ID_room)
+        {            
+            return new ResponseMessage("Lấy dữ liêu thành công", db.GetListPlayerInRoom(ID_room).ToList());
+        }
     }
 }

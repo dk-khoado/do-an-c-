@@ -418,10 +418,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56ec1d0a0f553af4891a2bddbe23bee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player:
+    room_id: 0
+    player_id: 0
+    nickname: 
+    money: 0
+    avartar: 
   isLocalPlayer: 0
   cardsOnHand: []
   manager: {fileID: 0}
   selectColor: 0
+  child: {fileID: 0}
 --- !u!1 &410548267
 GameObject:
   m_ObjectHideFlags: 0
@@ -1386,7 +1393,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bd4bba630581f34f89d02636e306b6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  URL: 
+  URL_GETPlayerList: 
+  address: http://localhost/
+  ID_owner: 1023
+  ID_Room: 1023
+  players: []
 --- !u!1 &1285739737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1869,10 +1880,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56ec1d0a0f553af4891a2bddbe23bee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player:
+    room_id: 0
+    player_id: 0
+    nickname: 
+    money: 0
+    avartar: 
   isLocalPlayer: 0
   cardsOnHand: []
   manager: {fileID: 0}
   selectColor: 0
+  child: {fileID: 0}
 --- !u!1001 &1636179310355911122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1989,6 +2007,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788058736244672567, guid: a319fe0478a50294cb3ba4426cf7179e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788058736244672567, guid: a319fe0478a50294cb3ba4426cf7179e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788058736244672567, guid: a319fe0478a50294cb3ba4426cf7179e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788058736244672567, guid: a319fe0478a50294cb3ba4426cf7179e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788058736244672567, guid: a319fe0478a50294cb3ba4426cf7179e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788058736244672567, guid: a319fe0478a50294cb3ba4426cf7179e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a319fe0478a50294cb3ba4426cf7179e, type: 3}
@@ -2133,6 +2181,11 @@ PrefabInstance:
       propertyPath: localPlayer
       value: 
       objectReference: {fileID: 588513593}
+    - target: {fileID: 5283061977379981150, guid: d503197148863454b81af121bbca8d1e,
+        type: 3}
+      propertyPath: _Dropdown
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5283061977379981151, guid: d503197148863454b81af121bbca8d1e,
         type: 3}
       propertyPath: m_LocalPosition.x

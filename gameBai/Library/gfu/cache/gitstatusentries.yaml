@@ -13,273 +13,1242 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-07-22T18:20:39.627+07:00
-  initializedAtString: 2019-07-22T18:17:59.160+07:00
+  lastUpdatedAtString: 2019-07-22T18:27:14.598+07:00
+  initializedAtString: 2019-07-22T15:35:03.562+07:00
   entries:
+  - path: api_gamebai\.vs\api_gamebai\config\applicationhost.config
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\.vs\api_gamebai\config\applicationhost.config
+    projectPath: ..\api_gamebai\.vs\api_gamebai\config\applicationhost.config
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\.vs\api_gamebai\v16\.suo
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\.vs\api_gamebai\v16\.suo
+    projectPath: ..\api_gamebai\.vs\api_gamebai\v16\.suo
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\.vs\api_gamebai\v16\Server\sqlite3\storage.ide
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\.vs\api_gamebai\v16\Server\sqlite3\storage.ide
+    projectPath: ..\api_gamebai\.vs\api_gamebai\v16\Server\sqlite3\storage.ide
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\.vs\api_gamebai\v16\Server\sqlite3\storage.ide-shm
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\.vs\api_gamebai\v16\Server\sqlite3\storage.ide-shm
+    projectPath: ..\api_gamebai\.vs\api_gamebai\v16\Server\sqlite3\storage.ide-shm
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: api_gamebai\.vs\api_gamebai\v16\Server\sqlite3\storage.ide-wal
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\.vs\api_gamebai\v16\Server\sqlite3\storage.ide-wal
+    projectPath: ..\api_gamebai\.vs\api_gamebai\v16\Server\sqlite3\storage.ide-wal
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: api_gamebai\api_gamebai\api_gamebai.csproj
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\api_gamebai.csproj
+    projectPath: ..\api_gamebai\api_gamebai\api_gamebai.csproj
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\bin\api_gamebai.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\api_gamebai.dll
+    projectPath: ..\api_gamebai\api_gamebai\bin\api_gamebai.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\bin\api_gamebai.pdb
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\api_gamebai.pdb
+    projectPath: ..\api_gamebai\api_gamebai\bin\api_gamebai.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\bin\roslyn\csc.rsp
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\csc.rsp
+    projectPath: ..\api_gamebai\api_gamebai\bin\roslyn\csc.rsp
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\bin\roslyn\csi.rsp
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\csi.rsp
+    projectPath: ..\api_gamebai\api_gamebai\bin\roslyn\csi.rsp
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\bin\roslyn\Microsoft.CSharp.Core.targets
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\Microsoft.CSharp.Core.targets
+    projectPath: ..\api_gamebai\api_gamebai\bin\roslyn\Microsoft.CSharp.Core.targets
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\bin\roslyn\Microsoft.VisualBasic.Core.targets
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\Microsoft.VisualBasic.Core.targets
+    projectPath: ..\api_gamebai\api_gamebai\bin\roslyn\Microsoft.VisualBasic.Core.targets
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\bin\roslyn\vbc.rsp
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\vbc.rsp
+    projectPath: ..\api_gamebai\api_gamebai\bin\roslyn\vbc.rsp
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\Controllers\RoomManagerController.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\Controllers\RoomManagerController.cs
+    projectPath: ..\api_gamebai\api_gamebai\Controllers\RoomManagerController.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\Controllers\UploadController.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\Controllers\UploadController.cs
+    projectPath: ..\api_gamebai\api_gamebai\Controllers\UploadController.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\Models\FindKeyUser_Result.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\Models\FindKeyUser_Result.cs
+    projectPath: ..\api_gamebai\api_gamebai\Models\FindKeyUser_Result.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\Models\GetListPlayerInRoom_Result.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\Models\GetListPlayerInRoom_Result.cs
+    projectPath: ..\api_gamebai\api_gamebai\Models\GetListPlayerInRoom_Result.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\Models\history_login.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\Models\history_login.cs
+    projectPath: ..\api_gamebai\api_gamebai\Models\history_login.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\Models\infoplayer.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\Models\infoplayer.cs
+    projectPath: ..\api_gamebai\api_gamebai\Models\infoplayer.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\Models\LoadListFriend_Result.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\Models\LoadListFriend_Result.cs
+    projectPath: ..\api_gamebai\api_gamebai\Models\LoadListFriend_Result.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\Models\LoginData_Result.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\Models\LoginData_Result.cs
+    projectPath: ..\api_gamebai\api_gamebai\Models\LoginData_Result.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\Models\player.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\Models\player.cs
+    projectPath: ..\api_gamebai\api_gamebai\Models\player.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\Models\player_key.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\Models\player_key.cs
+    projectPath: ..\api_gamebai\api_gamebai\Models\player_key.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\Models\RoomCreateModel.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\Models\RoomCreateModel.cs
+    projectPath: ..\api_gamebai\api_gamebai\Models\RoomCreateModel.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\Models\RoomJoinModel.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\Models\RoomJoinModel.cs
+    projectPath: ..\api_gamebai\api_gamebai\Models\RoomJoinModel.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\Models\RoomLeaveModel.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\Models\RoomLeaveModel.cs
+    projectPath: ..\api_gamebai\api_gamebai\Models\RoomLeaveModel.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\Models\RoomModel.Context.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\Models\RoomModel.Context.cs
+    projectPath: ..\api_gamebai\api_gamebai\Models\RoomModel.Context.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\Models\RoomModel.Designer.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\Models\RoomModel.Designer.cs
+    projectPath: ..\api_gamebai\api_gamebai\Models\RoomModel.Designer.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\Models\RoomModel.edmx
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\Models\RoomModel.edmx
+    projectPath: ..\api_gamebai\api_gamebai\Models\RoomModel.edmx
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\Models\RoomModel.edmx.diagram
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\Models\RoomModel.edmx.diagram
+    projectPath: ..\api_gamebai\api_gamebai\Models\RoomModel.edmx.diagram
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\Models\UsersModel.Context.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\Models\UsersModel.Context.cs
+    projectPath: ..\api_gamebai\api_gamebai\Models\UsersModel.Context.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\Models\UsersModel.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\Models\UsersModel.cs
+    projectPath: ..\api_gamebai\api_gamebai\Models\UsersModel.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\Models\UsersModel.Designer.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\Models\UsersModel.Designer.cs
+    projectPath: ..\api_gamebai\api_gamebai\Models\UsersModel.Designer.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\Models\vroom_listplayer.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\Models\vroom_listplayer.cs
+    projectPath: ..\api_gamebai\api_gamebai\Models\vroom_listplayer.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\obj\Debug\api_gamebai.csproj.CoreCompileInputs.cache
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csproj.CoreCompileInputs.cache
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csproj.CoreCompileInputs.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Debug\api_gamebai.csproj.FileListAbsolute.txt
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csproj.FileListAbsolute.txt
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csproj.FileListAbsolute.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Debug\api_gamebai.csprojAssemblyReference.cache
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csprojAssemblyReference.cache
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Debug\api_gamebai.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Debug\api_gamebai.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\api_gamebai.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Debug\api_gamebai.pdb
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Debug\api_gamebai.pdb
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\api_gamebai.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Debug\edmxResourcesToEmbed\Models\RoomModel.csdl
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Debug\edmxResourcesToEmbed\Models\RoomModel.csdl
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\edmxResourcesToEmbed\Models\RoomModel.csdl
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Debug\edmxResourcesToEmbed\Models\RoomModel.msl
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Debug\edmxResourcesToEmbed\Models\RoomModel.msl
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\edmxResourcesToEmbed\Models\RoomModel.msl
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Debug\edmxResourcesToEmbed\Models\RoomModel.ssdl
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Debug\edmxResourcesToEmbed\Models\RoomModel.ssdl
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\edmxResourcesToEmbed\Models\RoomModel.ssdl
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Debug\TempPE\Models.RoomModel.cs.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Debug\TempPE\Models.RoomModel.cs.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\TempPE\Models.RoomModel.cs.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Debug\TempPE\Models.RoomModel.Designer.cs.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Debug\TempPE\Models.RoomModel.Designer.cs.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\TempPE\Models.RoomModel.Designer.cs.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Debug\TempPE\Models.UsersModel.cs.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Debug\TempPE\Models.UsersModel.cs.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\TempPE\Models.UsersModel.cs.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Debug\TempPE\Models.UsersModel.Designer.cs.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Debug\TempPE\Models.UsersModel.Designer.cs.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\TempPE\Models.UsersModel.Designer.cs.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\api_gamebai.csproj.CoreCompileInputs.cache
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\api_gamebai.csproj.CoreCompileInputs.cache
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\api_gamebai.csproj.CoreCompileInputs.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\api_gamebai.csproj.FileListAbsolute.txt
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\api_gamebai.csproj.FileListAbsolute.txt
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\api_gamebai.csproj.FileListAbsolute.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\api_gamebai.csprojAssemblyReference.cache
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\api_gamebai.csprojAssemblyReference.cache
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\api_gamebai.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\api_gamebai.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\api_gamebai.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\api_gamebai.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\api_gamebai.pdb
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\api_gamebai.pdb
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\api_gamebai.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\edmxResourcesToEmbed\Models\RoomModel.csdl
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\edmxResourcesToEmbed\Models\RoomModel.csdl
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\edmxResourcesToEmbed\Models\RoomModel.csdl
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\obj\Release\edmxResourcesToEmbed\Models\RoomModel.msl
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\edmxResourcesToEmbed\Models\RoomModel.msl
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\edmxResourcesToEmbed\Models\RoomModel.msl
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\obj\Release\edmxResourcesToEmbed\Models\RoomModel.ssdl
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\edmxResourcesToEmbed\Models\RoomModel.ssdl
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\edmxResourcesToEmbed\Models\RoomModel.ssdl
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\api_gamebai.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\api_gamebai.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\api_gamebai.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\api_gamebai.pdb
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\api_gamebai.pdb
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\api_gamebai.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\csc.exe
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\csc.exe
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\csc.exe
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\csc.exe.config
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\csc.exe.config
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\csc.exe.config
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\csc.rsp
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\csc.rsp
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\csc.rsp
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\csi.exe
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\csi.exe
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\csi.exe
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\csi.exe.config
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\csi.exe.config
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\csi.exe.config
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\csi.rsp
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\csi.rsp
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\csi.rsp
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CSharp.Core.targets
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CSharp.Core.targets
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CSharp.Core.targets
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.Managed.Core.targets
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.Managed.Core.targets
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.Managed.Core.targets
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.Win32.Primitives.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.Win32.Primitives.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.Win32.Primitives.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Collections.Immutable.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Collections.Immutable.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Collections.Immutable.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Globalization.Calendars.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Globalization.Calendars.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Globalization.Calendars.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.IO.Compression.ZipFile.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.IO.Compression.ZipFile.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.IO.Compression.ZipFile.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.IO.Pipes.AccessControl.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.IO.Pipes.AccessControl.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.IO.Pipes.AccessControl.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.IO.Pipes.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.IO.Pipes.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.IO.Pipes.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Net.Http.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Net.Http.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Net.Http.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Net.Sockets.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Net.Sockets.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Net.Sockets.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Reflection.Metadata.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Reflection.Metadata.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Reflection.Metadata.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Security.AccessControl.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Security.AccessControl.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Security.AccessControl.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Security.Claims.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Security.Claims.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Security.Claims.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Security.Principal.Windows.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Security.Principal.Windows.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Security.Principal.Windows.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Threading.Tasks.Extensions.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Threading.Tasks.Extensions.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\System.Threading.Tasks.Extensions.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\vbc.exe
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\vbc.exe
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\vbc.exe
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\vbc.exe.config
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\vbc.exe.config
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\vbc.exe.config
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\vbc.rsp
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\vbc.rsp
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\vbc.rsp
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\VBCSCompiler.exe
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\VBCSCompiler.exe
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\VBCSCompiler.exe
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\VBCSCompiler.exe.config
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\VBCSCompiler.exe.config
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\bin\roslyn\VBCSCompiler.exe.config
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\Models\RoomManagerModel.edmx.diagram
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\Models\RoomManagerModel.edmx.diagram
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\Models\RoomManagerModel.edmx.diagram
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\Models\RoomModel.edmx.diagram
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\Models\RoomModel.edmx.diagram
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\Models\RoomModel.edmx.diagram
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\Web.config
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\Web.config
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\Package\PackageTmp\Web.config
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\TempPE\Models.RoomModel.Context.cs.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\TempPE\Models.RoomModel.Context.cs.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\TempPE\Models.RoomModel.Context.cs.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\obj\Release\TempPE\Models.RoomModel.cs.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\TempPE\Models.RoomModel.cs.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\TempPE\Models.RoomModel.cs.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\obj\Release\TempPE\Models.RoomModel.Designer.cs.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\TempPE\Models.RoomModel.Designer.cs.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\TempPE\Models.RoomModel.Designer.cs.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\obj\Release\TempPE\Models.UsersModel.cs.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\TempPE\Models.UsersModel.cs.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\TempPE\Models.UsersModel.cs.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\TempPE\Models.UsersModel.Designer.cs.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\TempPE\Models.UsersModel.Designer.cs.dll
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\TempPE\Models.UsersModel.Designer.cs.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\TransformWebConfig\original\Web.config
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\TransformWebConfig\original\Web.config
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\TransformWebConfig\original\Web.config
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Release\TransformWebConfig\transformed\Web.config
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Release\TransformWebConfig\transformed\Web.config
+    projectPath: ..\api_gamebai\api_gamebai\obj\Release\TransformWebConfig\transformed\Web.config
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\Properties\PublishProfiles\FolderProfile.pubxml.user
+    fullPath: D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\Properties\PublishProfiles\FolderProfile.pubxml.user
+    projectPath: ..\api_gamebai\api_gamebai\Properties\PublishProfiles\FolderProfile.pubxml.user
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: gameBai\.vs\gameBai\v16\.suo
-    fullPath: C:\Github do an\do-an-c-\gameBai\.vs\gameBai\v16\.suo
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\.vs\gameBai\v16\.suo
     projectPath: .vs\gameBai\v16\.suo
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: gameBai\.vs\gameBai\v16\Server\sqlite3\storage.ide
-    fullPath: C:\Github do an\do-an-c-\gameBai\.vs\gameBai\v16\Server\sqlite3\storage.ide
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\.vs\gameBai\v16\Server\sqlite3\storage.ide
     projectPath: .vs\gameBai\v16\Server\sqlite3\storage.ide
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: gameBai\.vs\gameBai\v16\Server\sqlite3\storage.ide-shm
-    fullPath: C:\Github do an\do-an-c-\gameBai\.vs\gameBai\v16\Server\sqlite3\storage.ide-shm
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\.vs\gameBai\v16\Server\sqlite3\storage.ide-shm
     projectPath: .vs\gameBai\v16\Server\sqlite3\storage.ide-shm
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
   - path: gameBai\.vs\gameBai\v16\Server\sqlite3\storage.ide-wal
-    fullPath: C:\Github do an\do-an-c-\gameBai\.vs\gameBai\v16\Server\sqlite3\storage.ide-wal
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\.vs\gameBai\v16\Server\sqlite3\storage.ide-wal
     projectPath: .vs\gameBai\v16\Server\sqlite3\storage.ide-wal
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
   - path: gameBai\Assembly-CSharp.csproj
-    fullPath: C:\Github do an\do-an-c-\gameBai\Assembly-CSharp.csproj
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Assembly-CSharp.csproj
     projectPath: Assembly-CSharp.csproj
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameBai\Assets\Scenes\ChangeThePage.unity
-    fullPath: C:\Github do an\do-an-c-\gameBai\Assets\Scenes\ChangeThePage.unity
-    projectPath: Assets\Scenes\ChangeThePage.unity
+  - path: gameBai\Assets\Prefab\Player_local.prefab
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Assets\Prefab\Player_local.prefab
+    projectPath: Assets\Prefab\Player_local.prefab
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameBai\Assets\Script\PhongCho\CreateActive.cs
-    fullPath: C:\Github do an\do-an-c-\gameBai\Assets\Script\PhongCho\CreateActive.cs
-    projectPath: Assets\Script\PhongCho\CreateActive.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Assets\Script\PhongCho\CreateActive.cs.meta
-    fullPath: C:\Github do an\do-an-c-\gameBai\Assets\Script\PhongCho\CreateActive.cs.meta
-    projectPath: Assets\Script\PhongCho\CreateActive.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Assets\Script\PhongCho\CreateRoom.cs
-    fullPath: C:\Github do an\do-an-c-\gameBai\Assets\Script\PhongCho\CreateRoom.cs
-    projectPath: Assets\Script\PhongCho\CreateRoom.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Assets\Script\PhongCho\CreateRoom.cs.meta
-    fullPath: C:\Github do an\do-an-c-\gameBai\Assets\Script\PhongCho\CreateRoom.cs.meta
-    projectPath: Assets\Script\PhongCho\CreateRoom.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Assets\Script\PhongCho\Sanhcho.cs
-    fullPath: C:\Github do an\do-an-c-\gameBai\Assets\Script\PhongCho\Sanhcho.cs
-    projectPath: Assets\Script\PhongCho\Sanhcho.cs
+  - path: gameBai\Assets\Scenes\Room_play.unity
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Assets\Scenes\Room_play.unity
+    projectPath: Assets\Scenes\Room_play.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameBai\Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans SDF
-      - Fallback.asset
-    fullPath: C:\Github do an\do-an-c-\gameBai\Assets\TextMesh Pro\Resources\Fonts
-      & Materials\LiberationSans SDF - Fallback.asset
-    projectPath: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans SDF
-      - Fallback.asset
+  - path: gameBai\Assets\Script\Contronller\Controller_NetWork.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Assets\Script\Contronller\Controller_NetWork.cs
+    projectPath: Assets\Script\Contronller\Controller_NetWork.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: gameBai\Assets\Script\Contronller\ControllerPlayer.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Assets\Script\Contronller\ControllerPlayer.cs
+    projectPath: Assets\Script\Contronller\ControllerPlayer.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Assets\Script\Manager\ManagerGame.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Assets\Script\Manager\ManagerGame.cs
+    projectPath: Assets\Script\Manager\ManagerGame.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Assets\Script\Models.meta
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Assets\Script\Models.meta
+    projectPath: Assets\Script\Models.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Assets\Script\Models\Player.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Assets\Script\Models\Player.cs
+    projectPath: Assets\Script\Models\Player.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Assets\Script\Models\Player.cs.meta
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Assets\Script\Models\Player.cs.meta
+    projectPath: Assets\Script\Models\Player.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Assets\Script\Models\Player_InRoomModels.cs
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Assets\Script\Models\Player_InRoomModels.cs
+    projectPath: Assets\Script\Models\Player_InRoomModels.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Assets\Script\Models\Player_InRoomModels.cs.meta
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Assets\Script\Models\Player_InRoomModels.cs.meta
+    projectPath: Assets\Script\Models\Player_InRoomModels.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: gameBai\Library\assetDatabase3
-    fullPath: C:\Github do an\do-an-c-\gameBai\Library\assetDatabase3
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\assetDatabase3
     projectPath: Library\assetDatabase3
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: gameBai\Library\CurrentLayout.dwlt
-    fullPath: C:\Github do an\do-an-c-\gameBai\Library\CurrentLayout.dwlt
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\CurrentLayout.dwlt
     projectPath: Library\CurrentLayout.dwlt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: gameBai\Library\EditorInstance.json
-    fullPath: C:\Github do an\do-an-c-\gameBai\Library\EditorInstance.json
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\EditorInstance.json
     projectPath: Library\EditorInstance.json
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
+    indexStatus: 1
+    workTreeStatus: 1
   - path: gameBai\Library\gfu\cache\branches.yaml
-    fullPath: C:\Github do an\do-an-c-\gameBai\Library\gfu\cache\branches.yaml
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\gfu\cache\branches.yaml
     projectPath: Library\gfu\cache\branches.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: gameBai\Library\gfu\cache\gitlocks.yaml
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: gameBai\Library\gfu\cache\gitlog.yaml
-    fullPath: C:\Github do an\do-an-c-\gameBai\Library\gfu\cache\gitlog.yaml
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\gfu\cache\gitlog.yaml
     projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: gameBai\Library\gfu\cache\gitstatusentries.yaml
-    fullPath: C:\Github do an\do-an-c-\gameBai\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: gameBai\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: C:\Github do an\do-an-c-\gameBai\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: gameBai\Library\gfu\cache\repoinfo.yaml
-    fullPath: C:\Github do an\do-an-c-\gameBai\Library\gfu\cache\repoinfo.yaml
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: gameBai\Library\InspectorExpandedItems.asset
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: gameBai\Library\LastSceneManagerSetup.txt
-    fullPath: C:\Github do an\do-an-c-\gameBai\Library\LastSceneManagerSetup.txt
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\LastSceneManagerSetup.txt
     projectPath: Library\LastSceneManagerSetup.txt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameBai\Library\metadata\2e\2e498d1c8094910479dc3e1b768306a4.info
-    fullPath: C:\Github do an\do-an-c-\gameBai\Library\metadata\2e\2e498d1c8094910479dc3e1b768306a4.info
-    projectPath: Library\metadata\2e\2e498d1c8094910479dc3e1b768306a4.info
+  - path: gameBai\Library\metadata\1b\1bd4bba630581f34f89d02636e306b6b
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\metadata\1b\1bd4bba630581f34f89d02636e306b6b
+    projectPath: Library\metadata\1b\1bd4bba630581f34f89d02636e306b6b
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameBai\Library\metadata\62\622c59f5af8e0f842b2a782557089022
-    fullPath: C:\Github do an\do-an-c-\gameBai\Library\metadata\62\622c59f5af8e0f842b2a782557089022
-    projectPath: Library\metadata\62\622c59f5af8e0f842b2a782557089022
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Library\metadata\62\622c59f5af8e0f842b2a782557089022.info
-    fullPath: C:\Github do an\do-an-c-\gameBai\Library\metadata\62\622c59f5af8e0f842b2a782557089022.info
-    projectPath: Library\metadata\62\622c59f5af8e0f842b2a782557089022.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Library\metadata\dc\dc155b7a843b46a43a6a9da74269e88a
-    fullPath: C:\Github do an\do-an-c-\gameBai\Library\metadata\dc\dc155b7a843b46a43a6a9da74269e88a
-    projectPath: Library\metadata\dc\dc155b7a843b46a43a6a9da74269e88a
+  - path: gameBai\Library\metadata\56\56ec1d0a0f553af4891a2bddbe23bee9
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\metadata\56\56ec1d0a0f553af4891a2bddbe23bee9
+    projectPath: Library\metadata\56\56ec1d0a0f553af4891a2bddbe23bee9
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameBai\Library\metadata\fd\fd6e2c113d8eb234e8d5e1de74d2646b
-    fullPath: C:\Github do an\do-an-c-\gameBai\Library\metadata\fd\fd6e2c113d8eb234e8d5e1de74d2646b
-    projectPath: Library\metadata\fd\fd6e2c113d8eb234e8d5e1de74d2646b
+  - path: gameBai\Library\metadata\83\8320589838428ef41ba9a9b32590f5c3
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\metadata\83\8320589838428ef41ba9a9b32590f5c3
+    projectPath: Library\metadata\83\8320589838428ef41ba9a9b32590f5c3
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: gameBai\Library\metadata\fd\fd6e2c113d8eb234e8d5e1de74d2646b.info
-    fullPath: C:\Github do an\do-an-c-\gameBai\Library\metadata\fd\fd6e2c113d8eb234e8d5e1de74d2646b.info
-    projectPath: Library\metadata\fd\fd6e2c113d8eb234e8d5e1de74d2646b.info
+  - path: gameBai\Library\metadata\83\8320589838428ef41ba9a9b32590f5c3.info
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\metadata\83\8320589838428ef41ba9a9b32590f5c3.info
+    projectPath: Library\metadata\83\8320589838428ef41ba9a9b32590f5c3.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: gameBai\Library\metadata\95\951ac0e9882a7614381587a08584376b
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\metadata\95\951ac0e9882a7614381587a08584376b
+    projectPath: Library\metadata\95\951ac0e9882a7614381587a08584376b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\metadata\95\951ac0e9882a7614381587a08584376b.info
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\metadata\95\951ac0e9882a7614381587a08584376b.info
+    projectPath: Library\metadata\95\951ac0e9882a7614381587a08584376b.info
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\metadata\9d\9d601b17ce6970e4984ee6570ae95502
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\metadata\9d\9d601b17ce6970e4984ee6570ae95502
+    projectPath: Library\metadata\9d\9d601b17ce6970e4984ee6570ae95502
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\a3\a319fe0478a50294cb3ba4426cf7179e
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\metadata\a3\a319fe0478a50294cb3ba4426cf7179e
+    projectPath: Library\metadata\a3\a319fe0478a50294cb3ba4426cf7179e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\a3\a319fe0478a50294cb3ba4426cf7179e.info
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\metadata\a3\a319fe0478a50294cb3ba4426cf7179e.info
+    projectPath: Library\metadata\a3\a319fe0478a50294cb3ba4426cf7179e.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\dc\dc1e0a97f536a9f4dabdd440be6e92c3
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\metadata\dc\dc1e0a97f536a9f4dabdd440be6e92c3
+    projectPath: Library\metadata\dc\dc1e0a97f536a9f4dabdd440be6e92c3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\metadata\dc\dc1e0a97f536a9f4dabdd440be6e92c3.info
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\metadata\dc\dc1e0a97f536a9f4dabdd440be6e92c3.info
+    projectPath: Library\metadata\dc\dc1e0a97f536a9f4dabdd440be6e92c3.info
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\ProjectSettings.asset
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\ProjectSettings.asset
+    projectPath: Library\ProjectSettings.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: gameBai\Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: C:\Github do an\do-an-c-\gameBai\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: gameBai\Library\ScriptAssemblies\Assembly-CSharp.pdb
-    fullPath: C:\Github do an\do-an-c-\gameBai\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\ScriptAssemblies\Assembly-CSharp.pdb
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameBai\Library\StateCache\Hierarchy\c72adf-mainStage.json
-    fullPath: C:\Github do an\do-an-c-\gameBai\Library\StateCache\Hierarchy\c72adf-mainStage.json
-    projectPath: Library\StateCache\Hierarchy\c72adf-mainStage.json
+  - path: gameBai\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameBai\Library\StateCache\SceneView\5fa3e5-mainStage.json
-    fullPath: C:\Github do an\do-an-c-\gameBai\Library\StateCache\SceneView\5fa3e5-mainStage.json
-    projectPath: Library\StateCache\SceneView\5fa3e5-mainStage.json
+  - path: gameBai\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.Timeline.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.Timeline.dll
+    projectPath: Library\ScriptAssemblies\Unity.Timeline.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ShaderCache\EditorEncounteredVariants
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\ShaderCache\EditorEncounteredVariants
+    projectPath: Library\ShaderCache\EditorEncounteredVariants
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\shadercompiler-UnityShaderCompiler.exe1.log
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\shadercompiler-UnityShaderCompiler.exe1.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe1.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\shadercompiler-UnityShaderCompiler.exe2.log
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\shadercompiler-UnityShaderCompiler.exe2.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe2.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\StateCache\Hierarchy\4d97f3-a319fe0478a50294cb.json
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\StateCache\Hierarchy\4d97f3-a319fe0478a50294cb.json
+    projectPath: Library\StateCache\Hierarchy\4d97f3-a319fe0478a50294cb.json
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\StateCache\Hierarchy\4d97f3-mainStage.json
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\StateCache\Hierarchy\4d97f3-mainStage.json
+    projectPath: Library\StateCache\Hierarchy\4d97f3-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\StateCache\SceneView\66eb7d-a319fe0478a50294cb.json
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\StateCache\SceneView\66eb7d-a319fe0478a50294cb.json
+    projectPath: Library\StateCache\SceneView\66eb7d-a319fe0478a50294cb.json
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\StateCache\SceneView\66eb7d-mainStage.json
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\StateCache\SceneView\66eb7d-mainStage.json
+    projectPath: Library\StateCache\SceneView\66eb7d-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\UIElements\EditorWindows\UnityEditor.InspectorWindow.pref
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Library\UIElements\EditorWindows\UnityEditor.InspectorWindow.pref
+    projectPath: Library\UIElements\EditorWindows\UnityEditor.InspectorWindow.pref
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: gameBai\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    fullPath: C:\Github do an\do-an-c-\gameBai\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
     projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: gameBai\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: C:\Github do an\do-an-c-\gameBai\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameBai\obj\Debug\Assembly-CSharp.dll
-    fullPath: C:\Github do an\do-an-c-\gameBai\obj\Debug\Assembly-CSharp.dll
-    projectPath: obj\Debug\Assembly-CSharp.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: gameBai\obj\Debug\Assembly-CSharp.pdb
-    fullPath: C:\Github do an\do-an-c-\gameBai\obj\Debug\Assembly-CSharp.pdb
-    projectPath: obj\Debug\Assembly-CSharp.pdb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: gameBai\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CopyComplete
-    fullPath: C:\Github do an\do-an-c-\gameBai\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CopyComplete
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CopyComplete
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.FileListAbsolute.txt
-    fullPath: C:\Github do an\do-an-c-\gameBai\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.FileListAbsolute.txt
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.FileListAbsolute.txt
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: gameBai\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    fullPath: C:\Github do an\do-an-c-\gameBai\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameBai\obj\Debug\Assembly-CSharp-Editor-firstpass.dll
-    fullPath: C:\Github do an\do-an-c-\gameBai\obj\Debug\Assembly-CSharp-Editor-firstpass.dll
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.dll
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\obj\Debug\Assembly-CSharp-Editor-firstpass.pdb
-    fullPath: C:\Github do an\do-an-c-\gameBai\obj\Debug\Assembly-CSharp-Editor-firstpass.pdb
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.pdb
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: gameBai\Temp\__Backupscenes\0.backup
-    fullPath: C:\Github do an\do-an-c-\gameBai\Temp\__Backupscenes\0.backup
-    projectPath: Temp\__Backupscenes\0.backup
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: gameBai\Temp\UnityLockfile
-    fullPath: C:\Github do an\do-an-c-\gameBai\Temp\UnityLockfile
-    projectPath: Temp\UnityLockfile
+  - path: gameBai\ProjectSettings\QualitySettings.asset
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\ProjectSettings\QualitySettings.asset
+    projectPath: ProjectSettings\QualitySettings.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: gameBai\Temp\UnityTempFile-eed771ac7d1183240a91c84b452f3e62
-    fullPath: C:\Github do an\do-an-c-\gameBai\Temp\UnityTempFile-eed771ac7d1183240a91c84b452f3e62
-    projectPath: Temp\UnityTempFile-eed771ac7d1183240a91c84b452f3e62
+  - path: gameBai\ProjectSettings\UnityConnectSettings.asset
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\ProjectSettings\UnityConnectSettings.asset
+    projectPath: ProjectSettings\UnityConnectSettings.asset
     originalPath: 
     indexStatus: 0
-    workTreeStatus: 5
-  - path: gameBai\Temp\UnityTempFile-f2efe14c95f02cc45b46e130aa28fdc7
-    fullPath: C:\Github do an\do-an-c-\gameBai\Temp\UnityTempFile-f2efe14c95f02cc45b46e130aa28fdc7
-    projectPath: Temp\UnityTempFile-f2efe14c95f02cc45b46e130aa28fdc7
+    workTreeStatus: 3
+  - path: gameBai\Temp\__Backupscenes\0.backup
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\__Backupscenes\0.backup
+    projectPath: Temp\__Backupscenes\0.backup
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityLockfile
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityLockfile
+    projectPath: Temp\UnityLockfile
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-0362374a137f8a54fade9f03a158eeb7
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-0362374a137f8a54fade9f03a158eeb7
+    projectPath: Temp\UnityTempFile-0362374a137f8a54fade9f03a158eeb7
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-07bf8214b505f8c408a45a56b47a77b5
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-07bf8214b505f8c408a45a56b47a77b5
+    projectPath: Temp\UnityTempFile-07bf8214b505f8c408a45a56b47a77b5
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-0b0a9cfbdd7d84b46aa33130411db2be
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-0b0a9cfbdd7d84b46aa33130411db2be
+    projectPath: Temp\UnityTempFile-0b0a9cfbdd7d84b46aa33130411db2be
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-0d2dea5fd0bb6384eaa07eadb2a7061d
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-0d2dea5fd0bb6384eaa07eadb2a7061d
+    projectPath: Temp\UnityTempFile-0d2dea5fd0bb6384eaa07eadb2a7061d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-1592dd645087d144380e003009b359df
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-1592dd645087d144380e003009b359df
+    projectPath: Temp\UnityTempFile-1592dd645087d144380e003009b359df
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-1cd3ad3b167a1a14e89d244366ca81a4
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-1cd3ad3b167a1a14e89d244366ca81a4
+    projectPath: Temp\UnityTempFile-1cd3ad3b167a1a14e89d244366ca81a4
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-38e4caf2c552fa54a892fc83277121f6
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-38e4caf2c552fa54a892fc83277121f6
+    projectPath: Temp\UnityTempFile-38e4caf2c552fa54a892fc83277121f6
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-410e39f7064e3a741b25522b79143c9f
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-410e39f7064e3a741b25522b79143c9f
+    projectPath: Temp\UnityTempFile-410e39f7064e3a741b25522b79143c9f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-51998e9cf4ae0344d83b6c1dae26cb85
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-51998e9cf4ae0344d83b6c1dae26cb85
+    projectPath: Temp\UnityTempFile-51998e9cf4ae0344d83b6c1dae26cb85
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-615d36f4f0675b645a416a2d5e689bb7
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-615d36f4f0675b645a416a2d5e689bb7
+    projectPath: Temp\UnityTempFile-615d36f4f0675b645a416a2d5e689bb7
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-61cede33e71d260448f0349e35b90987
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-61cede33e71d260448f0349e35b90987
+    projectPath: Temp\UnityTempFile-61cede33e71d260448f0349e35b90987
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-6220f401165314b4fb5d55b69af6a4e0
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-6220f401165314b4fb5d55b69af6a4e0
+    projectPath: Temp\UnityTempFile-6220f401165314b4fb5d55b69af6a4e0
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-62c16d211106c7b4099868b45f6c5fab
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-62c16d211106c7b4099868b45f6c5fab
+    projectPath: Temp\UnityTempFile-62c16d211106c7b4099868b45f6c5fab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-674c3995798f5204c8d55f97231802d1
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-674c3995798f5204c8d55f97231802d1
+    projectPath: Temp\UnityTempFile-674c3995798f5204c8d55f97231802d1
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-6e6edb867546e7e449774bdd0e73aeca
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-6e6edb867546e7e449774bdd0e73aeca
+    projectPath: Temp\UnityTempFile-6e6edb867546e7e449774bdd0e73aeca
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-80bf07a5ce57696488392e486d374b17
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-80bf07a5ce57696488392e486d374b17
+    projectPath: Temp\UnityTempFile-80bf07a5ce57696488392e486d374b17
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-8674f96f2da77b348b77b45ecc9db093
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-8674f96f2da77b348b77b45ecc9db093
+    projectPath: Temp\UnityTempFile-8674f96f2da77b348b77b45ecc9db093
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-8bac59902425178499be29afec871ab5
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-8bac59902425178499be29afec871ab5
+    projectPath: Temp\UnityTempFile-8bac59902425178499be29afec871ab5
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-8fb5bc9ebc3b1e84a946cd31d86b7ab5
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-8fb5bc9ebc3b1e84a946cd31d86b7ab5
+    projectPath: Temp\UnityTempFile-8fb5bc9ebc3b1e84a946cd31d86b7ab5
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-91a6898841e210a4faac0dc861d80c40
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-91a6898841e210a4faac0dc861d80c40
+    projectPath: Temp\UnityTempFile-91a6898841e210a4faac0dc861d80c40
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-930a0cc5abba2884bb8a920379c2fe4e
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-930a0cc5abba2884bb8a920379c2fe4e
+    projectPath: Temp\UnityTempFile-930a0cc5abba2884bb8a920379c2fe4e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-97d0241619f1df84694d182abcc748aa
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-97d0241619f1df84694d182abcc748aa
+    projectPath: Temp\UnityTempFile-97d0241619f1df84694d182abcc748aa
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-9d4ed24e90f396546901c667110face2
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-9d4ed24e90f396546901c667110face2
+    projectPath: Temp\UnityTempFile-9d4ed24e90f396546901c667110face2
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-a0112eabd2bd0f84799e5575b246cd0c
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-a0112eabd2bd0f84799e5575b246cd0c
+    projectPath: Temp\UnityTempFile-a0112eabd2bd0f84799e5575b246cd0c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-ac0e9112167d3f94da243b5bf550fffb
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-ac0e9112167d3f94da243b5bf550fffb
+    projectPath: Temp\UnityTempFile-ac0e9112167d3f94da243b5bf550fffb
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-b1461f29a6210b542989cf92d7e277d6
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-b1461f29a6210b542989cf92d7e277d6
+    projectPath: Temp\UnityTempFile-b1461f29a6210b542989cf92d7e277d6
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-b23b854836186ca42b1624ddb9598d59
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-b23b854836186ca42b1624ddb9598d59
+    projectPath: Temp\UnityTempFile-b23b854836186ca42b1624ddb9598d59
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-b91f4b81aa9253c4fbedbdcd405b6054
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-b91f4b81aa9253c4fbedbdcd405b6054
+    projectPath: Temp\UnityTempFile-b91f4b81aa9253c4fbedbdcd405b6054
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-be4b6e1a0f75ede47a0d9a5740780845
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-be4b6e1a0f75ede47a0d9a5740780845
+    projectPath: Temp\UnityTempFile-be4b6e1a0f75ede47a0d9a5740780845
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-bf2d0f8498d10db4b93588a574da4d07
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-bf2d0f8498d10db4b93588a574da4d07
+    projectPath: Temp\UnityTempFile-bf2d0f8498d10db4b93588a574da4d07
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-c7332d020d8702742afc4018c744a03b
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-c7332d020d8702742afc4018c744a03b
+    projectPath: Temp\UnityTempFile-c7332d020d8702742afc4018c744a03b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-d0e83c6f8e5fedd4fbfaeaa0976d48d1
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-d0e83c6f8e5fedd4fbfaeaa0976d48d1
+    projectPath: Temp\UnityTempFile-d0e83c6f8e5fedd4fbfaeaa0976d48d1
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-d72a5d90c51c65f408f5d8e8e571c308
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-d72a5d90c51c65f408f5d8e8e571c308
+    projectPath: Temp\UnityTempFile-d72a5d90c51c65f408f5d8e8e571c308
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-ead4dcdfabce94c438f2cfc0ecd7a5f5
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-ead4dcdfabce94c438f2cfc0ecd7a5f5
+    projectPath: Temp\UnityTempFile-ead4dcdfabce94c438f2cfc0ecd7a5f5
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-f4d716780e2862d4db64c458da5259df
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-f4d716780e2862d4db64c458da5259df
+    projectPath: Temp\UnityTempFile-f4d716780e2862d4db64c458da5259df
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-f9e0a9230295bc24488c7b99cb4661ba
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-f9e0a9230295bc24488c7b99cb4661ba
+    projectPath: Temp\UnityTempFile-f9e0a9230295bc24488c7b99cb4661ba
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-f9e21f11aaa19c14bbb32e6c2a0b4365
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-f9e21f11aaa19c14bbb32e6c2a0b4365
+    projectPath: Temp\UnityTempFile-f9e21f11aaa19c14bbb32e6c2a0b4365
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Temp\UnityTempFile-fa8ea976cb03ca14a9e69e87b0911388
+    fullPath: D:\backup E\gitHub\do-an-c-\gameBai\Temp\UnityTempFile-fa8ea976cb03ca14a9e69e87b0911388
+    projectPath: Temp\UnityTempFile-fa8ea976cb03ca14a9e69e87b0911388
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1

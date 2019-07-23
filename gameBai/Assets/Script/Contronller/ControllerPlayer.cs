@@ -5,14 +5,17 @@ using UnityEngine.UI;
 
 public class ControllerPlayer : MonoBehaviour
 {
+    public Player player;
     public bool isLocalPlayer;
     public List<GameObject> cardsOnHand = new List<GameObject>();
     public GameObject manager;
     public bool selectColor;
+    [SerializeField]
+    private GameObject child;
     //public GameObject UI_select;
     private void Start()
     {
-        manager = GameObject.Find("Manager");
+        manager = GameObject.Find("Manager");       
     }
     /// <summary>
     /// tạo card thui mà
@@ -20,7 +23,7 @@ public class ControllerPlayer : MonoBehaviour
     /// <param name="card">bỏ lồn vào đây</param>
     public void AddCard(GameObject card)
     {
-        GameObject temp = Instantiate(card, gameObject.transform);
+        GameObject temp = Instantiate(card,gameObject.transform);
         cardsOnHand.Add(temp);
     }
     public void RemoveAllCard()
