@@ -27,6 +27,7 @@ public class Sanhcho : MonoBehaviour
         StartCoroutine(GetRequestPhongcho("http://26.60.150.44/api/User/Get/" + PlayerPrefs.GetInt("id").ToString()));
         GetComponent<Phongchoset>().TatPhongcho();
         StartCoroutine(GetRequestDowloadAvartar("http://26.60.150.44/upload/" + PlayerPrefs.GetString("avartar")));
+        GetComponent<CreateActive>().TatTaophong();
     }
     public void Upload()
     {
@@ -71,8 +72,6 @@ public class Sanhcho : MonoBehaviour
                 Debug.Log(www.text);
                 StartCoroutine(GetRequestDowloadAvartar("http://26.60.150.44/upload/" + PlayerPrefs.GetString("avartar")));
             }
-
-
         }
     }
     public string MD5(string input)
@@ -156,9 +155,8 @@ public class Sanhcho : MonoBehaviour
             }
         }
     }
-
-
 }
+
 
 
 
