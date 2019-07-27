@@ -17,12 +17,16 @@ public class Login : MonoBehaviour
     public TMP_InputField repassword;
     public TMP_InputField email;
     DataFromLogin mnhandata = new DataFromLogin();
+    public static ConnectToServer connect = new ConnectToServer();
     public void onLogin()
     {
         sendDataLogin dataLogin = new sendDataLogin(username_login.text, password_login.text);
         string json = JsonUtility.ToJson(dataLogin);
         StartCoroutine(GetRequestLogin("http://26.60.150.44/api/User/Login", json));
+
         Debug.Log(json);
+
+        
        
     }
     public void onRegister()
@@ -62,19 +66,27 @@ public class Login : MonoBehaviour
             {
                 try
                 {
-                    mnhandata = JsonUtility.FromJson<DataFromLogin>(webRequest.downloadHandler.text);
-                    Debug.Log(webRequest.downloadHandler.text);
-                    if(mnhandata.result > 0)
+                    if (webRequest.isDone)
                     {
-                        PlayerPrefs.SetInt("id",mnhandata.data.id);
-                        PlayerPrefs.SetString("avartar",mnhandata.data.avartar);
-                       //ebug.Log(JsonUtility.ToJson(mnhandata));
-                        StartCoroutine(LoadYourAsyncScene());
-                    }
-                    else
-                    {
-                        Debug.Log(mnhandata.message);
-                        //Debug.Log(mnhandata.data);
+                        mnhandata = JsonUtility.FromJson<DataFromLogin>(webRequest.downloadHandler.text);
+                        Debug.Log(webRequest.downloadHandler.text);
+                        if (mnhandata.result > 0)
+                        {
+                            PlayerPrefs.SetInt("id", mnhandata.data.id);
+                            PlayerPrefs.SetString("avartar", mnhandata.data.avartar);
+                            connect.Connect("26.60.150.44", 8080);
+                            PlayerModel player = new PlayerModel();
+                            player.ID_player = mnhandata.data.id;
+                            player.cmd = "Login";
+                            connect.Send(player);
+                            //ebug.Log(JsonUtility.ToJson(mnhandata));
+                            StartCoroutine(LoadYourAsyncScene());
+                        }
+                        else
+                        {
+                            Debug.Log(mnhandata.message);
+                            //Debug.Log(mnhandata.data);
+                        }
                     }
                 }
                 catch(Exception e)

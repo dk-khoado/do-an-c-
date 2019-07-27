@@ -30,7 +30,7 @@ public class Sanhcho : MonoBehaviour
     }
     public void Upload()
     {
-        path = EditorUtility.OpenFilePanel("Chon hinh di may", "*", "JPG|PNJ");
+        //path = EditorUtility.OpenFilePanel("Chon hinh di may", "*", "JPG|PNJ");
         StartCoroutine(Upload(File.ReadAllBytes(path)));
         StartCoroutine(GetRequestDowloadAvartar("http://26.60.150.44/upload/" + PlayerPrefs.GetString("avartar")));
     }

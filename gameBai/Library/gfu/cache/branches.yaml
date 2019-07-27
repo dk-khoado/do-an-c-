@@ -13,29 +13,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2019-07-27T16:46:18.228+07:00
-  initializedAtString: 2019-07-27T14:44:13.257+07:00
+  lastUpdatedAtString: 2019-07-27T18:37:56.075+07:00
+  initializedAtString: 2019-07-27T18:07:23.079+07:00
   localBranches:
   - name: duy_01
     tracking: origin/duy_01
-  - name: khoa
-    tracking: origin/khoa
   - name: master
     tracking: origin/master
-  - name: tu
-    tracking: origin/tu
-  - name: tuan
-    tracking: origin/tuan
   remoteBranches:
-  - name: origin/duy_01
-    tracking: '[None]'
   - name: origin/HEAD
-    tracking: '[None]'
-  - name: origin/khoa
-    tracking: '[None]'
-  - name: origin/master
-    tracking: '[None]'
-  - name: origin/tu
     tracking: '[None]'
   - name: origin/tuan
     tracking: '[None]'
@@ -50,70 +36,28 @@ MonoBehaviour:
   localConfigBranches:
     keys:
     - duy_01
-    - khoa
     - master
-    - tu
-    - tuan
     values:
     - name: duy_01
       remote:
         name: origin
         url: https://github.com/kakoi-3nhan4-16/do-an-c-.git
       trackingBranch: duy_01
-    - name: khoa
-      remote:
-        name: origin
-        url: https://github.com/kakoi-3nhan4-16/do-an-c-.git
-      trackingBranch: khoa
     - name: master
       remote:
         name: origin
         url: https://github.com/kakoi-3nhan4-16/do-an-c-.git
       trackingBranch: master
-    - name: tu
-      remote:
-        name: origin
-        url: https://github.com/kakoi-3nhan4-16/do-an-c-.git
-      trackingBranch: tu
-    - name: tuan
-      remote:
-        name: origin
-        url: https://github.com/kakoi-3nhan4-16/do-an-c-.git
-      trackingBranch: tuan
   remoteConfigBranches:
     keys:
     - origin
     subKeys:
     - Values:
-      - duy_01
       - HEAD
-      - khoa
-      - master
-      - tu
       - tuan
     subKeyValues:
     - Values:
-      - name: duy_01
-        remote:
-          name: origin
-          url: https://github.com/kakoi-3nhan4-16/do-an-c-.git
-        trackingBranch: 
       - name: HEAD
-        remote:
-          name: origin
-          url: https://github.com/kakoi-3nhan4-16/do-an-c-.git
-        trackingBranch: 
-      - name: khoa
-        remote:
-          name: origin
-          url: https://github.com/kakoi-3nhan4-16/do-an-c-.git
-        trackingBranch: 
-      - name: master
-        remote:
-          name: origin
-          url: https://github.com/kakoi-3nhan4-16/do-an-c-.git
-        trackingBranch: 
-      - name: tu
         remote:
           name: origin
           url: https://github.com/kakoi-3nhan4-16/do-an-c-.git

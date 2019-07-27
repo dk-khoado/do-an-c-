@@ -17,10 +17,10 @@ public class Upload : MonoBehaviour
     
     public void Open()
     {
-        string path = EditorUtility.OpenFilePanel("Chọn hình đê!!","","PNg");
-        Debug.Log(path);        
-        Debug.Log(File.ReadAllBytes(path).Length);        
-        StartCoroutine(UploadImage(File.ReadAllBytes(path)));
+        //string path = EditorUtility.OpenFilePanel("Chọn hình đê!!","","PNg");
+        //Debug.Log(path);        
+        //Debug.Log(File.ReadAllBytes(path).Length);        
+        //StartCoroutine(UploadImage(File.ReadAllBytes(path)));
     }
 
     [System.Obsolete]
