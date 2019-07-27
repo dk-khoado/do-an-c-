@@ -29,7 +29,7 @@ public class Controller_Lobby : MonoBehaviour
     }
     public void Upload()
     {
-        path = EditorUtility.OpenFilePanel("Chon hinh di may", "*", "JPG");
+        //path = EditorUtility.OpenFilePanel("Chon hinh di may", "*", "JPG");
         StartCoroutine(Upload(File.ReadAllBytes(path)));
         StartCoroutine(GetRequestDowloadAvartar(BaseURL + "/upload/" + PlayerPrefs.GetString("avartar")));
     }
