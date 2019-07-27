@@ -23,8 +23,6 @@ MonoBehaviour:
   - name: tuan
     tracking: origin/tuan
   remoteBranches:
-  - name: origin/duy_01
-    tracking: '[None]'
   - name: origin/HEAD
     tracking: '[None]'
   - name: origin/khoa
@@ -67,18 +65,12 @@ MonoBehaviour:
     - origin
     subKeys:
     - Values:
-      - duy_01
       - HEAD
       - khoa
       - master
       - tuan
     subKeyValues:
     - Values:
-      - name: duy_01
-        remote:
-          name: origin
-          url: https://github.com/kakoi-3nhan4-16/do-an-c-.git
-        trackingBranch: 
       - name: HEAD
         remote:
           name: origin
