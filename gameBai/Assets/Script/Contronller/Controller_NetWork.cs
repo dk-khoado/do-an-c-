@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using TMPro;
 
 public class Controller_NetWork : MonoBehaviour
 {
@@ -12,17 +13,29 @@ public class Controller_NetWork : MonoBehaviour
     public List<Player> players = new List<Player>();
     [SerializeField]
     private ManagerGame manager;
+    private UI_manager uI_Manager;
     private void Awake()
     {
         manager = GetComponent<ManagerGame>();
+        uI_Manager = GetComponent<UI_manager>();
+
     }
     void Start()
-    {        
+    {
+        ID_Room = PlayerPrefs.GetInt("id_room");
+        ID_owner = PlayerPrefs.GetInt("id_owner");
         StartCoroutine(GetInfoPlayer());
     }
     void Update()
     {
-        
+        if (PlayerPrefs.GetInt("id") == ID_owner)
+        {
+            uI_Manager.btnStart.GetComponentInChildren<TMP_Text>().SetText("Bắt Đầu");
+        }
+        else
+        {
+            uI_Manager.btnStart.GetComponentInChildren<TMP_Text>().SetText("Sẳn sàng");
+        }
     }
     //láy danh sách người chơi trong phòng
     IEnumerator GetPlayerRoom()
@@ -35,7 +48,7 @@ public class Controller_NetWork : MonoBehaviour
     }
     IEnumerator GetInfoPlayer()
     {
-        string url = address + "api/RoomManager/GetPlayerInRoom?ID_room="+ID_Room;
+        string url = address + "/api/RoomManager/GetPlayerInRoom?ID_room="+ID_Room;
         using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
         {            
             yield return webRequest.SendWebRequest();
@@ -60,11 +73,17 @@ public class Controller_NetWork : MonoBehaviour
     /// </summary>
     public void SetDataPlayer()
     {
+        int i = 0;
         foreach (var player in players)
         {
-            foreach (var removePlayer in manager.remotePlayers)
+            if (player.player_id == manager.IDLocalPlayer)
             {
-
+                manager.localPlayer.GetComponent<ControllerPlayer>().player = player;
+            }
+            else
+            {
+                manager.remotePlayers[i].GetComponent<ControllerPlayer>().player = player;
+                i++;
             }
         }
     }

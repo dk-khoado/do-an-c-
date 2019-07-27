@@ -11,10 +11,10 @@ public class UI_manager : MonoBehaviour
     [SerializeField]
     private Image colorCurrent;
     public GameObject UIselectColor;
+    public GameObject btnStart;
     // Start is called before the first frame update
     void Start()
-    {
-        
+    {       
     }
 
     // Update is called once per frame

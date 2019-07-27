@@ -25,7 +25,7 @@ namespace api_gamebai.Controllers
                 return new ResponseMessage(BadRequest().ToString(), "Trống !!!");
             }
 
-            if(room.owner_id.ToString() == "" || room.limit_player.ToString() == "" || room.password == "" || room.room_name == "" || room.room_name == null)
+            if(room.owner_id.ToString() == "" || room.limit_player.ToString() == "" || room.room_name == "" || room.room_name == null)
             {
                 return new ResponseMessage(BadRequest().ToString(), "Không đc nhập thiếu");
             }
@@ -48,7 +48,8 @@ namespace api_gamebai.Controllers
                     if (db.players.Count(e => e.id == room.owner_id) > 0)
                     {
                         db.addRoomList(room.owner_id, room.limit_player, room.password, room.room_name);
-                        return new ResponseMessage(Ok().ToString(), "Tạo phòng thành công");
+                        
+                        return new ResponseMessage(Ok().ToString(), "Tạo phòng thành công", db.GetRoomByIDPlayer(room.owner_id).FirstOrDefault(),1);
 
                     }
                     else
@@ -60,8 +61,6 @@ namespace api_gamebai.Controllers
             }
 
         }
-
-
         [HttpPost]
         public ResponseMessage JoinRoom([FromBody]RoomJoinModel room)
         {
@@ -170,6 +169,6 @@ namespace api_gamebai.Controllers
         public ResponseMessage GetPlayerInRoom(int ID_room)
         {            
             return new ResponseMessage("Lấy dữ liêu thành công", db.GetListPlayerInRoom(ID_room).ToList());
-        }
+        }       
     }
 }

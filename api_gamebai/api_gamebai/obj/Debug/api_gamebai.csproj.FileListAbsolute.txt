@@ -255,7 +255,6 @@ D:\C#_project\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csproj.CopyComplete
 D:\C#_project\api_gamebai\api_gamebai\obj\Debug\api_gamebai.dll
 D:\C#_project\api_gamebai\api_gamebai\obj\Debug\api_gamebai.pdb
 D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\Views\mailTemplate.html
-D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csprojAssemblyReference.cache
 C:\Đồ án C#\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 C:\Đồ án C#\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\VBCSCompiler.exe
 C:\Đồ án C#\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\VBCSCompiler.exe.config

@@ -96,5 +96,14 @@ namespace api_gamebai.Models
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<GetListPlayerInRoom_Result>("GetListPlayerInRoom", iD_roomParameter);
         }
+    
+        public virtual ObjectResult<GetRoomByIDPlayer_Result> GetRoomByIDPlayer(Nullable<int> iD_player)
+        {
+            var iD_playerParameter = iD_player.HasValue ?
+                new ObjectParameter("ID_player", iD_player) :
+                new ObjectParameter("ID_player", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<GetRoomByIDPlayer_Result>("GetRoomByIDPlayer", iD_playerParameter);
+        }
     }
 }

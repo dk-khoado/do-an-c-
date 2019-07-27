@@ -65,10 +65,13 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.vroom_listplayer' does not hav
     <Parameter Name="owner_id" Type="int" Mode="In" />
     <Parameter Name="limit_player" Type="int" Mode="In" />
     <Parameter Name="password" Type="varchar" Mode="In" />
-    <Parameter Name="room_name" Type="varchar" Mode="In" />
+    <Parameter Name="room_name" Type="nvarchar" Mode="In" />
   </Function>
   <Function Name="GetListPlayerInRoom" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="ID_room" Type="int" Mode="In" />
+  </Function>
+  <Function Name="GetRoomByIDPlayer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID_player" Type="int" Mode="In" />
   </Function>
   <Function Name="JoinRoomList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="room_id" Type="int" Mode="In" />

@@ -60,5 +60,17 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetRoomByIDPlayer" FunctionName="DatabaseGameBaiModel1.Store.GetRoomByIDPlayer">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DatabaseGameBaiModel1.GetRoomByIDPlayer_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="owner_id" ColumnName="owner_id" />
+          <ScalarProperty Name="limit_player" ColumnName="limit_player" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="current_player" ColumnName="current_player" />
+          <ScalarProperty Name="room_name" ColumnName="room_name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>
