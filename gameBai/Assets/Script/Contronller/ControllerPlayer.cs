@@ -12,10 +12,23 @@ public class ControllerPlayer : MonoBehaviour
     public bool selectColor;
     [SerializeField]
     private GameObject child;
+    public bool isEmty;
+    public bool isRead;
     //public GameObject UI_select;
     private void Start()
     {
-        manager = GameObject.Find("Manager");       
+        manager = GameObject.Find("Manager");    
+    }
+    private void Update()
+    {
+        if (player.player_id==0 && player.nickname =="")
+        {
+            isEmty = true;
+        }
+        else
+        {
+            isEmty = false;
+        }
     }
     /// <summary>
     /// tạo card thui mà

@@ -9,7 +9,7 @@
         <EntityTypeShape EntityType="DatabaseGameBaiModel1.room_list" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="DatabaseGameBaiModel1.room_listplayer" Width="1.5" PointX="3.875" PointY="1.25" IsExpanded="true" />
         <AssociationConnector Association="DatabaseGameBaiModel1.FK_room_listplayer_room_list" />
-        <EntityTypeShape EntityType="DatabaseGameBaiModel1.vroom_listplayer" Width="1.5" PointX="6.5" PointY="1.625" FillColor="Lime" />
+        <EntityTypeShape EntityType="DatabaseGameBaiModel1.vroom_listplayer" Width="1.5" PointX="6.25" PointY="0.625" FillColor="Lime" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -26,12 +26,11 @@ public class Sanhcho : MonoBehaviour
     {
         StartCoroutine(GetRequestPhongcho("http://26.60.150.44/api/User/Get/" + PlayerPrefs.GetInt("id").ToString()));
         GetComponent<Phongchoset>().TatPhongcho();
-        StartCoroutine(GetRequestDowloadAvartar("http://26.60.150.44/upload/" + PlayerPrefs.GetString("avartar")));
-        GetComponent<CreateActive>().TatTaophong();
+        StartCoroutine(GetRequestDowloadAvartar("http://26.60.150.44/upload/" + PlayerPrefs.GetString("avartar")));       
     }
     public void Upload()
     {
-        path = EditorUtility.OpenFilePanel("Chon hinh di may", "*", "JPG");
+        path = EditorUtility.OpenFilePanel("Chon hinh di may", "*", "JPG|PNJ");
         StartCoroutine(Upload(File.ReadAllBytes(path)));
         StartCoroutine(GetRequestDowloadAvartar("http://26.60.150.44/upload/" + PlayerPrefs.GetString("avartar")));
     }

@@ -70,10 +70,13 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.vroom_listplayer' does not hav
           <Parameter Name="owner_id" Type="int" Mode="In" />
           <Parameter Name="limit_player" Type="int" Mode="In" />
           <Parameter Name="password" Type="varchar" Mode="In" />
-          <Parameter Name="room_name" Type="varchar" Mode="In" />
+          <Parameter Name="room_name" Type="nvarchar" Mode="In" />
         </Function>
         <Function Name="GetListPlayerInRoom" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="ID_room" Type="int" Mode="In" />
+        </Function>
+        <Function Name="GetRoomByIDPlayer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID_player" Type="int" Mode="In" />
         </Function>
         <Function Name="JoinRoomList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="room_id" Type="int" Mode="In" />
@@ -173,6 +176,9 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.vroom_listplayer' does not hav
           <Parameter Name="ID_room" Mode="In" Type="Int32" />
           </FunctionImport>
           <EntitySet Name="vroom_listplayer" EntityType="DatabaseGameBaiModel1.vroom_listplayer" />
+          <FunctionImport Name="GetRoomByIDPlayer" ReturnType="Collection(DatabaseGameBaiModel1.GetRoomByIDPlayer_Result)">
+          <Parameter Name="ID_player" Mode="In" Type="Int32" />
+          </FunctionImport>
         </EntityContainer>
         <Association Name="FK_room_listplayer_room_list">
           <End Type="DatabaseGameBaiModel1.room_list" Role="room_list" Multiplicity="1" />
@@ -206,6 +212,14 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.vroom_listplayer' does not hav
           <Property Name="money" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
           <Property Name="avartar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
+        <ComplexType Name="GetRoomByIDPlayer_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="Int32" Name="owner_id" Nullable="false" />
+          <Property Type="Int32" Name="limit_player" Nullable="false" />
+          <Property Type="String" Name="password" Nullable="true" MaxLength="10" />
+          <Property Type="Int32" Name="current_player" Nullable="true" />
+          <Property Type="String" Name="room_name" Nullable="true" MaxLength="10" />
+        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -271,6 +285,18 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.vroom_listplayer' does not hav
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="GetRoomByIDPlayer" FunctionName="DatabaseGameBaiModel1.Store.GetRoomByIDPlayer">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DatabaseGameBaiModel1.GetRoomByIDPlayer_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="owner_id" ColumnName="owner_id" />
+                <ScalarProperty Name="limit_player" ColumnName="limit_player" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="current_player" ColumnName="current_player" />
+                <ScalarProperty Name="room_name" ColumnName="room_name" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

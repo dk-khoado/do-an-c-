@@ -1,5 +1,4 @@
-﻿
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -9,23 +8,37 @@ public class ManagerGame : MonoBehaviour
 {
     public int IDLocalPlayer;
     public int AmountCardPerPlayer;
-    public GameObject localPlayer;
-    public List<GameObject> remotePlayers;
-    private Dictionary<int, GameObject> infoPlayer = new Dictionary<int, GameObject>();
-    public CardModel currentCard;
-    public GameObject selectCard;
+    public GameObject localPlayer;//đói tượng nội bộ      
+
+    public List<GameObject> remotePlayers;//danh sách người chơi trừ người chơi nội bộ
+
+    public GameObject ModelCard;//đối tượng card sẽ được tạo
+    public CardModel currentCard;//card hiện tại đang trên bàn 
+    public GameObject selectCard;//card đang chọn
+    public Player preTurnPlayer;//người chơi trước đó
+    public Player nextTurnPlayer;//người chơi kế tiếp
+    public EDirection direction;//hướng đi của lượt đánh
+    public Player currentPlayer;//người chơi đang đến lượt đi
+    public Player lastWinner;//người chiến thắng gần nhất
+    public int postionPlayer;
+
     public List<CardModel> cardModels = new List<CardModel>();
-    [SerializeField]
-    private GameObject ModelCard;
     public List<int> currentPosCard = new List<int>();
-    UI_manager uI_Manager;   
-    // Start is called before the first frame update
+
+    UI_manager uI_Manager;
+    Controller_NetWork netWork;
+
+    public bool isReady;//thuộc tính chỉ xuất hiện khi đối tượng k phải chủ phòng
+    public bool isPlaying;//true nếu đang chơi. false nếu đang chờ
     void Start()
     {
+
         uI_Manager = GetComponent<UI_manager>();
+        netWork = GetComponent<Controller_NetWork>();
         LoadCard();
         //XaoBai();
         FindPostionRemotePlayer();
+        IDLocalPlayer = PlayerPrefs.GetInt("id");
     }
     //tải tài nguyên các lá bài
     void LoadCard()
@@ -91,10 +104,9 @@ public class ManagerGame : MonoBehaviour
                 {
                     break;
                 }
-                if (item.GetComponent<ControllerPlayer>())
+                if (item.GetComponent<ControllerPlayer>() && !item.GetComponent<ControllerPlayer>().isEmty)
                 {
                     ModelCard.GetComponent<ControllerCard>().Properties = cardModels[currentPosCard[0]];
-
                     item.GetComponent<ControllerPlayer>().AddCard(ModelCard);
                     currentPosCard.RemoveAt(0);
                 }
@@ -135,6 +147,10 @@ public class ManagerGame : MonoBehaviour
     /// </summary>
     public void Attack()
     {
+        if (currentPlayer.player_id != IDLocalPlayer)
+        {
+            return;
+        }
         if (!currentCard)
         {
             if (selectCard.GetComponent<ControllerCard>().Properties.color == Color_Card.Black)
@@ -147,7 +163,7 @@ public class ManagerGame : MonoBehaviour
             {
                 currentCard = selectCard.GetComponent<ControllerCard>().Properties;
                 localPlayer.GetComponent<ControllerPlayer>().Attack(selectCard);
-            }           
+            }
         }
         if (!selectCard.GetComponent<ControllerCard>())
         {
@@ -180,7 +196,8 @@ public class ManagerGame : MonoBehaviour
             }
         }
         uI_Manager.properties = currentCard;
-    }   
+        EndTurn();
+    }
     /// <summary>
     /// chọn màu
     /// </summary>
@@ -195,7 +212,7 @@ public class ManagerGame : MonoBehaviour
                 cardModel.image = currentCard.image;
                 cardModel.isChucNang = false;
                 cardModel.number = 99;//để người chơi chỉ đánh được màu thui
-                currentCard = cardModel;         
+                currentCard = cardModel;
                 localPlayer.GetComponent<ControllerPlayer>().Attack(selectCard);
                 break;
             case Color_Card.Blue:
@@ -228,5 +245,116 @@ public class ManagerGame : MonoBehaviour
                 break;
         }
         uI_Manager.properties = currentCard;
-    }      
+    }
+    /// <summary>
+    /// sản sàng hoặc bắt đầu
+    /// </summary>
+    public void onReadyOrStart()
+    {
+        if (lastWinner.player_id != 0)
+        {
+            currentPlayer = lastWinner;
+        }
+        if (IDLocalPlayer == PlayerPrefs.GetInt("id_owner"))
+        {
+            currentPlayer = localPlayer.GetComponent<ControllerPlayer>().player;
+            NewGame();
+            ChiaBai();
+
+            uI_Manager.btnStart.SetActive(false);
+
+            int pos = 0;
+            GetPostionPlayer();
+            currentPlayer = netWork.players[postionPlayer];
+            if (postionPlayer < netWork.players.Count-1)
+            {
+                pos = postionPlayer + 1;
+            }            
+            nextTurnPlayer = netWork.players[pos];
+            if (postionPlayer ==0)
+            {
+                pos = netWork.players.Count-1;
+            }
+            else
+            {
+                pos = postionPlayer - 1;
+            }
+            preTurnPlayer = netWork.players[pos];
+        }
+        else
+        {
+            //foreach (var item in remotePlayers)
+            //{
+            //    if (item.GetComponent<ControllerPlayer>().player.player_id == netWork.ID_owner)
+            //    {
+            //        firtsTurnPlayer = localPlayer.GetComponent<ControllerPlayer>().player;
+            //    }
+            //}
+            isReady = true;
+        }
+    }
+    //KẾT THÚC LƯỢT ĐI
+    public void EndTurn()
+    {
+        switch (direction)
+        {
+            case EDirection.left:
+                preTurnPlayer = currentPlayer;
+                currentPlayer = nextTurnPlayer;
+                GetPostionPlayer();
+                if (postionPlayer == netWork.players.Count - 1)
+                {
+                    postionPlayer = 0;
+                }
+                else
+                {
+                    postionPlayer++;
+                    if (postionPlayer >= netWork.players.Count - 1)
+                    {
+                        postionPlayer = 0;
+                    }
+                }                
+                break;
+            case EDirection.right:
+                preTurnPlayer = currentPlayer;
+                currentPlayer = nextTurnPlayer;
+                GetPostionPlayer();
+                if (postionPlayer == 0)
+                {
+                    postionPlayer = netWork.players.Count-1;
+                }
+                else
+                {
+                    postionPlayer--;
+                    if (postionPlayer ==0)
+                    {
+                        postionPlayer = netWork.players.Count - 1;                       
+                    }
+                }               
+                break;
+            default:
+                break;
+        }
+        nextTurnPlayer = netWork.players[postionPlayer];
+    }
+    /// <summary>
+    /// lây vị trí của player trong mảng
+    /// </summary>
+    public void GetPostionPlayer()
+    {
+        int pos = 0;
+        foreach (var item in netWork.players)
+        {
+            if (item.player_id == currentPlayer.player_id)
+            {
+                postionPlayer = pos;
+                break;
+            }
+            else
+            {
+                pos++;
+                postionPlayer = pos;
+            }
+        }
+    }
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2002539521135615166}
   - component: {fileID: 2002539521135615137}
   m_Layer: 5
-  m_Name: Player_remote_01
+  m_Name: Player_remote
   m_TagString: remote
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,6 +73,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56ec1d0a0f553af4891a2bddbe23bee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player:
+    room_id: 0
+    player_id: 0
+    nickname: 
+    money: 0
+    avartar: 
   isLocalPlayer: 0
   cardsOnHand: []
   manager: {fileID: 0}
+  selectColor: 0
+  child: {fileID: 0}

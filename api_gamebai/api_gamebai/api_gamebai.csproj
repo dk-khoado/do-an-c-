@@ -194,6 +194,9 @@
     <Compile Include="Models\GetListPlayerInRoom_Result.cs">
       <DependentUpon>RoomModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\GetRoomByIDPlayer_Result.cs">
+      <DependentUpon>RoomModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\history_login.cs">
       <DependentUpon>UsersModel.tt</DependentUpon>
     </Compile>
