@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Text;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.Networking;
 using TMPro;
+using UnityEngine;
+using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 
 public class CreateRoom : MonoBehaviour
 {
@@ -15,17 +14,18 @@ public class CreateRoom : MonoBehaviour
     public TMP_Dropdown songuoi;
     public void Create()
     {
-        TaoPhongModel dataphong = new TaoPhongModel(PlayerPrefs.GetInt("id"), int.Parse(songuoi.options[songuoi.value].text), matkhau.text, tenphong.text);
+        TaoPhongModel dataphong = new TaoPhongModel(Login.mnhandata.data.id, int.Parse(songuoi.options[songuoi.value].text), matkhau.text, tenphong.text);
         string json = JsonUtility.ToJson(dataphong);
         Debug.Log(json);
         StartCoroutine(GetRequestCreate("http://26.60.150.44/api/RoomManager/CreateRoom", json));
-        
+
     }
     IEnumerator LoadScene()
     {
         AsyncOperation operating = SceneManager.LoadSceneAsync("Room_play");
         if (operating.isDone)
         {
+
             yield return null;
         }
     }
@@ -51,13 +51,20 @@ public class CreateRoom : MonoBehaviour
                     if (webRequest.isDone)
                     {
                         data = JsonUtility.FromJson<RoomByIDModel>(webRequest.downloadHandler.text);
-                        Debug.Log(webRequest.downloadHandler.text);                       
+                        Debug.Log(webRequest.downloadHandler.text);
                         if (data.result > 0)
                         {
                             int id_Room = data.data.id;
                             int id_owner = data.data.owner_id;
-                            PlayerPrefs.SetInt("id_room",id_Room);
+                            PlayerPrefs.SetInt("id_room", id_Room);
                             PlayerPrefs.SetInt("id_owner", id_owner);
+
+                            PlayerModel player = new PlayerModel();
+                            player.ID_player = id_owner;
+                            player.ID_room = id_Room;
+                            player.cmd = "Join_room";
+                            Login.connect.Send(player);
+
                             StartCoroutine(LoadScene());
                             Debug.Log(data.message);
                         }
@@ -65,7 +72,7 @@ public class CreateRoom : MonoBehaviour
                         {
                             Debug.Log(data.message);
                         }
-                    }                                      
+                    }
                 }
                 catch (Exception e)
                 {

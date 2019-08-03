@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ControllerPlayer : MonoBehaviour
 {
@@ -17,11 +15,11 @@ public class ControllerPlayer : MonoBehaviour
     //public GameObject UI_select;
     private void Start()
     {
-        manager = GameObject.Find("Manager");    
+        manager = GameObject.Find("Manager");
     }
     private void Update()
     {
-        if (player.player_id==0 && player.nickname =="")
+        if (player.player_id == 0 && player.nickname == "")
         {
             isEmty = true;
         }
@@ -36,7 +34,12 @@ public class ControllerPlayer : MonoBehaviour
     /// <param name="card">bỏ lồn vào đây</param>
     public void AddCard(GameObject card)
     {
-        GameObject temp = Instantiate(card,gameObject.transform);
+        if (!isLocalPlayer)
+        {
+
+            return;
+        }
+        GameObject temp = Instantiate(card, gameObject.transform);
         cardsOnHand.Add(temp);
     }
     public void RemoveAllCard()

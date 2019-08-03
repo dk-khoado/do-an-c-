@@ -1,8 +1,8 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine;
+using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 
 public class Controller_ItemRoom : MonoBehaviour
 {
@@ -26,9 +26,10 @@ public class Controller_ItemRoom : MonoBehaviour
     public void JoinRoom()
     {
         //DontDestroyOnLoad(gameObject);
-        PlayerPrefs.SetInt("id_room",data.id);
-        PlayerPrefs.SetInt("id_owner", data.owner_id);
-        StartCoroutine(LoadScene());
+        WWWForm form = new WWWForm();
+        form.AddField("room_id", data.id);
+        form.AddField("player_id", PlayerPrefs.GetInt("id"));
+        StartCoroutine(ApiJoinRoom(InternetConfig.basePath + "/api/RoomManager/JoinRoom", form));
     }
     IEnumerator LoadScene()
     {
@@ -38,9 +39,32 @@ public class Controller_ItemRoom : MonoBehaviour
             yield return null;
         }
     }
+    IEnumerator ApiJoinRoom(string url, WWWForm data)
+    {
+        using (UnityWebRequest webRequest = UnityWebRequest.Post(url, data))
+        {
+            yield return webRequest.SendWebRequest();
+            if (webRequest.error != null || webRequest.isHttpError)
+            {
+                Debug.Log(webRequest.error);
+            }
+            else
+            {
+                if (webRequest.isDone)
+                {
+                    PlayerModel player = new PlayerModel();
+                    player.ID_player = PlayerPrefs.GetInt("id");
+                    player.ID_room = this.data.id;
+                    player.cmd = "Join_room";
+                    Login.connect.Send(player);
+                    StartCoroutine(LoadScene());
+                }
+            }
+        }
+    }
     // Update is called once per frame
     void Update()
     {
-            
+
     }
 }

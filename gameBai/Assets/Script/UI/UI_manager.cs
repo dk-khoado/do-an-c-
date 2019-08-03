@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,15 +11,17 @@ public class UI_manager : MonoBehaviour
     private Image colorCurrent;
     public GameObject UIselectColor;
     public GameObject btnStart;
+
+    public TMP_Text _message;
     // Start is called before the first frame update
     void Start()
-    {       
+    {
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
         if (properties)
         {
             image.enabled = true;
@@ -45,7 +46,7 @@ public class UI_manager : MonoBehaviour
                     break;
                 case Color_Card.Yellow:
                     colorCurrent.color = Color.yellow;
-                    break;                
+                    break;
                 default:
                     break;
             }

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class ControllerCard : MonoBehaviour
@@ -21,7 +19,7 @@ public class ControllerCard : MonoBehaviour
                 image = Properties.image;
                 GetComponent<Image>().sprite = image;
             }
-        }        
+        }
     }
     private void FixedUpdate()
     {
@@ -58,7 +56,7 @@ public class ControllerCard : MonoBehaviour
     public void UnhoverCard()
     {
         hover = false;
-    }    
+    }
     public void ActiveSkill()
     {
         if (Properties.isChucNang)

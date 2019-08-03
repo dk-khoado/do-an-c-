@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Sprites;
 
 [CreateAssetMenu(fileName = "Card Game", menuName = "Card/CardUno")]
 public class cardModel : ScriptableObject
@@ -18,7 +15,7 @@ public class cardModel : ScriptableObject
     }
     public enum Chucnang
     {
-        direction, prohibit, plus, discoloration,none
+        direction, prohibit, plus, discoloration, none
     }
 
 }

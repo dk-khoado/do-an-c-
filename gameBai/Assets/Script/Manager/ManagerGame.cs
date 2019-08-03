@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 [RequireComponent(typeof(UI_manager))]
 public class ManagerGame : MonoBehaviour
@@ -38,7 +36,7 @@ public class ManagerGame : MonoBehaviour
         LoadCard();
         //XaoBai();
         FindPostionRemotePlayer();
-        IDLocalPlayer = PlayerPrefs.GetInt("id");
+        IDLocalPlayer = Login.mnhandata.data.id;
     }
     //tải tài nguyên các lá bài
     void LoadCard()
@@ -266,14 +264,14 @@ public class ManagerGame : MonoBehaviour
             int pos = 0;
             GetPostionPlayer();
             currentPlayer = netWork.players[postionPlayer];
-            if (postionPlayer < netWork.players.Count-1)
+            if (postionPlayer < netWork.players.Count - 1)
             {
                 pos = postionPlayer + 1;
-            }            
+            }
             nextTurnPlayer = netWork.players[pos];
-            if (postionPlayer ==0)
+            if (postionPlayer == 0)
             {
-                pos = netWork.players.Count-1;
+                pos = netWork.players.Count - 1;
             }
             else
             {
@@ -313,7 +311,7 @@ public class ManagerGame : MonoBehaviour
                     {
                         postionPlayer = 0;
                     }
-                }                
+                }
                 break;
             case EDirection.right:
                 preTurnPlayer = currentPlayer;
@@ -321,16 +319,16 @@ public class ManagerGame : MonoBehaviour
                 GetPostionPlayer();
                 if (postionPlayer == 0)
                 {
-                    postionPlayer = netWork.players.Count-1;
+                    postionPlayer = netWork.players.Count - 1;
                 }
                 else
                 {
                     postionPlayer--;
-                    if (postionPlayer ==0)
+                    if (postionPlayer == 0)
                     {
-                        postionPlayer = netWork.players.Count - 1;                       
+                        postionPlayer = netWork.players.Count - 1;
                     }
-                }               
+                }
                 break;
             default:
                 break;
@@ -357,4 +355,5 @@ public class ManagerGame : MonoBehaviour
             }
         }
     }
+
 }

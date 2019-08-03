@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
-using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Controller_NetWork : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Controller_NetWork : MonoBehaviour
     [SerializeField]
     private ManagerGame manager;
     private UI_manager uI_Manager;
+
     private void Awake()
     {
         manager = GetComponent<ManagerGame>();
@@ -28,7 +30,7 @@ public class Controller_NetWork : MonoBehaviour
     }
     void Update()
     {
-        if (PlayerPrefs.GetInt("id") == ID_owner)
+        if (Login.mnhandata.data.id == ID_owner)
         {
             uI_Manager.btnStart.GetComponentInChildren<TMP_Text>().SetText("Bắt Đầu");
         }
@@ -37,20 +39,32 @@ public class Controller_NetWork : MonoBehaviour
             uI_Manager.btnStart.GetComponentInChildren<TMP_Text>().SetText("Sẳn sàng");
         }
     }
+    private void LateUpdate()
+    {
+        if (Login.connect.isNew)
+        {
+            UServer data = Login.connect.GetUServer("join_room");
+            if (data.value != "")
+            {
+                StartCoroutine(GetInfoPlayer());
+                Debug.Log(data.value + "đã tham gia phòng");
+            }
+        }
+    }
     //láy danh sách người chơi trong phòng
     IEnumerator GetPlayerRoom()
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Get(URL_GETPlayerList))
         {
             yield return webRequest.SendWebRequest();
-            
+
         }
     }
     IEnumerator GetInfoPlayer()
     {
-        string url = address + "/api/RoomManager/GetPlayerInRoom?ID_room="+ID_Room;
+        string url = address + "/api/RoomManager/GetPlayerInRoom?ID_room=" + ID_Room;
         using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
-        {            
+        {
             yield return webRequest.SendWebRequest();
             if (webRequest.isNetworkError || webRequest.isHttpError)
             {
@@ -61,9 +75,29 @@ public class Controller_NetWork : MonoBehaviour
                 if (webRequest.isDone)
                 {
                     //string json = "{\"key\":" + webRequest.downloadHandler.text + "}";
-                    DataRoomPlayer data= JsonUtility.FromJson<DataRoomPlayer>(webRequest.downloadHandler.text);
+                    DataRoomPlayer data = JsonUtility.FromJson<DataRoomPlayer>(webRequest.downloadHandler.text);
                     players = data.data;
                     SetDataPlayer();
+                }
+            }
+        }
+    }
+    IEnumerator APILeaveRoom(WWWForm form)
+    {
+        string url = address + "/api/RoomManager/LeaveRoom";
+        using (UnityWebRequest webRequest = UnityWebRequest.Post(url, form))
+        {
+            yield return webRequest.SendWebRequest();
+            if (webRequest.isNetworkError || webRequest.isHttpError)
+            {
+                Debug.Log(webRequest.error);
+            }
+            else
+            {
+                if (webRequest.isDone)
+                {
+                    Debug.Log(webRequest.downloadHandler.text);
+                    SceneManager.LoadScene("Lobby");
                 }
             }
         }
@@ -86,5 +120,21 @@ public class Controller_NetWork : MonoBehaviour
                 i++;
             }
         }
+    }
+    /// <summary>
+    /// thoát phòng
+    /// </summary>
+    public void OutRoom()
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("room_id", ID_Room);
+        form.AddField("player_id", Login.mnhandata.data.id);
+        StartCoroutine(APILeaveRoom(form));
+    }
+    private void OnApplicationQuit()
+    {
+        PlayerPrefs.DeleteAll();
+        OutRoom();
+        Login.connect.Disconnected();
     }
 }

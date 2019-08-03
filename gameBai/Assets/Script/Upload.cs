@@ -1,10 +1,6 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using System.IO;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Networking;
 
 public class Upload : MonoBehaviour
 {
@@ -12,9 +8,9 @@ public class Upload : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
-    
+
     public void Open()
     {
         //string path = EditorUtility.OpenFilePanel("Chọn hình đê!!","","PNg");
@@ -25,10 +21,10 @@ public class Upload : MonoBehaviour
 
     [System.Obsolete]
     private IEnumerator UploadImage(byte[] data)
-    {       
+    {
         WWWForm form = new WWWForm();
-        form.AddBinaryData("khoa",data);
-        WWW www = new WWW("http://localhost//api/Upload/Avartar/19", form);             
+        form.AddBinaryData("khoa", data);
+        WWW www = new WWW("http://localhost//api/Upload/Avartar/19", form);
         yield return www;
 
         if (www.error != null)

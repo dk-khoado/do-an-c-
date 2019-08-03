@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - Controller_ItemRoom
     - Controller_Lobby
     - Controller_NetWork
+    - Controller_chatWord
     - CreateRoom
     - Login
     - ManagerGame
@@ -15,7 +16,6 @@ ScriptsOnlyBuild:
     - UI_manager
     GitHub.Unity.45.dll:
     - GitHub.Unity.ApplicationCache
-    - GitHub.Unity.BranchesCache
     - GitHub.Unity.EnvironmentCache
     - GitHub.Unity.GitAheadBehindCache
     - GitHub.Unity.GitLocksCache
@@ -52,7 +52,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/ChangeThePage.unity:
+    Assets/Scenes/Lobby.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -98,6 +98,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9448}
     - Class: 114
+      Script: {instanceID: 9450}
+    - Class: 114
       Script: {instanceID: 9452}
     - Class: 114
       Script: {instanceID: 9460}
@@ -108,13 +110,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9874}
     - Class: 114
-      Script: {instanceID: 10022}
+      Script: {instanceID: 10024}
     - Class: 114
-      Script: {instanceID: 10284}
+      Script: {instanceID: 10290}
     - Class: 114
-      Script: {instanceID: 10454}
+      Script: {instanceID: 10460}
     - Class: 114
       Script: {instanceID: 10820}
+    - Class: 114
+      Script: {instanceID: 10830}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -171,21 +175,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9820}
     - Class: 114
-      Script: {instanceID: 10198}
+      Script: {instanceID: 10204}
     - Class: 114
-      Script: {instanceID: 10284}
+      Script: {instanceID: 10290}
     - Class: 114
-      Script: {instanceID: 10294}
+      Script: {instanceID: 10300}
     - Class: 114
-      Script: {instanceID: 10454}
+      Script: {instanceID: 10460}
     - Class: 114
-      Script: {instanceID: 10484}
+      Script: {instanceID: 10490}
     - Class: 114
-      Script: {instanceID: 10624}
+      Script: {instanceID: 10630}
     - Class: 114
-      Script: {instanceID: 10724}
+      Script: {instanceID: 10730}
     - Class: 114
-      Script: {instanceID: 10806}
+      Script: {instanceID: 10814}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -248,19 +252,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9692}
     - Class: 114
-      Script: {instanceID: 10010}
+      Script: {instanceID: 10012}
     - Class: 114
-      Script: {instanceID: 10038}
+      Script: {instanceID: 10042}
     - Class: 114
-      Script: {instanceID: 10198}
+      Script: {instanceID: 10204}
     - Class: 114
-      Script: {instanceID: 10264}
+      Script: {instanceID: 10270}
     - Class: 114
-      Script: {instanceID: 10284}
+      Script: {instanceID: 10290}
     - Class: 114
-      Script: {instanceID: 10392}
+      Script: {instanceID: 10398}
     - Class: 114
-      Script: {instanceID: 10454}
+      Script: {instanceID: 10460}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -302,7 +306,7 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: eebef1e6d452aa6fb96d7976193cefb2
+      Hash: 7d996e6c60531add5d068ca398aaa40b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UI_Lobby
@@ -860,7 +864,7 @@ ScriptsOnlyBuild:
     className: Controller_NetWork
   - hash:
       serializedVersion: 2
-      Hash: 757f8c3d9545bc9c576e97ddb3c76f6e
+      Hash: 07fe2b92db45b42f93aa3e7ec51ea5bb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Controller_Lobby
@@ -1058,7 +1062,7 @@ ScriptsOnlyBuild:
     className: SimpleScript
   - hash:
       serializedVersion: 2
-      Hash: 6006f99b1de86a9b8e0ac45059c95a8b
+      Hash: c2e2bb11d236d4caa2a2895d7c006878
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UI_manager
@@ -1148,7 +1152,7 @@ ScriptsOnlyBuild:
     className: Benchmark02
   - hash:
       serializedVersion: 2
-      Hash: f66ab39cd910697416d2a680a75a703c
+      Hash: 87fc96dff29251b2124848dfc3e6213a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Login
@@ -1220,6 +1224,12 @@ ScriptsOnlyBuild:
     className: TMP_ColorGradient
   - hash:
       serializedVersion: 2
+      Hash: 2052004f543bfc809b16603eac3b69b5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Controller_chatWord
+  - hash:
+      serializedVersion: 2
       Hash: 0784d4fd5b93bd75440d01eb2fac4233
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1250,6 +1260,12 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
+      Hash: 0a6f69603e98fd910bb7bbc3a04a5490
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Controller_remotePlayer
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1257,6 +1273,6 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/Login.unity
-  - Assets/Scenes/ChangeThePage.unity
+  - Assets/Scenes/Lobby.unity
   - Assets/Scenes/Room_play.unity
-  playerPath: C:/C# demo/game/gameBai.exe
+  playerPath: D:/_TestGame/gameBai.exe
