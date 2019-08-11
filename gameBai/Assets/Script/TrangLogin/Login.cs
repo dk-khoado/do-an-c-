@@ -125,8 +125,7 @@ public class Login : MonoBehaviour
                     else
                     {
                         Debug.Log(mnhandata.message);
-                        Debug.Log(mnhandata.data);
-                        
+                        Debug.Log(mnhandata.data);                       
                     }
                 }
                 catch

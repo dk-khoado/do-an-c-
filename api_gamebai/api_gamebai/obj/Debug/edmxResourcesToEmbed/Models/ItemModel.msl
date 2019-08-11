@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DatabaseGameBaiItemManagerStoreContainer" CdmEntityContainer="DatabaseGameBai_Item">
+    <EntitySetMapping Name="player_inventory">
+      <EntityTypeMapping TypeName="DatabaseGameBaiItemManager.player_inventory">
+        <MappingFragment StoreEntitySet="player_inventory">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="player_id" ColumnName="player_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="limit_day" ColumnName="limit_day" />
+          <ScalarProperty Name="image_item" ColumnName="image_item" />
+          <ScalarProperty Name="type_item" ColumnName="type_item" />
+          <ScalarProperty Name="duration" ColumnName="duration" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="shop_game">
+      <EntityTypeMapping TypeName="DatabaseGameBaiItemManager.shop_game">
+        <MappingFragment StoreEntitySet="shop_game">
+          <ScalarProperty Name="id_item" ColumnName="id_item" />
+          <ScalarProperty Name="name_item" ColumnName="name_item" />
+          <ScalarProperty Name="limit_day" ColumnName="limit_day" />
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="isEnable" ColumnName="isEnable" />
+          <ScalarProperty Name="type_item" ColumnName="type_item" />
+          <ScalarProperty Name="duration_day_" ColumnName="duration(day)" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="AddToShop" FunctionName="DatabaseGameBaiItemManager.Store.AddToShop" />
+    <FunctionImportMapping FunctionImportName="BuyInventory" FunctionName="DatabaseGameBaiItemManager.Store.BuyInventory" />
+    <FunctionImportMapping FunctionImportName="Renewal" FunctionName="DatabaseGameBaiItemManager.Store.Renewal" />
+    <FunctionImportMapping FunctionImportName="SellSkin" FunctionName="DatabaseGameBaiItemManager.Store.SellSkin" />
+  </EntityContainerMapping>
+</Mapping>
