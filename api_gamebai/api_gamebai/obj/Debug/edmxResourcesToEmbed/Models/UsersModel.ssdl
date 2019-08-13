@@ -21,6 +21,7 @@
     <Property Name="email" Type="varchar" MaxLength="256" Nullable="false" />
     <Property Name="status" Type="int" Nullable="false" />
     <Property Name="avartar" Type="varchar(max)" />
+    <Property Name="rank_by_money" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="player_key">
     <Key>

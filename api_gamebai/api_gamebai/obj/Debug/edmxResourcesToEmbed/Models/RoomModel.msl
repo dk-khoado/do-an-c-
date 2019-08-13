@@ -4,6 +4,7 @@
     <EntitySetMapping Name="players">
       <EntityTypeMapping TypeName="DatabaseGameBaiModel1.player">
         <MappingFragment StoreEntitySet="player">
+          <ScalarProperty Name="rank_by_money" ColumnName="rank_by_money" />
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="username" ColumnName="username" />
           <ScalarProperty Name="password" ColumnName="password" />
@@ -18,6 +19,8 @@
     <EntitySetMapping Name="room_list">
       <EntityTypeMapping TypeName="DatabaseGameBaiModel1.room_list">
         <MappingFragment StoreEntitySet="room_list">
+          <ScalarProperty Name="id_bai" ColumnName="id_bai" />
+          <ScalarProperty Name="bet_money" ColumnName="bet_money" />
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="owner_id" ColumnName="owner_id" />
           <ScalarProperty Name="limit_player" ColumnName="limit_player" />
@@ -72,5 +75,13 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <EntitySetMapping Name="ListBais">
+      <EntityTypeMapping TypeName="DatabaseGameBaiModel1.ListBai">
+        <MappingFragment StoreEntitySet="ListBai">
+          <ScalarProperty Name="name_bai" ColumnName="name_bai" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

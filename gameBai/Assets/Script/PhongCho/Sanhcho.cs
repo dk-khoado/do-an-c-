@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 using TMPro;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
@@ -26,7 +24,7 @@ public class Sanhcho : MonoBehaviour
     {
         StartCoroutine(GetRequestPhongcho("http://26.60.150.44/api/User/Get/" + PlayerPrefs.GetInt("id").ToString()));
         GetComponent<Phongchoset>().TatPhongcho();
-        StartCoroutine(GetRequestDowloadAvartar("http://26.60.150.44/upload/" + PlayerPrefs.GetString("avartar")));       
+        StartCoroutine(GetRequestDowloadAvartar("http://26.60.150.44/upload/" + PlayerPrefs.GetString("avartar")));
     }
     public void Upload()
     {

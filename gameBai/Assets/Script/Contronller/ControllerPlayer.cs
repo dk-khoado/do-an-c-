@@ -1,34 +1,56 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class ControllerPlayer : MonoBehaviour
 {
     public Player player;
     public bool isLocalPlayer;
+
+    public float turnTime = 15;
+    public float currentTime;
+
+    public TMP_Text ui_time;  
+
     public List<GameObject> cardsOnHand = new List<GameObject>();
     public GameObject manager;
     public bool selectColor;
     [SerializeField]
     private GameObject child;
-    public bool isEmty;
-    public bool isRead;
+    //public bool isEmty;
+    public bool isTurn;
     //public GameObject UI_select;
     private void Start()
     {
-        manager = GameObject.Find("Manager");    
+        manager = GameObject.Find("Manager");
+        currentTime = turnTime;
     }
-    private void Update()
+    private void LateUpdate()
     {
-        if (player.player_id==0 && player.nickname =="")
+        if (player.player_id == manager.GetComponent<ManagerGame>().currentPlayer.player_id)
         {
-            isEmty = true;
+            isTurn = true;
+            ui_time.enabled = true;
+            currentTime -= Time.deltaTime;
+            if (currentTime < 0 && manager.GetComponent<ManagerGame>().isPlaying && isTurn)
+            {
+                manager.GetComponent<ManagerGame>().DrawmCard(1);
+                manager.GetComponent<ManagerGame>().EndTurn();
+                isTurn = false;
+            }
+            
+            if (ui_time)
+            {
+                ui_time.SetText(currentTime.ToString("f0"));
+            }
         }
         else
         {
-            isEmty = false;
+            ui_time.enabled = false;
+            currentTime = turnTime;
+            isTurn = false;
         }
+
     }
     /// <summary>
     /// tạo card thui mà
@@ -36,7 +58,12 @@ public class ControllerPlayer : MonoBehaviour
     /// <param name="card">bỏ lồn vào đây</param>
     public void AddCard(GameObject card)
     {
-        GameObject temp = Instantiate(card,gameObject.transform);
+        if (!isLocalPlayer)
+        {
+
+            return;
+        }
+        GameObject temp = Instantiate(card, gameObject.transform);
         cardsOnHand.Add(temp);
     }
     public void RemoveAllCard()

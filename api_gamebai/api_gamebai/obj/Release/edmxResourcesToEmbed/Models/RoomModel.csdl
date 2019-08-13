@@ -12,6 +12,7 @@
     <Property Name="email" Type="String" MaxLength="256" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="status" Type="Int32" Nullable="false" />
     <Property Name="avartar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="rank_by_money" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="room_list">
     <Key>
@@ -24,6 +25,9 @@
     <Property Name="current_player" Type="Int32" />
     <Property Name="room_name" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="room_listplayer" Relationship="DatabaseGameBaiModel1.FK_room_listplayer_room_list" FromRole="room_list" ToRole="room_listplayer" />
+    <Property Name="bet_money" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="id_bai" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ListBai" Relationship="DatabaseGameBaiModel1.FK__room_list__id_ba__6319B466" FromRole="room_list" ToRole="ListBai" />
   </EntityType>
   <EntityType Name="room_listplayer">
     <Key>
@@ -43,6 +47,7 @@
       <Parameter Name="limit_player" Mode="In" Type="Int32" />
       <Parameter Name="password" Mode="In" Type="String" />
       <Parameter Name="room_name" Mode="In" Type="String" />
+      <Parameter Name="id_bai" Mode="In" Type="Int32" />
     </FunctionImport>
     <FunctionImport Name="JoinRoomList">
       <Parameter Name="room_id" Mode="In" Type="Int32" />
@@ -66,6 +71,11 @@
     <FunctionImport Name="GetRoomByIDPlayer" ReturnType="Collection(DatabaseGameBaiModel1.GetRoomByIDPlayer_Result)">
       <Parameter Name="ID_player" Mode="In" Type="Int32" />
     </FunctionImport>
+    <EntitySet Name="ListBais" EntityType="DatabaseGameBaiModel1.ListBai" />
+    <AssociationSet Name="FK__room_list__id_ba__6319B466" Association="DatabaseGameBaiModel1.FK__room_list__id_ba__6319B466">
+      <End Role="ListBai" EntitySet="ListBais" />
+      <End Role="room_list" EntitySet="room_list" />
+    </AssociationSet>
   </EntityContainer>
   <Association Name="FK_room_listplayer_room_list">
     <End Type="DatabaseGameBaiModel1.room_list" Role="room_list" Multiplicity="1" />
@@ -107,4 +117,24 @@
     <Property Type="Int32" Name="current_player" Nullable="true" />
     <Property Type="String" Name="room_name" Nullable="true" MaxLength="10" />
   </ComplexType>
+  <EntityType Name="ListBai">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name_bai" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="room_list" Relationship="DatabaseGameBaiModel1.FK__room_list__id_ba__6319B466" FromRole="ListBai" ToRole="room_list" />
+  </EntityType>
+  <Association Name="FK__room_list__id_ba__6319B466">
+    <End Type="DatabaseGameBaiModel1.ListBai" Role="ListBai" Multiplicity="1" />
+    <End Type="DatabaseGameBaiModel1.room_list" Role="room_list" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ListBai">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="room_list">
+        <PropertyRef Name="id_bai" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>
