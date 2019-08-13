@@ -135,5 +135,10 @@ namespace api_gamebai.Controllers
                 return new ResponseMessage(BadRequest().ToString(), "Item không tồn tại !!!", 0);
             }
         }
+
+        public ResponseMessage GetAllInShop(int id)
+        {
+            return new ResponseMessage("succes", db.shop_game.Find(id), 1);
+        }
     }
 }
