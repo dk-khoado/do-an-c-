@@ -45,6 +45,8 @@ public partial class player
 
     public string avartar { get; set; }
 
+    public string rank_by_money { get; set; }
+
 
 
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

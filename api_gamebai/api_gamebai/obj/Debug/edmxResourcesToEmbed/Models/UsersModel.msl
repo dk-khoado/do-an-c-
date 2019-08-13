@@ -4,6 +4,7 @@
     <EntitySetMapping Name="players">
       <EntityTypeMapping TypeName="DatabaseGameBaiModel.player">
         <MappingFragment StoreEntitySet="player">
+          <ScalarProperty Name="rank_by_money" ColumnName="rank_by_money" />
           <ScalarProperty Name="avartar" ColumnName="avartar" />
           <ScalarProperty Name="status" ColumnName="status" />
           <ScalarProperty Name="id" ColumnName="id" />

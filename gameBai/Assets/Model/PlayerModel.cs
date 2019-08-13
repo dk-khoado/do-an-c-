@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System;
+﻿using System;
 [Serializable]
 public class PlayerModel
 {
@@ -9,5 +6,4 @@ public class PlayerModel
     public int ID_room;
     public string cmd;
     public string message;
-
 }

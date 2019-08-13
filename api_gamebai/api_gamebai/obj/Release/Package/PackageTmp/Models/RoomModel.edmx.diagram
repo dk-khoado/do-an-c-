@@ -5,11 +5,13 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="fc4c4a818012449fa2a7c17c039ad213" Name="Diagram1">
-        <EntityTypeShape EntityType="DatabaseGameBaiModel1.player" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseGameBaiModel1.player" Width="1.5" PointX="3.625" PointY="3" IsExpanded="true" />
         <EntityTypeShape EntityType="DatabaseGameBaiModel1.room_list" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="DatabaseGameBaiModel1.room_listplayer" Width="1.5" PointX="3.875" PointY="1.25" IsExpanded="true" />
         <AssociationConnector Association="DatabaseGameBaiModel1.FK_room_listplayer_room_list" />
         <EntityTypeShape EntityType="DatabaseGameBaiModel1.vroom_listplayer" Width="1.5" PointX="6.25" PointY="0.625" FillColor="Lime" />
+        <EntityTypeShape EntityType="DatabaseGameBaiModel1.ListBai" Width="1.5" PointX="0.75" PointY="4.875" />
+        <AssociationConnector Association="DatabaseGameBaiModel1.FK__room_list__id_ba__6319B466" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

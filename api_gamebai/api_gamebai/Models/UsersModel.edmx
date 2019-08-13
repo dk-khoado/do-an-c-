@@ -26,6 +26,7 @@
           <Property Name="email" Type="varchar" MaxLength="256" Nullable="false" />
           <Property Name="status" Type="int" Nullable="false" />
           <Property Name="avartar" Type="varchar(max)" />
+          <Property Name="rank_by_money" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="player_key">
           <Key>
@@ -142,6 +143,7 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.infoplayer' does not have a pr
           <Property Name="avartar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="player_key" Relationship="DatabaseGameBaiModel.player_id" FromRole="player" ToRole="player_key" />
           <NavigationProperty Name="history_login" Relationship="DatabaseGameBaiModel.player_fk_id" FromRole="player" ToRole="history_login" />
+          <Property Name="rank_by_money" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="infoplayer">
           <Key>
@@ -274,6 +276,7 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.infoplayer' does not have a pr
           <EntitySetMapping Name="players">
             <EntityTypeMapping TypeName="DatabaseGameBaiModel.player">
               <MappingFragment StoreEntitySet="player">
+                <ScalarProperty Name="rank_by_money" ColumnName="rank_by_money" />
                 <ScalarProperty Name="avartar" ColumnName="avartar" />
                 <ScalarProperty Name="status" ColumnName="status" />
                 <ScalarProperty Name="id" ColumnName="id" />

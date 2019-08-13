@@ -26,8 +26,11 @@ namespace api_gamebai.Models
         public string password { get; set; }
         public Nullable<int> current_player { get; set; }
         public string room_name { get; set; }
+        public Nullable<decimal> bet_money { get; set; }
+        public int id_bai { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<room_listplayer> room_listplayer { get; set; }
+        public virtual ListBai ListBai { get; set; }
     }
 }

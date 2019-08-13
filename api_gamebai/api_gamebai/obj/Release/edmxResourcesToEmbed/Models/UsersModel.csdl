@@ -14,6 +14,7 @@
     <Property Name="avartar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="player_key" Relationship="DatabaseGameBaiModel.player_id" FromRole="player" ToRole="player_key" />
     <NavigationProperty Name="history_login" Relationship="DatabaseGameBaiModel.player_fk_id" FromRole="player" ToRole="history_login" />
+    <Property Name="rank_by_money" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="infoplayer">
     <Key>
