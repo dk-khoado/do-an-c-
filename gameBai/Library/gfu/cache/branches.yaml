@@ -13,13 +13,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
+<<<<<<< HEAD
   lastUpdatedAtString: 2019-08-09T16:06:48.863+07:00
   initializedAtString: 2019-08-09T16:06:44.371+07:00
+=======
+  lastUpdatedAtString: 2019-08-11T14:47:38.646+07:00
+  initializedAtString: 2019-08-11T14:35:39.930+07:00
+>>>>>>> master
   localBranches:
   - name: duy_01
     tracking: origin/duy_01
+  - name: khoa
+    tracking: origin/khoa
   - name: master
     tracking: origin/master
+  - name: tuan
+    tracking: origin/tuan
   remoteBranches:
   - name: origin/HEAD
     tracking: '[None]'
@@ -40,18 +49,30 @@ MonoBehaviour:
   localConfigBranches:
     keys:
     - duy_01
+    - khoa
     - master
+    - tuan
     values:
     - name: duy_01
       remote:
         name: origin
         url: https://github.com/kakoi-3nhan4-16/do-an-c-.git
       trackingBranch: duy_01
+    - name: khoa
+      remote:
+        name: origin
+        url: https://github.com/kakoi-3nhan4-16/do-an-c-.git
+      trackingBranch: khoa
     - name: master
       remote:
         name: origin
         url: https://github.com/kakoi-3nhan4-16/do-an-c-.git
       trackingBranch: master
+    - name: tuan
+      remote:
+        name: origin
+        url: https://github.com/kakoi-3nhan4-16/do-an-c-.git
+      trackingBranch: tuan
   remoteConfigBranches:
     keys:
     - origin
