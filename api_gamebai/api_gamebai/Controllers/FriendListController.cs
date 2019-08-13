@@ -113,7 +113,7 @@ namespace api_gamebai.Controllers
         [HttpPost]
         public ResponseMessage GetListfriends(int id)
         {
-            ResponseMessage response = new ResponseMessage("Succes", db.vListFriends.Where(e => e.player_id == id).ToList());
+            ResponseMessage response = new ResponseMessage("Succes", db.vListFriends.Where(e => e.player_id == id).ToList(),1);
             return response;
         }        
     }

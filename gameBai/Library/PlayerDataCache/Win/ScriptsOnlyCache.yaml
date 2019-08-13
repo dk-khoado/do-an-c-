@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - CardModel
     - ControllerCard
     - ControllerPlayer
+    - ControllerRemotePlayer
     - Controller_ItemRoom
     - Controller_Lobby
     - Controller_NetWork
@@ -16,9 +17,11 @@ ScriptsOnlyBuild:
     - UI_manager
     GitHub.Unity.45.dll:
     - GitHub.Unity.ApplicationCache
+    - GitHub.Unity.BranchesCache
     - GitHub.Unity.EnvironmentCache
     - GitHub.Unity.GitAheadBehindCache
     - GitHub.Unity.GitLocksCache
+    - GitHub.Unity.GitLogCache
     - GitHub.Unity.GitStatusCache
     - GitHub.Unity.RepositoryInfoCache
     Unity.TextMeshPro.dll:
@@ -48,6 +51,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.RectMask2D
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
@@ -96,6 +100,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9440}
     - Class: 114
+      Script: {instanceID: 9446}
+    - Class: 114
       Script: {instanceID: 9448}
     - Class: 114
       Script: {instanceID: 9450}
@@ -108,17 +114,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9692}
     - Class: 114
-      Script: {instanceID: 9874}
+      Script: {instanceID: 9876}
     - Class: 114
-      Script: {instanceID: 10024}
+      Script: {instanceID: 10026}
     - Class: 114
-      Script: {instanceID: 10290}
+      Script: {instanceID: 10294}
     - Class: 114
-      Script: {instanceID: 10460}
+      Script: {instanceID: 10466}
     - Class: 114
-      Script: {instanceID: 10820}
+      Script: {instanceID: 10826}
     - Class: 114
-      Script: {instanceID: 10830}
+      Script: {instanceID: 10836}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -175,21 +181,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9820}
     - Class: 114
-      Script: {instanceID: 10204}
+      Script: {instanceID: 10208}
     - Class: 114
-      Script: {instanceID: 10290}
+      Script: {instanceID: 10294}
     - Class: 114
-      Script: {instanceID: 10300}
+      Script: {instanceID: 10304}
     - Class: 114
-      Script: {instanceID: 10460}
+      Script: {instanceID: 10466}
     - Class: 114
-      Script: {instanceID: 10490}
+      Script: {instanceID: 10496}
     - Class: 114
-      Script: {instanceID: 10630}
+      Script: {instanceID: 10636}
     - Class: 114
-      Script: {instanceID: 10730}
+      Script: {instanceID: 10736}
     - Class: 114
-      Script: {instanceID: 10814}
+      Script: {instanceID: 10820}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -252,19 +258,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9692}
     - Class: 114
-      Script: {instanceID: 10012}
+      Script: {instanceID: 9858}
     - Class: 114
-      Script: {instanceID: 10042}
+      Script: {instanceID: 10014}
     - Class: 114
-      Script: {instanceID: 10204}
+      Script: {instanceID: 10044}
     - Class: 114
-      Script: {instanceID: 10270}
+      Script: {instanceID: 10208}
     - Class: 114
-      Script: {instanceID: 10290}
+      Script: {instanceID: 10274}
     - Class: 114
-      Script: {instanceID: 10398}
+      Script: {instanceID: 10294}
     - Class: 114
-      Script: {instanceID: 10460}
+      Script: {instanceID: 10404}
+    - Class: 114
+      Script: {instanceID: 10466}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -306,7 +314,7 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 7d996e6c60531add5d068ca398aaa40b
+      Hash: cf5c83470c7967d8aa654d0c4f88ecc7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UI_Lobby
@@ -744,7 +752,7 @@ ScriptsOnlyBuild:
     className: Upload
   - hash:
       serializedVersion: 2
-      Hash: 9edf3ab013beb7a1026e3be1b190f7c4
+      Hash: 4c4f1fe65cb4adb1caf7492c491f4d4d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ControllerCard
@@ -834,6 +842,12 @@ ScriptsOnlyBuild:
     className: Benchmark01
   - hash:
       serializedVersion: 2
+      Hash: 2525f9d4b7f92f363c66180dc78f0faf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ControllerRemotePlayer
+  - hash:
+      serializedVersion: 2
       Hash: 55c5104e91952b79ed513b5041a2505b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -858,13 +872,13 @@ ScriptsOnlyBuild:
     className: TMP_Asset
   - hash:
       serializedVersion: 2
-      Hash: 0ed988bb8fddd81eef1d03b77a02d834
+      Hash: 1f6397175021039c8482d0babaa1c312
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Controller_NetWork
   - hash:
       serializedVersion: 2
-      Hash: 07fe2b92db45b42f93aa3e7ec51ea5bb
+      Hash: 1de64155b4ad57046de00344d0d8abaf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Controller_Lobby
@@ -876,7 +890,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 0da14e303dcf1dc4498f948863e772b5
+      Hash: f1e62103b793f3e638be8a131701bd40
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ManagerGame
@@ -948,7 +962,7 @@ ScriptsOnlyBuild:
     className: ObjectSpin
   - hash:
       serializedVersion: 2
-      Hash: 8b4744773944aa8976588887d5b48328
+      Hash: 82800276a5da4661705e2221bb6173ca
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ControllerPlayer
@@ -1062,7 +1076,7 @@ ScriptsOnlyBuild:
     className: SimpleScript
   - hash:
       serializedVersion: 2
-      Hash: c2e2bb11d236d4caa2a2895d7c006878
+      Hash: 8a18c517ea18da948be9424ef78c7d86
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UI_manager
@@ -1258,12 +1272,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalEmitter
-  - hash:
-      serializedVersion: 2
-      Hash: 0a6f69603e98fd910bb7bbc3a04a5490
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Controller_remotePlayer
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb

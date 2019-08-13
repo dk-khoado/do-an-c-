@@ -7,13 +7,17 @@ class TaoPhongModel
     public int limit_player;
     public string password;
     public string room_name;
+    public int bet_money;
+    public int id_bai;
     public TaoPhongModel() { }
-    public TaoPhongModel(int mower, int limit, string mpass, string room)
+    public TaoPhongModel(int mOwer, int limit, string mPass, string room, int bet_money, int id_bai)
     {
-        this.owner_id = mower;
+        this.owner_id = mOwer;
         this.limit_player = limit;
-        this.password = mpass;
+        this.password = mPass;
         this.room_name = room;
+        this.bet_money = bet_money;
+        this.id_bai = id_bai;
     }
 }
 

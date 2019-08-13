@@ -89,6 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a022423c5a06d8488231364e36b2368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   Properties: {fileID: 11400000, guid: 151586f41ca600e45911c3923980a365, type: 2}
   image: {fileID: 0}
   isSelect: 0
@@ -161,7 +162,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 4767091250495936830}
-          m_MethodName: Sss
+          m_MethodName: DeSelect
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

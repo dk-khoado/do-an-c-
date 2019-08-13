@@ -11,13 +11,29 @@ public class CreateRoom : MonoBehaviour
     RoomByIDModel data = new RoomByIDModel();
     public TMP_InputField tenphong;
     public TMP_InputField matkhau;
-    public TMP_Dropdown songuoi;
-    public void Create()
+    public TMP_Dropdown sotien;
+    public TMP_Dropdown soNguoiChoi;
+    public TMP_Dropdown typeGame;
+    public MessageBox messageBox;
+
+    public Controller_Lobby controller_Lobby;
+
+    private void Start()
     {
-        TaoPhongModel dataphong = new TaoPhongModel(Login.mnhandata.data.id, int.Parse(songuoi.options[songuoi.value].text), matkhau.text, tenphong.text);
+        controller_Lobby = GetComponent<Controller_Lobby>();
+    }
+    public void Create()
+    {        
+        TaoPhongModel dataphong = new TaoPhongModel(Login.mnhandata.data.id, 
+            int.Parse(soNguoiChoi.options[soNguoiChoi.value].text), 
+            matkhau.text, tenphong.text, 
+            int.Parse(sotien.options[sotien.value].text),
+            controller_Lobby.typeGames.data[typeGame.value].id);       
         string json = JsonUtility.ToJson(dataphong);
         Debug.Log(json);
-        StartCoroutine(GetRequestCreate("http://26.60.150.44/api/RoomManager/CreateRoom", json));
+        messageBox.Setting("Thông Báo","Đang Tạo Phòng...",btnType.type_03);
+        messageBox.Show();
+        StartCoroutine(GetRequestCreate(InternetConfig.basePath+"/api/RoomManager/CreateRoom", json));
 
     }
     IEnumerator LoadScene()
@@ -34,6 +50,7 @@ public class CreateRoom : MonoBehaviour
         using (UnityWebRequest webRequest = UnityWebRequest.Post(uri, postdata))
         {
             webRequest.SetRequestHeader("Content-Type", "application/json");
+            webRequest.SetRequestHeader("apikey", "123456789");
             byte[] raw = Encoding.UTF8.GetBytes(postdata);
             webRequest.uploadHandler = new UploadHandlerRaw(raw);
             // Request and wait for the desired page.
@@ -54,10 +71,13 @@ public class CreateRoom : MonoBehaviour
                         Debug.Log(webRequest.downloadHandler.text);
                         if (data.result > 0)
                         {
+                            messageBox.SetContent(data.message);
                             int id_Room = data.data.id;
                             int id_owner = data.data.owner_id;
-                            PlayerPrefs.SetInt("id_room", id_Room);
-                            PlayerPrefs.SetInt("id_owner", id_owner);
+                            InternetConfig.ID_Room = data.data.id;
+                            //InternetConfig.ID_Room = data.data.owner_id;
+                            //PlayerPrefs.SetInt("id_room", id_Room);
+                            //PlayerPrefs.SetInt("id_owner", id_owner);
 
                             PlayerModel player = new PlayerModel();
                             player.ID_player = id_owner;
@@ -70,6 +90,7 @@ public class CreateRoom : MonoBehaviour
                         }
                         else
                         {
+                            messageBox.SetContent("");
                             Debug.Log(data.message);
                         }
                     }

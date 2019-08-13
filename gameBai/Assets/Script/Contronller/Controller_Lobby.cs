@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class Controller_Lobby : MonoBehaviour
 {
@@ -16,9 +16,75 @@ public class Controller_Lobby : MonoBehaviour
     public GameObject itemRoom;
     public GameObject parentItemRoom;
     public bool isNew;
+    public UI_Lobby ui_Lobby;
+    [SerializeField]
+    private List<GameObject> roomList;
+    public  TypeGameModel typeGames;
     private void Awake()
     {
-        StartCoroutine(GetRequestDowloadAvartar(BaseURL + "/upload/" + Login.mnhandata.data.avartar));
+        StartCoroutine(GetRequestHoso(InternetConfig.basePath + "/api/User/Get/" + Login.mnhandata.data.id));
+        StartCoroutine(GetRequestDowloadAvartar(InternetConfig.basePath + "/upload/" + Login.mnhandata.data.avartar));      
+
+    }
+    private void Start()
+    {        
+        StartCoroutine(GetTypeGame(InternetConfig.basePath + "/api/TypeGame/Get"));
+    }
+    public void FindAllRoomList()
+    {
+        roomList.Clear();
+        GameObject[] temp = GameObject.FindGameObjectsWithTag("room_select");
+        foreach (var item in temp)
+        {
+            roomList.Add(item);
+        }
+    }
+    /// <summary>
+    /// cập nhập thông tin phòng hoặc thêm mới nếu không có
+    /// </summary>
+    public void UpdateOrAddRoomList(List<RoomModel> roomModels)
+    {
+        List<GameObject> temp = new List<GameObject>();
+        List<RoomModel> tempRM = new List<RoomModel>();
+        foreach (var room in roomList)
+        {
+            bool check = false;
+            foreach (var newRoom in roomModels)
+            {
+                if (room.GetComponent<Controller_ItemRoom>().GetIdRoom() == newRoom.id)
+                {
+                    check = true;
+                    room.GetComponent<Controller_ItemRoom>().SetData(newRoom);
+                    roomModels.Remove(newRoom);
+                    break;
+                }
+            }
+            if (check == false)
+            {
+                temp.Add(room);
+            }
+        }
+        if (roomModels.Count > 0)
+        {
+            foreach (var item in roomModels)
+            {
+                GameObject tempRoom = Instantiate(itemRoom, parentItemRoom.transform);
+                tempRoom.GetComponent<Controller_ItemRoom>().SetData(item);
+            }
+        }
+        foreach (var item in temp)
+        {
+            Destroy(item);
+        }
+
+    }
+    private void FixedUpdate()
+    {
+        UServer uServer = Login.connect.GetUServer("refresh_listroom");
+        if (uServer.value != "" && uServer.value != null && uServer.isNew)
+        {
+            StartCoroutine(GetRequestPhongcho(InternetConfig.basePath + "/api/RoomManager/GetRoomList"));
+        }
     }
     private void LateUpdate()
     {
@@ -26,11 +92,13 @@ public class Controller_Lobby : MonoBehaviour
         //StartCoroutine(GetRequestPhongcho(BaseURL + "/api/RoomManager/GetRoomList"));
         //GetComponent<UI_Lobby>().SetInfoPlayer(mdata);
     }
+
+    [System.Obsolete]
     public void Upload()
     {
         //path = EditorUtility.OpenFilePanel("Chon hinh di may", "*", "JPG");
         StartCoroutine(Upload(File.ReadAllBytes(path)));
-        StartCoroutine(GetRequestDowloadAvartar(BaseURL + "/upload/" + Login.mnhandata.data.avartar));
+        StartCoroutine(GetRequestDowloadAvartar(InternetConfig.basePath + "/upload/" + Login.mnhandata.data.avartar));
     }
     public void CloseGame()
     {
@@ -39,11 +107,7 @@ public class Controller_Lobby : MonoBehaviour
     }
     public void LoadRoom()
     {
-        foreach (var item in GameObject.FindGameObjectsWithTag("room_select"))
-        {
-            Destroy(item);
-        }
-        StartCoroutine(GetRequestPhongcho(BaseURL + "/api/RoomManager/GetRoomList"));
+        StartCoroutine(GetRequestPhongcho(InternetConfig.basePath + "/api/RoomManager/GetRoomList"));
     }
     IEnumerator GetRequestDowloadAvartar(string uri)
     {
@@ -51,6 +115,7 @@ public class Controller_Lobby : MonoBehaviour
         {
             // Debug.Log(uri);
             webRequest.SetRequestHeader("Content-Type", "application/json");
+            webRequest.SetRequestHeader("apiKey", "123456789");
             // Request and wait for the desired page.
 
             yield return webRequest.SendWebRequest();
@@ -64,16 +129,22 @@ public class Controller_Lobby : MonoBehaviour
             {
                 yield return new WaitForSeconds(0.1f);
                 GetComponent<UI_Lobby>().avartar_lobby.texture = ((DownloadHandlerTexture)webRequest.downloadHandler).texture;
-                StartCoroutine(GetRequestHoso(BaseURL + "/api/User/Get/" + Login.mnhandata.data.id));
+                StartCoroutine(GetRequestPhongcho(InternetConfig.basePath + "/api/RoomManager/GetRoomList"));
+                ui_Lobby.SetProcess(webRequest.downloadProgress);
+                yield return null;
             }
-
         }
     }
+
+    [System.Obsolete]
     IEnumerator Upload(byte[] data)
     {
+        Dictionary<string, string> headers = new Dictionary<string, string>();
+        headers.Add("apikey", "123456789");
         WWWForm form = new WWWForm();
         form.AddBinaryData(MD5(Login.mnhandata.data.id.ToString()), data);
-        WWW www = new WWW(BaseURL + "/api/Upload/Avartar/" + Login.mnhandata.data.id.ToString(), form);
+        form.headers.Add("apikey", "123456789");
+        WWW www = new WWW(InternetConfig.basePath + "/api/Upload/Avartar/" + Login.mnhandata.data.id.ToString(), form);
         yield return www;
         if (www.error != null)
         {
@@ -105,7 +176,7 @@ public class Controller_Lobby : MonoBehaviour
     }
     public void Hoso()
     {
-        StartCoroutine(GetRequestHoso(BaseURL + "/api/User/Get/" + Login.mnhandata.data.id.ToString()));
+        StartCoroutine(GetRequestHoso(InternetConfig.basePath + "/api/User/Get/" + Login.mnhandata.data.id.ToString()));
         //GetComponent<Phongchoset>().Batphongcho();
     }
     IEnumerator GetRequestPhongcho(string uri)
@@ -113,6 +184,7 @@ public class Controller_Lobby : MonoBehaviour
         using (UnityWebRequest webRequest = UnityWebRequest.Post(uri, UnityWebRequest.kHttpVerbPOST))
         {
             webRequest.SetRequestHeader("Content-Type", "application/json");
+            webRequest.SetRequestHeader("apiKey", "123456789");
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
             if (webRequest.isNetworkError)
@@ -121,21 +193,41 @@ public class Controller_Lobby : MonoBehaviour
             }
             else
             {
-                try
+                if (webRequest.isDone)
                 {
-                    if (webRequest.isDone)
-                    {
-                        roomModel = JsonUtility.FromJson<GetRoomModel>(webRequest.downloadHandler.text);
-                        foreach (var item in roomModel.data)
-                        {
-                            GameObject temp = Instantiate(itemRoom, parentItemRoom.transform);
-                            temp.GetComponent<Controller_ItemRoom>().SetData(item);
-                        }
-                    }
+                    FindAllRoomList();
+                    yield return new WaitForSeconds(0.1f);
+                    roomModel = JsonUtility.FromJson<GetRoomModel>(webRequest.downloadHandler.text);
+                    UpdateOrAddRoomList(roomModel.data);
+
+                    ui_Lobby.SetProcess(webRequest.downloadProgress);
+                    yield return null;
                 }
-                catch (Exception e)
-                {
-                    Debug.Log(e);
+            }
+        }
+    }
+
+    IEnumerator GetTypeGame(string uri)
+    {
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
+        {
+            webRequest.SetRequestHeader("Content-Type", "application/json");
+            webRequest.SetRequestHeader("apiKey", "123456789");
+            // Request and wait for the desired page.
+            yield return webRequest.SendWebRequest();
+            if (webRequest.isNetworkError)
+            {
+                Debug.Log(": Error: " + webRequest.error);
+            }
+            else
+            {
+                if (webRequest.isDone)
+                {                   
+                    yield return new WaitForSeconds(0.1f);
+                    typeGames = JsonUtility.FromJson<TypeGameModel>(webRequest.downloadHandler.text);
+                    Debug.Log(webRequest.downloadHandler.text);
+                    ui_Lobby.SetTypeGameDropDown(typeGames.data);
+                    yield return null;
                 }
             }
         }
@@ -146,6 +238,7 @@ public class Controller_Lobby : MonoBehaviour
         using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
         {
             webRequest.SetRequestHeader("Content-Type", "application/json");
+            webRequest.SetRequestHeader("apiKey", "123456789");
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
             if (webRequest.isNetworkError)
@@ -154,21 +247,15 @@ public class Controller_Lobby : MonoBehaviour
             }
             else
             {
-                try
+                if (webRequest.isDone)
                 {
-                    if (webRequest.isDone)
-                    {
-                        mdata = JsonUtility.FromJson<DataFromLogin>(webRequest.downloadHandler.text);
-                        GetComponent<UI_Lobby>().SetInfoPlayer(mdata);
-                        StartCoroutine(GetRequestPhongcho(BaseURL + "/api/RoomManager/GetRoomList"));
-                    }
-                    //GetComponent<UI_Lobby>().BatThongTinPlayer();                  
+                    yield return new WaitForSeconds(0.1f);
+                    mdata = JsonUtility.FromJson<DataFromLogin>(webRequest.downloadHandler.text);
+                    ui_Lobby.SetProcess(webRequest.downloadProgress);
+                    GetComponent<UI_Lobby>().SetInfoPlayer(mdata);
+                    yield return null;
                 }
-
-                catch (Exception e)
-                {
-                    Debug.Log(e);
-                }
+                //GetComponent<UI_Lobby>().BatThongTinPlayer();   
             }
         }
     }

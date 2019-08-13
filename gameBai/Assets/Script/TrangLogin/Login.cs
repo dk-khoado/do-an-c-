@@ -14,17 +14,21 @@ public class Login : MonoBehaviour
     public TMP_InputField password_register;
     public TMP_InputField repassword;
     public TMP_InputField email;
-    public GameObject loading;
     public static DataFromLogin mnhandata = new DataFromLogin();
     public static ConnectToServer connect = new ConnectToServer();
+
+    public MessageBox messageBox;
     private void Start()
     {
         PlayerPrefs.DeleteAll();
-        connect = new ConnectToServer();
+        //connect = new ConnectToServer();
     }
     public void onLogin()
     {
-        loading.SetActive(true);
+        //connect = new ConnectToServer();
+        messageBox.Show();
+        messageBox.buttonType = btnType.type_03;
+        messageBox.SetContent("Đang Đăng Nhập...");
         sendDataLogin dataLogin = new sendDataLogin(username_login.text, password_login.text);
         string json = JsonUtility.ToJson(dataLogin);
         StartCoroutine(GetRequestLogin("http://26.60.150.44/api/User/Login", json));
@@ -39,7 +43,7 @@ public class Login : MonoBehaviour
             bool.TryParse(connect.GetUServer("succses").value, out check);
             if (check)
             {
-                loading.SetActive(false);
+
                 StartCoroutine(LoadYourAsyncScene());
                 //Debug.Log("ket noi thanh cong");
             }
@@ -51,30 +55,47 @@ public class Login : MonoBehaviour
                 connect.Send(player);
             }
         }
+        if (connect.isError)
+        {
+
+            connect = new ConnectToServer();
+        }
     }
     public void onRegister()
     {
-
+        messageBox.Show();
+        messageBox.buttonType = btnType.type_03;
+        messageBox.SetContent("Đăng Tạo Tài Khoản");
         SendResgiter data2 = new SendResgiter(username_register.text, password_register.text, email.text);
         string json = JsonUtility.ToJson(data2);
-        if (password_register.text == repassword.text)
+        if (username_register.text.Trim().Equals(""))
         {
-            StartCoroutine(GetRequestRegister("http://26.60.150.44/api/User/Register", json));
-            GetComponent<SetActive>().ChangeRegister();
+            messageBox.buttonType = btnType.type_02;
+            messageBox.SetContent("Tên Đăng Nhập không được trống!");
+        }
+        else
+        if (password_register.text != repassword.text && password_register.text.Trim() != "" && repassword.text.Trim() != "")
+        {
+            messageBox.buttonType = btnType.type_02;
+            messageBox.SetContent("Mật khẩu nhập lại không khớp!");
+        }
+        else if (email.text.Trim() != "")
+        {
+            messageBox.buttonType = btnType.type_02;
+            messageBox.SetContent("Email Không được trống!");
         }
         else
         {
-            Debug.Log("Can't not be register");
-
+            StartCoroutine(GetRequestRegister(InternetConfig.basePath + "/api/User/Register", json));
         }
 
-        Debug.Log(json);
     }
     IEnumerator GetRequestLogin(string uri, string postdata)
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Post(uri, postdata))
         {
             webRequest.SetRequestHeader("Content-Type", "application/json");
+            webRequest.SetRequestHeader("apiKey", "123456789");
             byte[] raw = Encoding.UTF8.GetBytes(postdata);
             webRequest.uploadHandler = new UploadHandlerRaw(raw);
             // Request and wait for the desired page.
@@ -84,7 +105,7 @@ public class Login : MonoBehaviour
             if (webRequest.isNetworkError)
             {
                 Debug.Log(pages[page] + ": Error: " + webRequest.error);
-                loading.SetActive(false);
+
             }
             else
             {
@@ -96,6 +117,7 @@ public class Login : MonoBehaviour
                         //Debug.Log(webRequest.downloadHandler.text);
                         if (mnhandata.result > 0)
                         {
+                            messageBox.SetContent("Đang kết nối server...");
                             connect.Connect("26.60.150.44", 8080);
                             //loading.SetActive(false);
                             //ebug.Log(JsonUtility.ToJson(mnhandata));
@@ -107,7 +129,8 @@ public class Login : MonoBehaviour
                         }
                         else
                         {
-                            loading.SetActive(false);
+                            messageBox.SetContent("Sai tên đăng nhập hoặc mật khẩu!");
+                            messageBox.buttonType = btnType.type_02;
                             Debug.Log(mnhandata.message);
                             //Debug.Log(mnhandata.data);
                         }
@@ -115,7 +138,8 @@ public class Login : MonoBehaviour
                 }
                 catch (Exception e)
                 {
-                    loading.SetActive(false);
+                    messageBox.SetContent("Lỗi Xin thử lại");
+                    messageBox.buttonType = btnType.type_02;
                     Debug.Log(e);
                 }
             }
@@ -127,6 +151,7 @@ public class Login : MonoBehaviour
         using (UnityWebRequest webRequest = UnityWebRequest.Post(uri, postdata))
         {
             webRequest.SetRequestHeader("Content-Type", "application/json");
+            webRequest.SetRequestHeader("apiKey", "123456789");
             byte[] raw = Encoding.UTF8.GetBytes(postdata);
             webRequest.uploadHandler = new UploadHandlerRaw(raw);
             // Request and wait for the desired page.
@@ -135,6 +160,8 @@ public class Login : MonoBehaviour
             int page = pages.Length - 1;
             if (webRequest.isNetworkError)
             {
+                messageBox.buttonType = btnType.type_02;
+                messageBox.SetContent("Lỗi Xin thử lại!");
                 Debug.Log(pages[page] + ": Error: " + webRequest.error);
             }
             else
@@ -144,19 +171,20 @@ public class Login : MonoBehaviour
                     var mnhandata = JsonUtility.FromJson<DataFromLogin>(postdata);
                     if (mnhandata.result > 0)
                     {
-                        Debug.Log(mnhandata.message);
-                        Debug.Log(mnhandata.data);
+                        messageBox.buttonType = btnType.type_02;
+                        messageBox.SetContent("Tạo Thành Công :)");
+                        GetComponent<SetActive>().ChangeRegister();
                     }
                     else
                     {
-                        Debug.Log(mnhandata.message);
-                        Debug.Log(mnhandata.data);
-
+                        messageBox.buttonType = btnType.type_02;
+                        messageBox.SetContent("lỗi:" + mnhandata.message);
                     }
                 }
                 catch
                 {
-
+                    messageBox.buttonType = btnType.type_02;
+                    messageBox.SetContent("Lỗi Xin thử lại!");
                 }
             }
         }

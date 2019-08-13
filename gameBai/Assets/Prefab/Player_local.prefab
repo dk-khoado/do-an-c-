@@ -80,7 +80,11 @@ MonoBehaviour:
     money: 0
     avartar: 
   isLocalPlayer: 1
+  turnTime: 0
+  currentTime: 0
+  ui_time: {fileID: 0}
   cardsOnHand: []
   manager: {fileID: 0}
   selectColor: 0
   child: {fileID: 0}
+  isRead: 0

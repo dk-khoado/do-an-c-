@@ -12,9 +12,9 @@ namespace api_gamebai.Controllers
     public class ChatController : ApiController
     {
         DatabaseGameBai_friend db = new DatabaseGameBai_friend();      
-       public List<LoadListFriend_Result> Get(int id,[FromBody]UserLoginModel mLogin)
+       public List<LoadChatBox_Result> Get(int id,[FromBody]UserLoginModel mLogin)
         {           
-            return db.LoadListFriend(id).ToList();
+            return db.LoadChatBox(id).ToList();
         }
         [HttpPost]
         public ResponseMessage SendMessage([FromBody]SendChatModel sendChat)
@@ -23,7 +23,7 @@ namespace api_gamebai.Controllers
             {
                 if (db.sendmessage(sendChat.id_send, sendChat.id_recive, sendChat.message) > 0)
                 {
-                    return new ResponseMessage("sucsess", "Đã gửi", 9);
+                    return new ResponseMessage("sucsess", "Đã gửi", 1);
                 }
                 else
                 {

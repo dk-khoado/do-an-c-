@@ -355,3 +355,4 @@ D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Net.Http.d
 D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Net.Sockets.dll
 D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
 D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\backup E\gitHub\do-an-c-\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csprojAssemblyReference.cache

@@ -6,6 +6,10 @@ TagManager:
   tags:
   - remote
   - room_select
+  - UI_localPlayer
+  - UI_remotePlayer
+  - MessageBox
+  - FriendItem
   layers:
   - Default
   - TransparentFX

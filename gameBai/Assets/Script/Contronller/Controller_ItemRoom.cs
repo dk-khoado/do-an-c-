@@ -9,26 +9,33 @@ public class Controller_ItemRoom : MonoBehaviour
     public TMP_Text number;
     public TMP_Text name;
     public TMP_Text currentPlayer;
+    public TMP_Text typeGame;
     public GameObject manager;
-    RoomModel data = new RoomModel();
+    public RoomModel data = new RoomModel();
+
+    MessageBox messageBox;
     // Start is called before the first frame update
     void Start()
     {
         manager = GameObject.Find("manager");
+        messageBox = GameObject.FindGameObjectWithTag("MessageBox").GetComponent<MessageBox>();
+    }
+    public int GetIdRoom()
+    {
+        return data.id;
     }
     public void SetData(RoomModel index)
-    {
-        data = index;
-        number.text = data.id.ToString();
-        name.text = data.room_name;
-        currentPlayer.text = data.current_player.ToString();
+    {       
+        data = index;       
     }
     public void JoinRoom()
     {
+        Room_Config.bet_money = data.bet_money;        
         //DontDestroyOnLoad(gameObject);
         WWWForm form = new WWWForm();
         form.AddField("room_id", data.id);
-        form.AddField("player_id", PlayerPrefs.GetInt("id"));
+        form.AddField("player_id", Login.mnhandata.data.id);
+        messageBox.Setting("Thông báo","Đang Vào phòng", btnType.type_03);
         StartCoroutine(ApiJoinRoom(InternetConfig.basePath + "/api/RoomManager/JoinRoom", form));
     }
     IEnumerator LoadScene()
@@ -43,6 +50,7 @@ public class Controller_ItemRoom : MonoBehaviour
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Post(url, data))
         {
+            webRequest.SetRequestHeader("apikey", "123456789");
             yield return webRequest.SendWebRequest();
             if (webRequest.error != null || webRequest.isHttpError)
             {
@@ -53,10 +61,15 @@ public class Controller_ItemRoom : MonoBehaviour
                 if (webRequest.isDone)
                 {
                     PlayerModel player = new PlayerModel();
-                    player.ID_player = PlayerPrefs.GetInt("id");
+                    player.ID_player = Login.mnhandata.data.id;
                     player.ID_room = this.data.id;
                     player.cmd = "Join_room";
                     Login.connect.Send(player);
+
+                    InternetConfig.ID_Room = this.data.id;
+                    //PlayerPrefs.SetInt("id_room", this.data.id);
+                    //PlayerPrefs.SetInt("id_owner", this.data.owner_id);
+                    Debug.Log(webRequest.downloadHandler.text);
                     StartCoroutine(LoadScene());
                 }
             }
@@ -65,6 +78,9 @@ public class Controller_ItemRoom : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        number.text = data.id.ToString();
+        name.text = data.room_name;
+        currentPlayer.text = data.current_player.ToString() + "/" + data.limit_player;
 
     }
 }

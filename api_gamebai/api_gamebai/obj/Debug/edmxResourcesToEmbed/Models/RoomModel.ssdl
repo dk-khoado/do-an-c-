@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="DatabaseGameBaiModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ListBai">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name_bai" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
   <EntityType Name="player">
     <Key>
       <PropertyRef Name="id" />
@@ -12,6 +19,7 @@
     <Property Name="email" Type="varchar" MaxLength="256" Nullable="false" />
     <Property Name="status" Type="int" Nullable="false" />
     <Property Name="avartar" Type="varchar(max)" />
+    <Property Name="rank_by_money" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="room_list">
     <Key>
@@ -23,6 +31,8 @@
     <Property Name="password" Type="nchar" MaxLength="10" />
     <Property Name="current_player" Type="int" />
     <Property Name="room_name" Type="nvarchar" MaxLength="10" />
+    <Property Name="bet_money" Type="money" />
+    <Property Name="id_bai" Type="int" Nullable="false" />
   </EntityType>
   <!--Errors Found During Generation:
 warning 6002: The table/view 'DatabaseGameBai.dbo.room_listplayer' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -49,6 +59,18 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.vroom_listplayer' does not hav
     <Property Name="money" Type="money" Nullable="false" />
     <Property Name="avartar" Type="varchar(max)" />
   </EntityType>
+  <Association Name="FK__room_list__id_ba__6319B466">
+    <End Role="ListBai" Type="Self.ListBai" Multiplicity="1" />
+    <End Role="room_list" Type="Self.room_list" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ListBai">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="room_list">
+        <PropertyRef Name="id_bai" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_room_listplayer_room_list">
     <End Role="room_list" Type="Self.room_list" Multiplicity="1" />
     <End Role="room_listplayer" Type="Self.room_listplayer" Multiplicity="*" />
@@ -65,7 +87,8 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.vroom_listplayer' does not hav
     <Parameter Name="owner_id" Type="int" Mode="In" />
     <Parameter Name="limit_player" Type="int" Mode="In" />
     <Parameter Name="password" Type="varchar" Mode="In" />
-    <Parameter Name="room_name" Type="varchar" Mode="In" />
+    <Parameter Name="room_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="id_bai" Type="int" Mode="In" />
   </Function>
   <Function Name="GetListPlayerInRoom" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="ID_room" Type="int" Mode="In" />
@@ -82,6 +105,7 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.vroom_listplayer' does not hav
     <Parameter Name="player_id" Type="int" Mode="In" />
   </Function>
   <EntityContainer Name="DatabaseGameBaiModel1StoreContainer">
+    <EntitySet Name="ListBai" EntityType="Self.ListBai" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="player" EntityType="Self.player" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="room_list" EntityType="Self.room_list" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="room_listplayer" EntityType="Self.room_listplayer" store:Type="Tables" store:Schema="dbo">
@@ -99,6 +123,10 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.vroom_listplayer' does not hav
     [vroom_listplayer].[avartar] AS [avartar]
     FROM [dbo].[vroom_listplayer] AS [vroom_listplayer]</DefiningQuery>
     </EntitySet>
+    <AssociationSet Name="FK__room_list__id_ba__6319B466" Association="Self.FK__room_list__id_ba__6319B466">
+      <End Role="ListBai" EntitySet="ListBai" />
+      <End Role="room_list" EntitySet="room_list" />
+    </AssociationSet>
     <AssociationSet Name="FK_room_listplayer_room_list" Association="Self.FK_room_listplayer_room_list">
       <End Role="room_list" EntitySet="room_list" />
       <End Role="room_listplayer" EntitySet="room_listplayer" />

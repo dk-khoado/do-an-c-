@@ -13,6 +13,7 @@ public class Player
 public class DataRoomPlayer
 {
     public List<Player> data;
+    public int result;
 }
 public class sendDataLogin
 {

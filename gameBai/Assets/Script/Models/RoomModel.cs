@@ -11,5 +11,7 @@ public class RoomModel
     public string password;
     public int current_player;
     public string room_name;
+    public int bet_money;
+    public int id_bai;
 }
 

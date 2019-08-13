@@ -3,6 +3,7 @@ using System.IO;
 using System.Net.Sockets;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ConnectToServer
 {
@@ -11,27 +12,36 @@ public class ConnectToServer
     StreamReader reader;
     TcpClient client = new TcpClient();
     List<UServer> serverData = new List<UServer>();
+    Dictionary<bool,UServer> serverDatav2 = new Dictionary<bool, UServer>();
     PlayerModel playerData = new PlayerModel();
     private bool connected;
     public bool isNew = false;
     public bool Connected { get => client.Connected; }
+    public bool isError = false;
+
+    public ConnectToServer()
+    {
+        TcpClient client = new TcpClient();
+    }
 
     public void Connect(string host, int port)
     {
+        isError = false;
         client.Connect(host, port);
         Stream stream = client.GetStream();
-        Start(stream);
+        //Start(stream);
+        reader = new StreamReader(stream);
         writer = new StreamWriter(stream);
         writer.AutoFlush = true;
         //writer.WriteLine(JsonUtility.ToJson(player));
         Thread thread = new Thread(DoBackground);
-        thread.Start();
+        thread.Start();        
     }
     public void Start(Stream stream)
     {
         reader = new StreamReader(stream);
-        Thread thread = new Thread(Room);
-        thread.Start();
+       // Thread thread = new Thread(Room);
+       // thread.Start();
     }
 
     public void Room()
@@ -63,7 +73,8 @@ public class ConnectToServer
         {
             if (item.key == key)
             {
-                return item;
+                var i = item;
+                return i;
             }
         }
         return new UServer();
@@ -81,6 +92,7 @@ public class ConnectToServer
                 if (serverData[i].key == server.key)
                 {
                     serverData[i].value = server.value;
+                    serverData[i].isNew = server.isNew;
                     return;
                 }
             }
@@ -88,10 +100,11 @@ public class ConnectToServer
             {
                 Debug.Log("lỗi lưu key");
             }
-        }
+        }        
         //Debug.Log("đã lưu key:"+ server.value);
         serverData.Add(server);
     }
+
     private void DoBackground()
     {
         while (true)
@@ -102,6 +115,7 @@ public class ConnectToServer
                 string data = reader.ReadLine();
                 // Debug.Log(data);
                 UServer _serverData = JsonUtility.FromJson<UServer>(data);
+                _serverData.isNew = true;
                 AddOrUpdate(_serverData);
                 //playerData = JsonUtility.FromJson<PlayerModel>(data);
                 isNew = true;
@@ -109,13 +123,17 @@ public class ConnectToServer
             catch (System.Exception e)
             {
                 Debug.Log(e);
+                isError = true;
                 if (!client.Connected)
-                {
+                {                   
                     break;
                 }
             }
             //isNew = true;
         }
+        client.Close();
+        client.Dispose();
+        isError = true;
         Debug.Log("stop");
     }
 
@@ -132,14 +150,27 @@ public class ConnectToServer
     public UServer GetUServer(string key)
     {
         UServer temp = getValue(key);
-        isNew = false;
-        //Debug.Log(temp.value);
+        UServer temp2 = new UServer();
+        temp2.ID = temp.ID;
+        temp2.isNew = temp.isNew;
+        temp2.value = temp.value;
+        temp2.key = temp.key;
+        temp.isNew = false;
+        AddOrUpdate(temp);
+        //isNew = false;       
+        //Debug.Log(tamp2.value+" isnew:" + tamp2.isNew);
+        return temp2;
+    }
+    //lấy dữ liệu từ server
+    public UServer GetUServer(string key, bool old)
+    {
+        UServer temp = getValue(key);
+        isNew = false;       
+        //Debug.Log(tamp2.value+" isnew:" + tamp2.isNew);
         return temp;
     }
     public void Disconnected()
-    {
-        writer.Close();
-        reader.Close();
+    {       
         client.Close();
         client.Dispose();
     }

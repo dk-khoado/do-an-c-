@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class ControllerCard : MonoBehaviour
 {
+    public int id;
     public CardModel Properties;
     public Sprite image;
     private bool hover;
@@ -56,6 +57,11 @@ public class ControllerCard : MonoBehaviour
     public void UnhoverCard()
     {
         hover = false;
+    }
+    public void DeSelect()
+    {
+        isSelect = false;
+        animator.SetBool("select", false);
     }
     public void ActiveSkill()
     {

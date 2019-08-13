@@ -16,3 +16,5 @@ MonoBehaviour:
   color: 0
   isChucNang: 1
   image: {fileID: 8130428011928058339, guid: 09a35d43f8fe2d149acb874a81d0823d, type: 3}
+  skill: 3
+  amounDraw: 0

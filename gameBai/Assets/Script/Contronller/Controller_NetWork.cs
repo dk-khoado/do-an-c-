@@ -8,9 +8,9 @@ using UnityEngine.SceneManagement;
 public class Controller_NetWork : MonoBehaviour
 {
     public string URL_GETPlayerList;
-    public string address;
+    //public string InternetConfig.basePath;
     public int ID_owner;
-    public int ID_Room;
+    public int ID_Room;    
     public List<Player> players = new List<Player>();
     [SerializeField]
     private ManagerGame manager;
@@ -24,19 +24,26 @@ public class Controller_NetWork : MonoBehaviour
     }
     void Start()
     {
-        ID_Room = PlayerPrefs.GetInt("id_room");
-        ID_owner = PlayerPrefs.GetInt("id_owner");
+        ID_Room = InternetConfig.ID_Room;
+        //ID_owner = PlayerPrefs.GetInt("id_owner");
         StartCoroutine(GetInfoPlayer());
     }
     void Update()
-    {
+    {        
         if (Login.mnhandata.data.id == ID_owner)
         {
             uI_Manager.btnStart.GetComponentInChildren<TMP_Text>().SetText("Bắt Đầu");
         }
         else
         {
-            uI_Manager.btnStart.GetComponentInChildren<TMP_Text>().SetText("Sẳn sàng");
+            if (manager.isReady)
+            {
+                uI_Manager.btnStart.GetComponentInChildren<TMP_Text>().SetText("Bỏ Sẵn sàng");
+            }
+            else
+            {
+                uI_Manager.btnStart.GetComponentInChildren<TMP_Text>().SetText("Sẵn sàng");
+            }
         }
     }
     private void LateUpdate()
@@ -44,10 +51,22 @@ public class Controller_NetWork : MonoBehaviour
         if (Login.connect.isNew)
         {
             UServer data = Login.connect.GetUServer("join_room");
-            if (data.value != "")
+            if (data.value != "" && data.isNew)
             {
+
                 StartCoroutine(GetInfoPlayer());
                 Debug.Log(data.value + "đã tham gia phòng");
+            }
+            data = Login.connect.GetUServer("leave_room");
+            if (data.value != "" && data.isNew)
+            {
+                PlayerModel player = JsonUtility.FromJson<PlayerModel>(data.value);
+                if (player != default)
+                {
+                    RemoteDataPlayer(player.ID_player);
+                }
+                StartCoroutine(GetInfoPlayer());
+                Debug.Log(data.value + "đã rời phòng");
             }
         }
     }
@@ -57,18 +76,19 @@ public class Controller_NetWork : MonoBehaviour
         using (UnityWebRequest webRequest = UnityWebRequest.Get(URL_GETPlayerList))
         {
             yield return webRequest.SendWebRequest();
-
         }
     }
     IEnumerator GetInfoPlayer()
     {
-        string url = address + "/api/RoomManager/GetPlayerInRoom?ID_room=" + ID_Room;
+        string url = InternetConfig.basePath + "/api/RoomManager/GetPlayerInRoom?ID_room=" + ID_Room;
         using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
         {
+            webRequest.SetRequestHeader("apikey","123456789");
             yield return webRequest.SendWebRequest();
             if (webRequest.isNetworkError || webRequest.isHttpError)
             {
                 Debug.Log(webRequest.error);
+                StartCoroutine(GetInfoPlayer());
             }
             else
             {
@@ -76,7 +96,9 @@ public class Controller_NetWork : MonoBehaviour
                 {
                     //string json = "{\"key\":" + webRequest.downloadHandler.text + "}";
                     DataRoomPlayer data = JsonUtility.FromJson<DataRoomPlayer>(webRequest.downloadHandler.text);
+                    Debug.Log(webRequest.downloadHandler.text);
                     players = data.data;
+                    ID_owner = data.result;
                     SetDataPlayer();
                 }
             }
@@ -84,9 +106,10 @@ public class Controller_NetWork : MonoBehaviour
     }
     IEnumerator APILeaveRoom(WWWForm form)
     {
-        string url = address + "/api/RoomManager/LeaveRoom";
+        string url = InternetConfig.basePath + "/api/RoomManager/LeaveRoom";
         using (UnityWebRequest webRequest = UnityWebRequest.Post(url, form))
         {
+            webRequest.SetRequestHeader("apikey", "123456789");
             yield return webRequest.SendWebRequest();
             if (webRequest.isNetworkError || webRequest.isHttpError)
             {
@@ -96,7 +119,13 @@ public class Controller_NetWork : MonoBehaviour
             {
                 if (webRequest.isDone)
                 {
-                    Debug.Log(webRequest.downloadHandler.text);
+
+                    //Debug.Log(webRequest.downloadHandler.text);
+                    PlayerModel player = new PlayerModel();
+                    player.ID_player = Login.mnhandata.data.id;
+                    player.ID_room = ID_Room;
+                    player.cmd = "leave_room";
+                    Login.connect.Send(player);
                     SceneManager.LoadScene("Lobby");
                 }
             }
@@ -108,16 +137,50 @@ public class Controller_NetWork : MonoBehaviour
     public void SetDataPlayer()
     {
         int i = 0;
+        int pos=0;
+        bool findLCP = false;//đã tìm tháy vị trí localplayer
         foreach (var player in players)
         {
             if (player.player_id == manager.IDLocalPlayer)
             {
                 manager.localPlayer.GetComponent<ControllerPlayer>().player = player;
-            }
+                uI_Manager.GetComponent<UI_manager>().ShowDataPlayer(player);                                
+                findLCP = true;
+                pos = i;
+                if (manager.localPlayer.GetComponent<ControllerPlayer>().player.player_id == ID_owner)
+                {
+                    pos = 0;
+                }
+            }           
             else
             {
-                manager.remotePlayers[i].GetComponent<ControllerPlayer>().player = player;
-                i++;
+                if (pos==0)
+                {
+                    manager.remotePlayers[i].GetComponent<ControllerRemotePlayer>().player = player;
+                    manager.remotePlayers[i].GetComponent<ControllerRemotePlayer>().GetAvartar();
+                    i++;
+                }
+                else
+                {
+                    int sum = i - pos;
+                    Player temp = manager.remotePlayers[sum-1].GetComponent<ControllerRemotePlayer>().player;
+                    manager.remotePlayers[sum - 1].GetComponent<ControllerRemotePlayer>().player = player;
+                    manager.remotePlayers[sum-1].GetComponent<ControllerRemotePlayer>().GetAvartar();
+                    manager.remotePlayers[sum].GetComponent<ControllerRemotePlayer>().player = temp;
+                    manager.remotePlayers[sum].GetComponent<ControllerRemotePlayer>().GetAvartar();
+                }            
+            }
+        }       
+    }
+    public void RemoteDataPlayer(int ID_player)
+    {
+        for (int i = 0; i < manager.remotePlayers.Count; i++)
+        {
+            if (manager.remotePlayers[i].GetComponent<ControllerRemotePlayer>().player.player_id == ID_player)
+            {
+                players.Remove(manager.remotePlayers[i].GetComponent<ControllerRemotePlayer>().player);
+                manager.remotePlayers[i].GetComponent<ControllerRemotePlayer>().player = default;
+                return;
             }
         }
     }

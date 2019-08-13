@@ -17,7 +17,7 @@ public class Controller_chatWord : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (inputMessage.isFocused && inputMessage.text != "" && Input.GetKeyDown(KeyCode.Return))
+        if (inputMessage.text != "" && Input.GetKeyDown(KeyCode.Return))
         {
             PlayerModel player = Login.connect.player;
             player.cmd = "chat_all";
@@ -25,7 +25,7 @@ public class Controller_chatWord : MonoBehaviour
             Login.connect.Send(player);
             inputMessage.ActivateInputField();
             inputMessage.text = "";
-        }
+        }else
         if (inputMessage.text != "" && Input.GetKeyDown(KeyCode.Return))
         {
             PlayerModel player = Login.connect.player;
@@ -42,7 +42,7 @@ public class Controller_chatWord : MonoBehaviour
         if (Login.connect.isNew)
         {
             UServer data = Login.connect.GetUServer("chat_all");
-            if (data.value != "")
+            if (data.value != "" && data.isNew)
             {
                 try
                 {

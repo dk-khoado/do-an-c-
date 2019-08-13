@@ -47,7 +47,7 @@ namespace api_gamebai.Controllers
                     //Nếu người chơi tồn tại thì cho tạo phòng còn không thì thôi
                     if (db.players.Count(e => e.id == room.owner_id) > 0)
                     {
-                        db.addRoomList(room.owner_id, room.limit_player, room.password, room.room_name);
+                        db.addRoomList(room.owner_id, room.limit_player, room.password, room.room_name,room.id_bai);
                         
                         return new ResponseMessage(Ok().ToString(), "Tạo phòng thành công", db.GetRoomByIDPlayer(room.owner_id).FirstOrDefault(),1);
 
@@ -167,8 +167,10 @@ namespace api_gamebai.Controllers
             return new ResponseMessage("ok", db.room_list.ToList());
         }
         public ResponseMessage GetPlayerInRoom(int ID_room)
-        {            
-            return new ResponseMessage("Lấy dữ liêu thành công", db.GetListPlayerInRoom(ID_room).ToList());
+        {
+            string query = "SELECT * from room_list where id ="+ ID_room;
+            room_list room_= db.Database.SqlQuery<room_list>(query).FirstOrDefault();
+            return new ResponseMessage("Lấy dữ liêu thành công", db.GetListPlayerInRoom(ID_room).ToList(),room_.owner_id);
         }       
     }
 }

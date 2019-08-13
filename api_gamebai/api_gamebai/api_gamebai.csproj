@@ -131,6 +131,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApikeyManager\ApikeyManagerHandle.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -170,6 +171,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InfoPlayerController.cs" />
     <Compile Include="Controllers\MainController.cs" />
+    <Compile Include="Controllers\TypeGameController.cs" />
     <Compile Include="Controllers\UploadController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Models\AddFriendModel.cs" />
@@ -191,6 +193,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FriendsModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\FriendsModel1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FriendsModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\GetListPlayerInRoom_Result.cs">
       <DependentUpon>RoomModel.tt</DependentUpon>
     </Compile>
@@ -199,6 +206,9 @@
     </Compile>
     <Compile Include="Models\history_login.cs">
       <DependentUpon>UsersModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ListBai.cs">
+      <DependentUpon>RoomModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\LoadChatBox_Result.cs">
       <DependentUpon>FriendsModel.tt</DependentUpon>
@@ -298,7 +308,7 @@
     <Content Include="Models\FriendsModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>FriendsModel.edmx</DependentUpon>
-      <LastGenOutput>FriendsModel.cs</LastGenOutput>
+      <LastGenOutput>FriendsModel1.cs</LastGenOutput>
     </Content>
     <Content Include="Models\RoomModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
