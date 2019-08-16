@@ -88,6 +88,7 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.vroom_listplayer' does not hav
     <Parameter Name="limit_player" Type="int" Mode="In" />
     <Parameter Name="password" Type="varchar" Mode="In" />
     <Parameter Name="room_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="bet_money" Type="money" Mode="In" />
     <Parameter Name="id_bai" Type="int" Mode="In" />
   </Function>
   <Function Name="GetListPlayerInRoom" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">

@@ -9,7 +9,7 @@ public class UI_Lobby : MonoBehaviour
     public TMP_Text TenPlayer;
     public TMP_Text Tien;
     public TMP_Text Rank;
-    public Text _tien;
+    
 
     public RawImage avartar_lobby;
     public GameObject Phongcho;
@@ -79,7 +79,7 @@ public class UI_Lobby : MonoBehaviour
     {
         TenPlayer.text = data.data.nickname;
         Tien.text = data.data.money.ToString();
-        _tien.text = data.data.money.ToString();
+        
     }
     public void BatThongTinPlayer()
     {

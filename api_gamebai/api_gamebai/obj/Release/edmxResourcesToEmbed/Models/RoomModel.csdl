@@ -47,6 +47,7 @@
       <Parameter Name="limit_player" Mode="In" Type="Int32" />
       <Parameter Name="password" Mode="In" Type="String" />
       <Parameter Name="room_name" Mode="In" Type="String" />
+      <Parameter Name="bet_money" Mode="In" Type="Decimal" />
       <Parameter Name="id_bai" Mode="In" Type="Int32" />
     </FunctionImport>
     <FunctionImport Name="JoinRoomList">

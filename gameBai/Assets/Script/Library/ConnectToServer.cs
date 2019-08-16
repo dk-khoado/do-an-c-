@@ -115,10 +115,13 @@ public class ConnectToServer
                 string data = reader.ReadLine();
                 // Debug.Log(data);
                 UServer _serverData = JsonUtility.FromJson<UServer>(data);
-                _serverData.isNew = true;
-                AddOrUpdate(_serverData);
-                //playerData = JsonUtility.FromJson<PlayerModel>(data);
-                isNew = true;
+                if (_serverData != null)
+                {
+                    _serverData.isNew = true;
+                    AddOrUpdate(_serverData);
+                    //playerData = JsonUtility.FromJson<PlayerModel>(data);
+                    isNew = true;
+                }                
             }
             catch (System.Exception e)
             {
@@ -128,6 +131,7 @@ public class ConnectToServer
                 {                   
                     break;
                 }
+                break;
             }
             //isNew = true;
         }

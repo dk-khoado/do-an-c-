@@ -21,7 +21,7 @@ public class ControllerRemotePlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        manager = GameObject.Find("Manager");      
+        manager = GameObject.Find("Manager");
     }
     /// <summary>
     /// hiển thị trạng thái của lượt đi vừa rùi
@@ -55,7 +55,7 @@ public class ControllerRemotePlayer : MonoBehaviour
             {
                 ui_text_ready.SetActive(false);
             }
-        }        
+        }
         if (ui_message.enabled)
         {
             time += Time.deltaTime;
@@ -79,14 +79,44 @@ public class ControllerRemotePlayer : MonoBehaviour
             isEmty = false;
             child.SetActive(true);
         }
-        if (manager.GetComponent<ManagerGame>().currentPlayer.player_id == player.player_id)
+        if (manager.GetComponent<ManagerGame>())
         {
-            ani_turn.SetActive(true);
+            if (manager.GetComponent<ManagerGame>().currentPlayer.player_id == player.player_id)
+            {
+                ani_turn.SetActive(true);
+            }
+            else
+            {
+                ani_turn.SetActive(false);
+            }
         }
-        else
+        else if (manager.GetComponent<ManagerGame_tienlen>())
         {
-            ani_turn.SetActive(false);
+            if (manager.GetComponent<ManagerGame_tienlen>().currentPlayer.player_id == player.player_id)
+            {
+                ani_turn.SetActive(true);
+            }
+            else
+            {
+                ani_turn.SetActive(false);
+            }
         }
+        else if (manager.GetComponent<ManagerGame_catte>())
+        {
+            if (manager.GetComponent<ManagerGame_catte>())
+            {
+                if (manager.GetComponent<ManagerGame_catte>().currentPlayer.player_id == player.player_id)
+                {
+                    ani_turn.SetActive(true);
+                }
+                else
+                {
+                    ani_turn.SetActive(false);
+                }
+            }
+        }
+
+
     }
     private void LateUpdate()
     {
@@ -97,9 +127,7 @@ public class ControllerRemotePlayer : MonoBehaviour
         }
         else
         {
-            UI_name.SetText("????");
-            UI_money.SetText("????");
-            avartar.texture = null;
+            gameObject.SetActive(false);
         }
     }
     public void GetAvartar()

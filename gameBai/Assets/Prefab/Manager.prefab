@@ -49,6 +49,7 @@ MonoBehaviour:
   AmountCardPerPlayer: 7
   localPlayer: {fileID: 0}
   remotePlayers: []
+  ani: {fileID: 0}
   ModelCard: {fileID: 8909453836560703351, guid: 7ce928a86a2cf864fb5de9c914fe89b4,
     type: 3}
   currentCard: {fileID: 0}
@@ -84,6 +85,7 @@ MonoBehaviour:
   isReady: 0
   isPlaying: 0
   Uno: 0
+  isguest: 0
   ID_card: 0
 --- !u!114 &1823065503
 MonoBehaviour:

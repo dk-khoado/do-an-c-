@@ -21,16 +21,17 @@ public class CreateRoom : MonoBehaviour
     private void Start()
     {
         controller_Lobby = GetComponent<Controller_Lobby>();
-    }
+    }   
     public void Create()
-    {        
+    {
+        //Debug.Log(int.Parse(sotien.options[sotien.value].text));
         TaoPhongModel dataphong = new TaoPhongModel(Login.mnhandata.data.id, 
             int.Parse(soNguoiChoi.options[soNguoiChoi.value].text), 
             matkhau.text, tenphong.text, 
             int.Parse(sotien.options[sotien.value].text),
             controller_Lobby.typeGames.data[typeGame.value].id);       
         string json = JsonUtility.ToJson(dataphong);
-        Debug.Log(json);
+        //Debug.Log(json);
         messageBox.Setting("Thông Báo","Đang Tạo Phòng...",btnType.type_03);
         messageBox.Show();
         StartCoroutine(GetRequestCreate(InternetConfig.basePath+"/api/RoomManager/CreateRoom", json));
@@ -38,12 +39,37 @@ public class CreateRoom : MonoBehaviour
     }
     IEnumerator LoadScene()
     {
-        AsyncOperation operating = SceneManager.LoadSceneAsync("Room_play");
-        if (operating.isDone)
+        AsyncOperation operating;
+        switch (controller_Lobby.typeGames.data[typeGame.value].id)
         {
+            case 1:
+                operating = SceneManager.LoadSceneAsync("Room_play");
+                if (operating.isDone)
+                {
 
-            yield return null;
+                    yield return null;
+                }
+                break;
+            case 2:
+                operating = SceneManager.LoadSceneAsync("Room_play_01");
+                if (operating.isDone)
+                {
+
+                    yield return null;
+                }
+                break;
+            case 3:
+                operating = SceneManager.LoadSceneAsync("Room_play_catTe");
+                if (operating.isDone)
+                {
+
+                    yield return null;
+                }
+                break;
+            default:
+                break;
         }
+       
     }
     IEnumerator GetRequestCreate(string uri, string postdata)
     {
@@ -68,7 +94,7 @@ public class CreateRoom : MonoBehaviour
                     if (webRequest.isDone)
                     {
                         data = JsonUtility.FromJson<RoomByIDModel>(webRequest.downloadHandler.text);
-                        Debug.Log(webRequest.downloadHandler.text);
+                        //Debug.Log(webRequest.downloadHandler.text);
                         if (data.result > 0)
                         {
                             messageBox.SetContent(data.message);
@@ -86,11 +112,12 @@ public class CreateRoom : MonoBehaviour
                             Login.connect.Send(player);
 
                             StartCoroutine(LoadScene());
-                            Debug.Log(data.message);
+                            //Debug.Log(data.message);
                         }
                         else
                         {
-                            messageBox.SetContent("");
+                            messageBox.SetContent("Lỗi xin thử lại");
+                            messageBox.SetType(btnType.type_02);
                             Debug.Log(data.message);
                         }
                     }
