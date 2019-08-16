@@ -101,12 +101,15 @@
     <Compile Include="Assets\Script\Models\Player_InRoomModels.cs" />
     <Compile Include="Assets\Script\Models\RoomByIDModel.cs" />
     <Compile Include="Assets\Script\Models\RoomModel.cs" />
+    <Compile Include="Assets\Script\Models\ShopItem.cs" />
     <Compile Include="Assets\Script\Models\TaoPhongModel.cs" />
     <Compile Include="Assets\Script\Models\TypeGameModel.cs" />
     <Compile Include="Assets\Script\PhongCho\CreateActive.cs" />
     <Compile Include="Assets\Script\PhongCho\CreateRoom.cs" />
     <Compile Include="Assets\Script\PhongCho\Phongchoset.cs" />
     <Compile Include="Assets\Script\PhongCho\Sanhcho.cs" />
+    <Compile Include="Assets\Script\shop and inventory\Shop.cs" />
+    <Compile Include="Assets\Script\shop and inventory\Shop_Lobby.cs" />
     <Compile Include="Assets\Script\TrangLogin\Login.cs" />
     <Compile Include="Assets\Script\TrangLogin\SetActive.cs" />
     <Compile Include="Assets\Script\UI\MessageBox.cs" />
@@ -171,40 +174,40 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/backup E/gitHub/do-an-c-/gameBai/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Đồ án C#/do-an-c-/gameBai/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/backup E/gitHub/do-an-c-/gameBai/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Đồ án C#/do-an-c-/gameBai/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/backup E/gitHub/do-an-c-/gameBai/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Đồ án C#/do-an-c-/gameBai/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/backup E/gitHub/do-an-c-/gameBai/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Đồ án C#/do-an-c-/gameBai/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/backup E/gitHub/do-an-c-/gameBai/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Đồ án C#/do-an-c-/gameBai/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/backup E/gitHub/do-an-c-/gameBai/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Đồ án C#/do-an-c-/gameBai/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/backup E/gitHub/do-an-c-/gameBai/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Đồ án C#/do-an-c-/gameBai/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>D:/backup E/gitHub/do-an-c-/gameBai/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Đồ án C#/do-an-c-/gameBai/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>D:/backup E/gitHub/do-an-c-/gameBai/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Đồ án C#/do-an-c-/gameBai/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/backup E/gitHub/do-an-c-/gameBai/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Đồ án C#/do-an-c-/gameBai/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>D:/backup E/gitHub/do-an-c-/gameBai/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Đồ án C#/do-an-c-/gameBai/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/backup E/gitHub/do-an-c-/gameBai/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Đồ án C#/do-an-c-/gameBai/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -384,13 +387,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>D:/backup E/gitHub/do-an-c-/gameBai/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Đồ án C#/do-an-c-/gameBai/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>D:/backup E/gitHub/do-an-c-/gameBai/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Đồ án C#/do-an-c-/gameBai/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>D:/backup E/gitHub/do-an-c-/gameBai/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Đồ án C#/do-an-c-/gameBai/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

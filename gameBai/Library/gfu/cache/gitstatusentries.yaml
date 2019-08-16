@@ -13,6 +13,293 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
+<<<<<<< HEAD
+  lastUpdatedAtString: 2019-08-09T16:06:49.452+07:00
+  initializedAtString: 2019-08-09T15:11:13.931+07:00
+  entries:
+  - path: api_gamebai\.vs\api_gamebai\config\applicationhost.config
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\.vs\\api_gamebai\\config\\applicationhost.config"
+    projectPath: ..\api_gamebai\.vs\api_gamebai\config\applicationhost.config
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\.vs\api_gamebai\v16\.suo
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\.vs\\api_gamebai\\v16\\.suo"
+    projectPath: ..\api_gamebai\.vs\api_gamebai\v16\.suo
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\.vs\api_gamebai\v16\Server\sqlite3\storage.ide
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\.vs\\api_gamebai\\v16\\Server\\sqlite3\\storage.ide"
+    projectPath: ..\api_gamebai\.vs\api_gamebai\v16\Server\sqlite3\storage.ide
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\api_gamebai.csproj
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\api_gamebai.csproj"
+    projectPath: ..\api_gamebai\api_gamebai\api_gamebai.csproj
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\api_gamebai.csproj.user
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\api_gamebai.csproj.user"
+    projectPath: ..\api_gamebai\api_gamebai\api_gamebai.csproj.user
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\bin\api_gamebai.dll
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\bin\\api_gamebai.dll"
+    projectPath: ..\api_gamebai\api_gamebai\bin\api_gamebai.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\bin\api_gamebai.dll.config
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\bin\\api_gamebai.dll.config"
+    projectPath: ..\api_gamebai\api_gamebai\bin\api_gamebai.dll.config
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\bin\api_gamebai.pdb
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\bin\\api_gamebai.pdb"
+    projectPath: ..\api_gamebai\api_gamebai\bin\api_gamebai.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\Controllers\ItemManagerController.cs
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\Controllers\\ItemManagerController.cs"
+    projectPath: ..\api_gamebai\api_gamebai\Controllers\ItemManagerController.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\Controllers\RoomManagerController.cs
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\Controllers\\RoomManagerController.cs"
+    projectPath: ..\api_gamebai\api_gamebai\Controllers\RoomManagerController.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\Models\ItemModel.Context.cs
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\Models\\ItemModel.Context.cs"
+    projectPath: ..\api_gamebai\api_gamebai\Models\ItemModel.Context.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\Models\ItemModel.Context.tt
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\Models\\ItemModel.Context.tt"
+    projectPath: ..\api_gamebai\api_gamebai\Models\ItemModel.Context.tt
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\Models\ItemModel.cs
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\Models\\ItemModel.cs"
+    projectPath: ..\api_gamebai\api_gamebai\Models\ItemModel.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\Models\ItemModel.Designer.cs
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\Models\\ItemModel.Designer.cs"
+    projectPath: ..\api_gamebai\api_gamebai\Models\ItemModel.Designer.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\Models\ItemModel.edmx
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\Models\\ItemModel.edmx"
+    projectPath: ..\api_gamebai\api_gamebai\Models\ItemModel.edmx
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\Models\ItemModel.edmx.diagram
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\Models\\ItemModel.edmx.diagram"
+    projectPath: ..\api_gamebai\api_gamebai\Models\ItemModel.edmx.diagram
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\Models\ItemModel.tt
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\Models\\ItemModel.tt"
+    projectPath: ..\api_gamebai\api_gamebai\Models\ItemModel.tt
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\Models\player_inventory.cs
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\Models\\player_inventory.cs"
+    projectPath: ..\api_gamebai\api_gamebai\Models\player_inventory.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\Models\shop_game.cs
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\Models\\shop_game.cs"
+    projectPath: ..\api_gamebai\api_gamebai\Models\shop_game.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\obj\Debug\api_gamebai.csproj.CoreCompileInputs.cache
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\obj\\Debug\\api_gamebai.csproj.CoreCompileInputs.cache"
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csproj.CoreCompileInputs.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Debug\api_gamebai.csprojAssemblyReference.cache
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\obj\\Debug\\api_gamebai.csprojAssemblyReference.cache"
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\api_gamebai.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Debug\api_gamebai.dll
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\obj\\Debug\\api_gamebai.dll"
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\api_gamebai.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Debug\api_gamebai.pdb
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\obj\\Debug\\api_gamebai.pdb"
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\api_gamebai.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\obj\\Debug\\DesignTimeResolveAssemblyReferencesInput.cache"
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: api_gamebai\api_gamebai\obj\Debug\edmxResourcesToEmbed\Models\ItemModel.csdl
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\obj\\Debug\\edmxResourcesToEmbed\\Models\\ItemModel.csdl"
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\edmxResourcesToEmbed\Models\ItemModel.csdl
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\obj\Debug\edmxResourcesToEmbed\Models\ItemModel.msl
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\obj\\Debug\\edmxResourcesToEmbed\\Models\\ItemModel.msl"
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\edmxResourcesToEmbed\Models\ItemModel.msl
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\obj\Debug\edmxResourcesToEmbed\Models\ItemModel.ssdl
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\obj\\Debug\\edmxResourcesToEmbed\\Models\\ItemModel.ssdl"
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\edmxResourcesToEmbed\Models\ItemModel.ssdl
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\obj\Debug\TempPE\Models.ItemModel.Context.cs.dll
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\obj\\Debug\\TempPE\\Models.ItemModel.Context.cs.dll"
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\TempPE\Models.ItemModel.Context.cs.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\obj\Debug\TempPE\Models.ItemModel.cs.dll
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\obj\\Debug\\TempPE\\Models.ItemModel.cs.dll"
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\TempPE\Models.ItemModel.cs.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\obj\Debug\TempPE\Models.ItemModel.Designer.cs.dll
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\obj\\Debug\\TempPE\\Models.ItemModel.Designer.cs.dll"
+    projectPath: ..\api_gamebai\api_gamebai\obj\Debug\TempPE\Models.ItemModel.Designer.cs.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: api_gamebai\api_gamebai\Web.config
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\api_gamebai\\api_gamebai\\Web.config"
+    projectPath: ..\api_gamebai\api_gamebai\Web.config
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\.vs\gameBai\v16\.suo
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\gameBai\\.vs\\gameBai\\v16\\.suo"
+    projectPath: .vs\gameBai\v16\.suo
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\.vs\gameBai\v16\Server\sqlite3\storage.ide
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\gameBai\\.vs\\gameBai\\v16\\Server\\sqlite3\\storage.ide"
+    projectPath: .vs\gameBai\v16\Server\sqlite3\storage.ide
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Assets\Script\TrangLogin\Login.cs
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\gameBai\\Assets\\Script\\TrangLogin\\Login.cs"
+    projectPath: Assets\Script\TrangLogin\Login.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\assetDatabase3
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\gameBai\\Library\\assetDatabase3"
+    projectPath: Library\assetDatabase3
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\CurrentLayout.dwlt
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\gameBai\\Library\\CurrentLayout.dwlt"
+    projectPath: Library\CurrentLayout.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\EditorInstance.json
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\gameBai\\Library\\EditorInstance.json"
+    projectPath: Library\EditorInstance.json
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: gameBai\Library\expandedItems
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\gameBai\\Library\\expandedItems"
+    projectPath: Library\expandedItems
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\gfu\cache\branches.yaml
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\gameBai\\Library\\gfu\\cache\\branches.yaml"
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\gfu\cache\gitlocks.yaml
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\gameBai\\Library\\gfu\\cache\\gitlocks.yaml"
+    projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\gameBai\\Library\\gfu\\cache\\gitstatusentries.yaml"
+    projectPath: Library\gfu\cache\gitstatusentries.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\gameBai\\Library\\gfu\\cache\\gittrackingstatus.yaml"
+    projectPath: Library\gfu\cache\gittrackingstatus.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\gfu\cache\repoinfo.yaml
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\gameBai\\Library\\gfu\\cache\\repoinfo.yaml"
+    projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\metadata\ba\ba206c0ddd9283a48b92d3719f2a9025
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\gameBai\\Library\\metadata\\ba\\ba206c0ddd9283a48b92d3719f2a9025"
+    projectPath: Library\metadata\ba\ba206c0ddd9283a48b92d3719f2a9025
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\gameBai\\Library\\ScriptAssemblies\\Assembly-CSharp.dll"
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\gameBai\\Library\\ScriptAssemblies\\Assembly-CSharp.pdb"
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: gameBai\Temp\UnityLockfile
+    fullPath: "C:\\\u0110\u1ED3 \xE1n C#\\do-an-c-\\gameBai\\Temp\\UnityLockfile"
+    projectPath: Temp\UnityLockfile
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+=======
   lastUpdatedAtString: 2019-08-11T14:52:33.526+07:00
   initializedAtString: 2019-08-11T14:50:11.441+07:00
   entries:
@@ -25574,3 +25861,4 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+>>>>>>> master

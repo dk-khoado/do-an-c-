@@ -81,6 +81,14 @@ public class UI_Lobby : MonoBehaviour
         Tien.text = data.data.money.ToString();
         
     }
+
+    public void GetMoney(DataFromLogin data)
+    {
+        
+        Tien.text = data.data.money.ToString() + " Xu";
+        
+    }
+
     public void BatThongTinPlayer()
     {
         //Phongcho.SetActive(true);

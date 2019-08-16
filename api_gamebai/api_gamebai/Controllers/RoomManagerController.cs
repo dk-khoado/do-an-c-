@@ -11,6 +11,7 @@ namespace api_gamebai.Controllers
     public class RoomManagerController : ApiController
     {
         DatabaseGameBai_Room db = new DatabaseGameBai_Room();
+        
 
         //Tạo phòng
         [HttpPost]
@@ -44,6 +45,7 @@ namespace api_gamebai.Controllers
                 }
                 else
                 {
+                    
                     //Nếu người chơi tồn tại thì cho tạo phòng còn không thì thôi
                     if (db.players.Count(e => e.id == room.owner_id) > 0)
                     {
