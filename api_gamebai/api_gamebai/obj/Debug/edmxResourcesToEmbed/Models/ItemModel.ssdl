@@ -24,6 +24,7 @@
     <Property Name="isEnable" Type="bit" Nullable="false" />
     <Property Name="type_item" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="duration(day)" Type="int" />
+    <Property Name="descript" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <Function Name="AddToShop" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="name_item" Type="nvarchar" Mode="In" />
@@ -31,6 +32,7 @@
     <Parameter Name="isEnable" Type="bit" Mode="In" />
     <Parameter Name="type_item" Type="nvarchar" Mode="In" />
     <Parameter Name="duration" Type="int" Mode="In" />
+    <Parameter Name="descript" Type="nvarchar" Mode="In" />
   </Function>
   <Function Name="BuyInventory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="id_player" Type="int" Mode="In" />

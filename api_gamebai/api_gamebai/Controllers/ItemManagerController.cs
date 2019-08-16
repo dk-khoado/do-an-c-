@@ -42,7 +42,7 @@ namespace api_gamebai.Controllers
                     {
                         shop.duration_day_ = 1000000;
                     } while (shop.duration_day_ == null || shop.duration_day_.ToString() == "");*/
-                    db.AddToShop(shop.name_item, shop.cost, shop.isEnable, shop.type_item, shop.duration_day_);
+                    db.AddToShop(shop.name_item, shop.cost, shop.isEnable, shop.type_item, shop.duration_day_, shop.descript);
                     return new ResponseMessage("Thêm skin " + shop.type_item + " thành công" );
                 }
                 else
@@ -136,9 +136,9 @@ namespace api_gamebai.Controllers
             }
         }
 
-        public ResponseMessage GetAllInShop(int id)
+        public ResponseMessage GetAllInShop()
         {
-            return new ResponseMessage("succes", db.shop_game.Find(id), 1);
+            return new ResponseMessage("succes", db.shop_game, 1);
         }
     }
 }

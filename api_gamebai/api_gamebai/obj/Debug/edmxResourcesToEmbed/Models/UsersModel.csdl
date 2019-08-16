@@ -7,14 +7,15 @@
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="username" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="money" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="money" Type="Decimal" Precision="19" Scale="4" />
     <Property Name="nickname" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="email" Type="String" MaxLength="256" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int32" />
     <Property Name="avartar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="player_key" Relationship="DatabaseGameBaiModel.player_id" FromRole="player" ToRole="player_key" />
     <NavigationProperty Name="history_login" Relationship="DatabaseGameBaiModel.player_fk_id" FromRole="player" ToRole="history_login" />
     <Property Name="rank_by_money" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="player_inventory" Relationship="DatabaseGameBaiModel.kh_Do" FromRole="player" ToRole="player_inventory" />
   </EntityType>
   <EntityType Name="infoplayer">
     <Key>
@@ -67,6 +68,15 @@
       <Parameter Name="username" Mode="In" Type="String" />
       <Parameter Name="password" Mode="In" Type="String" />
     </FunctionImport>
+    <FunctionImport Name="ChangePassword">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+      <Parameter Name="repass" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="player_inventory" EntityType="DatabaseGameBaiModel.player_inventory" />
+    <AssociationSet Name="kh_Do" Association="DatabaseGameBaiModel.kh_Do">
+      <End Role="player" EntitySet="players" />
+      <End Role="player_inventory" EntitySet="player_inventory" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="player_key">
     <Key>
@@ -138,4 +148,29 @@
     <Property Type="Int32" Name="status" Nullable="false" />
     <Property Type="String" Name="avartar" Nullable="true" />
   </ComplexType>
+  <EntityType Name="player_inventory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="player_id" Type="Int32" Nullable="false" />
+    <Property Name="item_id" Type="Int32" Nullable="false" />
+    <Property Name="limit_day" Type="DateTime" Precision="3" />
+    <Property Name="image_item" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="type_item" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="duration" Type="Int32" />
+    <NavigationProperty Name="player" Relationship="DatabaseGameBaiModel.kh_Do" FromRole="player_inventory" ToRole="player" />
+  </EntityType>
+  <Association Name="kh_Do">
+    <End Type="DatabaseGameBaiModel.player" Role="player" Multiplicity="1" />
+    <End Type="DatabaseGameBaiModel.player_inventory" Role="player_inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="player">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="player_inventory">
+        <PropertyRef Name="player_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

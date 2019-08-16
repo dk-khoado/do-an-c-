@@ -177,13 +177,13 @@ public class Login : MonoBehaviour
                     }
                     else
                     {
-<<<<<<< HEAD
+
                         Debug.Log(mnhandata.message);
                         Debug.Log(mnhandata.data);                       
-=======
+
                         messageBox.buttonType = btnType.type_02;
                         messageBox.SetContent("lỗi:" + mnhandata.message);
->>>>>>> master
+
                     }
                 }
                 catch

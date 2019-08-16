@@ -22,5 +22,6 @@ namespace api_gamebai.Models
         public bool isEnable { get; set; }
         public string type_item { get; set; }
         public Nullable<int> duration_day_ { get; set; }
+        public string descript { get; set; }
     }
 }

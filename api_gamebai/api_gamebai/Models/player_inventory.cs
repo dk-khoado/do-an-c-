@@ -21,5 +21,7 @@ namespace api_gamebai.Models
         public string image_item { get; set; }
         public string type_item { get; set; }
         public Nullable<int> duration { get; set; }
+    
+        public virtual player player { get; set; }
     }
 }

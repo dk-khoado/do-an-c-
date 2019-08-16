@@ -30,7 +30,7 @@ namespace api_gamebai.Models
         public virtual DbSet<player_inventory> player_inventory { get; set; }
         public virtual DbSet<shop_game> shop_game { get; set; }
     
-        public virtual int AddToShop(string name_item, Nullable<decimal> cost, Nullable<bool> isEnable, string type_item, Nullable<int> duration)
+        public virtual int AddToShop(string name_item, Nullable<decimal> cost, Nullable<bool> isEnable, string type_item, Nullable<int> duration, string descript)
         {
             var name_itemParameter = name_item != null ?
                 new ObjectParameter("name_item", name_item) :
@@ -52,7 +52,11 @@ namespace api_gamebai.Models
                 new ObjectParameter("duration", duration) :
                 new ObjectParameter("duration", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("AddToShop", name_itemParameter, costParameter, isEnableParameter, type_itemParameter, durationParameter);
+            var descriptParameter = descript != null ?
+                new ObjectParameter("descript", descript) :
+                new ObjectParameter("descript", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("AddToShop", name_itemParameter, costParameter, isEnableParameter, type_itemParameter, durationParameter, descriptParameter);
         }
     
         public virtual int BuyInventory(Nullable<int> id_player, Nullable<int> id_item)

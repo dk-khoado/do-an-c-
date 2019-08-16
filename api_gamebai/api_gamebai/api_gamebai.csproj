@@ -208,6 +208,21 @@
     <Compile Include="Models\history_login.cs">
       <DependentUpon>UsersModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ItemModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ItemModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ItemModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ItemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ItemModel.Designer.cs">
+      <DependentUpon>ItemModel.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Models\ListBai.cs">
       <DependentUpon>RoomModel.tt</DependentUpon>
     </Compile>
@@ -227,7 +242,7 @@
       <DependentUpon>FriendsModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\player_inventory.cs">
-      <DependentUpon>ItemModel.tt</DependentUpon>
+      <DependentUpon>UsersModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\player_key.cs">
       <DependentUpon>UsersModel.tt</DependentUpon>
@@ -423,6 +438,7 @@
     <Content Include="Views\Home\Verify.cshtml" />
     <Content Include="Views\Main\Index.cshtml" />
     <Content Include="Views\LayoutMaster\LayoutMaster.cshtml" />
+    <Content Include="Views\Home\ChangePassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

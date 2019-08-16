@@ -24,6 +24,7 @@
     <Property Name="isEnable" Type="Boolean" Nullable="false" />
     <Property Name="type_item" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="duration_day_" Type="Int32" />
+    <Property Name="descript" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityContainer Name="DatabaseGameBai_Item" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="player_inventory" EntityType="Self.player_inventory" />
@@ -34,6 +35,7 @@
       <Parameter Name="isEnable" Mode="In" Type="Boolean" />
       <Parameter Name="type_item" Mode="In" Type="String" />
       <Parameter Name="duration" Mode="In" Type="Int32" />
+      <Parameter Name="descript" Mode="In" Type="String" />
     </FunctionImport>
     <FunctionImport Name="BuyInventory">
       <Parameter Name="id_player" Mode="In" Type="Int32" />

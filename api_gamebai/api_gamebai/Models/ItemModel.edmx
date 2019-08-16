@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DatabaseGameBaiItemManager.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="DatabaseGameBaiItemManager.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="player_inventory">
           <Key>
             <PropertyRef Name="id" />
@@ -29,6 +29,7 @@
           <Property Name="isEnable" Type="bit" Nullable="false" />
           <Property Name="type_item" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="duration(day)" Type="int" />
+          <Property Name="descript" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <Function Name="AddToShop" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="name_item" Type="nvarchar" Mode="In" />
@@ -36,6 +37,7 @@
           <Parameter Name="isEnable" Type="bit" Mode="In" />
           <Parameter Name="type_item" Type="nvarchar" Mode="In" />
           <Parameter Name="duration" Type="int" Mode="In" />
+          <Parameter Name="descript" Type="nvarchar" Mode="In" />
         </Function>
         <Function Name="BuyInventory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="id_player" Type="int" Mode="In" />
@@ -53,8 +55,7 @@
           <EntitySet Name="player_inventory" EntityType="Self.player_inventory" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="shop_game" EntityType="Self.shop_game" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DatabaseGameBaiItemManager" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -82,6 +83,7 @@
           <Property Name="isEnable" Type="Boolean" Nullable="false" />
           <Property Name="type_item" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="duration_day_" Type="Int32" />
+          <Property Name="descript" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityContainer Name="DatabaseGameBai_Item" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="player_inventory" EntityType="Self.player_inventory" />
@@ -92,6 +94,7 @@
             <Parameter Name="isEnable" Mode="In" Type="Boolean" />
             <Parameter Name="type_item" Mode="In" Type="String" />
             <Parameter Name="duration" Mode="In" Type="Int32" />
+            <Parameter Name="descript" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="BuyInventory">
             <Parameter Name="id_player" Mode="In" Type="Int32" />
@@ -128,6 +131,7 @@
           <EntitySetMapping Name="shop_game">
             <EntityTypeMapping TypeName="DatabaseGameBaiItemManager.shop_game">
               <MappingFragment StoreEntitySet="shop_game">
+                <ScalarProperty Name="descript" ColumnName="descript" />
                 <ScalarProperty Name="id_item" ColumnName="id_item" />
                 <ScalarProperty Name="name_item" ColumnName="name_item" />
                 <ScalarProperty Name="limit_day" ColumnName="limit_day" />

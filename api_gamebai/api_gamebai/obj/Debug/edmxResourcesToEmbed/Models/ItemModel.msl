@@ -17,6 +17,7 @@
     <EntitySetMapping Name="shop_game">
       <EntityTypeMapping TypeName="DatabaseGameBaiItemManager.shop_game">
         <MappingFragment StoreEntitySet="shop_game">
+          <ScalarProperty Name="descript" ColumnName="descript" />
           <ScalarProperty Name="id_item" ColumnName="id_item" />
           <ScalarProperty Name="name_item" ColumnName="name_item" />
           <ScalarProperty Name="limit_day" ColumnName="limit_day" />
