@@ -10,7 +10,7 @@ public class ControllerPlayer : MonoBehaviour
     public float turnTime = 15;
     public float currentTime;
 
-    public TMP_Text ui_time;  
+    public TMP_Text ui_time;
 
     public List<GameObject> cardsOnHand = new List<GameObject>();
     public GameObject manager;
@@ -25,32 +25,90 @@ public class ControllerPlayer : MonoBehaviour
         manager = GameObject.Find("Manager");
         currentTime = turnTime;
     }
+    private void FixedUpdate()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+            if (manager.GetComponent<ManagerGame_tienlen>())
+            {
+                manager.GetComponent<ManagerGame_tienlen>().selectCard.Clear();
+            }
+        }
+    }
     private void LateUpdate()
     {
-        if (player.player_id == manager.GetComponent<ManagerGame>().currentPlayer.player_id)
+        if (manager.GetComponent<ManagerGame>())
         {
-            isTurn = true;
-            ui_time.enabled = true;
-            currentTime -= Time.deltaTime;
-            if (currentTime < 0 && manager.GetComponent<ManagerGame>().isPlaying && isTurn)
+            
+            if (player.player_id == manager.GetComponent<ManagerGame>().currentPlayer.player_id && manager.GetComponent<ManagerGame>().isPlaying)
             {
-                manager.GetComponent<ManagerGame>().DrawmCard(1);
-                manager.GetComponent<ManagerGame>().EndTurn();
+                isTurn = true;
+                ui_time.enabled = true;
+                currentTime -= Time.deltaTime;
+                if (currentTime < 0 && manager.GetComponent<ManagerGame>().isPlaying && isTurn)
+                {
+                    manager.GetComponent<ManagerGame>().DrawmCard(1);
+                    manager.GetComponent<ManagerGame>().EndTurn();
+                    isTurn = false;
+                }
+                if (ui_time)
+                {
+                    ui_time.SetText(currentTime.ToString("f0"));
+                }
+            }
+            else
+            {
+                ui_time.enabled = false;
+                currentTime = turnTime;
                 isTurn = false;
             }
-            
-            if (ui_time)
-            {
-                ui_time.SetText(currentTime.ToString("f0"));
-            }
         }
-        else
+        else if (manager.GetComponent<ManagerGame_tienlen>())
         {
-            ui_time.enabled = false;
-            currentTime = turnTime;
-            isTurn = false;
-        }
-
+            if (player.player_id == manager.GetComponent<ManagerGame_tienlen>().currentPlayer.player_id && manager.GetComponent<ManagerGame_tienlen>().isPlaying)
+            {
+                isTurn = true;
+                ui_time.enabled = true;
+                currentTime -= Time.deltaTime;
+                if (currentTime < 0 && manager.GetComponent<ManagerGame_tienlen>().isPlaying && isTurn)
+                {                    
+                    isTurn = false;
+                }
+                if (ui_time)
+                {
+                    ui_time.SetText(currentTime.ToString("f0"));
+                }
+            }
+            else
+            {
+                ui_time.enabled = false;
+                currentTime = turnTime;
+                isTurn = false;
+            }
+        }else if (manager.GetComponent<ManagerGame_catte>())
+        {
+            if (player.player_id == manager.GetComponent<ManagerGame_catte>().currentPlayer.player_id && manager.GetComponent<ManagerGame_catte>().isPlaying)
+            {
+                isTurn = true;
+                ui_time.enabled = true;
+                currentTime -= Time.deltaTime;
+                if (currentTime < 0 && manager.GetComponent<ManagerGame_catte>().isPlaying && isTurn)
+                {
+                    manager.GetComponent<ManagerGame_catte>().EndTurn(true);
+                    isTurn = false;
+                }
+                if (ui_time)
+                {
+                    ui_time.SetText(currentTime.ToString("f0"));
+                }
+            }
+            else
+            {
+                ui_time.enabled = false;
+                currentTime = turnTime;
+                isTurn = false;
+            }
+        }         
     }
     /// <summary>
     /// tạo card thui mà

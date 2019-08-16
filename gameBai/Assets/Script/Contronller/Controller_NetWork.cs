@@ -10,17 +10,37 @@ public class Controller_NetWork : MonoBehaviour
     public string URL_GETPlayerList;
     //public string InternetConfig.basePath;
     public int ID_owner;
-    public int ID_Room;    
+    public int ID_Room;
     public List<Player> players = new List<Player>();
     [SerializeField]
     private ManagerGame manager;
+    [SerializeField]
+    private ManagerGame_tienlen manager_tienlen;
+    [SerializeField]
+    private ManagerGame_catte manager_catTe;
     private UI_manager uI_Manager;
 
     private void Awake()
     {
-        manager = GetComponent<ManagerGame>();
+        if (GetComponent<ManagerGame>())
+        {
+            manager = GetComponent<ManagerGame>();
+        }
+        if (GetComponent<ManagerGame_tienlen>())
+        {
+            manager_tienlen = GetComponent<ManagerGame_tienlen>();
+        }
+        if (GetComponent<ManagerGame_catte>())
+        {
+            manager_catTe = GetComponent<ManagerGame_catte>();
+        }
+
         uI_Manager = GetComponent<UI_manager>();
 
+    }
+    public void UpdatePlayer()
+    {
+        StartCoroutine(GetInfoPlayer());
     }
     void Start()
     {
@@ -29,22 +49,62 @@ public class Controller_NetWork : MonoBehaviour
         StartCoroutine(GetInfoPlayer());
     }
     void Update()
-    {        
-        if (Login.mnhandata.data.id == ID_owner)
+    {
+        if (manager)
         {
-            uI_Manager.btnStart.GetComponentInChildren<TMP_Text>().SetText("Bắt Đầu");
-        }
-        else
-        {
-            if (manager.isReady)
+            if (Login.mnhandata.data.id == ID_owner)
             {
-                uI_Manager.btnStart.GetComponentInChildren<TMP_Text>().SetText("Bỏ Sẵn sàng");
+                uI_Manager.btnStart.GetComponentInChildren<TMP_Text>().SetText("Bắt Đầu");
             }
             else
             {
-                uI_Manager.btnStart.GetComponentInChildren<TMP_Text>().SetText("Sẵn sàng");
+                if (manager.isReady)
+                {
+                    uI_Manager.btnStart.GetComponentInChildren<TMP_Text>().SetText("Bỏ Sẵn sàng");
+                }
+                else
+                {
+                    uI_Manager.btnStart.GetComponentInChildren<TMP_Text>().SetText("Sẵn sàng");
+                }
             }
         }
+        else if (manager_tienlen)
+        {
+            if (Login.mnhandata.data.id == ID_owner)
+            {
+                uI_Manager.btnStart.GetComponentInChildren<TMP_Text>().SetText("Bắt Đầu");
+            }
+            else
+            {
+                if (manager_tienlen.isReady)
+                {
+                    uI_Manager.btnStart.GetComponentInChildren<TMP_Text>().SetText("Bỏ Sẵn sàng");
+                }
+                else
+                {
+                    uI_Manager.btnStart.GetComponentInChildren<TMP_Text>().SetText("Sẵn sàng");
+                }
+            }
+        }
+        else if(manager_catTe)
+        {
+            if (Login.mnhandata.data.id == ID_owner)
+            {
+                uI_Manager.btnStart.GetComponentInChildren<TMP_Text>().SetText("Bắt Đầu");
+            }
+            else
+            {
+                if (manager_catTe.isReady)
+                {
+                    uI_Manager.btnStart.GetComponentInChildren<TMP_Text>().SetText("Bỏ Sẵn sàng");
+                }
+                else
+                {
+                    uI_Manager.btnStart.GetComponentInChildren<TMP_Text>().SetText("Sẵn sàng");
+                }
+            }
+        }
+
     }
     private void LateUpdate()
     {
@@ -55,7 +115,7 @@ public class Controller_NetWork : MonoBehaviour
             {
 
                 StartCoroutine(GetInfoPlayer());
-                Debug.Log(data.value + "đã tham gia phòng");
+                //Debug.Log(data.value + "đã tham gia phòng");
             }
             data = Login.connect.GetUServer("leave_room");
             if (data.value != "" && data.isNew)
@@ -83,7 +143,7 @@ public class Controller_NetWork : MonoBehaviour
         string url = InternetConfig.basePath + "/api/RoomManager/GetPlayerInRoom?ID_room=" + ID_Room;
         using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
         {
-            webRequest.SetRequestHeader("apikey","123456789");
+            webRequest.SetRequestHeader("apikey", "123456789");
             yield return webRequest.SendWebRequest();
             if (webRequest.isNetworkError || webRequest.isHttpError)
             {
@@ -96,7 +156,7 @@ public class Controller_NetWork : MonoBehaviour
                 {
                     //string json = "{\"key\":" + webRequest.downloadHandler.text + "}";
                     DataRoomPlayer data = JsonUtility.FromJson<DataRoomPlayer>(webRequest.downloadHandler.text);
-                    Debug.Log(webRequest.downloadHandler.text);
+                    //Debug.Log(webRequest.downloadHandler.text);
                     players = data.data;
                     ID_owner = data.result;
                     SetDataPlayer();
@@ -137,52 +197,142 @@ public class Controller_NetWork : MonoBehaviour
     public void SetDataPlayer()
     {
         int i = 0;
-        int pos=0;
+        int pos = 0;
         bool findLCP = false;//đã tìm tháy vị trí localplayer
-        foreach (var player in players)
+        if (manager)
         {
-            if (player.player_id == manager.IDLocalPlayer)
+            foreach (var player in players)
             {
-                manager.localPlayer.GetComponent<ControllerPlayer>().player = player;
-                uI_Manager.GetComponent<UI_manager>().ShowDataPlayer(player);                                
-                findLCP = true;
-                pos = i;
-                if (manager.localPlayer.GetComponent<ControllerPlayer>().player.player_id == ID_owner)
+                if (player.player_id == manager.IDLocalPlayer)
                 {
-                    pos = 0;
-                }
-            }           
-            else
-            {
-                if (pos==0)
-                {
-                    manager.remotePlayers[i].GetComponent<ControllerRemotePlayer>().player = player;
-                    manager.remotePlayers[i].GetComponent<ControllerRemotePlayer>().GetAvartar();
-                    i++;
+                    manager.localPlayer.GetComponent<ControllerPlayer>().player = player;
+                    uI_Manager.GetComponent<UI_manager>().ShowDataPlayer(player);
+                    findLCP = true;
+                    pos = i;
+                    if (manager.localPlayer.GetComponent<ControllerPlayer>().player.player_id == ID_owner)
+                    {
+                        pos = 0;
+                    }
                 }
                 else
                 {
-                    int sum = i - pos;
-                    Player temp = manager.remotePlayers[sum-1].GetComponent<ControllerRemotePlayer>().player;
-                    manager.remotePlayers[sum - 1].GetComponent<ControllerRemotePlayer>().player = player;
-                    manager.remotePlayers[sum-1].GetComponent<ControllerRemotePlayer>().GetAvartar();
-                    manager.remotePlayers[sum].GetComponent<ControllerRemotePlayer>().player = temp;
-                    manager.remotePlayers[sum].GetComponent<ControllerRemotePlayer>().GetAvartar();
-                }            
+                    if (pos == 0)
+                    {
+                        manager.remotePlayers[i].GetComponent<ControllerRemotePlayer>().player = player;
+                        manager.remotePlayers[i].GetComponent<ControllerRemotePlayer>().GetAvartar();
+                        i++;
+                    }
+                    else
+                    {
+                        int sum = i - pos;
+                        Player temp = manager.remotePlayers[sum - 1].GetComponent<ControllerRemotePlayer>().player;
+                        manager.remotePlayers[sum - 1].GetComponent<ControllerRemotePlayer>().player = player;
+                        manager.remotePlayers[sum - 1].GetComponent<ControllerRemotePlayer>().GetAvartar();
+                        manager.remotePlayers[sum].GetComponent<ControllerRemotePlayer>().player = temp;
+                        manager.remotePlayers[sum].GetComponent<ControllerRemotePlayer>().GetAvartar();
+                    }
+                }
             }
-        }       
+        }
+        else if (manager_tienlen)
+        {
+            foreach (var player in players)
+            {
+                if (player.player_id == manager_tienlen.IDLocalPlayer)
+                {
+                    manager_tienlen.localPlayer.GetComponent<ControllerPlayer>().player = player;
+                    uI_Manager.GetComponent<UI_manager>().ShowDataPlayer(player);
+                    findLCP = true;
+                    pos = i;
+                    if (manager_tienlen.localPlayer.GetComponent<ControllerPlayer>().player.player_id == ID_owner)
+                    {
+                        pos = 0;
+                    }
+                }
+                else
+                {
+                    if (pos == 0)
+                    {
+                        manager_tienlen.remotePlayers[i].GetComponent<ControllerRemotePlayer>().player = player;
+                        manager_tienlen.remotePlayers[i].GetComponent<ControllerRemotePlayer>().GetAvartar();
+                        i++;
+                    }
+                    else
+                    {
+                        int sum = i - pos;
+                        Player temp = manager_tienlen.remotePlayers[sum - 1].GetComponent<ControllerRemotePlayer>().player;
+                        manager_tienlen.remotePlayers[sum - 1].GetComponent<ControllerRemotePlayer>().player = player;
+                        manager.remotePlayers[sum - 1].GetComponent<ControllerRemotePlayer>().GetAvartar();
+                        manager_tienlen.remotePlayers[sum].GetComponent<ControllerRemotePlayer>().player = temp;
+                        manager_tienlen.remotePlayers[sum].GetComponent<ControllerRemotePlayer>().GetAvartar();
+                    }
+                }
+            }
+        }
+        else if (manager_catTe)
+        {
+            foreach (var player in players)
+            {
+                if (player.player_id == manager_catTe.IDLocalPlayer)
+                {
+                    manager_catTe.localPlayer.GetComponent<ControllerPlayer>().player = player;
+                    uI_Manager.GetComponent<UI_manager>().ShowDataPlayer(player);
+                    findLCP = true;
+                    pos = i;
+                    if (manager_catTe.localPlayer.GetComponent<ControllerPlayer>().player.player_id == ID_owner)
+                    {
+                        pos = 0;
+                    }
+                }
+                else
+                {
+                    if (pos == 0)
+                    {
+                        manager_catTe.remotePlayers[i].GetComponent<ControllerRemotePlayer>().player = player;
+                        manager_catTe.remotePlayers[i].GetComponent<ControllerRemotePlayer>().GetAvartar();
+                        i++;
+                    }
+                    else
+                    {
+                        int sum = i - pos;
+                        Player temp = manager_tienlen.remotePlayers[sum - 1].GetComponent<ControllerRemotePlayer>().player;
+                        manager_catTe.remotePlayers[sum - 1].GetComponent<ControllerRemotePlayer>().player = player;
+                        manager_catTe.remotePlayers[sum - 1].GetComponent<ControllerRemotePlayer>().GetAvartar();
+                        manager_catTe.remotePlayers[sum].GetComponent<ControllerRemotePlayer>().player = temp;
+                        manager_catTe.remotePlayers[sum].GetComponent<ControllerRemotePlayer>().GetAvartar();
+                    }
+                }
+            }
+        }
+
     }
     public void RemoteDataPlayer(int ID_player)
     {
-        for (int i = 0; i < manager.remotePlayers.Count; i++)
+        if (manager)
         {
-            if (manager.remotePlayers[i].GetComponent<ControllerRemotePlayer>().player.player_id == ID_player)
+            for (int i = 0; i < manager.remotePlayers.Count; i++)
             {
-                players.Remove(manager.remotePlayers[i].GetComponent<ControllerRemotePlayer>().player);
-                manager.remotePlayers[i].GetComponent<ControllerRemotePlayer>().player = default;
-                return;
+                if (manager.remotePlayers[i].GetComponent<ControllerRemotePlayer>().player.player_id == ID_player)
+                {
+                    players.Remove(manager.remotePlayers[i].GetComponent<ControllerRemotePlayer>().player);
+                    manager.remotePlayers[i].GetComponent<ControllerRemotePlayer>().player = default;
+                    return;
+                }
             }
         }
+        else if (manager_tienlen)
+        {
+            for (int i = 0; i < manager_tienlen.remotePlayers.Count; i++)
+            {
+                if (manager_tienlen.remotePlayers[i].GetComponent<ControllerRemotePlayer>().player.player_id == ID_player)
+                {
+                    players.Remove(manager.remotePlayers[i].GetComponent<ControllerRemotePlayer>().player);
+                    manager_tienlen.remotePlayers[i].GetComponent<ControllerRemotePlayer>().player = default;
+                    return;
+                }
+            }
+        }
+
     }
     /// <summary>
     /// thoát phòng
@@ -201,3 +351,32 @@ public class Controller_NetWork : MonoBehaviour
         Login.connect.Disconnected();
     }
 }
+/*
+
+                                                                            
+                                                                            
+     999999999     555555555555555555      888888888             66666666   
+   99:::::::::99   5::::::::::::::::5    88:::::::::88          6::::::6    
+ 99:::::::::::::99 5::::::::::::::::5  88:::::::::::::88       6::::::6     
+9::::::99999::::::95:::::555555555555 8::::::88888::::::8     6::::::6      
+9:::::9     9:::::95:::::5            8:::::8     8:::::8    6::::::6       
+9:::::9     9:::::95:::::5            8:::::8     8:::::8   6::::::6        
+ 9:::::99999::::::95:::::5555555555    8:::::88888:::::8   6::::::6         
+  99::::::::::::::95:::::::::::::::5    8:::::::::::::8   6::::::::66666    
+    99999::::::::9 555555555555:::::5  8:::::88888:::::8 6::::::::::::::66  
+         9::::::9              5:::::58:::::8     8:::::86::::::66666:::::6 
+        9::::::9               5:::::58:::::8     8:::::86:::::6     6:::::6
+       9::::::9    5555555     5:::::58:::::8     8:::::86:::::6     6:::::6
+      9::::::9     5::::::55555::::::58::::::88888::::::86::::::66666::::::6
+     9::::::9       55:::::::::::::55  88:::::::::::::88  66:::::::::::::66 
+    9::::::9          55:::::::::55      88:::::::::88      66:::::::::66   
+   99999999             555555555          888888888          666666666     
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+ 
+*/

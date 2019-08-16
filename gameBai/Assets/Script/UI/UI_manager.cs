@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class UI_manager : MonoBehaviour
 {
     public CardModel properties;
+    public CardModel13 properties_V13;
     [SerializeField]
     private Image image;
     [SerializeField]
@@ -23,9 +24,14 @@ public class UI_manager : MonoBehaviour
     public TMP_Text UI_name;
     public TMP_Text UI_money;
     public RawImage avartar;
+   
     // Start is called before the first frame update
     void Start()
     {
+    }
+    public void UpdateMoney(string money)
+    {
+        UI_money.SetText(money);
     }
     public void ShowWin(string text)
     {
@@ -34,16 +40,19 @@ public class UI_manager : MonoBehaviour
             //GameObject temp = Instantiate(prefabStatusText, prefabStatusParent,true);
             //temp.GetComponent<TMP_Text>().SetText(text);
             //Destroy(temp, 2);
-            win_message.GetComponent<TMP_Text>().SetText(text);
+            win_message.GetComponentInChildren<TMP_Text>().SetText(text);
             win_message.SetActive(true);
         }
     }
     public void ShowDataPlayer(Player data)
-    {
+    {        
         UI_name.SetText(data.nickname);
         UI_money.SetText(data.money.ToString());
-        string url = InternetConfig.basePath + "/upload/" + data.avartar;
-        StartCoroutine(GetRequestDowloadAvartar(url));
+        if (avartar.texture == null)
+        {
+            string url = InternetConfig.basePath + "/upload/" + data.avartar;
+            StartCoroutine(GetRequestDowloadAvartar(url));
+        }        
     }
     IEnumerator GetRequestDowloadAvartar(string uri)
     {
@@ -71,8 +80,8 @@ public class UI_manager : MonoBehaviour
     }
     // Update is called once per frame
     void Update()
-    {        
-        if (properties)
+    {       
+        if (properties || properties_V13)
         {
             image.enabled = true;
         }
@@ -102,6 +111,11 @@ public class UI_manager : MonoBehaviour
                     break;
             }
         }
+        else if(properties_V13)
+        {
+            image.sprite = properties_V13.image;
+        }
+
     }
 
     public void ShowSelectColor()

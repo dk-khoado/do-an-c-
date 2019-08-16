@@ -33,7 +33,7 @@ namespace api_gamebai.Models
         public virtual DbSet<vroom_listplayer> vroom_listplayer { get; set; }
         public virtual DbSet<ListBai> ListBais { get; set; }
     
-        public virtual int addRoomList(Nullable<int> owner_id, Nullable<int> limit_player, string password, string room_name, Nullable<int> id_bai)
+        public virtual int addRoomList(Nullable<int> owner_id, Nullable<int> limit_player, string password, string room_name, Nullable<decimal> bet_money, Nullable<int> id_bai)
         {
             var owner_idParameter = owner_id.HasValue ?
                 new ObjectParameter("owner_id", owner_id) :
@@ -51,11 +51,15 @@ namespace api_gamebai.Models
                 new ObjectParameter("room_name", room_name) :
                 new ObjectParameter("room_name", typeof(string));
     
+            var bet_moneyParameter = bet_money.HasValue ?
+                new ObjectParameter("bet_money", bet_money) :
+                new ObjectParameter("bet_money", typeof(decimal));
+    
             var id_baiParameter = id_bai.HasValue ?
                 new ObjectParameter("id_bai", id_bai) :
                 new ObjectParameter("id_bai", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("addRoomList", owner_idParameter, limit_playerParameter, passwordParameter, room_nameParameter, id_baiParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("addRoomList", owner_idParameter, limit_playerParameter, passwordParameter, room_nameParameter, bet_moneyParameter, id_baiParameter);
         }
     
         public virtual int JoinRoomList(Nullable<int> room_id, Nullable<int> player_id)

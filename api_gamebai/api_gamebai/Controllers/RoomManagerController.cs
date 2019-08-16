@@ -49,7 +49,7 @@ namespace api_gamebai.Controllers
                     //Nếu người chơi tồn tại thì cho tạo phòng còn không thì thôi
                     if (db.players.Count(e => e.id == room.owner_id) > 0)
                     {
-                        db.addRoomList(room.owner_id, room.limit_player, room.password, room.room_name,room.id_bai);
+                        db.addRoomList(room.owner_id, room.limit_player, room.password, room.room_name,room.bet_money,room.id_bai);
                         
                         return new ResponseMessage(Ok().ToString(), "Tạo phòng thành công", db.GetRoomByIDPlayer(room.owner_id).FirstOrDefault(),1);
 

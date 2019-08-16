@@ -5,10 +5,11 @@ public class ControllerCard : MonoBehaviour
 {
     public int id;
     public CardModel Properties;
+    public CardModel13 Properties_V13;
     public Sprite image;
     private bool hover;
     public bool isSelect;
-    Animator animator;
+    public Animator animator;
     // Start is called before the first frame update    
     private void Start()
     {
@@ -17,26 +18,61 @@ public class ControllerCard : MonoBehaviour
         {
             if (!image)
             {
-                image = Properties.image;
-                GetComponent<Image>().sprite = image;
+                if (Properties)
+                {
+                    image = Properties.image;
+                    GetComponent<Image>().sprite = image;
+                }
+                else if (Properties_V13)
+                {
+                    image = Properties_V13.image;
+                    GetComponent<Image>().sprite = image;
+                }
             }
         }
     }
     private void FixedUpdate()
     {
-        if (Input.GetMouseButtonUp(0))
+        if (GetComponentInParent<ControllerPlayer>().manager)
         {
-            if (!hover)
+            GameObject manager = GetComponentInParent<ControllerPlayer>().manager;
+            if (manager.GetComponent<ManagerGame>())
             {
-                isSelect = false;
-                animator.SetBool("select", false);
-                if (!GetComponentInParent<ControllerPlayer>().isLocalPlayer)
+                if (gameObject.GetInstanceID() == manager.GetComponent<ManagerGame>().selectCard.GetInstanceID())
                 {
-                    return;
+                    Debug.Log(true);
+                    animator.SetBool("select", true);
                 }
-                GameObject manager = GetComponentInParent<ControllerPlayer>().manager;
-                //manager.GetComponent<ManagerGame>().currentCard = null;
+                else
+                {
+                    Debug.Log(false);
+                    animator.SetBool("select", false);
+                }
             }
+            else if (manager.GetComponent<ManagerGame_catte>())
+            {
+                if (manager.GetComponent<ManagerGame_catte>())
+                {
+                    if (manager.GetComponent<ManagerGame_catte>().selectCard)
+                    {
+                        if (gameObject.GetInstanceID() == manager.GetComponent<ManagerGame_catte>().selectCard.GetInstanceID())
+                        {
+                            animator.SetBool("select", true);
+                        }
+                        else
+                        {
+                          
+                            animator.SetBool("select", false);
+                        }
+                    }
+                    else
+                    {
+                       
+                        animator.SetBool("select", false);
+                    }                   
+                }
+            }
+
         }
     }
     public void SelectCard()
@@ -45,10 +81,22 @@ public class ControllerCard : MonoBehaviour
         {
             return;
         }
-        GameObject manager = GetComponentInParent<ControllerPlayer>().manager;
-        manager.GetComponent<ManagerGame>().selectCard = gameObject;
-        isSelect = true;
-        animator.SetBool("select", true);
+        if (Properties)
+        {
+            GameObject manager = GetComponentInParent<ControllerPlayer>().manager;
+            manager.GetComponent<ManagerGame>().selectCard = gameObject;
+            isSelect = true;
+            animator.SetBool("select", true);
+        }
+        else if (Properties_V13)
+        {
+            GameObject manager = GetComponentInParent<ControllerPlayer>().manager;
+            manager.GetComponent<ManagerGame_catte>().selectCard = gameObject;
+            isSelect = true;
+            animator.SetBool("select", true);
+        }
+
+
     }
     public void HoverCard()
     {
@@ -62,25 +110,5 @@ public class ControllerCard : MonoBehaviour
     {
         isSelect = false;
         animator.SetBool("select", false);
-    }
-    public void ActiveSkill()
-    {
-        if (Properties.isChucNang)
-        {
-            switch (Properties.skill)
-            {
-                case Skill.Draw:
-                    break;
-                case Skill.Wild:
-
-                    break;
-                case Skill.Reverse:
-                    break;
-                case Skill.Skip:
-                    break;
-                default:
-                    break;
-            }
-        }
     }
 }
