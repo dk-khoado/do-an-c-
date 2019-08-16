@@ -29,5 +29,9 @@ public class Win : MonoBehaviour
                 time = 0;
             }
         }
+        else
+        {
+            time = 0;
+        }
     }
 }

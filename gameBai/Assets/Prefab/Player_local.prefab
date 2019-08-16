@@ -46,7 +46,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1636179309801476331}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2095666955, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
@@ -80,11 +80,11 @@ MonoBehaviour:
     money: 0
     avartar: 
   isLocalPlayer: 1
-  turnTime: 0
+  turnTime: 15
   currentTime: 0
   ui_time: {fileID: 0}
   cardsOnHand: []
   manager: {fileID: 0}
   selectColor: 0
   child: {fileID: 0}
-  isRead: 0
+  isTurn: 0

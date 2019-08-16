@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(UI_manager))]
 public class ManagerGame : MonoBehaviour
@@ -9,6 +10,7 @@ public class ManagerGame : MonoBehaviour
     public GameObject localPlayer;//đói tượng nội bộ      
 
     public List<GameObject> remotePlayers;//danh sách người chơi trừ người chơi nội bộ
+    public GameObject ani;
 
     public GameObject ModelCard;//đối tượng card sẽ được tạo
     public CardModel currentCard;//card hiện tại đang trên bàn 
@@ -29,6 +31,7 @@ public class ManagerGame : MonoBehaviour
     public bool isReady;//thuộc tính chỉ xuất hiện khi đối tượng k phải chủ phòng
     public bool isPlaying;//true nếu đang chơi. false nếu đang chờ
     public bool Uno;//sự win :))
+    public bool isguest;//sự chờ đợi :((
 
     private DataReadyOrStart dataReady;
     [SerializeField]
@@ -48,6 +51,39 @@ public class ManagerGame : MonoBehaviour
         if (currentPlayer.player_id == IDLocalPlayer)
         {
             uI_Manager._message.SetText("");
+        }
+        UServer uServerStart = Login.connect.GetUServer("start_game");
+        if (uServerStart.value != "" && uServerStart.value != null && uServerStart.isNew)
+        {
+            PlayerModel playerModel = new PlayerModel();
+            try
+            {
+                playerModel = JsonUtility.FromJson<PlayerModel>(uServerStart.value);
+                //Debug.Log(playerModel.message);
+                dataReady = JsonUtility.FromJson<DataReadyOrStart>(playerModel.message);
+
+            }
+            catch
+            {
+                //đây bỏ trống
+            }
+            if (dataReady != null)
+            {
+                if (dataReady.isStart && !isPlaying)
+                {
+                    isPlaying = dataReady.isPlaying;
+                    currentPlayer = dataReady.currentPlayer;
+                    nextTurnPlayer = dataReady.nextTurnPlayer;
+                    preTurnPlayer = dataReady.preTurnPlayer;
+                    foreach (var item in dataReady.listCards)
+                    {
+                        if (item.IDplayer == IDLocalPlayer)
+                        {
+                            spawmBai(item.card);
+                        }
+                    }
+                }
+            }
         }
         //update trạng thái của player
         UServer uServer = Login.connect.GetUServer("ready");
@@ -153,7 +189,7 @@ public class ManagerGame : MonoBehaviour
                         if (currentCard.isChucNang)
                         {
                             if (packageEndTurn.currentPlayer.player_id == IDLocalPlayer)
-                            {                                
+                            {
                                 //foreach (var item in remotePlayers)
                                 //{
                                 //    if (item.GetComponent<ControllerRemotePlayer>().player.player_id == preTurnPlayer.player_id)
@@ -174,7 +210,7 @@ public class ManagerGame : MonoBehaviour
                                             item.GetComponent<ControllerRemotePlayer>().SetMessageStatus("Rút Bài");
                                         }
                                     }
-                                }                               
+                                }
                             }
                         }
                     }
@@ -200,7 +236,7 @@ public class ManagerGame : MonoBehaviour
                                     item.GetComponent<ControllerRemotePlayer>().SetMessageStatus("Bỏ Lượt");
                                 }
                             }
-                        }                       
+                        }
                     }
                     uI_Manager.properties = currentCard;
                 }
@@ -230,7 +266,7 @@ public class ManagerGame : MonoBehaviour
                                 if (item.player_id == playerModel.ID_player)
                                 {
                                     lastWinner = item;
-                                    uI_Manager.ShowWin(item.nickname + " thắng ???");
+                                    uI_Manager.ShowWin(item.nickname.ToString() + " thắng");
                                     break;
                                 }
                             }
@@ -238,25 +274,122 @@ public class ManagerGame : MonoBehaviour
                             {
                                 Debug.LogError(e);
                             }
-                            
+
                         }
                         NewGame();
                     }
                 }
                 catch (System.Exception e)
                 {
-                    
+                    //đây bỏ trống nhé
+                }
+            }
+        }
+
+        //kiểm tra uno
+        UServer uServerv4 = Login.connect.GetUServer("uno");
+        if (uServerv3 != null)
+        {
+            PlayerModel playerModel = new PlayerModel();
+            if (uServerv4.value != "" && uServerv4.value != null && uServerv4.isNew)
+            {
+                try
+                {
+                    playerModel = JsonUtility.FromJson<PlayerModel>(uServerv4.value);
+                    if (bool.Parse(playerModel.message))
+                    {
+                        foreach (var item in remotePlayers)
+                        {
+                            if (item.GetComponent<ControllerRemotePlayer>().player.player_id == currentPlayer.player_id)
+                            {
+                                item.GetComponent<ControllerRemotePlayer>().SetMessageStatus("UNO");
+                            }
+                        }
+                    }
+                }
+                catch (System.Exception e)
+                {
+                    //đây bỏ trống nhé
                 }
             }
         }
     }
     private void LateUpdate()
     {
-        
+        if (ani)
+        {
+            if (isPlaying)
+            {
+                ani.SetActive(true);
+            }
+            else
+            {
+                ani.SetActive(false);
+            }
+        }
+        if (ani.GetComponent<Animator>())
+        {           
+            switch (direction)
+            {
+                case EDirection.left:
+                    ani.GetComponent<Animator>().SetInteger("direction",0);
+                    break;
+                case EDirection.right:
+                    ani.GetComponent<Animator>().SetInteger("direction", 1);
+                    break;
+                default:
+                    break;
+            }
+        }
+        UServer uServerUpdate = Login.connect.GetUServer("update");
+        if (uServerUpdate.value != "" && uServerUpdate.value != null && uServerUpdate.isNew)
+        {
+            netWork.UpdatePlayer();
+            //PlayerUpdateMoneyModel playerModel = new PlayerUpdateMoneyModel();            
+            //try
+            //{
+            //    //Debug.Log(uServerUpdate.value);
+            //    playerModel = JsonUtility.FromJson<PlayerUpdateMoneyModel>(uServerUpdate.value);
+            //    //Debug.Log(playerModel.message.Length);
+            //}
+            //catch
+            //{
+            //    //đây bỏ trống
+            //}
+            //if (playerModel != null)
+            //{
+            //    foreach (var item in playerModel.message)
+            //    {
+            //        if (item.ID_player == IDLocalPlayer)
+            //        {
+            //            uI_Manager.UpdateMoney(item.money.ToString());
+            //        }
+            //        else
+            //        {
+            //            foreach (var remotePlayer in remotePlayers)
+            //            {
+            //                if (remotePlayer.GetComponent<ControllerRemotePlayer>().player.player_id == item.ID_player)
+            //                {
+            //                    remotePlayer.GetComponent<ControllerRemotePlayer>().player.money = item.money;
+            //                    break;
+            //                }
+            //            }
+            //        }
+            //    }
+            //}
+        }
+
+
+        UServer uServerEnd = Login.connect.GetUServer("end_game");
+        if (uServerEnd.value != "" && uServerEnd.value != null && uServerEnd.isNew)
+        {
+            NewGame();
+            netWork.UpdatePlayer();       
+        }
         if (isPlaying)
         {
             uI_Manager.btnStart.SetActive(false);
-            if (netWork.players.Count <2)
+            if (netWork.players.Count < 2)
             {
                 PlayerModel playerModel = new PlayerModel();
                 playerModel.ID_player = IDLocalPlayer;
@@ -265,7 +398,7 @@ public class ManagerGame : MonoBehaviour
                 playerModel.message = "true";
                 Login.connect.Send(playerModel);
 
-                uI_Manager.ShowWin("Bạn thắng");
+                //uI_Manager.ShowWin("Bạn thắng");
             }
         }
         else
@@ -274,31 +407,49 @@ public class ManagerGame : MonoBehaviour
         }
 
     }
+
+    /*                _..gggggppppp.._                       
+                      _.gd$$$$$$$$$$$$$$$$$$bp._                  
+                   .g$$$$$$P^^""j$$b""""^^T$$$$$$p.               
+                .g$$$P^T$$b    d$P T;       ""^^T$$$p.            
+              .d$$P^"  :$; `  :$;                "^T$$b.          
+            .d$$P'      T$b.   T$b                  `T$$b.        
+           d$$P'      .gg$$$$bpd$$$p.d$bpp.           `T$$b       
+          d$$P      .d$$$$$$$$$$$$$$$$$$$$bp.           T$$b      
+         d$$P      d$$$$$$$$$$$$$$$$$$$$$$$$$b.          T$$b     
+        d$$P      d$$$$$$$$$$$$$$$$$$P^^T$$$$P            T$$b    
+       d$$P    '-'T$$$$$$$$$$$$$$$$$$bggpd$$$$b.           T$$b   
+      :$$$      .d$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$p._.g.     $$$;  
+      $$$;     d$$$$$$$$$$$$$$$$$$$$$$$P^"^T$$$$P^^T$$$;    :$$$  
+     :$$$     :$$$$$$$$$$$$$$:$$$$$$$$$_    "^T$bpd$$$$,     $$$; 
+     $$$;     :$$$$$$$$$$$$$$bT$$$$$P^^T$p.    `T$$$$$$;     :$$$ 
+    :$$$      :$$$$$$$$$$$$$$P `^^^'    "^T$p.    lb`TP       $$$;
+    :$$$      $$$$$$$$$$$$$$$              `T$$p._;$b         $$$;
+    $$$;      $$$$$$$$$$$$$$;                `T$$$$:Tb        :$$$
+    $$$;      $$$$$$$$$$$$$$$                        Tb    _  :$$$
+    :$$$     d$$$$$$$$$$$$$$$.                        $b.__Tb $$$;
+    :$$$  .g$$$$$$$$$$$$$$$$$$$p...______...gp._      :$`^^^' $$$;
+     $$$;  `^^'T$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$p.    Tb._, :$$$ 
+     :$$$       T$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$b.   "^"  $$$; 
+      $$$;       `$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$b      :$$$  
+      :$$$        $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$;     $$$;  
+       T$$b    _  :$$`$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$;   d$$P   
+        T$$b   T$g$$; :$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  d$$P    
+         T$$b   `^^'  :$$ "^T$$$$$$$$$$$$$$$$$$$$$$$$$$$ d$$P     
+          T$$b        $P     T$$$$$$$$$$$$$$$$$$$$$$$$$;d$$P      
+           T$$b.      '       $$$$$$$$$$$$$$$$$$$$$$$$$$$$P       
+            `T$$$p.   bug    d$$$$$$$$$$$$$$$$$$$$$$$$$$P'        
+              `T$$$$p..__..g$$$$$$$$$$$$$$$$$$$$$$$$$$P'          
+                "^$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$^"            
+                   "^T$$$$$$$$$$$$$$$$$$$$$$$$$$P^"               
+                       """^^^T$$$$$$$$$$P^^^"""*/
     //tải tài nguyên các lá bài
     void LoadCard()
     {
         CardModel[] temp = Resources.LoadAll<CardModel>("uno/");
         foreach (var item in temp)
         {
-            if (item.color != Color_Card.Black)
-            {
-                if (item.number == 0 && !item.isChucNang)
-                {
-                    cardModels.Add(item);
-                }
-                else
-                {
-                    cardModels.Add(item);
-                    cardModels.Add(item);
-                }
-            }
-            else
-            {
-                cardModels.Add(item);
-                cardModels.Add(item);
-                cardModels.Add(item);
-                cardModels.Add(item);
-            }
+            cardModels.Add(item);           
         }
 
     }
@@ -332,7 +483,7 @@ public class ManagerGame : MonoBehaviour
             {
                 if (!listCards.ContainsKey(item.player_id))
                 {
-                    Debug.Log("ôi vãi lồn");
+                    //Debug.Log("ôi vãi lồn");
                     List<int> temp = new List<int>();
                     temp.Add(currentPosCard[0]);
                     listCards.Add(item.player_id, temp);
@@ -340,7 +491,7 @@ public class ManagerGame : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("ôi vãi cặc");
+                   // Debug.Log("ôi vãi cặc");
                     listCards[item.player_id].Add(currentPosCard[0]);
                     currentPosCard.RemoveAt(0);
                 }
@@ -365,6 +516,7 @@ public class ManagerGame : MonoBehaviour
     }
     public void NewGame()
     {
+        ani.GetComponent<Image>().color = Color.white;
         currentCard = null;
         uI_Manager.properties = null;
         XaoBai();
@@ -386,7 +538,7 @@ public class ManagerGame : MonoBehaviour
         PlayerModel playerModel = new PlayerModel();
         playerModel.ID_player = IDLocalPlayer;
         playerModel.ID_room = netWork.ID_Room;
-        playerModel.cmd = "update";
+        playerModel.cmd = "ready";
         playerModel.message = JsonUtility.ToJson(data);
 
         Login.connect.Send(playerModel);
@@ -547,15 +699,18 @@ public class ManagerGame : MonoBehaviour
     /// sản sàng hoặc bắt đầu
     /// </summary>
     public void onReadyOrStart()
-    {
-        if (lastWinner.player_id != 0)
-        {
-            currentPlayer = lastWinner;
-        }
+    {        
         if (IDLocalPlayer == netWork.ID_owner && CheckReady() && netWork.players.Count > 1)
         {
-            currentPlayer = localPlayer.GetComponent<ControllerPlayer>().player;
+            if (lastWinner.player_id != 0)
+            {
+                currentPlayer = lastWinner;
+            }
+            else
+            {
+                currentPlayer = localPlayer.GetComponent<ControllerPlayer>().player;
 
+            }
             uI_Manager.btnStart.SetActive(false);
 
             int pos = 0;
@@ -674,6 +829,7 @@ public class ManagerGame : MonoBehaviour
         endTurn.onlyColor = true;
         endTurn.indexColor = indexColor;
         endTurn.direction = numberDir;
+        endTurn.amountCard = localPlayer.GetComponent<ControllerPlayer>().cardsOnHand.Count;       
 
         PlayerModel playerModel = new PlayerModel();
         playerModel.cmd = "end";
@@ -747,6 +903,8 @@ public class ManagerGame : MonoBehaviour
         Debug.Log(currentPlayer.player_id);
         DataPackageEndTurn endTurn = new DataPackageEndTurn(currentPlayer, preTurnPlayer, nextTurnPlayer, currentPosCard, id);
         endTurn.direction = numberDir;
+        endTurn.amountCard = localPlayer.GetComponent<ControllerPlayer>().cardsOnHand.Count;     
+
         PlayerModel playerModel = new PlayerModel();
         playerModel.cmd = "end";
         playerModel.ID_player = IDLocalPlayer;
@@ -806,6 +964,8 @@ public class ManagerGame : MonoBehaviour
         DataPackageEndTurn endTurn = new DataPackageEndTurn(currentPlayer, preTurnPlayer, nextTurnPlayer, currentPosCard, ID_card);
         endTurn.isSkip = true;
         endTurn.direction = numberDir;
+        endTurn.amountCard = localPlayer.GetComponent<ControllerPlayer>().cardsOnHand.Count;        
+
         PlayerModel playerModel = new PlayerModel();
         playerModel.cmd = "end";
         playerModel.ID_player = IDLocalPlayer;
@@ -868,7 +1028,8 @@ public class ManagerGame : MonoBehaviour
             case Skill.Draw:
                 if (cardModel.amounDraw > 0)
                 {
-                    uI_Manager._message.SetText("Cộng " + cardModel.amounDraw +" lá bài");
+
+                    uI_Manager._message.SetText("Cộng " + cardModel.amounDraw + " lá bài");
                     DrawmCard(cardModel.amounDraw);
                     EndTurn();
                 }
@@ -886,7 +1047,17 @@ public class ManagerGame : MonoBehaviour
     }
     public void UNO()
     {
-        Uno = true;
+        if (localPlayer.GetComponent<ControllerPlayer>().cardsOnHand.Count <= 2)
+        {
+            uI_Manager._message.SetText("Uno");
+            Uno = true;
+            PlayerModel playerModel = new PlayerModel();
+            playerModel.ID_player = IDLocalPlayer;
+            playerModel.ID_room = netWork.ID_Room;
+            playerModel.cmd = "uno";
+            playerModel.message = "true";
+            Login.connect.Send(playerModel);
+        }        
     }
     /// <summary>
     /// kiểm tra chiến thắng

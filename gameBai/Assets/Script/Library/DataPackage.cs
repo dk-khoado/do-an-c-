@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 public class DataPackageEndTurn
 {
     public bool isSkip = false;
-    public bool onlyColor = false;
+    public bool onlyColor = false;  
+    public int amountCard;
     public int indexColor;
     public int amountDraw;
 
@@ -35,6 +36,47 @@ public class DataPackageEndTurn
         this.currentCard = currentCard;
     }
 }
+
+
+
+
+[Serializable]
+public class DataPackageEndTurnCatte
+{
+    public bool isSkip = false;    
+    public bool endRound;
+    public int amountDraw;
+
+
+
+    public Player currentPlayer;//người chơi đang đến lượt đi
+    public Player preTurnPlayer;//người chơi trước đó
+    public Player nextTurnPlayer;//người chơi kế tiếp
+    public Player currentWinner;//người chơi kế tiếp
+    public int direction;
+
+    public List<int> currentPosCard = new List<int>();
+
+    public int currentCard;//card hiện tại đang trên bàn 
+    public DataPackageEndTurnCatte()
+    {
+
+    }
+    public DataPackageEndTurnCatte(Player currentPlayer, Player preTurnPlayer, Player nextTurnPlayer, List<int> currentPosCard, int currentCard)
+    {
+        this.currentPlayer = currentPlayer;
+        this.preTurnPlayer = preTurnPlayer;
+        this.nextTurnPlayer = nextTurnPlayer;
+        this.currentPosCard = currentPosCard;
+        this.currentCard = currentCard;
+    }
+}
+
+
+
+
+
+
 [Serializable]
 public class DicListcard
 {

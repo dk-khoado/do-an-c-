@@ -4,7 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
+[Serializable]
+public class MessageItemRequest
+{
+    public List<MessageItem> data;
+}
+[Serializable]
 public class MessageItem
 {
     public int player_id_send;

@@ -225,7 +225,7 @@ public class Controller_Lobby : MonoBehaviour
                 {                   
                     yield return new WaitForSeconds(0.1f);
                     typeGames = JsonUtility.FromJson<TypeGameModel>(webRequest.downloadHandler.text);
-                    Debug.Log(webRequest.downloadHandler.text);
+                    //Debug.Log(webRequest.downloadHandler.text);
                     ui_Lobby.SetTypeGameDropDown(typeGames.data);
                     yield return null;
                 }

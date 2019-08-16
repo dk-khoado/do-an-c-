@@ -10,6 +10,7 @@ TagManager:
   - UI_remotePlayer
   - MessageBox
   - FriendItem
+  - message_content
   layers:
   - Default
   - TransparentFX

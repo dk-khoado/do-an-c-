@@ -64,11 +64,15 @@
   <ItemGroup>
     <Compile Include="Assets\Model\PlayerModel.cs" />
     <Compile Include="Assets\Script\CardModel.cs" />
+    <Compile Include="Assets\Script\CardModel13.cs" />
+    <Compile Include="Assets\Script\cat_te\ManagerGame_catte.cs" />
+    <Compile Include="Assets\Script\cat_te\UI_manager_catte.cs" />
     <Compile Include="Assets\Script\Controller_Uno.cs" />
     <Compile Include="Assets\Script\Contronller\CardSkill.cs" />
     <Compile Include="Assets\Script\Contronller\chat\Controller_chatWord.cs" />
     <Compile Include="Assets\Script\Contronller\chat\Contronler_ChatFriend.cs" />
     <Compile Include="Assets\Script\Contronller\chat\Friends\ChatBoxFriend.cs" />
+    <Compile Include="Assets\Script\Contronller\chat\Friends\DataMessage.cs" />
     <Compile Include="Assets\Script\Contronller\chat\Friends\ItemChatFriend.cs" />
     <Compile Include="Assets\Script\Contronller\Controller_ItemRoom.cs" />
     <Compile Include="Assets\Script\Contronller\Controller_Lobby.cs" />
@@ -85,9 +89,11 @@
     <Compile Include="Assets\Script\Library\Dta.cs" />
     <Compile Include="Assets\Script\Library\InternetConfig.cs" />
     <Compile Include="Assets\Script\Library\Room_Config.cs" />
+    <Compile Include="Assets\Script\Library\UpdateMoney.cs" />
     <Compile Include="Assets\Script\Library\Userver.cs" />
     <Compile Include="Assets\Script\ListPropertys.cs" />
     <Compile Include="Assets\Script\Manager\ManagerGame.cs" />
+    <Compile Include="Assets\Script\Manager\ManagerGame_tienlen.cs" />
     <Compile Include="Assets\Script\Models\FriendModel.cs" />
     <Compile Include="Assets\Script\Models\GetRoomModel.cs" />
     <Compile Include="Assets\Script\Models\MessageItem.cs" />
@@ -104,6 +110,8 @@
     <Compile Include="Assets\Script\TrangLogin\Login.cs" />
     <Compile Include="Assets\Script\TrangLogin\SetActive.cs" />
     <Compile Include="Assets\Script\UI\MessageBox.cs" />
+    <Compile Include="Assets\Script\UI\MessageBox_input.cs" />
+    <Compile Include="Assets\Script\UI\OutGame.cs" />
     <Compile Include="Assets\Script\UI\UI_Lobby.cs" />
     <Compile Include="Assets\Script\UI\UI_manager.cs" />
     <Compile Include="Assets\Script\Upload.cs" />

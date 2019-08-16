@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 7526569743704088711}
   - component: {fileID: 7526569743704088705}
   - component: {fileID: 7526569743704088710}
+  - component: {fileID: -4761542283910089892}
   m_Layer: 5
   m_Name: item_chatF
-  m_TagString: Untagged
+  m_TagString: message_content
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65,7 +66,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "\xE1dasdasdaskdaskdkasdjkasdjklasjdklasjdklasjdklajsdklasjdklasjdklasjdklasjdklasldkjalsdkjasldkasjdasldkjasdlkasjdlkajdalkdjaslkdjaskljdlaskjdklasjdas"
+  m_text: hello
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2fc5f265e5cf4a3429b7a38481e36155, type: 2}
   m_sharedMaterial: {fileID: 6131038116434022233, guid: 2fc5f265e5cf4a3429b7a38481e36155,
@@ -158,3 +159,23 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &-4761542283910089892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7526569743704088708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15003ffc89d557f4bb3007ca5913a173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    player_id_send: 19
+    player_id_receive: 1013
+    isseen: 0
+    message: hello
+    send_date: 2019-08-14T00:21:52.083
+    isdelete: 0
+  _message: {fileID: 0}
