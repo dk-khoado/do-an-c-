@@ -223,7 +223,46 @@ namespace api_gamebai.Controllers
         [HttpGet]
         public IHttpActionResult ForgotPassword(int id)
         {
-            return RedirectToRoute("Default",new { controller="Home",action="Index"});
-        }          
+            
+            return RedirectToRoute("Default",new { controller="Home",action="ChangePassword"});
+        }
+
+
+        private void SendMailForgotPassword(string to, string name, string keyUser)
+        {
+            string htmlMail;
+            using (StreamReader reader = new StreamReader(HttpContext.Current.Request.MapPath("~/Views/mailTemplate.html")))
+            {
+               
+                string url = Url.Link("Default", new { controller = "Home", action = "Change" }) + "?key=" + keyUser;
+                htmlMail = reader.ReadToEnd();
+                htmlMail = htmlMail.Replace("{name}", name);
+                htmlMail = htmlMail.Replace("{link}", url);
+            }
+            try
+            {
+                MailMessage mail = new MailMessage();
+                SmtpClient SmtpServer = new SmtpClient("smtp.googlemail.com");
+
+                mail.From = new MailAddress("khoado29k11@viendong.edu.vn");
+                mail.To.Add(to);
+                mail.IsBodyHtml = true;
+                mail.Subject = "Test Mail";
+                mail.Body = htmlMail;
+
+                SmtpServer.Port = 587;
+                SmtpServer.Credentials = new NetworkCredential("khoado29k11@viendong.edu.vn", "khoa958632147");
+                SmtpServer.EnableSsl = true;
+
+                SmtpServer.Send(mail);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+            }
+        }
+
+
+
     }
 }

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseGameBaiItemManager.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="player_inventory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="player_id" Type="int" Nullable="false" />
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="limit_day" Type="datetime" />
+    <Property Name="image_item" Type="nvarchar" MaxLength="50" />
+    <Property Name="type_item" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="duration" Type="int" />
+  </EntityType>
+  <EntityType Name="shop_game">
+    <Key>
+      <PropertyRef Name="id_item" />
+    </Key>
+    <Property Name="id_item" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name_item" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="limit_day" Type="datetime" />
+    <Property Name="cost" Type="money" Nullable="false" />
+    <Property Name="image" Type="nvarchar" MaxLength="50" />
+    <Property Name="isEnable" Type="bit" Nullable="false" />
+    <Property Name="type_item" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="duration(day)" Type="int" />
+    <Property Name="descript" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Function Name="AddToShop" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="name_item" Type="nvarchar" Mode="In" />
+    <Parameter Name="cost" Type="money" Mode="In" />
+    <Parameter Name="isEnable" Type="bit" Mode="In" />
+    <Parameter Name="type_item" Type="nvarchar" Mode="In" />
+    <Parameter Name="duration" Type="int" Mode="In" />
+    <Parameter Name="descript" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="BuyInventory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_player" Type="int" Mode="In" />
+    <Parameter Name="id_item" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Renewal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_player" Type="int" Mode="In" />
+    <Parameter Name="id_item" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SellSkin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="player_id" Type="int" Mode="In" />
+    <Parameter Name="item_id" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="DatabaseGameBaiItemManagerStoreContainer">
+    <EntitySet Name="player_inventory" EntityType="Self.player_inventory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="shop_game" EntityType="Self.shop_game" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

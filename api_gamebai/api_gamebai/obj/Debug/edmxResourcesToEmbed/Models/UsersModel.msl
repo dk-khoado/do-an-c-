@@ -90,5 +90,19 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ChangePassword" FunctionName="DatabaseGameBaiModel.Store.ChangePassword" />
+    <EntitySetMapping Name="player_inventory">
+      <EntityTypeMapping TypeName="DatabaseGameBaiModel.player_inventory">
+        <MappingFragment StoreEntitySet="player_inventory">
+          <ScalarProperty Name="duration" ColumnName="duration" />
+          <ScalarProperty Name="type_item" ColumnName="type_item" />
+          <ScalarProperty Name="image_item" ColumnName="image_item" />
+          <ScalarProperty Name="limit_day" ColumnName="limit_day" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="player_id" ColumnName="player_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>
