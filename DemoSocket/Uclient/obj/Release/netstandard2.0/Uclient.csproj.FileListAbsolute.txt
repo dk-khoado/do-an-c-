@@ -1,0 +1,9 @@
+D:\C#_project\demo\DemoSocket\Uclient\bin\Release\netstandard2.0\Uclient.deps.json
+D:\C#_project\demo\DemoSocket\Uclient\bin\Release\netstandard2.0\Uclient.dll
+D:\C#_project\demo\DemoSocket\Uclient\bin\Release\netstandard2.0\Uclient.pdb
+D:\C#_project\demo\DemoSocket\Uclient\obj\Release\netstandard2.0\Uclient.csproj.CoreCompileInputs.cache
+D:\C#_project\demo\DemoSocket\Uclient\obj\Release\netstandard2.0\Uclient.AssemblyInfoInputs.cache
+D:\C#_project\demo\DemoSocket\Uclient\obj\Release\netstandard2.0\Uclient.AssemblyInfo.cs
+D:\C#_project\demo\DemoSocket\Uclient\obj\Release\netstandard2.0\Uclient.dll
+D:\C#_project\demo\DemoSocket\Uclient\obj\Release\netstandard2.0\Uclient.pdb
+D:\C#_project\demo\DemoSocket\Uclient\obj\Release\netstandard2.0\Uclient.csprojAssemblyReference.cache

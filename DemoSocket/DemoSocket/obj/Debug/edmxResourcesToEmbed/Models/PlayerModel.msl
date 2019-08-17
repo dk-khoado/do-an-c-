@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DatabaseGameBaiModelStoreContainer" CdmEntityContainer="DatabaseGameBaiEntities">
+    <EntitySetMapping Name="players">
+      <EntityTypeMapping TypeName="DatabaseGameBaiModel.player">
+        <MappingFragment StoreEntitySet="player">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="money" ColumnName="money" />
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="avartar" ColumnName="avartar" />
+          <ScalarProperty Name="rank_by_money" ColumnName="rank_by_money" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="chuyenTien" FunctionName="DatabaseGameBaiModel.Store.chuyenTien" />
+    <FunctionImportMapping FunctionImportName="congTien" FunctionName="DatabaseGameBaiModel.Store.congTien" />
+    <FunctionImportMapping FunctionImportName="LoadChatBox" FunctionName="DatabaseGameBaiModel.Store.LoadChatBox">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DatabaseGameBaiModel.LoadChatBox_Result">
+          <ScalarProperty Name="player_id_send" ColumnName="player_id_send" />
+          <ScalarProperty Name="player_id_receive" ColumnName="player_id_receive" />
+          <ScalarProperty Name="isseen" ColumnName="isseen" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="send_date" ColumnName="send_date" />
+          <ScalarProperty Name="isdelete" ColumnName="isdelete" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sendmessage" FunctionName="DatabaseGameBaiModel.Store.sendmessage" />
+    <FunctionImportMapping FunctionImportName="truTien" FunctionName="DatabaseGameBaiModel.Store.truTien" />
+    <EntitySetMapping Name="room_list">
+      <EntityTypeMapping TypeName="DatabaseGameBaiModel.room_list">
+        <MappingFragment StoreEntitySet="room_list">
+          <ScalarProperty Name="id_bai" ColumnName="id_bai" />
+          <ScalarProperty Name="bet_money" ColumnName="bet_money" />
+          <ScalarProperty Name="room_name" ColumnName="room_name" />
+          <ScalarProperty Name="current_player" ColumnName="current_player" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="limit_player" ColumnName="limit_player" />
+          <ScalarProperty Name="owner_id" ColumnName="owner_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
