@@ -1,0 +1,7 @@
+﻿{
+    "CMD": {
+        "exit": "thoát khỏi chương trình",
+        "Join_room": "tham gia phòng",
+        "leave_room": "thoát phòng"
+    }
+}

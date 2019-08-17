@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseGameBaiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="player">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="money" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="nickname" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="256" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="avartar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="rank_by_money" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="DatabaseGameBaiEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="players" EntityType="Self.player" />
+    <FunctionImport Name="chuyenTien">
+      <Parameter Name="money" Mode="In" Type="Decimal" />
+      <Parameter Name="id_send" Mode="In" Type="Int32" />
+      <Parameter Name="id_receive" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="congTien">
+      <Parameter Name="amount" Mode="In" Type="Decimal" />
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="LoadChatBox" ReturnType="Collection(DatabaseGameBaiModel.LoadChatBox_Result)">
+      <Parameter Name="playerID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sendmessage">
+      <Parameter Name="playerIDsend" Mode="In" Type="Int32" />
+      <Parameter Name="playerIDrecive" Mode="In" Type="Int32" />
+      <Parameter Name="message" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="truTien">
+      <Parameter Name="amount" Mode="In" Type="Decimal" />
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="room_list" EntityType="DatabaseGameBaiModel.room_list" />
+  </EntityContainer>
+  <ComplexType Name="LoadChatBox_Result">
+    <Property Type="Int32" Name="player_id_send" Nullable="false" />
+    <Property Type="Int32" Name="player_id_receive" Nullable="false" />
+    <Property Type="Boolean" Name="isseen" Nullable="false" />
+    <Property Type="String" Name="message" Nullable="false" MaxLength="Max" />
+    <Property Type="DateTime" Name="send_date" Nullable="false" Precision="23" />
+    <Property Type="Boolean" Name="isdelete" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="room_list">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="owner_id" Type="Int32" Nullable="false" />
+    <Property Name="limit_player" Type="Int32" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="current_player" Type="Int32" />
+    <Property Name="room_name" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="bet_money" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="id_bai" Type="Int32" Nullable="false" />
+  </EntityType>
+</Schema>

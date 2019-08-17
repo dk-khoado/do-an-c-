@@ -1,0 +1,361 @@
+
+8/13/2019 10:57:28 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/13/2019 10:57:59 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/13/2019 10:59:21 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/13/2019 11:03:08 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/13/2019 11:03:41 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/13/2019 11:05:38 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/13/2019 11:07:58 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/13/2019 11:09:28 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/13/2019 11:21:20 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/13/2019 11:22:06 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/13/2019 11:27:16 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/13/2019 11:29:41 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/13/2019 11:31:55 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/13/2019 11:33:16 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/13/2019 11:41:38 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/13/2019 11:43:26 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/13/2019 11:44:17 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/13/2019 11:45:14 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 12:08:01 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 12:20:43 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 12:22:34 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 12:24:46 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 12:27:57 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 12:29:00 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 12:30:30 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 12:33:22 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 12:34:38 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 12:37:56 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 12:40:14 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 12:42:44 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 12:44:06 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 12:44:46 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 12:45:52 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 12:46:46 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 12:50:17 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 12:56:44 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 8:36:42 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.SendAllRoom(Int32 id_Room, String nhan) in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 171
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 358
+
+
+8/14/2019 8:39:00 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.SendAllRoom(Int32 id_Room, String nhan) in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 171
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 358
+
+
+8/14/2019 8:39:12 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.SendAllRoom(Int32 id_Room, String nhan) in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 171
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 358
+
+
+8/14/2019 8:43:43 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 8:47:20 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 8:48:38 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 8:49:47 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 8:50:36 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 8:51:12 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 8:52:17 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 8:52:56 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 8:53:13 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 8:56:44 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.SendAllRoom(Int32 id_Room, String nhan) in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 171
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 367
+
+
+8/14/2019 8:57:10 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.SendAllRoom(Int32 id_Room, String nhan) in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 171
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 367
+
+
+8/14/2019 8:57:48 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.SendAllRoom(Int32 id_Room, String nhan) in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 171
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 367
+
+
+8/14/2019 8:59:32 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 201
+
+
+8/14/2019 9:01:50 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.SendAllRoom(Int32 id_Room, String nhan) in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 171
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 367
+
+
+8/14/2019 9:04:23 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.SendAllRoom(Int32 id_Room, String nhan) in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 171
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 369
+
+
+8/14/2019 9:12:27 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 209
+
+
+8/14/2019 9:16:04 PM
+System.ArgumentException: An item with the same key has already been added.
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 280
+
+
+8/14/2019 9:16:31 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 209
+
+
+8/14/2019 9:17:58 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 209
+
+
+8/14/2019 9:27:30 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 209
+
+
+8/14/2019 9:27:52 PM
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 270
+
+
+8/14/2019 9:31:43 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 209
+
+
+8/14/2019 9:31:46 PM
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 270
+
+
+8/14/2019 10:26:23 PM
+System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.StreamWriter.Flush(Boolean flushStream, Boolean flushEncoder)
+   at System.IO.StreamWriter.Write(Char[] buffer, Int32 index, Int32 count)
+   at System.IO.TextWriter.WriteLine(String value)
+   at DemoSocket.Client.Send(String input) in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 152
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 304
+
+
+8/14/2019 10:28:04 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 209
+
+
+8/14/2019 10:28:45 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 209
+
+
+8/14/2019 10:30:45 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 209
+
+
+8/14/2019 10:34:46 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 209
+
+
+8/14/2019 10:43:17 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 209
+
