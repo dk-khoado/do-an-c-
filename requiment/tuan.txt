@@ -1,9 +1,3 @@
-yêu cầu:
-
-tạo api đăng nhập đăng ký user
-------đăng ký
-    -kiểm tra tên đã tồn tại
-------đăng nhập
-    - kiểm tra tên có tồn tại
-    - mật khẩu sai
--------kiểm tra hết tất cả trường hợp lỗi
+﻿- tạo trang login, register 
+	- register: có check nhập trùng password . username có kiểm tra ký tự đặt biệt
+	- login : username có kiếm tra ký tự đặt biệt.
