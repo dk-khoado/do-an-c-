@@ -14,10 +14,10 @@
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="username" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="money" Type="money" Nullable="false" />
+    <Property Name="money" Type="money" />
     <Property Name="nickname" Type="nvarchar" MaxLength="30" Nullable="false" />
     <Property Name="email" Type="varchar" MaxLength="256" Nullable="false" />
-    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="status" Type="int" />
     <Property Name="avartar" Type="varchar(max)" />
     <Property Name="rank_by_money" Type="nvarchar" MaxLength="50" />
   </EntityType>
@@ -30,7 +30,7 @@
     <Property Name="limit_player" Type="int" Nullable="false" />
     <Property Name="password" Type="nchar" MaxLength="10" />
     <Property Name="current_player" Type="int" />
-    <Property Name="room_name" Type="nvarchar" MaxLength="10" />
+    <Property Name="room_name" Type="nvarchar" MaxLength="50" />
     <Property Name="bet_money" Type="money" />
     <Property Name="id_bai" Type="int" Nullable="false" />
   </EntityType>

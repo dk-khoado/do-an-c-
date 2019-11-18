@@ -7,10 +7,10 @@
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="username" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="money" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="money" Type="Decimal" Precision="19" Scale="4" />
     <Property Name="nickname" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="email" Type="String" MaxLength="256" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int32" />
     <Property Name="avartar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <Property Name="rank_by_money" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
@@ -23,7 +23,7 @@
     <Property Name="limit_player" Type="Int32" Nullable="false" />
     <Property Name="password" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
     <Property Name="current_player" Type="Int32" />
-    <Property Name="room_name" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="room_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="room_listplayer" Relationship="DatabaseGameBaiModel1.FK_room_listplayer_room_list" FromRole="room_list" ToRole="room_listplayer" />
     <Property Name="bet_money" Type="Decimal" Precision="19" Scale="4" />
     <Property Name="id_bai" Type="Int32" Nullable="false" />
@@ -47,6 +47,7 @@
       <Parameter Name="limit_player" Mode="In" Type="Int32" />
       <Parameter Name="password" Mode="In" Type="String" />
       <Parameter Name="room_name" Mode="In" Type="String" />
+      <Parameter Name="bet_money" Mode="In" Type="Decimal" />
       <Parameter Name="id_bai" Mode="In" Type="Int32" />
     </FunctionImport>
     <FunctionImport Name="JoinRoomList">

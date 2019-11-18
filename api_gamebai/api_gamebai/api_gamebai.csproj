@@ -438,7 +438,6 @@
     <Content Include="Views\Home\Verify.cshtml" />
     <Content Include="Views\Main\Index.cshtml" />
     <Content Include="Views\LayoutMaster\LayoutMaster.cshtml" />
-    <Content Include="Views\Home\ChangePassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

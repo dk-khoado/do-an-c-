@@ -2465,3 +2465,36 @@ System.NullReferenceException: Object reference not set to an instance of an obj
 System.NullReferenceException: Object reference not set to an instance of an object.
    at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 209
 
+
+11/14/2019 3:38:31 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 209
+
+
+11/14/2019 3:38:49 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 209
+
+
+11/14/2019 3:50:50 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 209
+
+
+11/14/2019 3:52:25 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 209
+
+
+11/14/2019 3:56:05 PM
+System.ArgumentException: An item with the same key has already been added.
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 297
+
+
+11/14/2019 4:00:35 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoSocket.Client.DoInBackground() in D:\C#_project\demo\DemoSocket\DemoSocket\Program.cs:line 209
+

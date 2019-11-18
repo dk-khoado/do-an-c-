@@ -16,12 +16,24 @@
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="username" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="money" Type="money" Nullable="false" />
+    <Property Name="money" Type="money" />
     <Property Name="nickname" Type="nvarchar" MaxLength="30" Nullable="false" />
     <Property Name="email" Type="varchar" MaxLength="256" Nullable="false" />
-    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="status" Type="int" />
     <Property Name="avartar" Type="varchar(max)" />
     <Property Name="rank_by_money" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="player_inventory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="player_id" Type="int" Nullable="false" />
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="limit_day" Type="datetime" />
+    <Property Name="image_item" Type="nvarchar" MaxLength="50" />
+    <Property Name="type_item" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="duration" Type="int" />
   </EntityType>
   <EntityType Name="player_key">
     <Key>
@@ -49,6 +61,18 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.infoplayer' does not have a pr
     <Property Name="win" Type="int" />
     <Property Name="hightscore" Type="money" />
   </EntityType>
+  <Association Name="kh_Do">
+    <End Role="player" Type="Self.player" Multiplicity="1" />
+    <End Role="player_inventory" Type="Self.player_inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="player">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="player_inventory">
+        <PropertyRef Name="player_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="player_fk_id">
     <End Role="player" Type="Self.player" Multiplicity="1" />
     <End Role="history_login" Type="Self.history_login" Multiplicity="*" />
@@ -73,6 +97,10 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.infoplayer' does not have a pr
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="ChangePassword" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="repass" Type="varchar" Mode="In" />
+  </Function>
   <Function Name="congTien" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="amount" Type="money" Mode="In" />
     <Parameter Name="id" Type="int" Mode="In" />
@@ -99,6 +127,7 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.infoplayer' does not have a pr
   <EntityContainer Name="DatabaseGameBaiModelStoreContainer">
     <EntitySet Name="history_login" EntityType="Self.history_login" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="player" EntityType="Self.player" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="player_inventory" EntityType="Self.player_inventory" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="player_key" EntityType="Self.player_key" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="infoplayer" EntityType="Self.infoplayer" store:Type="Views" store:Schema="dbo">
       <DefiningQuery>SELECT 
@@ -111,6 +140,10 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.infoplayer' does not have a pr
     [infoplayer].[hightscore] AS [hightscore]
     FROM [dbo].[infoplayer] AS [infoplayer]</DefiningQuery>
     </EntitySet>
+    <AssociationSet Name="kh_Do" Association="Self.kh_Do">
+      <End Role="player" EntitySet="player" />
+      <End Role="player_inventory" EntitySet="player_inventory" />
+    </AssociationSet>
     <AssociationSet Name="player_fk_id" Association="Self.player_fk_id">
       <End Role="player" EntitySet="player" />
       <End Role="history_login" EntitySet="history_login" />

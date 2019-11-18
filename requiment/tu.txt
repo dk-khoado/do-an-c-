@@ -1,1 +1,5 @@
 ﻿làm trang chủ cho trang web
+ ****layout trang admin
+
+
+cả 2: làm phần layout cho phần admin. gồm quản lý bài đăng trên trang web

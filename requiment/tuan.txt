@@ -1,3 +1,8 @@
 ﻿- tạo trang login, register 
 	- register: có check nhập trùng password . username có kiểm tra ký tự đặt biệt
 	- login : username có kiếm tra ký tự đặt biệt.
+
+**** login cho trang admin.
+
+
+cả 2: làm phần layout cho phần admin. gồm quản lý bài đăng trên trang web

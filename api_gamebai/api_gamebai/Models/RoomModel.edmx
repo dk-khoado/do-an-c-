@@ -19,10 +19,10 @@
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="username" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="money" Type="money" Nullable="false" />
+          <Property Name="money" Type="money" />
           <Property Name="nickname" Type="nvarchar" MaxLength="30" Nullable="false" />
           <Property Name="email" Type="varchar" MaxLength="256" Nullable="false" />
-          <Property Name="status" Type="int" Nullable="false" />
+          <Property Name="status" Type="int" />
           <Property Name="avartar" Type="varchar(max)" />
           <Property Name="rank_by_money" Type="nvarchar" MaxLength="50" />
         </EntityType>
@@ -35,7 +35,7 @@
           <Property Name="limit_player" Type="int" Nullable="false" />
           <Property Name="password" Type="nchar" MaxLength="10" />
           <Property Name="current_player" Type="int" />
-          <Property Name="room_name" Type="nvarchar" MaxLength="10" />
+          <Property Name="room_name" Type="nvarchar" MaxLength="50" />
           <Property Name="bet_money" Type="money" />
           <Property Name="id_bai" Type="int" Nullable="false" />
         </EntityType>
@@ -149,10 +149,10 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.vroom_listplayer' does not hav
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="username" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="money" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="money" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="nickname" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="email" Type="String" MaxLength="256" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="status" Type="Int32" Nullable="false" />
+          <Property Name="status" Type="Int32" />
           <Property Name="avartar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="rank_by_money" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
@@ -165,7 +165,7 @@ warning 6002: The table/view 'DatabaseGameBai.dbo.vroom_listplayer' does not hav
           <Property Name="limit_player" Type="Int32" Nullable="false" />
           <Property Name="password" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
           <Property Name="current_player" Type="Int32" />
-          <Property Name="room_name" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="room_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="room_listplayer" Relationship="DatabaseGameBaiModel1.FK_room_listplayer_room_list" FromRole="room_list" ToRole="room_listplayer" />
           <Property Name="bet_money" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="id_bai" Type="Int32" Nullable="false" />
