@@ -225,11 +225,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#_project\\demo\\DemoSocket\\Uclient\\Uclient.csproj",
+      "projectUniqueName": "D:\\backup E\\gitHub\\do-an-c-\\DemoSocket\\Uclient\\Uclient.csproj",
       "projectName": "Uclient",
-      "projectPath": "D:\\C#_project\\demo\\DemoSocket\\Uclient\\Uclient.csproj",
+      "projectPath": "D:\\backup E\\gitHub\\do-an-c-\\DemoSocket\\Uclient\\Uclient.csproj",
       "packagesPath": "C:\\Users\\KhoaThu\\.nuget\\packages\\",
-      "outputPath": "D:\\C#_project\\demo\\DemoSocket\\Uclient\\obj\\",
+      "outputPath": "D:\\backup E\\gitHub\\do-an-c-\\DemoSocket\\Uclient\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
