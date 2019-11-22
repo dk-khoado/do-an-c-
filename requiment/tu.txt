@@ -9,3 +9,6 @@ phần mới:
   - làm CHỨC NĂNG tạo bài đăng sự kiện trên trang chủ  
   ghi chú: tuấn vs tú cùng làm
   - login admin. không yều database
+phần trang chủ game:
+
+  -layout: trang chủ, trang đăng nhập, đăng ký, login admin,trang admin
