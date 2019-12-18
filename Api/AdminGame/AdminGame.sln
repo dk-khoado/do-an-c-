@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "AdminGame", "AdminGame\AdminGame.njsproj", "{43491170-F553-4375-B7A1-41E0661FFF05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43491170-F553-4375-B7A1-41E0661FFF05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43491170-F553-4375-B7A1-41E0661FFF05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43491170-F553-4375-B7A1-41E0661FFF05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43491170-F553-4375-B7A1-41E0661FFF05}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BBE9843A-9CA0-4BD8-9ED4-E5D161EB01EB}
+	EndGlobalSection
+EndGlobal

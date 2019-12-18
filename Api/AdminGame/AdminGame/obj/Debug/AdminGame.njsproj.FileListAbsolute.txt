@@ -1,0 +1,2 @@
+D:\Visual\AdminGame\AdminGame\obj\Debug\AdminGame.njsprojAssemblyReference.cache
+D:\Visual\AdminGame\AdminGame\bin\Microsoft.NodejsTools.WebRole.dll

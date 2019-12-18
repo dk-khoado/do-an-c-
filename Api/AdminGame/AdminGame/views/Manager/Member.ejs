@@ -1,0 +1,48 @@
+﻿<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Email</th>
+            <th></th>
+        </tr>
+    </thead>
+
+</table>
+
+
+
+<script>
+    var dataJSON = <%- data %>
+
+        $(document).ready(function () {
+            $('#example').DataTable({
+                "data": dataJSON,               
+                "columns": [
+                    { "data": "name" },
+                    { "data": "position" },
+                    { "data": "email" },
+                    {
+                        "render": function (data, type, row) {
+                            return "<a href='#' onclick='getData(" + JSON.stringify(row.id) + ")'>Delete</a>||<a href='/UpdateAdmin/"+row.id+"'>Edit</a>";
+                        }
+                    }
+                ]
+            });
+        });
+    
+    function getData(id) {
+        $.ajax({
+            url: "/BanAdmin/" + id,
+            method: "post"
+        }).done(function (result) {
+            if (result.message == "OK") {
+                alert("Xóa thành công");
+            }
+            else {
+                alert("Không thể xóa admin có quyền hành cao nhất");
+            }
+
+        })
+    }
+</script>

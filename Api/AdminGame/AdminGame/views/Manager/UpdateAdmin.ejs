@@ -1,0 +1,70 @@
+﻿
+
+    <header style="background-color:#3B5998;">
+        <div class="row">
+            <div class="col-8">
+                <img src="image/logo.jpg" height="100px" width="auto">
+                <button type="button" class="btn btn-success" style="width:auto ;">Sign Up</button>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </header>
+    <div id="tabs">
+
+        <div class="row">
+
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <form onsubmit="return false">
+                    <h3 style="text-align: center; margin-top: 100px; margin-bottom: 50px">
+                        Promote Admin
+                    </h3>
+                    <input type="text" class="form-control" id="adname" name="adname" placeholder="Username" required>
+                    <br />
+                    <input type="email" class="form-control" id="ademail" name="ademail" placeholder="Email" required>
+                    <br />
+                    <input type="text" class="form-control" id="adPosition" name="adPosition" placeholder="Position" required>
+                    <br />
+                    <input type="submit" class="btn btn-primary" onclick="UpdateMember()" style="width: 100%" />
+                    <hr>
+                </form>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+        </div>
+
+    </div>
+    <script>
+        var getData = <%- dataAdmin %>;       
+        document.getElementById('adname').value = getData.name;
+        document.getElementById('ademail').value = getData.email;
+        document.getElementById('adPosition').value = getData.position;
+
+        function UpdateMember() {
+            let data = {};
+            data.adname = document.getElementById('adname').value;
+            data.ademail = document.getElementById('ademail').value;
+            data.adPosition = document.getElementById('adPosition').value;
+            $.ajax({
+                url: "/UpdateAdmin/" + getData.id,
+                method: "post",
+                data: data
+            }).done(function (result) {
+                if (result.message == "success") {
+                    alert("Update thành công");
+                }
+                else {
+                    alert("Update thất bại");
+                }
+
+            })
+        }
+
+    </script>
+
+
+
+
+
+
+   
+

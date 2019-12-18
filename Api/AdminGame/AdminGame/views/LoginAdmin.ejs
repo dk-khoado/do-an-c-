@@ -1,0 +1,54 @@
+﻿<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <header style="background-color:#3B5998;">
+        <div class="row">
+            <div class="col-8">
+                <img src="image/logo.jpg" height="100px" width="auto">
+                <button type="button" class="btn btn-success" style="width:auto ;">Sign Up</button>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </header>
+    <div id="tabs">
+
+        <div class="row">
+
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <form method="post" action="/">
+                    <h3 style="text-align: center; margin-top: 100px; margin-bottom: 50px">Log Into Admin Page</h3>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+                    <br>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                    <p class="text-danger"><%= err %></p>
+                    <input type="checkbox" id="check" checked>Remember Me
+                    <br>
+                    <input type="submit" class="btn btn-primary" style="width: 100%" />
+
+                    <hr>
+                    <center>
+                        <a href="#">
+                            <button type="button" class="btn btn-success" style="width: 60%">Creat a new account</button>
+                        </a>
+                        <br>
+                        <a href="#">Forgot a account ?</a>
+                        <br>
+                        <a href="#">Not now</a>
+                    </center>
+                </form>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+        </div>
+
+    </div>
+
+
+</body>
+
+
